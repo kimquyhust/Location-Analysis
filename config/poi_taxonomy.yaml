@@ -1,0 +1,180 @@
+version: "0.2.0"
+source: openstreetmap
+
+# A source object may match several raw rules, but it resolves to one leaf
+# category. Cross-source/node-area conflation happens before aggregation.
+entity_policy:
+  identity_fields: [osm_type, osm_id]
+  cross_geometry_deduplication:
+    enabled: true
+    require_name_or_brand_match: true
+    maximum_representative_point_distance_m: 75
+  category_precedence:
+    - transport_air_water_hub
+    - transport_rail_station
+    - transport_rail_stop
+    - transport_bus_station
+    - transport_bus_stop
+    - higher_education
+    - school
+    - early_childhood
+    - hospital
+    - clinic
+    - pharmacy
+    - marketplace
+    - mall
+    - supermarket
+    - convenience
+    - lodging
+    - attraction_culture
+    - park_recreation
+    - manufacturing
+    - warehouse_logistics
+    - food_drink
+    - financial_service
+    - civic_service
+    - retail_other
+
+geometry_policy:
+  accepted: [Point, Polygon, MultiPolygon]
+  count_representation:
+    point: original
+    polygon: point_on_surface
+  distance_representation:
+    point: original
+    polygon: original_geometry
+  area_representation:
+    polygon: intersection_area
+  forbid_polygon_centroid_for_distance: true
+
+canonical_categories:
+  early_childhood:
+    group: education
+    match_any:
+      - {key: amenity, values: [kindergarten, childcare]}
+  school:
+    group: education
+    match_any:
+      - {key: amenity, values: [school]}
+  higher_education:
+    group: education
+    match_any:
+      - {key: amenity, values: [college, university]}
+  hospital:
+    group: healthcare
+    match_any:
+      - {key: amenity, values: [hospital]}
+      - {key: healthcare, values: [hospital]}
+  clinic:
+    group: healthcare
+    match_any:
+      - {key: amenity, values: [clinic, doctors, dentist]}
+      - {key: healthcare, values: [clinic, doctor, dentist]}
+  pharmacy:
+    group: healthcare
+    match_any:
+      - {key: amenity, values: [pharmacy]}
+      - {key: healthcare, values: [pharmacy]}
+  food_drink:
+    group: commercial
+    match_any:
+      - {key: amenity, values: [restaurant, cafe, fast_food, food_court, bar, pub]}
+  convenience:
+    group: retail
+    match_any:
+      - {key: shop, values: [convenience]}
+  supermarket:
+    group: retail
+    match_any:
+      - {key: shop, values: [supermarket]}
+  mall:
+    group: retail
+    match_any:
+      - {key: shop, values: [mall]}
+  marketplace:
+    group: retail
+    match_any:
+      - {key: amenity, values: [marketplace]}
+  retail_other:
+    group: retail
+    match_any:
+      - {key: shop, values: ["*"]}
+    exclude_if_matches: [convenience, supermarket, mall, marketplace]
+  financial_service:
+    group: commercial_service
+    match_any:
+      - {key: amenity, values: [bank, atm]}
+  civic_service:
+    group: public_service
+    match_any:
+      - {key: amenity, values: [courthouse, fire_station, police, post_office, townhall]}
+      - {key: office, values: [government]}
+  lodging:
+    group: tourism
+    match_any:
+      - {key: tourism, values: [apartment, camp_site, chalet, guest_house, hostel, hotel, motel]}
+  attraction_culture:
+    group: tourism
+    match_any:
+      - {key: tourism, values: [attraction, gallery, museum, viewpoint]}
+      - {key: amenity, values: [arts_centre, theatre]}
+      - {key: historic, values: [archaeological_site, castle, memorial, monument, ruins]}
+  park_recreation:
+    group: leisure
+    match_any:
+      - {key: leisure, values: [fitness_centre, park, playground, sports_centre, stadium]}
+      - {key: amenity, values: [cinema]}
+  manufacturing:
+    group: industrial_logistics
+    match_any:
+      - {key: man_made, values: [works]}
+      - {key: building, values: [industrial]}
+  warehouse_logistics:
+    group: industrial_logistics
+    match_any:
+      - {key: building, values: [warehouse]}
+      - {key: industrial, values: [logistics]}
+  transport_bus_stop:
+    group: transport
+    match_any:
+      - {key: highway, values: [bus_stop]}
+      - all:
+          - {key: public_transport, values: [platform]}
+          - {key: bus, values: ["yes"]}
+  transport_bus_station:
+    group: transport
+    match_any:
+      - {key: amenity, values: [bus_station]}
+      - all:
+          - {key: public_transport, values: [station]}
+          - {key: bus, values: ["yes"]}
+  transport_rail_stop:
+    group: transport
+    match_any:
+      - {key: railway, values: [halt, tram_stop]}
+  transport_rail_station:
+    group: transport
+    match_any:
+      - {key: railway, values: [station]}
+  transport_air_water_hub:
+    group: transport
+    match_any:
+      - {key: aeroway, values: [aerodrome, terminal]}
+      - {key: amenity, values: [ferry_terminal]}
+      - {key: industrial, values: [port]}
+
+# Areal context is outside the count taxonomy. These records may overlap point
+# POIs and are measured by intersection area or geometry distance.
+area_categories:
+  industrial_site:
+    match_any:
+      - {key: landuse, values: [industrial]}
+  park_area:
+    match_any:
+      - {key: leisure, values: [park]}
+
+audit:
+  retain_unmatched: true
+  report_counts_by_tag_pair: true
+  report_multi_match_rate: true
+  report_node_area_duplicate_rate: true

@@ -1,0 +1,79 @@
+manifest_version: "0.2.0"
+
+# Exact releases, URIs, and checksums are filled in the immutable run manifest.
+# APIs are for discovery; feature computation uses bulk files.
+sources:
+  poi:
+    preferred: geofabrik_vietnam_osm_pbf
+    fallback: overture_places
+    preferred_license: ODbL-1.0
+    fallback_license: CDLA-Permissive-2.0_or_Apache-2.0_by_source
+    status: qualified_with_coverage_audit_required
+  roads:
+    preferred: geofabrik_vietnam_osm_pbf
+    fallback: overture_transportation
+    preferred_license: ODbL-1.0
+    fallback_license: ODbL-1.0
+    status: qualified_with_coverage_audit_required
+  transport_nodes:
+    preferred: geofabrik_vietnam_osm_pbf
+    fallback: overture_places_and_transportation
+    preferred_license: ODbL-1.0
+    fallback_license: mixed_by_overture_theme
+    status: qualified_for_mapped_nodes_only
+    excludes: [service_frequency, schedules, nationwide_gtfs]
+  population:
+    preferred: worldpop_global2_R2025A_v1_100m_constrained_count
+    fallback: ghsl_ghs_pop_R2023A_100m
+    preferred_license: CC-BY-4.0
+    status: qualified_pin_year_before_download
+  land_cover:
+    preferred: esa_worldcover_2021_v200_10m
+    fallback: copernicus_lcfm_lcm_2020_v1_10m
+    preferred_license: CC-BY-4.0
+    status: qualified
+  land_use_zoning:
+    preferred: null
+    fallback: osm_landuse_observations
+    status: no_authoritative_nationwide_source_qualified
+    warning: never_present_osm_landuse_as_official_zoning
+  built_up:
+    preferred: ghsl_ghs_built_s_R2023A_100m
+    fallback: ghsl_ghs_built_s_E2018_10m
+    status: qualified_pin_epoch_before_download
+    warning: non_residential_is_not_industrial
+  urban_centres:
+    preferred: ghsl_urban_centre_database_R2024A
+    fallback: null
+    status: qualified_pin_release_and_geometry_layer
+  admin_province:
+    preferred: ocha_cod_ab_vietnam_2025_adm1
+    fallback: overture_divisions
+    status: verify_package_metadata_license_unit_count_and_checksum
+    expected_unit_count: 34
+  admin_commune_geometry:
+    preferred: null
+    fallback: null
+    status: blocked_pending_qualified_post_2025_bulk_geometry
+    expected_unit_count: 3321
+    rejected_defaults:
+      - geoboundaries_adm1_2008
+      - geoboundaries_adm2_2020
+      - gadm_without_commercial_permission
+
+required_manifest_fields:
+  - source_id
+  - provider
+  - product
+  - release
+  - represented_at
+  - retrieved_at_utc
+  - source_uri
+  - local_path
+  - sha256
+  - bytes
+  - license_id
+  - crs
+  - bounds
+  - expected_assets
+  - present_assets

@@ -1,0 +1,109 @@
+feature_set_version: "0.2.0"
+
+parameters:
+  road_classes:
+    all_driveable:
+      - motorway
+      - trunk
+      - primary
+      - secondary
+      - tertiary
+      - unclassified
+      - residential
+      - living_street
+      - service
+      - track
+    major: [motorway, trunk, primary, secondary]
+    include_link_variants: true
+  intersections:
+    graph: osm_shared_node_topology
+    minimum_degree: 3
+    count_geometric_crossings_without_shared_node: false
+    collapse_divided_carriageways: false
+  poi_rollups:
+    transit_stop: [transport_bus_stop, transport_rail_stop, transport_rail_station]
+    transport_hub: [transport_bus_station, transport_rail_station, transport_air_water_hub]
+    retail: [convenience, supermarket, retail_other]
+    poi_total: all_canonical_categories
+
+# Atomic MVP only. Identifiers, spatial metadata, provenance, and source
+# status columns are mandatory output metadata but are not model features.
+mvp_features:
+  - population_count
+  - population_density
+  - built_up_ratio
+  - tree_cover_ratio
+  - grass_shrub_ratio
+  - cropland_ratio
+  - water_wetland_ratio
+  - road_length_km
+  - road_density_km_per_km2
+  - major_road_length_km
+  - intersection_density_per_km2
+  - distance_nearest_major_road_m
+  - distance_nearest_urban_centre_km
+  - transit_stop_count_1km
+  - distance_nearest_transit_stop_m
+  - distance_nearest_transport_hub_m
+  - school_count_1km
+  - higher_education_count_3km
+  - distance_nearest_higher_education_m
+  - hospital_count_3km
+  - clinic_count_1km
+  - pharmacy_count_1km
+  - distance_nearest_hospital_m
+  - food_drink_count_1km
+  - retail_count_1km
+  - marketplace_count_1km
+  - mall_count_3km
+  - lodging_count_1km
+  - attraction_culture_count_3km
+  - park_recreation_count_1km
+  - distance_nearest_park_m
+  - osm_industrial_site_area_ratio
+  - distance_nearest_osm_industrial_site_m
+  - poi_total_count_1km
+  - poi_category_richness_1km
+
+required_metadata:
+  - spatial_unit_id
+  - spatial_method
+  - spatial_resolution
+  - spatial_unit_area_km2
+  - representative_lat
+  - representative_lon
+  - admin_province_code
+  - admin_commune_code
+  - run_id
+  - feature_set_version
+  - source_manifest_id
+  - computed_at_utc
+
+required_source_status:
+  - osm_ingest_status
+  - osm_query_complete
+  - poi_taxonomy_version
+  - population_coverage_fraction
+  - built_up_coverage_fraction
+  - land_cover_coverage_fraction
+  - admin_match_status
+
+contextual_features:
+  enabled: false
+  gate: 4
+  candidates:
+    - log1p_selected_counts
+    - national_percentile_selected_features
+    - peer_percentile_selected_features
+    - local_density_ratio_selected_features
+    - source_defined_ghs_smod_class
+
+semantic_scores:
+  enabled: false
+  gate: 5
+  candidates:
+    - residential_score
+    - commercial_score
+    - education_score
+    - tourism_score
+    - industrial_score

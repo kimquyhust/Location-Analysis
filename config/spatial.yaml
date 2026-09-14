@@ -1,0 +1,69 @@
+spatial_unit:
+  method: null  # admin | square_grid | h3; set only after Gate 2 results
+  h3_resolution: null
+  square_grid_size_m: null
+  admin_geometry_version: null
+
+gate2_candidates:
+  administrative:
+    levels: [post_2025_commune]
+    enabled_when: qualified_current_geometry_available
+    expected_unit_count: 3321
+  square_grid_operational_m: [250, 500, 1000]
+  square_grid_h3_area_controls_m: [125, 325, 850, 2270]
+  h3:
+    library_major_version: 4
+    resolutions: [7, 8, 9, 10]
+
+buffers_m:
+  neighborhood: 1000
+  regional: 3000
+
+distance_search_caps_m:
+  transit_stop: 50000
+  transport_hub: 100000
+  higher_education: 100000
+  hospital: 100000
+  park: 50000
+  industrial_site: 100000
+  major_road: 50000
+  urban_centre: 300000
+
+representative_aois:
+  - {id: hanoi_core, context: dense_urban, lat: 21.028, lon: 105.852, width_km: 6, height_km: 6}
+  - {id: hcmc_core, context: dense_urban, lat: 10.776, lon: 106.700, width_km: 6, height_km: 6}
+  - {id: thu_duc_east, context: suburban, lat: 10.850, lon: 106.780, width_km: 12, height_km: 12}
+  - {id: dong_thap_rural, context: rural_delta, lat: 10.460, lon: 105.640, width_km: 15, height_km: 15}
+  - {id: mu_cang_chai, context: rural_mountain, lat: 21.770, lon: 104.130, width_km: 15, height_km: 15}
+  - {id: binh_duong_industrial, context: industrial, lat: 11.130, lon: 106.620, width_km: 12, height_km: 12}
+  - {id: hoi_an, context: tourism, lat: 15.880, lon: 108.330, width_km: 12, height_km: 12}
+  - {id: phu_quoc_coast, context: tourism, lat: 10.220, lon: 103.960, width_km: 12, height_km: 12}
+
+gate2_metrics:
+  - unit_count
+  - unit_area_distribution
+  - poi_sparsity
+  - population_sparsity
+  - road_sparsity
+  - semantic_mixing
+  - within_unit_location_loss
+  - neighborhood_representation_error
+  - boundary_origin_sensitivity
+  - maup_stability
+  - computation_wall_time
+  - peak_rss
+  - storage_bytes
+  - latlon_lookup_latency
+
+gate2_acceptance:
+  minimum_raster_processing_coverage: 0.999
+  coarse_within_unit_range_fraction_of_between_unit_iqr: 0.25
+  coarse_minimum_anchor_features_triggered: 2
+  fine_cost_multiplier_vs_next_coarser: 2.0
+  fine_minimum_error_improvement: 0.05
+  fine_maximum_indistinguishable_neighbor_fraction: 0.80
+  selection: pareto_nondominated_then_lowest_cost_then_lookup_simplicity
+
+output_crs:
+  storage: EPSG:4326
+  metric_operations: local_utm_or_equal_area_selected_per_aoi
