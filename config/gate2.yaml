@@ -1,0 +1,149 @@
+# Gate 2 spatial-unit experiment — runner parameters.
+#
+# `config/spatial.yaml` holds the DECISION (candidates, metrics, acceptance
+# rules, and `spatial_unit.method`, which stays null until Gate 2 completes).
+# This file holds only how the experiment is executed, so nothing in the
+# runner is hard-coded. Changing any value here changes the recorded
+# config hash on every benchmark row.
+version: "1.0.0"
+
+run:
+  output_root: data/gate2
+  # Every stochastic step (unit sampling, jitter, lookup query points) is
+  # seeded from this single value, so a rerun with identical inputs is
+  # bit-identical.
+  random_seed: 20260914
+
+national_grid:
+  # ONE national grid CRS and ONE origin, so a square cell ID is stable and
+  # unique nationwide rather than per-AOI. VN-2000 / UTM zone 48N is an
+  # official Vietnamese national projected CRS. Its central meridian is
+  # 105E, so eastern AOIs (Hoi An at 108.33E) carry up to ~0.12% linear /
+  # ~0.24% areal scale distortion. That is why ACTUAL unit areas are
+  # measured per AOI in the AOI's own local UTM and reported, rather than
+  # nominal size being assumed. The deviation is reported, not hidden.
+  crs: "EPSG:3405"
+  crs_name: "VN-2000 / UTM zone 48N"
+  origin_easting_m: 0.0
+  origin_northing_m: 0.0
+  # A cell covers [x0, x0 + size) x [y0, y0 + size): lower/left edges
+  # belong to the cell, upper/right edges belong to the next cell. A point
+  # exactly on a shared edge therefore resolves deterministically to
+  # exactly one cell.
+  tie_rule: half_open_lower_left_inclusive
+
+aoi:
+  # Local metric CRS per AOI, chosen from the AOI centre longitude. All
+  # area/length measurement happens here; stored geometry is EPSG:4326.
+  metric_crs_rule: utm_zone_from_centre_longitude
+  hemisphere: north
+  storage_crs: "EPSG:4326"
+
+candidates:
+  # Mirrors config/spatial.yaml gate2_candidates. Listed here with the
+  # role each variant plays so the runner does not need to infer it.
+  square_m:
+    - {size_m: 250,  role: operational}
+    - {size_m: 500,  role: operational}
+    - {size_m: 1000, role: operational}
+    - {size_m: 125,  role: area_control, controls_for: h3_r10}
+    - {size_m: 325,  role: area_control, controls_for: h3_r9}
+    - {size_m: 850,  role: area_control, controls_for: h3_r8}
+    - {size_m: 2270, role: area_control, controls_for: h3_r7}
+  h3_resolutions: [7, 8, 9, 10]
+  administrative:
+    enabled: false
+    status: blocked
+    # Set enabled: true ONLY after every rule in
+    # docs/spatial_unit_decision.md "Administrative-source qualification"
+    # passes against a real downloaded package.
+    qualification_record: docs/gate2_admin_qualification.md
+
+buffers_m:
+  neighborhood: 1000
+  regional: 3000
+
+anchor_features:
+  # Point-computable features used for within-unit location loss, MAUP
+  # stability, and robustness ranking. Every one declares its spatial
+  # support explicitly; none uses the unit footprint, because they must be
+  # computable at an arbitrary point inside a unit.
+  - {id: poi_count_1km,        support: buffer_1km, source_role: poi,      unit: count}
+  - {id: population_1km,       support: buffer_1km, source_role: population, unit: persons}
+  - {id: road_length_1km_m,    support: buffer_1km, source_role: roads,    unit: metres}
+  - {id: builtup_fraction_1km, support: buffer_1km, source_role: built_up, unit: fraction}
+
+within_unit_loss:
+  # Interior sample points per unit: the unit's representative point plus
+  # one point per quadrant of its bounding box, each snapped inside the
+  # unit. Deterministic — no random draw.
+  interior_points_per_unit: 5
+  # Computing 5 anchor vectors for every unit of a 125 m grid over a
+  # 15 x 15 km AOI is 72,000 point evaluations per candidate per AOI. A
+  # deterministic seeded sample of units is used instead; the between-unit
+  # IQR is still computed from ALL units' representative points.
+  sampled_units_per_candidate_aoi: 400
+
+neighborhood_representation:
+  # Units sampled per candidate x AOI for the ring-vs-circle comparison.
+  sampled_units: 40
+  # The ring/circle overlap is measured on a deterministic point lattice
+  # rather than by polygon union: a k-ring of a fine H3 resolution can hold
+  # hundreds of cells, and unioning those per unit per radius does not
+  # scale. Each lattice point is assigned by the candidate's OWN lookup, so
+  # both families are measured by exactly the same procedure.
+  lattice_points_per_axis: 60
+  # Ring radii k are searched from 1 up to this multiple of the estimated
+  # k, and the best Jaccard is reported together with the k that achieved it.
+  max_k_search_multiple: 2.0
+
+boundary_sensitivity:
+  # Square grids are regenerated at these fractions of a cell width. H3 has
+  # no origin parameter, so this test is structurally not applicable to it;
+  # that is recorded as not_applicable, NOT as a passing score.
+  origin_offset_fractions: [[0.0, 0.0], [0.5, 0.0], [0.0, 0.5], [0.5, 0.5]]
+  jitter_fraction_of_cell_width: 0.10
+  jitter_points: 5000
+
+maup:
+  # Point-level comparison of the value a location is assigned under
+  # adjacent resolutions of the same family.
+  sample_points: 5000
+  top_decile_fraction: 0.10
+
+lookup:
+  queries: 10000
+  batch_size: 1000
+  # Deterministic boundary/coastal correctness cases are generated from the
+  # AOI: exact cell-corner points, cell-edge midpoints, AOI corners.
+  boundary_cases_per_candidate: 200
+
+nationwide_projection:
+  # Used only to project unit counts and storage to national scale. Source
+  # is the General Statistics Office of Vietnam total area figure; it is a
+  # projection input, not a measurement of this experiment.
+  vietnam_land_area_km2: 331212
+  source: "General Statistics Office of Vietnam, total national area"
+
+acceptance:
+  # Mirrors config/spatial.yaml gate2_acceptance so the runner reads one
+  # place. Kept in sync by tests/test_gate2_config_consistency.py.
+  minimum_raster_processing_coverage: 0.999
+  coarse_within_unit_range_fraction_of_between_unit_iqr: 0.25
+  coarse_minimum_anchor_features_triggered: 2
+  fine_cost_multiplier_vs_next_coarser: 2.0
+  fine_minimum_error_improvement: 0.05
+  fine_maximum_indistinguishable_neighbor_fraction: 0.80
+  # Two anchor vectors count as "indistinguishable" when every component
+  # differs by less than this relative tolerance.
+  indistinguishable_relative_tolerance: 0.05
+  selection: pareto_nondominated_then_lowest_cost_then_lookup_simplicity
+
+feasibility_budget:
+  # PROJECT_BRIEF.md provides no hardware/runtime/storage budget. None is
+  # invented here. With this null, the runner must report a Pareto frontier
+  # and must not select a single "best" candidate.
+  provided: false
+  max_wall_time_s: null
+  max_peak_rss_bytes: null
+  max_nationwide_storage_bytes: null

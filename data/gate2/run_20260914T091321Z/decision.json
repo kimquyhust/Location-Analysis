@@ -1,0 +1,286 @@
+{
+  "blockers": [
+    "no owner feasibility budget (PROJECT_BRIEF.md supplies none)",
+    "administrative candidate blocked \u2014 the three-family comparison is incomplete"
+  ],
+  "coarse_gate_rejections": [
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "binh_duong_industrial",
+      "candidate_id": "h3_r7",
+      "context": "industrial"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "dong_thap_rural",
+      "candidate_id": "h3_r7",
+      "context": "rural_delta"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "hanoi_core",
+      "candidate_id": "h3_r7",
+      "context": "dense_urban"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "hcmc_core",
+      "candidate_id": "h3_r7",
+      "context": "dense_urban"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "hoi_an",
+      "candidate_id": "h3_r7",
+      "context": "tourism"
+    },
+    {
+      "anchor_features_triggered": 3.0,
+      "aoi_id": "mu_cang_chai",
+      "candidate_id": "h3_r7",
+      "context": "rural_mountain"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "phu_quoc_coast",
+      "candidate_id": "h3_r7",
+      "context": "tourism"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "thu_duc_east",
+      "candidate_id": "h3_r7",
+      "context": "suburban"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "binh_duong_industrial",
+      "candidate_id": "h3_r8",
+      "context": "industrial"
+    },
+    {
+      "anchor_features_triggered": 3.0,
+      "aoi_id": "dong_thap_rural",
+      "candidate_id": "h3_r8",
+      "context": "rural_delta"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "hanoi_core",
+      "candidate_id": "h3_r8",
+      "context": "dense_urban"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "hcmc_core",
+      "candidate_id": "h3_r8",
+      "context": "dense_urban"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "hoi_an",
+      "candidate_id": "h3_r8",
+      "context": "tourism"
+    },
+    {
+      "anchor_features_triggered": 2.0,
+      "aoi_id": "mu_cang_chai",
+      "candidate_id": "h3_r8",
+      "context": "rural_mountain"
+    },
+    {
+      "anchor_features_triggered": 2.0,
+      "aoi_id": "phu_quoc_coast",
+      "candidate_id": "h3_r8",
+      "context": "tourism"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "thu_duc_east",
+      "candidate_id": "h3_r8",
+      "context": "suburban"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "binh_duong_industrial",
+      "candidate_id": "square_1000m",
+      "context": "industrial"
+    },
+    {
+      "anchor_features_triggered": 3.0,
+      "aoi_id": "dong_thap_rural",
+      "candidate_id": "square_1000m",
+      "context": "rural_delta"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "hanoi_core",
+      "candidate_id": "square_1000m",
+      "context": "dense_urban"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "hcmc_core",
+      "candidate_id": "square_1000m",
+      "context": "dense_urban"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "hoi_an",
+      "candidate_id": "square_1000m",
+      "context": "tourism"
+    },
+    {
+      "anchor_features_triggered": 3.0,
+      "aoi_id": "thu_duc_east",
+      "candidate_id": "square_1000m",
+      "context": "suburban"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "binh_duong_industrial",
+      "candidate_id": "square_2270m",
+      "context": "industrial"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "dong_thap_rural",
+      "candidate_id": "square_2270m",
+      "context": "rural_delta"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "hanoi_core",
+      "candidate_id": "square_2270m",
+      "context": "dense_urban"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "hcmc_core",
+      "candidate_id": "square_2270m",
+      "context": "dense_urban"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "hoi_an",
+      "candidate_id": "square_2270m",
+      "context": "tourism"
+    },
+    {
+      "anchor_features_triggered": 3.0,
+      "aoi_id": "mu_cang_chai",
+      "candidate_id": "square_2270m",
+      "context": "rural_mountain"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "phu_quoc_coast",
+      "candidate_id": "square_2270m",
+      "context": "tourism"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "thu_duc_east",
+      "candidate_id": "square_2270m",
+      "context": "suburban"
+    },
+    {
+      "anchor_features_triggered": 3.0,
+      "aoi_id": "hoi_an",
+      "candidate_id": "square_500m",
+      "context": "tourism"
+    },
+    {
+      "anchor_features_triggered": 4.0,
+      "aoi_id": "binh_duong_industrial",
+      "candidate_id": "square_850m",
+      "context": "industrial"
+    },
+    {
+      "anchor_features_triggered": 3.0,
+      "aoi_id": "dong_thap_rural",
+      "candidate_id": "square_850m",
+      "context": "rural_delta"
+    },
+    {
+      "anchor_features_triggered": 3.0,
+      "aoi_id": "hanoi_core",
+      "candidate_id": "square_850m",
+      "context": "dense_urban"
+    },
+    {
+      "anchor_features_triggered": 2.0,
+      "aoi_id": "hcmc_core",
+      "candidate_id": "square_850m",
+      "context": "dense_urban"
+    },
+    {
+      "anchor_features_triggered": 3.0,
+      "aoi_id": "hoi_an",
+      "candidate_id": "square_850m",
+      "context": "tourism"
+    },
+    {
+      "anchor_features_triggered": 2.0,
+      "aoi_id": "thu_duc_east",
+      "candidate_id": "square_850m",
+      "context": "suburban"
+    }
+  ],
+  "coarse_gate_survivors_all_contexts": [
+    "h3_r10",
+    "h3_r9",
+    "square_125m",
+    "square_250m",
+    "square_325m"
+  ],
+  "completeness": {
+    "expected_pairs": 88,
+    "missing_candidate_aoi_pairs": [],
+    "passed": true,
+    "present_pairs": 88,
+    "raster_coverage_floor": 0.999,
+    "raster_rows_below_floor": 0,
+    "vector_ingest_failures": 0,
+    "zonal_rows_below_floor": 0
+  },
+  "contexts_evaluated": [
+    "binh_duong_industrial",
+    "dong_thap_rural",
+    "hanoi_core",
+    "hcmc_core",
+    "hoi_an",
+    "mu_cang_chai",
+    "phu_quoc_coast",
+    "thu_duc_east"
+  ],
+  "core_pareto_frontier": [
+    "h3_r7",
+    "h3_r8",
+    "square_1000m",
+    "square_125m",
+    "square_2270m",
+    "square_250m",
+    "square_325m",
+    "square_500m",
+    "square_850m"
+  ],
+  "decision": "no_decision",
+  "fine_gate_rejections": [],
+  "pareto_frontier": [
+    "h3_r10",
+    "h3_r7",
+    "h3_r8",
+    "h3_r9",
+    "square_1000m",
+    "square_125m",
+    "square_2270m",
+    "square_250m",
+    "square_325m",
+    "square_500m",
+    "square_850m"
+  ],
+  "pareto_undetermined": [],
+  "robustness_failures": [],
+  "spatial_unit_method": null
+}

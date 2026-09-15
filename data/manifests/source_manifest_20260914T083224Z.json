@@ -1,0 +1,2517 @@
+{
+  "manifest_version": "1.1.0",
+  "run_id": "20260914T083224Z",
+  "status": "complete",
+  "failure_reason": null,
+  "written_at_utc": "2026-09-14T08:34:54+00:00",
+  "sources": [
+    {
+      "source_id": "osm_geofabrik_vnm_20260913",
+      "provider": "OpenStreetMap contributors / Geofabrik",
+      "product": "Geofabrik Vietnam OSM extract",
+      "release": "vietnam-260913",
+      "represented_at": "vietnam-260913",
+      "retrieved_at_utc": "2026-09-14T04:38:42+00:00",
+      "source_uri": "https://download.geofabrik.de/asia/vietnam-260913.osm.pbf",
+      "local_path": "data/raw/osm/vietnam-260913.osm.pbf",
+      "sha256": "3c4b19fea3e58ce0e3f6a1a52d75b141de1351e699cb8136bd7b1585bc24f52c",
+      "bytes": 328456722,
+      "license_id": "ODbL-1.0",
+      "crs": null,
+      "bounds": null,
+      "expected_assets": [
+        "osm_geofabrik_vnm_20260913"
+      ],
+      "present_assets": [
+        "osm_geofabrik_vnm_20260913"
+      ],
+      "notes": "reused Gate 1 pinned asset (checksum-confirmed); retrieved_at_utc_method=filesystem_mtime_proxy",
+      "is_derived": false,
+      "parent_source_id": null,
+      "parent_sha256": null,
+      "transform": null,
+      "validation": {
+        "node_count": 46177857,
+        "way_count": 4703101,
+        "relation_count": 24631,
+        "bbox": [
+          100.6067931,
+          6.2183523,
+          114.6407887,
+          23.5024689
+        ],
+        "timestamp_last": "2026-09-13T20:21:15Z"
+      },
+      "retrieved_at_utc_method": "filesystem_mtime_proxy"
+    },
+    {
+      "source_id": "worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "provider": "WorldPop / University of Southampton",
+      "product": "Global 2 R2025A v1 constrained count",
+      "release": "2025",
+      "represented_at": "2025",
+      "retrieved_at_utc": "2026-09-14T04:44:57+00:00",
+      "source_uri": "https://data.worldpop.org/GIS/Population/Global_2015_2030/R2025A/2025/VNM/v1/100m/constrained/vnm_pop_2025_CN_100m_R2025A_v1.tif",
+      "local_path": "data/raw/worldpop/vnm_pop_2025_CN_100m_R2025A_v1.tif",
+      "sha256": "21f403884d5a2d3a0961f75ef66dea51c43fcc9e2e99d4e43cbcceafd6774540",
+      "bytes": 75215955,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        102.14333220476,
+        8.412500302349983,
+        109.46916550879,
+        23.393333575759982
+      ],
+      "expected_assets": [
+        "worldpop_vnm_2025_cn_100m_r2025a_v1"
+      ],
+      "present_assets": [
+        "worldpop_vnm_2025_cn_100m_r2025a_v1"
+      ],
+      "notes": "reused Gate 1 pinned asset (checksum-confirmed); retrieved_at_utc_method=filesystem_mtime_proxy",
+      "is_derived": false,
+      "parent_source_id": null,
+      "parent_sha256": null,
+      "transform": null,
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": -99999.0,
+        "bounds": [
+          102.14333220476,
+          8.412500302349983,
+          109.46916550879,
+          23.393333575759982
+        ],
+        "width": 8791,
+        "height": 17977,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "filesystem_mtime_proxy"
+    },
+    {
+      "source_id": "esa_worldcover_2021_v200_N09E102",
+      "provider": "ESA WorldCover consortium",
+      "product": "ESA WorldCover 10 m 2021 v200",
+      "release": "2021_v200",
+      "represented_at": "2021_v200",
+      "retrieved_at_utc": "2026-09-14T08:32:41+00:00",
+      "source_uri": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N09E102_Map.tif",
+      "local_path": "data/raw/worldcover/ESA_WorldCover_10m_2021_v200_N09E102_Map.tif",
+      "sha256": "e212faf44afc6c60a6eca287ed078c86bf01c2f55a9eac0b6f09d319520f5c27",
+      "bytes": 36075843,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        102.0,
+        9.0,
+        105.0,
+        12.0
+      ],
+      "expected_assets": [
+        "esa_worldcover_2021_v200_N09E102"
+      ],
+      "present_assets": [
+        "esa_worldcover_2021_v200_N09E102"
+      ],
+      "notes": "downloaded this run",
+      "is_derived": false,
+      "parent_source_id": null,
+      "parent_sha256": null,
+      "transform": null,
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": 0.0,
+        "bounds": [
+          102.0,
+          9.0,
+          105.0,
+          12.0
+        ],
+        "width": 36000,
+        "height": 36000,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "download"
+    },
+    {
+      "source_id": "esa_worldcover_2021_v200_N09E105",
+      "provider": "ESA WorldCover consortium",
+      "product": "ESA WorldCover 10 m 2021 v200",
+      "release": "2021_v200",
+      "represented_at": "2021_v200",
+      "retrieved_at_utc": "2026-09-14T08:32:58+00:00",
+      "source_uri": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N09E105_Map.tif",
+      "local_path": "data/raw/worldcover/ESA_WorldCover_10m_2021_v200_N09E105_Map.tif",
+      "sha256": "7e9c655b7eefe460f92f0a15122295d33b33c3e1493afd56a463fb973dcc1cbc",
+      "bytes": 92338709,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        105.0,
+        9.0,
+        108.0,
+        12.0
+      ],
+      "expected_assets": [
+        "esa_worldcover_2021_v200_N09E105"
+      ],
+      "present_assets": [
+        "esa_worldcover_2021_v200_N09E105"
+      ],
+      "notes": "downloaded this run",
+      "is_derived": false,
+      "parent_source_id": null,
+      "parent_sha256": null,
+      "transform": null,
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": 0.0,
+        "bounds": [
+          105.0,
+          9.0,
+          108.0,
+          12.0
+        ],
+        "width": 36000,
+        "height": 36000,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "download"
+    },
+    {
+      "source_id": "esa_worldcover_2021_v200_N15E108",
+      "provider": "ESA WorldCover consortium",
+      "product": "ESA WorldCover 10 m 2021 v200",
+      "release": "2021_v200",
+      "represented_at": "2021_v200",
+      "retrieved_at_utc": "2026-09-14T08:33:02+00:00",
+      "source_uri": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N15E108_Map.tif",
+      "local_path": "data/raw/worldcover/ESA_WorldCover_10m_2021_v200_N15E108_Map.tif",
+      "sha256": "14f46435b0730cac15cd32f749a0bba7c778f0f243c48ecd452d6e54cf93e029",
+      "bytes": 11813732,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        108.0,
+        15.0,
+        111.0,
+        18.0
+      ],
+      "expected_assets": [
+        "esa_worldcover_2021_v200_N15E108"
+      ],
+      "present_assets": [
+        "esa_worldcover_2021_v200_N15E108"
+      ],
+      "notes": "downloaded this run",
+      "is_derived": false,
+      "parent_source_id": null,
+      "parent_sha256": null,
+      "transform": null,
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": 0.0,
+        "bounds": [
+          108.0,
+          15.0,
+          111.0,
+          18.0
+        ],
+        "width": 36000,
+        "height": 36000,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "download"
+    },
+    {
+      "source_id": "esa_worldcover_2021_v200_N18E105",
+      "provider": "ESA WorldCover consortium",
+      "product": "ESA WorldCover 10 m 2021 v200",
+      "release": "2021_v200",
+      "represented_at": "2021_v200",
+      "retrieved_at_utc": "2026-09-14T08:33:19+00:00",
+      "source_uri": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N18E105_Map.tif",
+      "local_path": "data/raw/worldcover/ESA_WorldCover_10m_2021_v200_N18E105_Map.tif",
+      "sha256": "8232d5b8d3dd26e27c95d33219dab592fb99bf217a536325d1b7e46f8be61325",
+      "bytes": 45738052,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        105.0,
+        18.0,
+        108.0,
+        21.0
+      ],
+      "expected_assets": [
+        "esa_worldcover_2021_v200_N18E105"
+      ],
+      "present_assets": [
+        "esa_worldcover_2021_v200_N18E105"
+      ],
+      "notes": "downloaded this run",
+      "is_derived": false,
+      "parent_source_id": null,
+      "parent_sha256": null,
+      "transform": null,
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": 0.0,
+        "bounds": [
+          105.0,
+          18.0,
+          108.0,
+          21.0
+        ],
+        "width": 36000,
+        "height": 36000,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "download"
+    },
+    {
+      "source_id": "esa_worldcover_2021_v200_N21E102",
+      "provider": "ESA WorldCover consortium",
+      "product": "ESA WorldCover 10 m 2021 v200",
+      "release": "2021_v200",
+      "represented_at": "2021_v200",
+      "retrieved_at_utc": "2026-09-14T08:33:35+00:00",
+      "source_uri": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N21E102_Map.tif",
+      "local_path": "data/raw/worldcover/ESA_WorldCover_10m_2021_v200_N21E102_Map.tif",
+      "sha256": "93d716d61771eb16fb459e44caebaebd4e0af487b050d8484dc6ec60a0e9a43d",
+      "bytes": 106663209,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        102.0,
+        21.0,
+        105.0,
+        24.0
+      ],
+      "expected_assets": [
+        "esa_worldcover_2021_v200_N21E102"
+      ],
+      "present_assets": [
+        "esa_worldcover_2021_v200_N21E102"
+      ],
+      "notes": "downloaded this run",
+      "is_derived": false,
+      "parent_source_id": null,
+      "parent_sha256": null,
+      "transform": null,
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": 0.0,
+        "bounds": [
+          102.0,
+          21.0,
+          105.0,
+          24.0
+        ],
+        "width": 36000,
+        "height": 36000,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "download"
+    },
+    {
+      "source_id": "esa_worldcover_2021_v200_N21E105",
+      "provider": "ESA WorldCover consortium",
+      "product": "ESA WorldCover 10 m 2021 v200",
+      "release": "2021_v200",
+      "represented_at": "2021_v200",
+      "retrieved_at_utc": "2026-09-14T08:34:01+00:00",
+      "source_uri": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N21E105_Map.tif",
+      "local_path": "data/raw/worldcover/ESA_WorldCover_10m_2021_v200_N21E105_Map.tif",
+      "sha256": "321baa319d64788b726b3bb808da9d987ff5e0c927dbf9bba0a5d4be15b36f92",
+      "bytes": 102974131,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        105.0,
+        21.0,
+        108.0,
+        24.0
+      ],
+      "expected_assets": [
+        "esa_worldcover_2021_v200_N21E105"
+      ],
+      "present_assets": [
+        "esa_worldcover_2021_v200_N21E105"
+      ],
+      "notes": "downloaded this run",
+      "is_derived": false,
+      "parent_source_id": null,
+      "parent_sha256": null,
+      "transform": null,
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": 0.0,
+        "bounds": [
+          105.0,
+          21.0,
+          108.0,
+          24.0
+        ],
+        "width": 36000,
+        "height": 36000,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "download"
+    },
+    {
+      "source_id": "ghs_built_s_e2020_r2023a_r7_c28",
+      "provider": "European Commission JRC GHSL",
+      "product": "GHS-BUILT-S R2023A 100 m",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T08:34:09+00:00",
+      "source_uri": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0_R7_C28.zip",
+      "local_path": "data/raw/ghsl/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0_R7_C28.zip",
+      "sha256": "6918f9e2db77e6e8b61b371dbe250dd495785658b27746b1c8e65e3a75b1a8ac",
+      "bytes": 10027484,
+      "license_id": "CC-BY-4.0",
+      "crs": null,
+      "bounds": null,
+      "expected_assets": [
+        "ghs_built_s_e2020_r2023a_r7_c28"
+      ],
+      "present_assets": [
+        "ghs_built_s_e2020_r2023a_r7_c28"
+      ],
+      "notes": "downloaded this run",
+      "is_derived": false,
+      "parent_source_id": null,
+      "parent_sha256": null,
+      "transform": null,
+      "validation": {
+        "container": "zip"
+      },
+      "retrieved_at_utc_method": "download"
+    },
+    {
+      "source_id": "ghs_built_s_e2020_r2023a_r7_c28_extracted",
+      "provider": "derived/unzip",
+      "product": "extracted native-grid GeoTIFF",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T08:34:09+00:00",
+      "source_uri": "derived:ghs_built_s_e2020_r2023a_r7_c28",
+      "local_path": "data/raw/ghsl/built-s-e2020-r7-c28/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0_R7_C28.tif",
+      "sha256": "02937aec17201a704d21c6edeca327c6076dee0fc9babec891d05f905b6604fd",
+      "bytes": 9411472,
+      "license_id": "CC-BY-4.0",
+      "crs": "ESRI:54009",
+      "bounds": [
+        8959000.0,
+        2000000.0,
+        9959000.0,
+        3000000.0
+      ],
+      "expected_assets": [
+        "ghs_built_s_e2020_r2023a_r7_c28_extracted"
+      ],
+      "present_assets": [
+        "ghs_built_s_e2020_r2023a_r7_c28_extracted"
+      ],
+      "notes": "derived this run",
+      "is_derived": true,
+      "parent_source_id": "ghs_built_s_e2020_r2023a_r7_c28",
+      "parent_sha256": "6918f9e2db77e6e8b61b371dbe250dd495785658b27746b1c8e65e3a75b1a8ac",
+      "transform": {
+        "tool": "unzip",
+        "member": "GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0_R7_C28.tif"
+      },
+      "validation": {
+        "crs": "ESRI:54009",
+        "nodata": 65535.0,
+        "bounds": [
+          8959000.0,
+          2000000.0,
+          9959000.0,
+          3000000.0
+        ],
+        "width": 10000,
+        "height": 10000,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "ghs_built_s_e2020_r2023a_r7_c29",
+      "provider": "European Commission JRC GHSL",
+      "product": "GHS-BUILT-S R2023A 100 m",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T08:34:28+00:00",
+      "source_uri": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0_R7_C29.zip",
+      "local_path": "data/raw/ghsl/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0_R7_C29.zip",
+      "sha256": "9c0054bf6a8d4a2dcda70a8eba8db0596712993a718626b47a1c34dae1458084",
+      "bytes": 20376976,
+      "license_id": "CC-BY-4.0",
+      "crs": null,
+      "bounds": null,
+      "expected_assets": [
+        "ghs_built_s_e2020_r2023a_r7_c29"
+      ],
+      "present_assets": [
+        "ghs_built_s_e2020_r2023a_r7_c29"
+      ],
+      "notes": "downloaded this run",
+      "is_derived": false,
+      "parent_source_id": null,
+      "parent_sha256": null,
+      "transform": null,
+      "validation": {
+        "container": "zip"
+      },
+      "retrieved_at_utc_method": "download"
+    },
+    {
+      "source_id": "ghs_built_s_e2020_r2023a_r7_c29_extracted",
+      "provider": "derived/unzip",
+      "product": "extracted native-grid GeoTIFF",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T08:34:28+00:00",
+      "source_uri": "derived:ghs_built_s_e2020_r2023a_r7_c29",
+      "local_path": "data/raw/ghsl/built-s-e2020-r7-c29/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0_R7_C29.tif",
+      "sha256": "349c7fb83847f5fb7137b1b787af87e2b667aec473fecf08b35162cf0496c52b",
+      "bytes": 20695056,
+      "license_id": "CC-BY-4.0",
+      "crs": "ESRI:54009",
+      "bounds": [
+        9959000.0,
+        2000000.0,
+        10959000.0,
+        3000000.0
+      ],
+      "expected_assets": [
+        "ghs_built_s_e2020_r2023a_r7_c29_extracted"
+      ],
+      "present_assets": [
+        "ghs_built_s_e2020_r2023a_r7_c29_extracted"
+      ],
+      "notes": "derived this run",
+      "is_derived": true,
+      "parent_source_id": "ghs_built_s_e2020_r2023a_r7_c29",
+      "parent_sha256": "9c0054bf6a8d4a2dcda70a8eba8db0596712993a718626b47a1c34dae1458084",
+      "transform": {
+        "tool": "unzip",
+        "member": "GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0_R7_C29.tif"
+      },
+      "validation": {
+        "crs": "ESRI:54009",
+        "nodata": 65535.0,
+        "bounds": [
+          9959000.0,
+          2000000.0,
+          10959000.0,
+          3000000.0
+        ],
+        "width": 10000,
+        "height": 10000,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "ghs_built_s_e2020_r2023a_r8_c29",
+      "provider": "European Commission JRC GHSL",
+      "product": "GHS-BUILT-S R2023A 100 m",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T08:34:32+00:00",
+      "source_uri": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0_R8_C29.zip",
+      "local_path": "data/raw/ghsl/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0_R8_C29.zip",
+      "sha256": "7bab346003f29e2733161298c57cecb29a75de73709482406d2810daf131aa25",
+      "bytes": 17069829,
+      "license_id": "CC-BY-4.0",
+      "crs": null,
+      "bounds": null,
+      "expected_assets": [
+        "ghs_built_s_e2020_r2023a_r8_c29"
+      ],
+      "present_assets": [
+        "ghs_built_s_e2020_r2023a_r8_c29"
+      ],
+      "notes": "downloaded this run",
+      "is_derived": false,
+      "parent_source_id": null,
+      "parent_sha256": null,
+      "transform": null,
+      "validation": {
+        "container": "zip"
+      },
+      "retrieved_at_utc_method": "download"
+    },
+    {
+      "source_id": "ghs_built_s_e2020_r2023a_r8_c29_extracted",
+      "provider": "derived/unzip",
+      "product": "extracted native-grid GeoTIFF",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T08:34:33+00:00",
+      "source_uri": "derived:ghs_built_s_e2020_r2023a_r8_c29",
+      "local_path": "data/raw/ghsl/built-s-e2020-r8-c29/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0_R8_C29.tif",
+      "sha256": "3b5784806528534ef42658aa04144d43732efc6ff54e79fa87eedf198fb137c1",
+      "bytes": 17117148,
+      "license_id": "CC-BY-4.0",
+      "crs": "ESRI:54009",
+      "bounds": [
+        9959000.0,
+        1000000.0,
+        10959000.0,
+        2000000.0
+      ],
+      "expected_assets": [
+        "ghs_built_s_e2020_r2023a_r8_c29_extracted"
+      ],
+      "present_assets": [
+        "ghs_built_s_e2020_r2023a_r8_c29_extracted"
+      ],
+      "notes": "derived this run",
+      "is_derived": true,
+      "parent_source_id": "ghs_built_s_e2020_r2023a_r8_c29",
+      "parent_sha256": "7bab346003f29e2733161298c57cecb29a75de73709482406d2810daf131aa25",
+      "transform": {
+        "tool": "unzip",
+        "member": "GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0_R8_C29.tif"
+      },
+      "validation": {
+        "crs": "ESRI:54009",
+        "nodata": 65535.0,
+        "bounds": [
+          9959000.0,
+          1000000.0,
+          10959000.0,
+          2000000.0
+        ],
+        "width": 10000,
+        "height": 10000,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_hanoi_core_osm",
+      "provider": "derived/osmium extract",
+      "product": "AOI extract (complete_ways, halo)",
+      "release": "vietnam-260913",
+      "represented_at": "vietnam-260913",
+      "retrieved_at_utc": "2026-09-14T08:34:35+00:00",
+      "source_uri": "derived:osm_geofabrik_vnm_20260913",
+      "local_path": "data/gate2/aoi_sources/hanoi_core/osm.osm.pbf",
+      "sha256": "909d6f9c28f84f367a8c3b4677f316341a19ee019338c7a4013aba7230521352",
+      "bytes": 7647825,
+      "license_id": "ODbL-1.0",
+      "crs": null,
+      "bounds": [
+        105.7891,
+        20.9689,
+        105.915,
+        21.0871
+      ],
+      "expected_assets": [
+        "gate2_hanoi_core_osm"
+      ],
+      "present_assets": [
+        "gate2_hanoi_core_osm"
+      ],
+      "notes": "aoi=hanoi_core; aoi_checksum=8951524c20a6125e6854c452adcc0e836ae3f9f24d703b20d9006b209a4031eb; derived this run",
+      "is_derived": true,
+      "parent_source_id": "osm_geofabrik_vnm_20260913",
+      "parent_sha256": "3c4b19fea3e58ce0e3f6a1a52d75b141de1351e699cb8136bd7b1585bc24f52c",
+      "transform": {
+        "tool": "osmium extract",
+        "strategy": "complete_ways",
+        "bbox": [
+          105.7891,
+          20.9689,
+          105.915,
+          21.0871
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "node_count": 709364,
+        "way_count": 165529,
+        "relation_count": 2230,
+        "bbox": [
+          105.5870905,
+          20.7032404,
+          106.3021514,
+          21.2043839
+        ],
+        "timestamp_last": "2026-09-13T18:06:21Z"
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_hanoi_core_worldpop2025",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2025",
+      "represented_at": "2025",
+      "retrieved_at_utc": "2026-09-14T08:34:36+00:00",
+      "source_uri": "derived:worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "local_path": "data/gate2/aoi_sources/hanoi_core/worldpop2025.tif",
+      "sha256": "90bab91df2b295753d48b0cbd652dde0f00eabb7a69268383a61d36d466851b1",
+      "bytes": 74748,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        105.78833219018,
+        20.96833358545998,
+        105.91583218967,
+        21.08750025164998
+      ],
+      "expected_assets": [
+        "gate2_hanoi_core_worldpop2025"
+      ],
+      "present_assets": [
+        "gate2_hanoi_core_worldpop2025"
+      ],
+      "notes": "aoi=hanoi_core; aoi_checksum=8951524c20a6125e6854c452adcc0e836ae3f9f24d703b20d9006b209a4031eb; derived this run",
+      "is_derived": true,
+      "parent_source_id": "worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "parent_sha256": "21f403884d5a2d3a0961f75ef66dea51c43fcc9e2e99d4e43cbcceafd6774540",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          105.7891,
+          20.9689,
+          105.915,
+          21.0871
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          105.7891,
+          20.9689,
+          105.915,
+          21.0871
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": -99999.0,
+        "bounds": [
+          105.78833219018,
+          20.96833358545998,
+          105.91583218967,
+          21.08750025164998
+        ],
+        "width": 153,
+        "height": 143,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_hanoi_core_worldcover",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2021_v200",
+      "represented_at": "2021_v200",
+      "retrieved_at_utc": "2026-09-14T08:34:36+00:00",
+      "source_uri": "derived:esa_worldcover_2021_v200_N21E105",
+      "local_path": "data/gate2/aoi_sources/hanoi_core/worldcover.tif",
+      "sha256": "67c97742998fd4e1c73bc86943b948a0853880d76c7c29697e497e21b150c18e",
+      "bytes": 217968,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        105.78908333333334,
+        20.968833333333336,
+        105.915,
+        21.08716666666667
+      ],
+      "expected_assets": [
+        "gate2_hanoi_core_worldcover"
+      ],
+      "present_assets": [
+        "gate2_hanoi_core_worldcover"
+      ],
+      "notes": "aoi=hanoi_core; aoi_checksum=8951524c20a6125e6854c452adcc0e836ae3f9f24d703b20d9006b209a4031eb; derived this run",
+      "is_derived": true,
+      "parent_source_id": "esa_worldcover_2021_v200_N21E105",
+      "parent_sha256": "321baa319d64788b726b3bb808da9d987ff5e0c927dbf9bba0a5d4be15b36f92",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          105.7891,
+          20.9689,
+          105.915,
+          21.0871
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          105.7891,
+          20.9689,
+          105.915,
+          21.0871
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": 0.0,
+        "bounds": [
+          105.78908333333334,
+          20.968833333333336,
+          105.915,
+          21.08716666666667
+        ],
+        "width": 1511,
+        "height": 1420,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_hanoi_core_ghs_built_s",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample, Mollweide native)",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T08:34:37+00:00",
+      "source_uri": "derived:ghs_built_s_e2020_r2023a_r7_c29_extracted",
+      "local_path": "data/gate2/aoi_sources/hanoi_core/ghs_built_s.tif",
+      "sha256": "6362504a0b87252669a06c5a86642577121affe3bce069de18fe5a6ad6efd6b3",
+      "bytes": 39198,
+      "license_id": "CC-BY-4.0",
+      "crs": "ESRI:54009",
+      "bounds": [
+        10157800.0,
+        2570400.0,
+        10175000.0,
+        2584700.0
+      ],
+      "expected_assets": [
+        "gate2_hanoi_core_ghs_built_s"
+      ],
+      "present_assets": [
+        "gate2_hanoi_core_ghs_built_s"
+      ],
+      "notes": "aoi=hanoi_core; aoi_checksum=8951524c20a6125e6854c452adcc0e836ae3f9f24d703b20d9006b209a4031eb; derived this run",
+      "is_derived": true,
+      "parent_source_id": "ghs_built_s_e2020_r2023a_r7_c29_extracted",
+      "parent_sha256": "349c7fb83847f5fb7137b1b787af87e2b667aec473fecf08b35162cf0496c52b",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          10157872.7877,
+          2570432.3274,
+          10174957.135,
+          2584667.457
+        ],
+        "bbox_crs": "ESRI:54009",
+        "source_bbox_wgs84": [
+          105.7891,
+          20.9689,
+          105.915,
+          21.0871
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "ESRI:54009",
+        "nodata": 65535.0,
+        "bounds": [
+          10157800.0,
+          2570400.0,
+          10175000.0,
+          2584700.0
+        ],
+        "width": 172,
+        "height": 143,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_hcmc_core_osm",
+      "provider": "derived/osmium extract",
+      "product": "AOI extract (complete_ways, halo)",
+      "release": "vietnam-260913",
+      "represented_at": "vietnam-260913",
+      "retrieved_at_utc": "2026-09-14T08:34:39+00:00",
+      "source_uri": "derived:osm_geofabrik_vnm_20260913",
+      "local_path": "data/gate2/aoi_sources/hcmc_core/osm.osm.pbf",
+      "sha256": "0f8a5fe7adf076f86409747352d00342deee88a3082afc272304ae6799be5733",
+      "bytes": 5779791,
+      "license_id": "ODbL-1.0",
+      "crs": null,
+      "bounds": [
+        106.6402,
+        10.7169,
+        106.7598,
+        10.8351
+      ],
+      "expected_assets": [
+        "gate2_hcmc_core_osm"
+      ],
+      "present_assets": [
+        "gate2_hcmc_core_osm"
+      ],
+      "notes": "aoi=hcmc_core; aoi_checksum=34fb7aff466923a5ac0ad904d5e8d2c4aafba7a9ca1a0db6ebdd56b8d0da191f; derived this run",
+      "is_derived": true,
+      "parent_source_id": "osm_geofabrik_vnm_20260913",
+      "parent_sha256": "3c4b19fea3e58ce0e3f6a1a52d75b141de1351e699cb8136bd7b1585bc24f52c",
+      "transform": {
+        "tool": "osmium extract",
+        "strategy": "complete_ways",
+        "bbox": [
+          106.6402,
+          10.7169,
+          106.7598,
+          10.8351
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "node_count": 490221,
+        "way_count": 105381,
+        "relation_count": 2870,
+        "bbox": [
+          106.5695365,
+          10.3486896,
+          107.2361765,
+          11.0395408
+        ],
+        "timestamp_last": "2026-09-13T18:32:55Z"
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_hcmc_core_worldpop2025",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2025",
+      "represented_at": "2025",
+      "retrieved_at_utc": "2026-09-14T08:34:39+00:00",
+      "source_uri": "derived:worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "local_path": "data/gate2/aoi_sources/hcmc_core/worldpop2025.tif",
+      "sha256": "28895a60929cd424a9ea2a91856a8ee5fc96b657c5b108cc5a3750919376bdeb",
+      "bytes": 73244,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        106.63999885344,
+        10.716666959799982,
+        106.75999885296001,
+        10.835833625989983
+      ],
+      "expected_assets": [
+        "gate2_hcmc_core_worldpop2025"
+      ],
+      "present_assets": [
+        "gate2_hcmc_core_worldpop2025"
+      ],
+      "notes": "aoi=hcmc_core; aoi_checksum=34fb7aff466923a5ac0ad904d5e8d2c4aafba7a9ca1a0db6ebdd56b8d0da191f; derived this run",
+      "is_derived": true,
+      "parent_source_id": "worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "parent_sha256": "21f403884d5a2d3a0961f75ef66dea51c43fcc9e2e99d4e43cbcceafd6774540",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          106.6402,
+          10.7169,
+          106.7598,
+          10.8351
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          106.6402,
+          10.7169,
+          106.7598,
+          10.8351
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": -99999.0,
+        "bounds": [
+          106.63999885344,
+          10.716666959799982,
+          106.75999885296001,
+          10.835833625989983
+        ],
+        "width": 144,
+        "height": 143,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_hcmc_core_worldcover",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2021_v200",
+      "represented_at": "2021_v200",
+      "retrieved_at_utc": "2026-09-14T08:34:39+00:00",
+      "source_uri": "derived:esa_worldcover_2021_v200_N09E105",
+      "local_path": "data/gate2/aoi_sources/hcmc_core/worldcover.tif",
+      "sha256": "91f9822e7360ae75d0a900b2a997b96a6510a71fda2a0118c4fbfca0b821e944",
+      "bytes": 229049,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        106.64016666666667,
+        10.716833333333332,
+        106.75983333333333,
+        10.835166666666666
+      ],
+      "expected_assets": [
+        "gate2_hcmc_core_worldcover"
+      ],
+      "present_assets": [
+        "gate2_hcmc_core_worldcover"
+      ],
+      "notes": "aoi=hcmc_core; aoi_checksum=34fb7aff466923a5ac0ad904d5e8d2c4aafba7a9ca1a0db6ebdd56b8d0da191f; derived this run",
+      "is_derived": true,
+      "parent_source_id": "esa_worldcover_2021_v200_N09E105",
+      "parent_sha256": "7e9c655b7eefe460f92f0a15122295d33b33c3e1493afd56a463fb973dcc1cbc",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          106.6402,
+          10.7169,
+          106.7598,
+          10.8351
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          106.6402,
+          10.7169,
+          106.7598,
+          10.8351
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": 0.0,
+        "bounds": [
+          106.64016666666667,
+          10.716833333333332,
+          106.75983333333333,
+          10.835166666666666
+        ],
+        "width": 1436,
+        "height": 1420,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_hcmc_core_ghs_built_s",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample, Mollweide native)",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T08:34:40+00:00",
+      "source_uri": "derived:ghs_built_s_e2020_r2023a_r8_c29_extracted",
+      "local_path": "data/gate2/aoi_sources/hcmc_core/ghs_built_s.tif",
+      "sha256": "eedffd8f179df76ed3437c5ed87bd98d4bd25bb11fd33bb4dc66ab639487383b",
+      "bytes": 37033,
+      "license_id": "CC-BY-4.0",
+      "crs": "ESRI:54009",
+      "bounds": [
+        10569700.0,
+        1322100.0,
+        10584200.0,
+        1336700.0
+      ],
+      "expected_assets": [
+        "gate2_hcmc_core_ghs_built_s"
+      ],
+      "present_assets": [
+        "gate2_hcmc_core_ghs_built_s"
+      ],
+      "notes": "aoi=hcmc_core; aoi_checksum=34fb7aff466923a5ac0ad904d5e8d2c4aafba7a9ca1a0db6ebdd56b8d0da191f; derived this run",
+      "is_derived": true,
+      "parent_source_id": "ghs_built_s_e2020_r2023a_r8_c29_extracted",
+      "parent_sha256": "3b5784806528534ef42658aa04144d43732efc6ff54e79fa87eedf198fb137c1",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          10569776.7635,
+          1322126.2093,
+          10584196.7977,
+          1336641.8223
+        ],
+        "bbox_crs": "ESRI:54009",
+        "source_bbox_wgs84": [
+          106.6402,
+          10.7169,
+          106.7598,
+          10.8351
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "ESRI:54009",
+        "nodata": 65535.0,
+        "bounds": [
+          10569700.0,
+          1322100.0,
+          10584200.0,
+          1336700.0
+        ],
+        "width": 145,
+        "height": 146,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_thu_duc_east_osm",
+      "provider": "derived/osmium extract",
+      "product": "AOI extract (complete_ways, halo)",
+      "release": "vietnam-260913",
+      "represented_at": "vietnam-260913",
+      "retrieved_at_utc": "2026-09-14T08:34:42+00:00",
+      "source_uri": "derived:osm_geofabrik_vnm_20260913",
+      "local_path": "data/gate2/aoi_sources/thu_duc_east/osm.osm.pbf",
+      "sha256": "b617b584684a6872f2aa4f7709a87a4e4c9266547c609693b8e95c1178071ec6",
+      "bytes": 5963860,
+      "license_id": "ODbL-1.0",
+      "crs": null,
+      "bounds": [
+        106.6926,
+        10.7636,
+        106.8675,
+        10.9364
+      ],
+      "expected_assets": [
+        "gate2_thu_duc_east_osm"
+      ],
+      "present_assets": [
+        "gate2_thu_duc_east_osm"
+      ],
+      "notes": "aoi=thu_duc_east; aoi_checksum=f0dee5bd0e25c6559eca283d59fafd94ec3bda9abdf4c06e4357c9ceb83cfc86; derived this run",
+      "is_derived": true,
+      "parent_source_id": "osm_geofabrik_vnm_20260913",
+      "parent_sha256": "3c4b19fea3e58ce0e3f6a1a52d75b141de1351e699cb8136bd7b1585bc24f52c",
+      "transform": {
+        "tool": "osmium extract",
+        "strategy": "complete_ways",
+        "bbox": [
+          106.6926,
+          10.7636,
+          106.8675,
+          10.9364
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "node_count": 609222,
+        "way_count": 112429,
+        "relation_count": 1909,
+        "bbox": [
+          106.5941205,
+          10.3486896,
+          107.2361765,
+          11.1081837
+        ],
+        "timestamp_last": "2026-09-13T18:06:21Z"
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_thu_duc_east_worldpop2025",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2025",
+      "represented_at": "2025",
+      "retrieved_at_utc": "2026-09-14T08:34:42+00:00",
+      "source_uri": "derived:worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "local_path": "data/gate2/aoi_sources/thu_duc_east/worldpop2025.tif",
+      "sha256": "07361af034f4f68d592b962cf3d41f6911ae2c311a69f54c675ce6cfc65cea15",
+      "bytes": 150092,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        106.69249885323,
+        10.763333626279982,
+        106.86833218586001,
+        10.936666958919982
+      ],
+      "expected_assets": [
+        "gate2_thu_duc_east_worldpop2025"
+      ],
+      "present_assets": [
+        "gate2_thu_duc_east_worldpop2025"
+      ],
+      "notes": "aoi=thu_duc_east; aoi_checksum=f0dee5bd0e25c6559eca283d59fafd94ec3bda9abdf4c06e4357c9ceb83cfc86; derived this run",
+      "is_derived": true,
+      "parent_source_id": "worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "parent_sha256": "21f403884d5a2d3a0961f75ef66dea51c43fcc9e2e99d4e43cbcceafd6774540",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          106.6926,
+          10.7636,
+          106.8675,
+          10.9364
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          106.6926,
+          10.7636,
+          106.8675,
+          10.9364
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": -99999.0,
+        "bounds": [
+          106.69249885323,
+          10.763333626279982,
+          106.86833218586001,
+          10.936666958919982
+        ],
+        "width": 211,
+        "height": 208,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_thu_duc_east_worldcover",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2021_v200",
+      "represented_at": "2021_v200",
+      "retrieved_at_utc": "2026-09-14T08:34:43+00:00",
+      "source_uri": "derived:esa_worldcover_2021_v200_N09E105",
+      "local_path": "data/gate2/aoi_sources/thu_duc_east/worldcover.tif",
+      "sha256": "bfdb455bf3a6d37c3cae3101ac820da278d96c04a1bae918c7bdefc2a5f67f04",
+      "bytes": 631601,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        106.69258333333333,
+        10.763583333333333,
+        106.86749999999999,
+        10.936416666666666
+      ],
+      "expected_assets": [
+        "gate2_thu_duc_east_worldcover"
+      ],
+      "present_assets": [
+        "gate2_thu_duc_east_worldcover"
+      ],
+      "notes": "aoi=thu_duc_east; aoi_checksum=f0dee5bd0e25c6559eca283d59fafd94ec3bda9abdf4c06e4357c9ceb83cfc86; derived this run",
+      "is_derived": true,
+      "parent_source_id": "esa_worldcover_2021_v200_N09E105",
+      "parent_sha256": "7e9c655b7eefe460f92f0a15122295d33b33c3e1493afd56a463fb973dcc1cbc",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          106.6926,
+          10.7636,
+          106.8675,
+          10.9364
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          106.6926,
+          10.7636,
+          106.8675,
+          10.9364
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": 0.0,
+        "bounds": [
+          106.69258333333333,
+          10.763583333333333,
+          106.86749999999999,
+          10.936416666666666
+        ],
+        "width": 2099,
+        "height": 2074,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_thu_duc_east_ghs_built_s",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample, Mollweide native)",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T08:34:43+00:00",
+      "source_uri": "derived:ghs_built_s_e2020_r2023a_r8_c29_extracted",
+      "local_path": "data/gate2/aoi_sources/thu_duc_east/ghs_built_s.tif",
+      "sha256": "b6d5fd30ba05d7704c254971014f9e14a659f27fbe65b57a8e78f8d31f5c20df",
+      "bytes": 70157,
+      "license_id": "CC-BY-4.0",
+      "crs": "ESRI:54009",
+      "bounds": [
+        10572700.0,
+        1327800.0,
+        10593900.0,
+        1349100.0
+      ],
+      "expected_assets": [
+        "gate2_thu_duc_east_ghs_built_s"
+      ],
+      "present_assets": [
+        "gate2_thu_duc_east_ghs_built_s"
+      ],
+      "notes": "aoi=thu_duc_east; aoi_checksum=f0dee5bd0e25c6559eca283d59fafd94ec3bda9abdf4c06e4357c9ceb83cfc86; derived this run",
+      "is_derived": true,
+      "parent_source_id": "ghs_built_s_e2020_r2023a_r8_c29_extracted",
+      "parent_sha256": "3b5784806528534ef42658aa04144d43732efc6ff54e79fa87eedf198fb137c1",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          10572750.4827,
+          1327861.4877,
+          10593862.8606,
+          1349080.2783
+        ],
+        "bbox_crs": "ESRI:54009",
+        "source_bbox_wgs84": [
+          106.6926,
+          10.7636,
+          106.8675,
+          10.9364
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "ESRI:54009",
+        "nodata": 65535.0,
+        "bounds": [
+          10572700.0,
+          1327800.0,
+          10593900.0,
+          1349100.0
+        ],
+        "width": 212,
+        "height": 213,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_dong_thap_rural_osm",
+      "provider": "derived/osmium extract",
+      "product": "AOI extract (complete_ways, halo)",
+      "release": "vietnam-260913",
+      "represented_at": "vietnam-260913",
+      "retrieved_at_utc": "2026-09-14T08:34:44+00:00",
+      "source_uri": "derived:osm_geofabrik_vnm_20260913",
+      "local_path": "data/gate2/aoi_sources/dong_thap_rural/osm.osm.pbf",
+      "sha256": "c9b81db933cfc06f6e238ed6b3dc7047941b19e8acfd3258c13c00c735c1c861",
+      "bytes": 550910,
+      "license_id": "ODbL-1.0",
+      "crs": null,
+      "bounds": [
+        105.5393,
+        10.3603,
+        105.7408,
+        10.5597
+      ],
+      "expected_assets": [
+        "gate2_dong_thap_rural_osm"
+      ],
+      "present_assets": [
+        "gate2_dong_thap_rural_osm"
+      ],
+      "notes": "aoi=dong_thap_rural; aoi_checksum=3e03727b1c33c4ef63bc17955b77cd5ef435f8b65eb23ea819c333bf2f928128; derived this run",
+      "is_derived": true,
+      "parent_source_id": "osm_geofabrik_vnm_20260913",
+      "parent_sha256": "3c4b19fea3e58ce0e3f6a1a52d75b141de1351e699cb8136bd7b1585bc24f52c",
+      "transform": {
+        "tool": "osmium extract",
+        "strategy": "complete_ways",
+        "bbox": [
+          105.5393,
+          10.3603,
+          105.7408,
+          10.5597
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "node_count": 69893,
+        "way_count": 5115,
+        "relation_count": 112,
+        "bbox": [
+          105.3594329,
+          10.2477901,
+          106.1279243,
+          10.7290079
+        ],
+        "timestamp_last": "2026-09-11T08:13:07Z"
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_dong_thap_rural_worldpop2025",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2025",
+      "represented_at": "2025",
+      "retrieved_at_utc": "2026-09-14T08:34:44+00:00",
+      "source_uri": "derived:worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "local_path": "data/gate2/aoi_sources/dong_thap_rural/worldpop2025.tif",
+      "sha256": "008f47ac07ff1566d31d85e43c91ff560a73072150ed9d50f477bbbc1627d561",
+      "bytes": 165350,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        105.53916552451,
+        10.360000294559983,
+        105.74083219037,
+        10.560000293759982
+      ],
+      "expected_assets": [
+        "gate2_dong_thap_rural_worldpop2025"
+      ],
+      "present_assets": [
+        "gate2_dong_thap_rural_worldpop2025"
+      ],
+      "notes": "aoi=dong_thap_rural; aoi_checksum=3e03727b1c33c4ef63bc17955b77cd5ef435f8b65eb23ea819c333bf2f928128; derived this run",
+      "is_derived": true,
+      "parent_source_id": "worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "parent_sha256": "21f403884d5a2d3a0961f75ef66dea51c43fcc9e2e99d4e43cbcceafd6774540",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          105.5393,
+          10.3603,
+          105.7408,
+          10.5597
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          105.5393,
+          10.3603,
+          105.7408,
+          10.5597
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": -99999.0,
+        "bounds": [
+          105.53916552451,
+          10.360000294559983,
+          105.74083219037,
+          10.560000293759982
+        ],
+        "width": 242,
+        "height": 240,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_dong_thap_rural_worldcover",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2021_v200",
+      "represented_at": "2021_v200",
+      "retrieved_at_utc": "2026-09-14T08:34:45+00:00",
+      "source_uri": "derived:esa_worldcover_2021_v200_N09E105",
+      "local_path": "data/gate2/aoi_sources/dong_thap_rural/worldcover.tif",
+      "sha256": "23a244d57b15395881569fab7ef6e56bd2193a18dd20fd63ffcfd416f20777c0",
+      "bytes": 617561,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        105.53925,
+        10.360249999999999,
+        105.74083333333333,
+        10.55975
+      ],
+      "expected_assets": [
+        "gate2_dong_thap_rural_worldcover"
+      ],
+      "present_assets": [
+        "gate2_dong_thap_rural_worldcover"
+      ],
+      "notes": "aoi=dong_thap_rural; aoi_checksum=3e03727b1c33c4ef63bc17955b77cd5ef435f8b65eb23ea819c333bf2f928128; derived this run",
+      "is_derived": true,
+      "parent_source_id": "esa_worldcover_2021_v200_N09E105",
+      "parent_sha256": "7e9c655b7eefe460f92f0a15122295d33b33c3e1493afd56a463fb973dcc1cbc",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          105.5393,
+          10.3603,
+          105.7408,
+          10.5597
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          105.5393,
+          10.3603,
+          105.7408,
+          10.5597
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": 0.0,
+        "bounds": [
+          105.53925,
+          10.360249999999999,
+          105.74083333333333,
+          10.55975
+        ],
+        "width": 2419,
+        "height": 2394,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_dong_thap_rural_ghs_built_s",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample, Mollweide native)",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T08:34:45+00:00",
+      "source_uri": "derived:ghs_built_s_e2020_r2023a_r8_c29_extracted",
+      "local_path": "data/gate2/aoi_sources/dong_thap_rural/ghs_built_s.tif",
+      "sha256": "6641c919d229b5ac0b84d0a91e6b44280c4affc9a1fbc24ce1838746f744f305",
+      "bytes": 53350,
+      "license_id": "CC-BY-4.0",
+      "crs": "ESRI:54009",
+      "bounds": [
+        10466500.0,
+        1278300.0,
+        10490700.0,
+        1302900.0
+      ],
+      "expected_assets": [
+        "gate2_dong_thap_rural_ghs_built_s"
+      ],
+      "present_assets": [
+        "gate2_dong_thap_rural_ghs_built_s"
+      ],
+      "notes": "aoi=dong_thap_rural; aoi_checksum=3e03727b1c33c4ef63bc17955b77cd5ef435f8b65eb23ea819c333bf2f928128; derived this run",
+      "is_derived": true,
+      "parent_source_id": "ghs_built_s_e2020_r2023a_r8_c29_extracted",
+      "parent_sha256": "3b5784806528534ef42658aa04144d43732efc6ff54e79fa87eedf198fb137c1",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          10466526.0949,
+          1278320.7195,
+          10490670.0422,
+          1302817.8256
+        ],
+        "bbox_crs": "ESRI:54009",
+        "source_bbox_wgs84": [
+          105.5393,
+          10.3603,
+          105.7408,
+          10.5597
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "ESRI:54009",
+        "nodata": 65535.0,
+        "bounds": [
+          10466500.0,
+          1278300.0,
+          10490700.0,
+          1302900.0
+        ],
+        "width": 242,
+        "height": 246,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_mu_cang_chai_osm",
+      "provider": "derived/osmium extract",
+      "product": "AOI extract (complete_ways, halo)",
+      "release": "vietnam-260913",
+      "represented_at": "vietnam-260913",
+      "retrieved_at_utc": "2026-09-14T08:34:46+00:00",
+      "source_uri": "derived:osm_geofabrik_vnm_20260913",
+      "local_path": "data/gate2/aoi_sources/mu_cang_chai/osm.osm.pbf",
+      "sha256": "d3b44fd355bf1a5148a794962541a9c5d551859d403397982beb40d95b1000cc",
+      "bytes": 408910,
+      "license_id": "ODbL-1.0",
+      "crs": null,
+      "bounds": [
+        104.0229,
+        21.67,
+        104.237,
+        21.8699
+      ],
+      "expected_assets": [
+        "gate2_mu_cang_chai_osm"
+      ],
+      "present_assets": [
+        "gate2_mu_cang_chai_osm"
+      ],
+      "notes": "aoi=mu_cang_chai; aoi_checksum=6a721850cab94278f907650d91a3aa31f60cc16844032c21aaab58eec935f88a; derived this run",
+      "is_derived": true,
+      "parent_source_id": "osm_geofabrik_vnm_20260913",
+      "parent_sha256": "3c4b19fea3e58ce0e3f6a1a52d75b141de1351e699cb8136bd7b1585bc24f52c",
+      "transform": {
+        "tool": "osmium extract",
+        "strategy": "complete_ways",
+        "bbox": [
+          104.0229,
+          21.67,
+          104.237,
+          21.8699
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "node_count": 67758,
+        "way_count": 2475,
+        "relation_count": 23,
+        "bbox": [
+          103.8721275,
+          21.6315799,
+          104.4174153,
+          21.9274518
+        ],
+        "timestamp_last": "2026-09-02T15:07:47Z"
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_mu_cang_chai_worldpop2025",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2025",
+      "represented_at": "2025",
+      "retrieved_at_utc": "2026-09-14T08:34:46+00:00",
+      "source_uri": "derived:worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "local_path": "data/gate2/aoi_sources/mu_cang_chai/worldpop2025.tif",
+      "sha256": "47f90b6e414aa19f6b5c38a576f3d61eb1d1928dfa653199c3d1baaab67b4121",
+      "bytes": 32301,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        104.02249886391,
+        21.670000249319983,
+        104.23749886305,
+        21.870000248519982
+      ],
+      "expected_assets": [
+        "gate2_mu_cang_chai_worldpop2025"
+      ],
+      "present_assets": [
+        "gate2_mu_cang_chai_worldpop2025"
+      ],
+      "notes": "aoi=mu_cang_chai; aoi_checksum=6a721850cab94278f907650d91a3aa31f60cc16844032c21aaab58eec935f88a; derived this run",
+      "is_derived": true,
+      "parent_source_id": "worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "parent_sha256": "21f403884d5a2d3a0961f75ef66dea51c43fcc9e2e99d4e43cbcceafd6774540",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          104.0229,
+          21.67,
+          104.237,
+          21.8699
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          104.0229,
+          21.67,
+          104.237,
+          21.8699
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": -99999.0,
+        "bounds": [
+          104.02249886391,
+          21.670000249319983,
+          104.23749886305,
+          21.870000248519982
+        ],
+        "width": 258,
+        "height": 240,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_mu_cang_chai_worldcover",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2021_v200",
+      "represented_at": "2021_v200",
+      "retrieved_at_utc": "2026-09-14T08:34:47+00:00",
+      "source_uri": "derived:esa_worldcover_2021_v200_N21E102",
+      "local_path": "data/gate2/aoi_sources/mu_cang_chai/worldcover.tif",
+      "sha256": "58521565317092afc9b745e1b1201a25b769a1d8f4f1d560ced5a6a76f407ed1",
+      "bytes": 526279,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        104.02283333333334,
+        21.67,
+        104.23700000000001,
+        21.86991666666667
+      ],
+      "expected_assets": [
+        "gate2_mu_cang_chai_worldcover"
+      ],
+      "present_assets": [
+        "gate2_mu_cang_chai_worldcover"
+      ],
+      "notes": "aoi=mu_cang_chai; aoi_checksum=6a721850cab94278f907650d91a3aa31f60cc16844032c21aaab58eec935f88a; derived this run",
+      "is_derived": true,
+      "parent_source_id": "esa_worldcover_2021_v200_N21E102",
+      "parent_sha256": "93d716d61771eb16fb459e44caebaebd4e0af487b050d8484dc6ec60a0e9a43d",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          104.0229,
+          21.67,
+          104.237,
+          21.8699
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          104.0229,
+          21.67,
+          104.237,
+          21.8699
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": 0.0,
+        "bounds": [
+          104.02283333333334,
+          21.67,
+          104.23700000000001,
+          21.86991666666667
+        ],
+        "width": 2570,
+        "height": 2399,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_mu_cang_chai_ghs_built_s",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample, Mollweide native)",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T08:34:47+00:00",
+      "source_uri": "derived:ghs_built_s_e2020_r2023a_r7_c29_extracted",
+      "local_path": "data/gate2/aoi_sources/mu_cang_chai/ghs_built_s.tif",
+      "sha256": "85b1e768e1e33b0b605fa71edf10ca4b88283b119c6232e4ead061a1462f2db7",
+      "bytes": 5001,
+      "license_id": "CC-BY-4.0",
+      "crs": "ESRI:54009",
+      "bounds": [
+        9955000.0,
+        2654800.0,
+        9984200.0,
+        2678900.0
+      ],
+      "expected_assets": [
+        "gate2_mu_cang_chai_ghs_built_s"
+      ],
+      "present_assets": [
+        "gate2_mu_cang_chai_ghs_built_s"
+      ],
+      "notes": "aoi=mu_cang_chai; aoi_checksum=6a721850cab94278f907650d91a3aa31f60cc16844032c21aaab58eec935f88a; derived this run",
+      "is_derived": true,
+      "parent_source_id": "ghs_built_s_e2020_r2023a_r7_c29_extracted",
+      "parent_sha256": "349c7fb83847f5fb7137b1b787af87e2b667aec473fecf08b35162cf0496c52b",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          9955082.3056,
+          2654804.0701,
+          9984184.667,
+          2678832.0722
+        ],
+        "bbox_crs": "ESRI:54009",
+        "source_bbox_wgs84": [
+          104.0229,
+          21.67,
+          104.237,
+          21.8699
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "ESRI:54009",
+        "nodata": 65535.0,
+        "bounds": [
+          9955000.0,
+          2654800.0,
+          9984200.0,
+          2678900.0
+        ],
+        "width": 292,
+        "height": 241,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_binh_duong_industrial_osm",
+      "provider": "derived/osmium extract",
+      "product": "AOI extract (complete_ways, halo)",
+      "release": "vietnam-260913",
+      "represented_at": "vietnam-260913",
+      "retrieved_at_utc": "2026-09-14T08:34:49+00:00",
+      "source_uri": "derived:osm_geofabrik_vnm_20260913",
+      "local_path": "data/gate2/aoi_sources/binh_duong_industrial/osm.osm.pbf",
+      "sha256": "6a059bb8b174c039cf7590c00548aeb9ee4bea2e8feca21a9958fc5de9cf0be0",
+      "bytes": 729127,
+      "license_id": "ODbL-1.0",
+      "crs": null,
+      "bounds": [
+        106.5325,
+        11.0436,
+        106.7075,
+        11.2164
+      ],
+      "expected_assets": [
+        "gate2_binh_duong_industrial_osm"
+      ],
+      "present_assets": [
+        "gate2_binh_duong_industrial_osm"
+      ],
+      "notes": "aoi=binh_duong_industrial; aoi_checksum=7a66bf9d427ff30eb082fd8cc4417a92635d166b738b871b22bd4ad3842ffc4c; derived this run",
+      "is_derived": true,
+      "parent_source_id": "osm_geofabrik_vnm_20260913",
+      "parent_sha256": "3c4b19fea3e58ce0e3f6a1a52d75b141de1351e699cb8136bd7b1585bc24f52c",
+      "transform": {
+        "tool": "osmium extract",
+        "strategy": "complete_ways",
+        "bbox": [
+          106.5325,
+          11.0436,
+          106.7075,
+          11.2164
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "node_count": 83187,
+        "way_count": 12679,
+        "relation_count": 143,
+        "bbox": [
+          106.3352053,
+          10.8816482,
+          106.820377,
+          11.3471598
+        ],
+        "timestamp_last": "2026-09-13T18:06:21Z"
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_binh_duong_industrial_worldpop2025",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2025",
+      "represented_at": "2025",
+      "retrieved_at_utc": "2026-09-14T08:34:49+00:00",
+      "source_uri": "derived:worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "local_path": "data/gate2/aoi_sources/binh_duong_industrial/worldpop2025.tif",
+      "sha256": "f29bf6ed4a5606dd4cf36530ff28cf022d5edfaf7f1e536dd9ee4a18c27c3cc9",
+      "bytes": 131596,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        106.53249885387,
+        11.043333625159981,
+        106.7083321865,
+        11.216666957799982
+      ],
+      "expected_assets": [
+        "gate2_binh_duong_industrial_worldpop2025"
+      ],
+      "present_assets": [
+        "gate2_binh_duong_industrial_worldpop2025"
+      ],
+      "notes": "aoi=binh_duong_industrial; aoi_checksum=7a66bf9d427ff30eb082fd8cc4417a92635d166b738b871b22bd4ad3842ffc4c; derived this run",
+      "is_derived": true,
+      "parent_source_id": "worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "parent_sha256": "21f403884d5a2d3a0961f75ef66dea51c43fcc9e2e99d4e43cbcceafd6774540",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          106.5325,
+          11.0436,
+          106.7075,
+          11.2164
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          106.5325,
+          11.0436,
+          106.7075,
+          11.2164
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": -99999.0,
+        "bounds": [
+          106.53249885387,
+          11.043333625159981,
+          106.7083321865,
+          11.216666957799982
+        ],
+        "width": 211,
+        "height": 208,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_binh_duong_industrial_worldcover",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2021_v200",
+      "represented_at": "2021_v200",
+      "retrieved_at_utc": "2026-09-14T08:34:49+00:00",
+      "source_uri": "derived:esa_worldcover_2021_v200_N09E105",
+      "local_path": "data/gate2/aoi_sources/binh_duong_industrial/worldcover.tif",
+      "sha256": "614d714a3a67ec7d1daeecfbfc67c179a081bdd84d18565124bebed31cd378ca",
+      "bytes": 564848,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        106.5325,
+        11.043583333333334,
+        106.7075,
+        11.216416666666667
+      ],
+      "expected_assets": [
+        "gate2_binh_duong_industrial_worldcover"
+      ],
+      "present_assets": [
+        "gate2_binh_duong_industrial_worldcover"
+      ],
+      "notes": "aoi=binh_duong_industrial; aoi_checksum=7a66bf9d427ff30eb082fd8cc4417a92635d166b738b871b22bd4ad3842ffc4c; derived this run",
+      "is_derived": true,
+      "parent_source_id": "esa_worldcover_2021_v200_N09E105",
+      "parent_sha256": "7e9c655b7eefe460f92f0a15122295d33b33c3e1493afd56a463fb973dcc1cbc",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          106.5325,
+          11.0436,
+          106.7075,
+          11.2164
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          106.5325,
+          11.0436,
+          106.7075,
+          11.2164
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": 0.0,
+        "bounds": [
+          106.5325,
+          11.043583333333334,
+          106.7075,
+          11.216416666666667
+        ],
+        "width": 2100,
+        "height": 2074,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_binh_duong_industrial_ghs_built_s",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample, Mollweide native)",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T08:34:49+00:00",
+      "source_uri": "derived:ghs_built_s_e2020_r2023a_r8_c29_extracted",
+      "local_path": "data/gate2/aoi_sources/binh_duong_industrial/ghs_built_s.tif",
+      "sha256": "798c132dd24c826d9433c56d20af12d4a3422b897334f4a69ee0377ba978b091",
+      "bytes": 47171,
+      "license_id": "CC-BY-4.0",
+      "crs": "ESRI:54009",
+      "bounds": [
+        10550600.0,
+        1362200.0,
+        10571900.0,
+        1383500.0
+      ],
+      "expected_assets": [
+        "gate2_binh_duong_industrial_ghs_built_s"
+      ],
+      "present_assets": [
+        "gate2_binh_duong_industrial_ghs_built_s"
+      ],
+      "notes": "aoi=binh_duong_industrial; aoi_checksum=7a66bf9d427ff30eb082fd8cc4417a92635d166b738b871b22bd4ad3842ffc4c; derived this run",
+      "is_derived": true,
+      "parent_source_id": "ghs_built_s_e2020_r2023a_r8_c29_extracted",
+      "parent_sha256": "3b5784806528534ef42658aa04144d43732efc6ff54e79fa87eedf198fb137c1",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          10550650.6144,
+          1362241.415,
+          10571854.8152,
+          1383452.5043
+        ],
+        "bbox_crs": "ESRI:54009",
+        "source_bbox_wgs84": [
+          106.5325,
+          11.0436,
+          106.7075,
+          11.2164
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "ESRI:54009",
+        "nodata": 65535.0,
+        "bounds": [
+          10550600.0,
+          1362200.0,
+          10571900.0,
+          1383500.0
+        ],
+        "width": 213,
+        "height": 213,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_hoi_an_osm",
+      "provider": "derived/osmium extract",
+      "product": "AOI extract (complete_ways, halo)",
+      "release": "vietnam-260913",
+      "represented_at": "vietnam-260913",
+      "retrieved_at_utc": "2026-09-14T08:34:51+00:00",
+      "source_uri": "derived:osm_geofabrik_vnm_20260913",
+      "local_path": "data/gate2/aoi_sources/hoi_an/osm.osm.pbf",
+      "sha256": "2ef656457154050c3de1d790082da5b51403c00b82828258a8e0b3b3f561a3c8",
+      "bytes": 2811957,
+      "license_id": "ODbL-1.0",
+      "crs": null,
+      "bounds": [
+        108.2401,
+        15.7931,
+        108.4198,
+        15.9669
+      ],
+      "expected_assets": [
+        "gate2_hoi_an_osm"
+      ],
+      "present_assets": [
+        "gate2_hoi_an_osm"
+      ],
+      "notes": "aoi=hoi_an; aoi_checksum=5cecca1095cdaf1d38f618f261a685301f9cfc4a7bc4c359b00b5421d6096218; derived this run",
+      "is_derived": true,
+      "parent_source_id": "osm_geofabrik_vnm_20260913",
+      "parent_sha256": "3c4b19fea3e58ce0e3f6a1a52d75b141de1351e699cb8136bd7b1585bc24f52c",
+      "transform": {
+        "tool": "osmium extract",
+        "strategy": "complete_ways",
+        "bbox": [
+          108.2401,
+          15.7931,
+          108.4198,
+          15.9669
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "node_count": 387346,
+        "way_count": 76059,
+        "relation_count": 84,
+        "bbox": [
+          108.120017,
+          15.4923573,
+          108.6603035,
+          16.08382
+        ],
+        "timestamp_last": "2026-09-13T18:06:21Z"
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_hoi_an_worldpop2025",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2025",
+      "represented_at": "2025",
+      "retrieved_at_utc": "2026-09-14T08:34:51+00:00",
+      "source_uri": "derived:worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "local_path": "data/gate2/aoi_sources/hoi_an/worldpop2025.tif",
+      "sha256": "d801176f8c1bcd15145e469fa75385f3a2c230cfefa37bf9528d6780b453b09e",
+      "bytes": 102573,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        108.23999884704,
+        15.792500272829981,
+        108.41999884632,
+        15.967500272129982
+      ],
+      "expected_assets": [
+        "gate2_hoi_an_worldpop2025"
+      ],
+      "present_assets": [
+        "gate2_hoi_an_worldpop2025"
+      ],
+      "notes": "aoi=hoi_an; aoi_checksum=5cecca1095cdaf1d38f618f261a685301f9cfc4a7bc4c359b00b5421d6096218; derived this run",
+      "is_derived": true,
+      "parent_source_id": "worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "parent_sha256": "21f403884d5a2d3a0961f75ef66dea51c43fcc9e2e99d4e43cbcceafd6774540",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          108.2401,
+          15.7931,
+          108.4198,
+          15.9669
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          108.2401,
+          15.7931,
+          108.4198,
+          15.9669
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": -99999.0,
+        "bounds": [
+          108.23999884704,
+          15.792500272829981,
+          108.41999884632,
+          15.967500272129982
+        ],
+        "width": 216,
+        "height": 210,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_hoi_an_worldcover",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2021_v200",
+      "represented_at": "2021_v200",
+      "retrieved_at_utc": "2026-09-14T08:34:52+00:00",
+      "source_uri": "derived:esa_worldcover_2021_v200_N15E108",
+      "local_path": "data/gate2/aoi_sources/hoi_an/worldcover.tif",
+      "sha256": "367b0231be6d7fc488483ae072f24bdfbf792989bac99b3365c2c5a23562d7a4",
+      "bytes": 542390,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        108.24008333333333,
+        15.793083333333334,
+        108.41983333333333,
+        15.966916666666666
+      ],
+      "expected_assets": [
+        "gate2_hoi_an_worldcover"
+      ],
+      "present_assets": [
+        "gate2_hoi_an_worldcover"
+      ],
+      "notes": "aoi=hoi_an; aoi_checksum=5cecca1095cdaf1d38f618f261a685301f9cfc4a7bc4c359b00b5421d6096218; derived this run",
+      "is_derived": true,
+      "parent_source_id": "esa_worldcover_2021_v200_N15E108",
+      "parent_sha256": "14f46435b0730cac15cd32f749a0bba7c778f0f243c48ecd452d6e54cf93e029",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          108.2401,
+          15.7931,
+          108.4198,
+          15.9669
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          108.2401,
+          15.7931,
+          108.4198,
+          15.9669
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": 0.0,
+        "bounds": [
+          108.24008333333333,
+          15.793083333333334,
+          108.41983333333333,
+          15.966916666666666
+        ],
+        "width": 2157,
+        "height": 2086,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_hoi_an_ghs_built_s",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample, Mollweide native)",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T08:34:52+00:00",
+      "source_uri": "derived:ghs_built_s_e2020_r2023a_r8_c29_extracted",
+      "local_path": "data/gate2/aoi_sources/hoi_an/ghs_built_s.tif",
+      "sha256": "3da2b0107037262c3398e5acf8db0997977d5eeb8c1e68e37a301ac016e9b10d",
+      "bytes": 38947,
+      "license_id": "CC-BY-4.0",
+      "crs": "ESRI:54009",
+      "bounds": [
+        10587700.0,
+        1943200.0,
+        10611000.0,
+        1964500.0
+      ],
+      "expected_assets": [
+        "gate2_hoi_an_ghs_built_s"
+      ],
+      "present_assets": [
+        "gate2_hoi_an_ghs_built_s"
+      ],
+      "notes": "aoi=hoi_an; aoi_checksum=5cecca1095cdaf1d38f618f261a685301f9cfc4a7bc4c359b00b5421d6096218; derived this run",
+      "is_derived": true,
+      "parent_source_id": "ghs_built_s_e2020_r2023a_r8_c29_extracted",
+      "parent_sha256": "3b5784806528534ef42658aa04144d43732efc6ff54e79fa87eedf198fb137c1",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          10587736.0414,
+          1943240.1308,
+          10610972.7993,
+          1964412.1587
+        ],
+        "bbox_crs": "ESRI:54009",
+        "source_bbox_wgs84": [
+          108.2401,
+          15.7931,
+          108.4198,
+          15.9669
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "ESRI:54009",
+        "nodata": 65535.0,
+        "bounds": [
+          10587700.0,
+          1943200.0,
+          10611000.0,
+          1964500.0
+        ],
+        "width": 233,
+        "height": 213,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_phu_quoc_coast_osm",
+      "provider": "derived/osmium extract",
+      "product": "AOI extract (complete_ways, halo)",
+      "release": "vietnam-260913",
+      "represented_at": "vietnam-260913",
+      "retrieved_at_utc": "2026-09-14T08:34:54+00:00",
+      "source_uri": "derived:osm_geofabrik_vnm_20260913",
+      "local_path": "data/gate2/aoi_sources/phu_quoc_coast/osm.osm.pbf",
+      "sha256": "ee765ce2880fb4329ae337ae21dde09912eee4f1570a183eee2892b8bcd6503d",
+      "bytes": 1500822,
+      "license_id": "ODbL-1.0",
+      "crs": null,
+      "bounds": [
+        103.8729,
+        10.1338,
+        104.047,
+        10.3062
+      ],
+      "expected_assets": [
+        "gate2_phu_quoc_coast_osm"
+      ],
+      "present_assets": [
+        "gate2_phu_quoc_coast_osm"
+      ],
+      "notes": "aoi=phu_quoc_coast; aoi_checksum=2ab5fe5b3317d6ebd823a5fc4e3c823b5e85112923403db27c188b40f9214218; derived this run",
+      "is_derived": true,
+      "parent_source_id": "osm_geofabrik_vnm_20260913",
+      "parent_sha256": "3c4b19fea3e58ce0e3f6a1a52d75b141de1351e699cb8136bd7b1585bc24f52c",
+      "transform": {
+        "tool": "osmium extract",
+        "strategy": "complete_ways",
+        "bbox": [
+          103.8729,
+          10.1338,
+          104.047,
+          10.3062
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "node_count": 216008,
+        "way_count": 49765,
+        "relation_count": 40,
+        "bbox": [
+          103.0522427,
+          9.4110961,
+          105.0765719,
+          10.4476024
+        ],
+        "timestamp_last": "2026-09-10T09:12:55Z"
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_phu_quoc_coast_worldpop2025",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2025",
+      "represented_at": "2025",
+      "retrieved_at_utc": "2026-09-14T08:34:54+00:00",
+      "source_uri": "derived:worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "local_path": "data/gate2/aoi_sources/phu_quoc_coast/worldpop2025.tif",
+      "sha256": "8b1623c0b5c3f794b894d651cf04195a301af2997438e3724c3527749cadb5e9",
+      "bytes": 54884,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        103.87249886451,
+        10.133333628799981,
+        104.04749886381,
+        10.306666961439982
+      ],
+      "expected_assets": [
+        "gate2_phu_quoc_coast_worldpop2025"
+      ],
+      "present_assets": [
+        "gate2_phu_quoc_coast_worldpop2025"
+      ],
+      "notes": "aoi=phu_quoc_coast; aoi_checksum=2ab5fe5b3317d6ebd823a5fc4e3c823b5e85112923403db27c188b40f9214218; derived this run",
+      "is_derived": true,
+      "parent_source_id": "worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "parent_sha256": "21f403884d5a2d3a0961f75ef66dea51c43fcc9e2e99d4e43cbcceafd6774540",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          103.8729,
+          10.1338,
+          104.047,
+          10.3062
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          103.8729,
+          10.1338,
+          104.047,
+          10.3062
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": -99999.0,
+        "bounds": [
+          103.87249886451,
+          10.133333628799981,
+          104.04749886381,
+          10.306666961439982
+        ],
+        "width": 210,
+        "height": 208,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_phu_quoc_coast_worldcover",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample)",
+      "release": "2021_v200",
+      "represented_at": "2021_v200",
+      "retrieved_at_utc": "2026-09-14T08:34:54+00:00",
+      "source_uri": "derived:esa_worldcover_2021_v200_N09E102",
+      "local_path": "data/gate2/aoi_sources/phu_quoc_coast/worldcover.tif",
+      "sha256": "d923635380d1da781e5446e93f8a581298f76e771878636ee49f825146964596",
+      "bytes": 249716,
+      "license_id": "CC-BY-4.0",
+      "crs": "EPSG:4326",
+      "bounds": [
+        103.87283333333333,
+        10.133750000000001,
+        104.047,
+        10.30625
+      ],
+      "expected_assets": [
+        "gate2_phu_quoc_coast_worldcover"
+      ],
+      "present_assets": [
+        "gate2_phu_quoc_coast_worldcover"
+      ],
+      "notes": "aoi=phu_quoc_coast; aoi_checksum=2ab5fe5b3317d6ebd823a5fc4e3c823b5e85112923403db27c188b40f9214218; derived this run",
+      "is_derived": true,
+      "parent_source_id": "esa_worldcover_2021_v200_N09E102",
+      "parent_sha256": "e212faf44afc6c60a6eca287ed078c86bf01c2f55a9eac0b6f09d319520f5c27",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          103.8729,
+          10.1338,
+          104.047,
+          10.3062
+        ],
+        "bbox_crs": "EPSG:4326",
+        "source_bbox_wgs84": [
+          103.8729,
+          10.1338,
+          104.047,
+          10.3062
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "EPSG:4326",
+        "nodata": 0.0,
+        "bounds": [
+          103.87283333333333,
+          10.133750000000001,
+          104.047,
+          10.30625
+        ],
+        "width": 2090,
+        "height": 2070,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    },
+    {
+      "source_id": "gate2_phu_quoc_coast_ghs_built_s",
+      "provider": "derived/gdal_translate",
+      "product": "AOI clip (no resample, Mollweide native)",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T08:34:54+00:00",
+      "source_uri": "derived:ghs_built_s_e2020_r2023a_r8_c29_extracted",
+      "local_path": "data/gate2/aoi_sources/phu_quoc_coast/ghs_built_s.tif",
+      "sha256": "8b71fab081cd5e97d1e8f66a5f3f358fb138e68c16fb0dd26dc3e3bf980d309e",
+      "bytes": 16594,
+      "license_id": "CC-BY-4.0",
+      "crs": "ESRI:54009",
+      "bounds": [
+        10306400.0,
+        1250400.0,
+        10327200.0,
+        1271700.0
+      ],
+      "expected_assets": [
+        "gate2_phu_quoc_coast_ghs_built_s"
+      ],
+      "present_assets": [
+        "gate2_phu_quoc_coast_ghs_built_s"
+      ],
+      "notes": "aoi=phu_quoc_coast; aoi_checksum=2ab5fe5b3317d6ebd823a5fc4e3c823b5e85112923403db27c188b40f9214218; derived this run",
+      "is_derived": true,
+      "parent_source_id": "ghs_built_s_e2020_r2023a_r8_c29_extracted",
+      "parent_sha256": "3b5784806528534ef42658aa04144d43732efc6ff54e79fa87eedf198fb137c1",
+      "transform": {
+        "tool": "gdal_translate",
+        "op": "projwin_no_resample",
+        "bbox": [
+          10306448.9316,
+          1250487.0392,
+          10327181.7265,
+          1271673.2797
+        ],
+        "bbox_crs": "ESRI:54009",
+        "source_bbox_wgs84": [
+          103.8729,
+          10.1338,
+          104.047,
+          10.3062
+        ],
+        "halo_km": 3.5
+      },
+      "validation": {
+        "crs": "ESRI:54009",
+        "nodata": 65535.0,
+        "bounds": [
+          10306400.0,
+          1250400.0,
+          10327200.0,
+          1271700.0
+        ],
+        "width": 208,
+        "height": 213,
+        "band_count": 1
+      },
+      "retrieved_at_utc_method": "derived_at_utc"
+    }
+  ]
+}

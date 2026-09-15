@@ -1,0 +1,83 @@
+# Gate 2 MVP resolution decision — runner parameters.
+#
+# Owner-approved scope reduction (docs/gate2_mvp_decision.md): H3 is the
+# provisional MVP spatial-unit family and Gate 2 now decides ONLY which H3
+# resolution the MVP uses. Square/administrative candidates, robustness,
+# alternate-source sensitivity, semantic mixing, neighbourhood
+# representation and the Pareto machinery of config/gate2.yaml are
+# deferred, not run. config/gate2.yaml is left untouched as the record of
+# the full experiment design.
+version: "1.0.0"
+
+run:
+  output_root: data/gate2
+  # A run directory is `<output_root>/<run_dir_prefix><run_id>`; it is
+  # created exist_ok=False and never written to again after run_manifest
+  # and SHA256SUMS are emitted.
+  run_dir_prefix: mvp_run_
+  random_seed: 20260914
+
+aoi:
+  metric_crs_rule: utm_zone_from_centre_longitude
+  hemisphere: north
+  storage_crs: "EPSG:4326"
+  # The four representative contexts the MVP decision is measured on. The
+  # definitions come from config/spatial.yaml representative_aois; this
+  # list only selects among them. The other four AOIs are deferred
+  # validation contexts (Gate 6).
+  mvp_aoi_ids: [hanoi_core, hoi_an, mu_cang_chai, dong_thap_rural]
+
+candidates:
+  family: h3
+  library_major_version: 4
+  h3_resolutions: [8, 9, 10]
+
+buffers_m:
+  neighborhood: 1000
+  regional: 3000
+
+anchor_features:
+  # The three anchors the MVP too-coarse rule uses. Each is point-
+  # computable on a 1 km disk, so it can be evaluated at any interior
+  # sample point of a cell. builtup_fraction_1km is dropped from the rule
+  # by the owner's scope reduction (alternate built-up sensitivity is
+  # deferred), not because it measured anything wrong.
+  - {id: poi_count_1km,     support: buffer_1km, source_role: poi,        unit: count}
+  - {id: population_1km,    support: buffer_1km, source_role: population, unit: persons}
+  - {id: road_length_1km_m, support: buffer_1km, source_role: roads,      unit: metres}
+
+within_unit_loss:
+  interior_points_per_unit: 5
+  sampled_units_per_candidate_aoi: 400
+
+lookup:
+  queries: 10000
+  batch_size: 1000
+  boundary_cases_per_candidate: 200
+
+nationwide_projection:
+  vietnam_land_area_km2: 331212
+  source: "General Statistics Office of Vietnam, total national area"
+
+acceptance:
+  # The pre-registered too-coarse rule, unchanged: an anchor triggers when
+  # the median within-cell sample-point range exceeds this fraction of the
+  # between-cell IQR; a resolution is rejected in a context when at least
+  # `coarse_minimum_anchor_features_triggered` anchors trigger. No other
+  # threshold is introduced.
+  coarse_within_unit_range_fraction_of_between_unit_iqr: 0.25
+  coarse_minimum_anchor_features_triggered: 2
+
+selection:
+  # Owner-stated order of preference, applied mechanically by
+  # src/spatial/mvp_decision.py:
+  #   1. if `default` passes in every MVP AOI, select it;
+  #   2. else if `finer_fallback` passes, select it;
+  #   3. `coarser_alternative` only if it passes everywhere AND has lower
+  #      projected nationwide unit count and storage than `default` AND no
+  #      greater within-cell location loss than `default`;
+  #   4. otherwise NO DECISION.
+  default: 9
+  finer_fallback: 10
+  coarser_alternative: 8
+  decision_status: provisional_mvp

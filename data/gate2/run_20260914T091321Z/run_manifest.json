@@ -1,0 +1,682 @@
+{
+  "acquisition_source_index": {
+    "path": "data/gate2/aoi_sources/gate2_source_index.json",
+    "sha256": "44023fd3dc616da8245e6ef464d3734ea40aada9881d2681c571bb7bcabff5e8"
+  },
+  "administrative_candidate": {
+    "enabled": false,
+    "qualification_record": "docs/gate2_admin_qualification.md",
+    "status": "blocked"
+  },
+  "aoi_geojson": {
+    "path": "data/gate2/run_20260914T091321Z/aois.geojson",
+    "sha256": "3e435d120ee5fbf5c1ef9cf1850d9b7fda66e58789c952aa41e6181786fbf394"
+  },
+  "aois": [
+    {
+      "aoi_id": "hanoi_core",
+      "bounds_wgs84": [
+        105.82298307792101,
+        21.000749238028703,
+        105.88102735797169,
+        21.055246182701673
+      ],
+      "checksum": "8951524c20a6125e6854c452adcc0e836ae3f9f24d703b20d9006b209a4031eb",
+      "context": "dense_urban",
+      "metric_crs": "EPSG:32648"
+    },
+    {
+      "aoi_id": "hcmc_core",
+      "bounds_wgs84": [
+        106.67242140557882,
+        10.7487282606163,
+        106.72758350026177,
+        10.803270039460424
+      ],
+      "checksum": "34fb7aff466923a5ac0ad904d5e8d2c4aafba7a9ca1a0db6ebdd56b8d0da191f",
+      "context": "dense_urban",
+      "metric_crs": "EPSG:32648"
+    },
+    {
+      "aoi_id": "thu_duc_east",
+      "bounds_wgs84": [
+        106.7248201070983,
+        10.795441156494483,
+        106.83519965573883,
+        10.904552121579114
+      ],
+      "checksum": "f0dee5bd0e25c6559eca283d59fafd94ec3bda9abdf4c06e4357c9ceb83cfc86",
+      "context": "suburban",
+      "metric_crs": "EPSG:32648"
+    },
+    {
+      "aoi_id": "dong_thap_rural",
+      "bounds_wgs84": [
+        105.57134812893621,
+        10.392027758692217,
+        105.70868162745523,
+        10.527959047814017
+      ],
+      "checksum": "3e03727b1c33c4ef63bc17955b77cd5ef435f8b65eb23ea819c333bf2f928128",
+      "context": "rural_delta",
+      "metric_crs": "EPSG:32648"
+    },
+    {
+      "aoi_id": "mu_cang_chai",
+      "bounds_wgs84": [
+        104.05702244462904,
+        21.701850288122227,
+        104.20290945687037,
+        21.838119956001588
+      ],
+      "checksum": "6a721850cab94278f907650d91a3aa31f60cc16844032c21aaab58eec935f88a",
+      "context": "rural_mountain",
+      "metric_crs": "EPSG:32648"
+    },
+    {
+      "aoi_id": "binh_duong_industrial",
+      "bounds_wgs84": [
+        106.56478515548237,
+        11.07545851038727,
+        106.67523515600826,
+        11.184534213980239
+      ],
+      "checksum": "7a66bf9d427ff30eb082fd8cc4417a92635d166b738b871b22bd4ad3842ffc4c",
+      "context": "industrial",
+      "metric_crs": "EPSG:32648"
+    },
+    {
+      "aoi_id": "hoi_an",
+      "bounds_wgs84": [
+        108.27328600197367,
+        15.825119871584445,
+        108.38668412640548,
+        15.934870327937151
+      ],
+      "checksum": "5cecca1095cdaf1d38f618f261a685301f9cfc4a7bc4c359b00b5421d6096218",
+      "context": "tourism",
+      "metric_crs": "EPSG:32649"
+    },
+    {
+      "aoi_id": "phu_quoc_coast",
+      "bounds_wgs84": [
+        103.90503932905581,
+        10.165563792531405,
+        104.01494209496364,
+        10.274428717848282
+      ],
+      "checksum": "2ab5fe5b3317d6ebd823a5fc4e3c823b5e85112923403db27c188b40f9214218",
+      "context": "tourism",
+      "metric_crs": "EPSG:32648"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact": "candidate_inventory",
+      "bytes": 11490064,
+      "columns": [
+        "aoi_id",
+        "aoi_overlap_fraction",
+        "aoi_overlap_m2",
+        "area_m2",
+        "builtup_fraction_mean",
+        "candidate_id",
+        "context",
+        "family",
+        "land_fraction",
+        "landcover_entropy_bits",
+        "neighbor_count",
+        "poi_count",
+        "population",
+        "rep_lat",
+        "rep_lon",
+        "road_length_m",
+        "role",
+        "run_id",
+        "unit_id"
+      ],
+      "path": "data/gate2/run_20260914T091321Z/candidate_inventory.parquet",
+      "rows": 186761,
+      "sha256": "0efd0f8275e8adfd1cf3576147e95da4d8adc6c507d8d56037c8dbd2a58c2cfa"
+    },
+    {
+      "artifact": "candidate_metrics",
+      "bytes": 96431,
+      "columns": [
+        "aoi_id",
+        "candidate_id",
+        "context",
+        "dimension",
+        "family",
+        "metric",
+        "notes",
+        "role",
+        "run_id",
+        "source_status",
+        "spatial_support",
+        "unit",
+        "value"
+      ],
+      "path": "data/gate2/run_20260914T091321Z/candidate_metrics.parquet",
+      "rows": 12686,
+      "sha256": "4e842c371996e3fb04bac6cd05fe2ae74d91aee59ccabd7de8452e23e7ad262c"
+    },
+    {
+      "artifact": "benchmark_runs",
+      "bytes": 30682,
+      "columns": [
+        "aoi_id",
+        "candidate_id",
+        "code_version",
+        "config_hash",
+        "context",
+        "env_cpu_count_logical",
+        "env_geopandas",
+        "env_h3",
+        "env_machine",
+        "env_numpy",
+        "env_pandas",
+        "env_platform",
+        "env_processor",
+        "env_python",
+        "env_rasterio",
+        "env_shapely",
+        "env_total_ram_bytes",
+        "family",
+        "notes",
+        "output_bytes",
+        "peak_rss_bytes",
+        "recorded_at_utc",
+        "role",
+        "rows",
+        "run_id",
+        "source_releases",
+        "stage",
+        "status",
+        "wall_time_s"
+      ],
+      "path": "data/gate2/run_20260914T091321Z/benchmark_runs.parquet",
+      "rows": 784,
+      "sha256": "59949fb19b8dc439c2a7176b2901a34403db449590d65aa616a693dadf56ce67"
+    },
+    {
+      "artifact": "lookup_benchmark",
+      "bytes": 11785,
+      "columns": [
+        "aoi_id",
+        "candidate_id",
+        "correctness_checked",
+        "correctness_failures",
+        "errors",
+        "lookup_mode",
+        "notes",
+        "p50_latency_us",
+        "p95_latency_us",
+        "queries",
+        "run_id",
+        "tie_cases"
+      ],
+      "path": "data/gate2/run_20260914T091321Z/lookup_benchmark.parquet",
+      "rows": 176,
+      "sha256": "745ceb14489d25f248d52e0e44f0e29d25d900c891fc31b6b020f5ccff0832ac"
+    },
+    {
+      "artifact": "source_coverage",
+      "bytes": 21739,
+      "columns": [
+        "aoi_id",
+        "bounds",
+        "bytes",
+        "crs",
+        "expected_assets",
+        "expected_valid_pixels",
+        "ingest_status",
+        "license_id",
+        "notes",
+        "present_assets",
+        "processed_valid_pixels",
+        "processing_coverage",
+        "release",
+        "retrieved_at_utc",
+        "run_id",
+        "sha256",
+        "source_id",
+        "source_role",
+        "source_uri"
+      ],
+      "path": "data/gate2/run_20260914T091321Z/source_coverage.parquet",
+      "rows": 32,
+      "sha256": "29649eac0eb588f90953600014e7b4489d8d27c22414b28efc3f681d97bb1e83"
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "h3_r10",
+      "family": "h3",
+      "nominal_area_km2": 0.01504750190766435,
+      "role": "operational"
+    },
+    {
+      "candidate_id": "h3_r9",
+      "family": "h3",
+      "nominal_area_km2": 0.1053325134272067,
+      "role": "operational"
+    },
+    {
+      "candidate_id": "h3_r8",
+      "family": "h3",
+      "nominal_area_km2": 0.7373275975944177,
+      "role": "operational"
+    },
+    {
+      "candidate_id": "h3_r7",
+      "family": "h3",
+      "nominal_area_km2": 5.161293359717191,
+      "role": "operational"
+    },
+    {
+      "candidate_id": "square_125m",
+      "family": "square",
+      "nominal_area_km2": 0.015625,
+      "role": "area_control"
+    },
+    {
+      "candidate_id": "square_250m",
+      "family": "square",
+      "nominal_area_km2": 0.0625,
+      "role": "operational"
+    },
+    {
+      "candidate_id": "square_325m",
+      "family": "square",
+      "nominal_area_km2": 0.10562500000000001,
+      "role": "area_control"
+    },
+    {
+      "candidate_id": "square_500m",
+      "family": "square",
+      "nominal_area_km2": 0.25,
+      "role": "operational"
+    },
+    {
+      "candidate_id": "square_850m",
+      "family": "square",
+      "nominal_area_km2": 0.7224999999999999,
+      "role": "area_control"
+    },
+    {
+      "candidate_id": "square_1000m",
+      "family": "square",
+      "nominal_area_km2": 1.0,
+      "role": "operational"
+    },
+    {
+      "candidate_id": "square_2270m",
+      "family": "square",
+      "nominal_area_km2": 5.1529,
+      "role": "area_control"
+    }
+  ],
+  "code_version": "59fe994cacf930df79d9b364fe104f1778d41f47+dirty",
+  "config_hash": "dde7c4a1b884b8e8ae0d445081473bee53f80267718ff4e93c198722f9ef9813",
+  "decision": {
+    "blockers": [
+      "no owner feasibility budget (PROJECT_BRIEF.md supplies none)",
+      "administrative candidate blocked \u2014 the three-family comparison is incomplete"
+    ],
+    "coarse_gate_rejections": [
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "binh_duong_industrial",
+        "candidate_id": "h3_r7",
+        "context": "industrial"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "dong_thap_rural",
+        "candidate_id": "h3_r7",
+        "context": "rural_delta"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "hanoi_core",
+        "candidate_id": "h3_r7",
+        "context": "dense_urban"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "hcmc_core",
+        "candidate_id": "h3_r7",
+        "context": "dense_urban"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "hoi_an",
+        "candidate_id": "h3_r7",
+        "context": "tourism"
+      },
+      {
+        "anchor_features_triggered": 3.0,
+        "aoi_id": "mu_cang_chai",
+        "candidate_id": "h3_r7",
+        "context": "rural_mountain"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "phu_quoc_coast",
+        "candidate_id": "h3_r7",
+        "context": "tourism"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "thu_duc_east",
+        "candidate_id": "h3_r7",
+        "context": "suburban"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "binh_duong_industrial",
+        "candidate_id": "h3_r8",
+        "context": "industrial"
+      },
+      {
+        "anchor_features_triggered": 3.0,
+        "aoi_id": "dong_thap_rural",
+        "candidate_id": "h3_r8",
+        "context": "rural_delta"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "hanoi_core",
+        "candidate_id": "h3_r8",
+        "context": "dense_urban"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "hcmc_core",
+        "candidate_id": "h3_r8",
+        "context": "dense_urban"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "hoi_an",
+        "candidate_id": "h3_r8",
+        "context": "tourism"
+      },
+      {
+        "anchor_features_triggered": 2.0,
+        "aoi_id": "mu_cang_chai",
+        "candidate_id": "h3_r8",
+        "context": "rural_mountain"
+      },
+      {
+        "anchor_features_triggered": 2.0,
+        "aoi_id": "phu_quoc_coast",
+        "candidate_id": "h3_r8",
+        "context": "tourism"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "thu_duc_east",
+        "candidate_id": "h3_r8",
+        "context": "suburban"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "binh_duong_industrial",
+        "candidate_id": "square_1000m",
+        "context": "industrial"
+      },
+      {
+        "anchor_features_triggered": 3.0,
+        "aoi_id": "dong_thap_rural",
+        "candidate_id": "square_1000m",
+        "context": "rural_delta"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "hanoi_core",
+        "candidate_id": "square_1000m",
+        "context": "dense_urban"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "hcmc_core",
+        "candidate_id": "square_1000m",
+        "context": "dense_urban"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "hoi_an",
+        "candidate_id": "square_1000m",
+        "context": "tourism"
+      },
+      {
+        "anchor_features_triggered": 3.0,
+        "aoi_id": "thu_duc_east",
+        "candidate_id": "square_1000m",
+        "context": "suburban"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "binh_duong_industrial",
+        "candidate_id": "square_2270m",
+        "context": "industrial"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "dong_thap_rural",
+        "candidate_id": "square_2270m",
+        "context": "rural_delta"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "hanoi_core",
+        "candidate_id": "square_2270m",
+        "context": "dense_urban"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "hcmc_core",
+        "candidate_id": "square_2270m",
+        "context": "dense_urban"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "hoi_an",
+        "candidate_id": "square_2270m",
+        "context": "tourism"
+      },
+      {
+        "anchor_features_triggered": 3.0,
+        "aoi_id": "mu_cang_chai",
+        "candidate_id": "square_2270m",
+        "context": "rural_mountain"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "phu_quoc_coast",
+        "candidate_id": "square_2270m",
+        "context": "tourism"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "thu_duc_east",
+        "candidate_id": "square_2270m",
+        "context": "suburban"
+      },
+      {
+        "anchor_features_triggered": 3.0,
+        "aoi_id": "hoi_an",
+        "candidate_id": "square_500m",
+        "context": "tourism"
+      },
+      {
+        "anchor_features_triggered": 4.0,
+        "aoi_id": "binh_duong_industrial",
+        "candidate_id": "square_850m",
+        "context": "industrial"
+      },
+      {
+        "anchor_features_triggered": 3.0,
+        "aoi_id": "dong_thap_rural",
+        "candidate_id": "square_850m",
+        "context": "rural_delta"
+      },
+      {
+        "anchor_features_triggered": 3.0,
+        "aoi_id": "hanoi_core",
+        "candidate_id": "square_850m",
+        "context": "dense_urban"
+      },
+      {
+        "anchor_features_triggered": 2.0,
+        "aoi_id": "hcmc_core",
+        "candidate_id": "square_850m",
+        "context": "dense_urban"
+      },
+      {
+        "anchor_features_triggered": 3.0,
+        "aoi_id": "hoi_an",
+        "candidate_id": "square_850m",
+        "context": "tourism"
+      },
+      {
+        "anchor_features_triggered": 2.0,
+        "aoi_id": "thu_duc_east",
+        "candidate_id": "square_850m",
+        "context": "suburban"
+      }
+    ],
+    "coarse_gate_survivors_all_contexts": [
+      "h3_r10",
+      "h3_r9",
+      "square_125m",
+      "square_250m",
+      "square_325m"
+    ],
+    "completeness": {
+      "expected_pairs": 88,
+      "missing_candidate_aoi_pairs": [],
+      "passed": true,
+      "present_pairs": 88,
+      "raster_coverage_floor": 0.999,
+      "raster_rows_below_floor": 0,
+      "vector_ingest_failures": 0,
+      "zonal_rows_below_floor": 0
+    },
+    "contexts_evaluated": [
+      "binh_duong_industrial",
+      "dong_thap_rural",
+      "hanoi_core",
+      "hcmc_core",
+      "hoi_an",
+      "mu_cang_chai",
+      "phu_quoc_coast",
+      "thu_duc_east"
+    ],
+    "core_pareto_frontier": [
+      "h3_r7",
+      "h3_r8",
+      "square_1000m",
+      "square_125m",
+      "square_2270m",
+      "square_250m",
+      "square_325m",
+      "square_500m",
+      "square_850m"
+    ],
+    "decision": "no_decision",
+    "fine_gate_rejections": [],
+    "pareto_frontier": [
+      "h3_r10",
+      "h3_r7",
+      "h3_r8",
+      "h3_r9",
+      "square_1000m",
+      "square_125m",
+      "square_2270m",
+      "square_250m",
+      "square_325m",
+      "square_500m",
+      "square_850m"
+    ],
+    "pareto_undetermined": [],
+    "robustness_failures": [],
+    "spatial_unit_method": null
+  },
+  "environment": {
+    "cpu_count_logical": 8,
+    "geopandas": "1.1.4",
+    "h3": "4.5.0",
+    "machine": "arm64",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "platform": "macOS-15.6-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.12.13",
+    "rasterio": "1.5.1",
+    "shapely": "2.1.2",
+    "total_ram_bytes": 17179869184
+  },
+  "feasibility_budget": {
+    "max_nationwide_storage_bytes": null,
+    "max_peak_rss_bytes": null,
+    "max_wall_time_s": null,
+    "provided": false
+  },
+  "finished_at_utc": "2026-09-14T09:17:20+00:00",
+  "gate": 2,
+  "plots": [
+    "data/gate2/run_20260914T091321Z/figures/map_unit_boundaries_binh_duong_industrial.png",
+    "data/gate2/run_20260914T091321Z/figures/map_poi_count_binh_duong_industrial.png",
+    "data/gate2/run_20260914T091321Z/figures/map_population_binh_duong_industrial.png",
+    "data/gate2/run_20260914T091321Z/figures/map_land_fraction_binh_duong_industrial.png",
+    "data/gate2/run_20260914T091321Z/figures/map_unit_boundaries_dong_thap_rural.png",
+    "data/gate2/run_20260914T091321Z/figures/map_poi_count_dong_thap_rural.png",
+    "data/gate2/run_20260914T091321Z/figures/map_population_dong_thap_rural.png",
+    "data/gate2/run_20260914T091321Z/figures/map_land_fraction_dong_thap_rural.png",
+    "data/gate2/run_20260914T091321Z/figures/map_unit_boundaries_hanoi_core.png",
+    "data/gate2/run_20260914T091321Z/figures/map_poi_count_hanoi_core.png",
+    "data/gate2/run_20260914T091321Z/figures/map_population_hanoi_core.png",
+    "data/gate2/run_20260914T091321Z/figures/map_land_fraction_hanoi_core.png",
+    "data/gate2/run_20260914T091321Z/figures/map_unit_boundaries_hcmc_core.png",
+    "data/gate2/run_20260914T091321Z/figures/map_poi_count_hcmc_core.png",
+    "data/gate2/run_20260914T091321Z/figures/map_population_hcmc_core.png",
+    "data/gate2/run_20260914T091321Z/figures/map_land_fraction_hcmc_core.png",
+    "data/gate2/run_20260914T091321Z/figures/map_unit_boundaries_hoi_an.png",
+    "data/gate2/run_20260914T091321Z/figures/map_poi_count_hoi_an.png",
+    "data/gate2/run_20260914T091321Z/figures/map_population_hoi_an.png",
+    "data/gate2/run_20260914T091321Z/figures/map_land_fraction_hoi_an.png",
+    "data/gate2/run_20260914T091321Z/figures/map_unit_boundaries_mu_cang_chai.png",
+    "data/gate2/run_20260914T091321Z/figures/map_poi_count_mu_cang_chai.png",
+    "data/gate2/run_20260914T091321Z/figures/map_population_mu_cang_chai.png",
+    "data/gate2/run_20260914T091321Z/figures/map_land_fraction_mu_cang_chai.png",
+    "data/gate2/run_20260914T091321Z/figures/map_unit_boundaries_phu_quoc_coast.png",
+    "data/gate2/run_20260914T091321Z/figures/map_poi_count_phu_quoc_coast.png",
+    "data/gate2/run_20260914T091321Z/figures/map_population_phu_quoc_coast.png",
+    "data/gate2/run_20260914T091321Z/figures/map_land_fraction_phu_quoc_coast.png",
+    "data/gate2/run_20260914T091321Z/figures/map_unit_boundaries_thu_duc_east.png",
+    "data/gate2/run_20260914T091321Z/figures/map_poi_count_thu_duc_east.png",
+    "data/gate2/run_20260914T091321Z/figures/map_population_thu_duc_east.png",
+    "data/gate2/run_20260914T091321Z/figures/map_land_fraction_thu_duc_east.png",
+    "data/gate2/run_20260914T091321Z/figures/plot_poi_sparsity_vs_area.png",
+    "data/gate2/run_20260914T091321Z/figures/plot_population_sparsity_vs_area.png",
+    "data/gate2/run_20260914T091321Z/figures/plot_road_sparsity_vs_area.png",
+    "data/gate2/run_20260914T091321Z/figures/plot_semantic_mixing_vs_area.png",
+    "data/gate2/run_20260914T091321Z/figures/plot_dominant_landcover_vs_area.png",
+    "data/gate2/run_20260914T091321Z/figures/plot_within_unit_loss_vs_area.png",
+    "data/gate2/run_20260914T091321Z/figures/plot_neighborhood_error_1km_vs_area.png",
+    "data/gate2/run_20260914T091321Z/figures/plot_neighborhood_error_3km_vs_area.png",
+    "data/gate2/run_20260914T091321Z/figures/plot_builtup_variance_vs_area.png",
+    "data/gate2/run_20260914T091321Z/figures/plot_unit_count_vs_storage.png",
+    "data/gate2/run_20260914T091321Z/figures/plot_boundary_origin_sensitivity.png",
+    "data/gate2/run_20260914T091321Z/figures/plot_maup_adjacent_resolution_stability.png"
+  ],
+  "run_id": "20260914T091321Z",
+  "source_releases": {
+    "acquisition_manifest": "data/manifests/source_manifest_20260914T083224Z.json",
+    "acquisition_run_id": "20260914T083224Z"
+  },
+  "started_at_utc": "2026-09-14T09:13:21+00:00"
+}

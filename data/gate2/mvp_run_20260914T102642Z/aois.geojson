@@ -1,0 +1,173 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              105.82298307792101,
+              21.00103809313713
+            ],
+            [
+              105.88070883108368,
+              21.000749238028703
+            ],
+            [
+              105.88102735797169,
+              21.054956512943885
+            ],
+            [
+              105.82328073302338,
+              21.055246182701673
+            ],
+            [
+              105.82298307792101,
+              21.00103809313713
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "aoi_checksum": "8951524c20a6125e6854c452adcc0e836ae3f9f24d703b20d9006b209a4031eb",
+        "aoi_id": "hanoi_core",
+        "centre_lat": 21.028,
+        "centre_lon": 105.852,
+        "construction": "axis-aligned rectangle of width_km x height_km centred on (centre_lat, centre_lon) in metric_crs, reprojected to EPSG:4326",
+        "context": "dense_urban",
+        "height_km": 6.0,
+        "metric_crs": "EPSG:32648",
+        "storage_crs": "EPSG:4326",
+        "width_km": 6.0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              108.2747446371275,
+              15.825119871584445
+            ],
+            [
+              108.38668412640548,
+              15.826497720123372
+            ],
+            [
+              108.38528523450373,
+              15.934870327937151
+            ],
+            [
+              108.27328600197367,
+              15.933482560180721
+            ],
+            [
+              108.2747446371275,
+              15.825119871584445
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "aoi_checksum": "5cecca1095cdaf1d38f618f261a685301f9cfc4a7bc4c359b00b5421d6096218",
+        "aoi_id": "hoi_an",
+        "centre_lat": 15.88,
+        "centre_lon": 108.33,
+        "construction": "axis-aligned rectangle of width_km x height_km centred on (centre_lat, centre_lon) in metric_crs, reprojected to EPSG:4326",
+        "context": "tourism",
+        "height_km": 12.0,
+        "metric_crs": "EPSG:32649",
+        "storage_crs": "EPSG:4326",
+        "width_km": 12.0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              104.05790758047569,
+              21.701850288122227
+            ],
+            [
+              104.20290945687037,
+              21.702610855243027
+            ],
+            [
+              104.2021605180361,
+              21.838119956001588
+            ],
+            [
+              104.05702244462904,
+              21.83735416516961
+            ],
+            [
+              104.05790758047569,
+              21.701850288122227
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "aoi_checksum": "6a721850cab94278f907650d91a3aa31f60cc16844032c21aaab58eec935f88a",
+        "aoi_id": "mu_cang_chai",
+        "centre_lat": 21.77,
+        "centre_lon": 104.13,
+        "construction": "axis-aligned rectangle of width_km x height_km centred on (centre_lat, centre_lon) in metric_crs, reprojected to EPSG:4326",
+        "context": "rural_mountain",
+        "height_km": 15.0,
+        "metric_crs": "EPSG:32648",
+        "storage_crs": "EPSG:4326",
+        "width_km": 15.0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              105.57134812893621,
+              10.392301048108626
+            ],
+            [
+              105.70837392209046,
+              10.392027758692217
+            ],
+            [
+              105.70868162745523,
+              10.52768211304572
+            ],
+            [
+              105.5715963215132,
+              10.527959047814017
+            ],
+            [
+              105.57134812893621,
+              10.392301048108626
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "aoi_checksum": "3e03727b1c33c4ef63bc17955b77cd5ef435f8b65eb23ea819c333bf2f928128",
+        "aoi_id": "dong_thap_rural",
+        "centre_lat": 10.46,
+        "centre_lon": 105.64,
+        "construction": "axis-aligned rectangle of width_km x height_km centred on (centre_lat, centre_lon) in metric_crs, reprojected to EPSG:4326",
+        "context": "rural_delta",
+        "height_km": 15.0,
+        "metric_crs": "EPSG:32648",
+        "storage_crs": "EPSG:4326",
+        "width_km": 15.0
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

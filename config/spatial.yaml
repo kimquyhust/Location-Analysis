@@ -1,8 +1,82 @@
 spatial_unit:
-  method: null  # admin | square_grid | h3; set only after Gate 2 results
-  h3_resolution: null
+  # PROVISIONAL MVP SELECTION (owner-approved scope reduction, 2026-09-14;
+  # docs/gate2_mvp_decision.md). The owner selected H3 as the provisional
+  # MVP family; Gate 2 then evaluated the resolution only. h3_r9 passed the
+  # pre-registered too-coarse rule (three anchors, 25% of between-cell IQR,
+  # reject at >= 2 anchors) in all four MVP AOIs, so selection rule 1
+  # fired: data/gate2/mvp_run_20260914T150714Z/decision.json.
+  #
+  # This is an MVP engineering decision, NOT evidence that H3 (or r9) is
+  # optimal everywhere in Vietnam. The square/administrative comparison is
+  # deferred and nationwide validation remains Gate 6. The earlier full
+  # run (gate2_experiment below) is diagnostic only: two of its raster
+  # clips were truncated at tile boundaries.
+  method: h3  # admin | square_grid | h3
+  h3_resolution: 9
   square_grid_size_m: null
   admin_geometry_version: null
+  decision_status: provisional_mvp
+  nationwide_validation_pending: true
+  full_family_comparison_deferred: true
+  decision_record: docs/gate2_mvp_decision.md
+
+gate2_mvp:
+  status: complete_selected
+  run_id: "20260914T150714Z"
+  run_directory: data/gate2/mvp_run_20260914T150714Z
+  config: config/gate2_mvp.yaml
+  acquisition_manifest: data/manifests/source_manifest_20260914T102150Z.json
+  aois: [hanoi_core, hoi_an, mu_cang_chai, dong_thap_rural]
+  candidates: [h3_r8, h3_r9, h3_r10]
+  candidate_aoi_pairs: 12
+  selected_candidate: h3_r9
+  selection_rule_fired: 1
+  # Anchors triggered per AOI (reject at >= 2): r8 2/3/3/2, r9 0/0/0/1,
+  # r10 0/0/0/1 for dong_thap_rural/hanoi_core/hoi_an/mu_cang_chai.
+  passed_all_contexts: [h3_r9, h3_r10]
+  rejected: [h3_r8]
+  deferred:
+    - square_grid_family_comparison
+    - administrative_family
+    - h3_r7
+    - origin_shift_and_jitter_robustness
+    - alternate_population_and_builtup_source_sensitivity
+    - semantic_mixing_and_neighborhood_representation
+    - maup_stability
+    - pareto_selection_and_feasibility_budget
+    - nationwide_validation (Gate 6)
+
+gate2_experiment:
+  # Historical full-design run. Superseded for decision purposes by
+  # gate2_mvp above; retained as diagnostics. Its hanoi_core WorldCover
+  # clip and mu_cang_chai GHS-BUILT-S clip were truncated at tile
+  # boundaries (docs/gate2_remediation_design.md F3a/F3b); the
+  # acquisition path was fixed on 2026-09-14 and the four MVP AOIs were
+  # re-acquired with tile mosaics. Its own metrics are unchanged on disk.
+  status: executed_no_decision_diagnostic_only
+  run_id: "20260914T091321Z"
+  run_directory: data/gate2/run_20260914T091321Z
+  acquisition_manifest: data/manifests/source_manifest_20260914T083224Z.json
+  # Hash of config/gate2.yaml + config/spatial.yaml AS THEY WERE AT RUN TIME.
+  # Adding this record block changed spatial.yaml, so a rerun now yields a
+  # different hash -- that is correct behaviour, not drift.
+  config_hash: dde7c4a1b884b8e8
+  aois_completed: 8
+  candidates_completed: 11
+  candidate_aoi_pairs: 88
+  families_compared: [square_grid, h3]     # administrative is blocked
+  administrative_candidate: blocked
+  administrative_qualification_record: docs/gate2_admin_qualification.md
+  feasibility_budget_provided: false
+  known_defects:
+    - hanoi_core land_cover clip truncated below 21.0N (N18E105 never clipped in)
+    - mu_cang_chai built_up clip truncated west of x=9,959,000 m Mollweide (R7_C28 never clipped in)
+  # Passed the too-coarse gate in every one of the eight contexts AND sit on
+  # the measured trade-off surface. A live region, not a selection.
+  live_candidate_region: [square_125m, h3_r10, square_250m, square_325m, h3_r9]
+  blockers:
+    - no_owner_feasibility_budget
+    - administrative_family_blocked
 
 gate2_candidates:
   administrative:

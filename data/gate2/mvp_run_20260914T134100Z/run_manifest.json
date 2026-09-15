@@ -1,0 +1,296 @@
+{
+  "acquisition_source_index": {
+    "path": "data/gate2/aoi_sources/gate2_source_index.json",
+    "sha256": "a2d0689e1804a7cec2776ff29a9ef23a1c622fd9c8bc40c1ed9296ac8784f23f"
+  },
+  "aoi_geojson": {
+    "path": "data/gate2/mvp_run_20260914T134100Z/aois.geojson",
+    "sha256": "56d7f574e4b6c83b350f5487d5738c41fc739ef9559c528c213d46ac3434a18e"
+  },
+  "aois": [
+    {
+      "aoi_id": "hanoi_core",
+      "bounds_wgs84": [
+        105.82298307792101,
+        21.000749238028703,
+        105.88102735797169,
+        21.055246182701673
+      ],
+      "checksum": "8951524c20a6125e6854c452adcc0e836ae3f9f24d703b20d9006b209a4031eb",
+      "context": "dense_urban",
+      "metric_crs": "EPSG:32648"
+    },
+    {
+      "aoi_id": "hoi_an",
+      "bounds_wgs84": [
+        108.27328600197367,
+        15.825119871584445,
+        108.38668412640548,
+        15.934870327937151
+      ],
+      "checksum": "5cecca1095cdaf1d38f618f261a685301f9cfc4a7bc4c359b00b5421d6096218",
+      "context": "tourism",
+      "metric_crs": "EPSG:32649"
+    },
+    {
+      "aoi_id": "mu_cang_chai",
+      "bounds_wgs84": [
+        104.05702244462904,
+        21.701850288122227,
+        104.20290945687037,
+        21.838119956001588
+      ],
+      "checksum": "6a721850cab94278f907650d91a3aa31f60cc16844032c21aaab58eec935f88a",
+      "context": "rural_mountain",
+      "metric_crs": "EPSG:32648"
+    },
+    {
+      "aoi_id": "dong_thap_rural",
+      "bounds_wgs84": [
+        105.57134812893621,
+        10.392027758692217,
+        105.70868162745523,
+        10.527959047814017
+      ],
+      "checksum": "3e03727b1c33c4ef63bc17955b77cd5ef435f8b65eb23ea819c333bf2f928128",
+      "context": "rural_delta",
+      "metric_crs": "EPSG:32648"
+    }
+  ],
+  "aois_expected": [
+    "hanoi_core",
+    "hoi_an",
+    "mu_cang_chai",
+    "dong_thap_rural"
+  ],
+  "artifacts": [
+    {
+      "artifact": "candidate_inventory",
+      "bytes": 2589851,
+      "columns": [
+        "aoi_id",
+        "aoi_overlap_fraction",
+        "aoi_overlap_m2",
+        "area_m2",
+        "candidate_id",
+        "context",
+        "family",
+        "land_fraction",
+        "neighbor_count",
+        "poi_count",
+        "population",
+        "rep_lat",
+        "rep_lon",
+        "road_length_m",
+        "role",
+        "run_id",
+        "unit_id"
+      ],
+      "path": "data/gate2/mvp_run_20260914T134100Z/candidate_inventory.parquet",
+      "rows": 44866,
+      "sha256": "44da8537c5bb83af0779b24528867504cada98a3230626cbec26ea2f098f17fb"
+    },
+    {
+      "artifact": "candidate_metrics",
+      "bytes": 18217,
+      "columns": [
+        "aoi_id",
+        "candidate_id",
+        "context",
+        "dimension",
+        "family",
+        "metric",
+        "notes",
+        "role",
+        "run_id",
+        "source_status",
+        "spatial_support",
+        "unit",
+        "value"
+      ],
+      "path": "data/gate2/mvp_run_20260914T134100Z/candidate_metrics.parquet",
+      "rows": 1062,
+      "sha256": "706208cac6a2d28f523d0661186a1deef77205f91fd7468407f2c12be7014f58"
+    },
+    {
+      "artifact": "benchmark_runs",
+      "bytes": 20263,
+      "columns": [
+        "aoi_id",
+        "candidate_id",
+        "code_version",
+        "config_hash",
+        "context",
+        "env_cpu_count_logical",
+        "env_geopandas",
+        "env_h3",
+        "env_machine",
+        "env_numpy",
+        "env_pandas",
+        "env_platform",
+        "env_processor",
+        "env_python",
+        "env_rasterio",
+        "env_shapely",
+        "env_total_ram_bytes",
+        "family",
+        "notes",
+        "output_bytes",
+        "peak_rss_bytes",
+        "recorded_at_utc",
+        "role",
+        "rows",
+        "run_id",
+        "source_releases",
+        "stage",
+        "status",
+        "wall_time_s"
+      ],
+      "path": "data/gate2/mvp_run_20260914T134100Z/benchmark_runs.parquet",
+      "rows": 112,
+      "sha256": "c06770595d7e427570453fdf47faca2b385459f69576eedcade830562b0ea676"
+    },
+    {
+      "artifact": "lookup_benchmark",
+      "bytes": 9296,
+      "columns": [
+        "aoi_id",
+        "candidate_id",
+        "correctness_checked",
+        "correctness_failures",
+        "errors",
+        "lookup_mode",
+        "notes",
+        "p50_latency_us",
+        "p95_latency_us",
+        "queries",
+        "run_id",
+        "tie_cases"
+      ],
+      "path": "data/gate2/mvp_run_20260914T134100Z/lookup_benchmark.parquet",
+      "rows": 24,
+      "sha256": "32489de02e80cd09c5d3c8cb8715b0b83c9a9949042638086d84684741a78d8c"
+    },
+    {
+      "artifact": "source_coverage",
+      "bytes": 20047,
+      "columns": [
+        "aoi_id",
+        "bounds",
+        "bytes",
+        "crs",
+        "expected_assets",
+        "expected_valid_pixels",
+        "ingest_status",
+        "license_id",
+        "notes",
+        "present_assets",
+        "processed_valid_pixels",
+        "processing_coverage",
+        "release",
+        "retrieved_at_utc",
+        "run_id",
+        "sha256",
+        "source_id",
+        "source_role",
+        "source_tiles",
+        "source_uri",
+        "window_inside_tile_union"
+      ],
+      "path": "data/gate2/mvp_run_20260914T134100Z/source_coverage.parquet",
+      "rows": 16,
+      "sha256": "0d5b3bd01e55fa3221af7e18ca1bff47caa889fc73f313f5ad60b254d9d2ea1a"
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "h3_r8",
+      "family": "h3",
+      "nominal_area_km2": 0.7373275975944177,
+      "resolution": 8,
+      "role": "operational"
+    },
+    {
+      "candidate_id": "h3_r9",
+      "family": "h3",
+      "nominal_area_km2": 0.1053325134272067,
+      "resolution": 9,
+      "role": "operational"
+    },
+    {
+      "candidate_id": "h3_r10",
+      "family": "h3",
+      "nominal_area_km2": 0.01504750190766435,
+      "resolution": 10,
+      "role": "operational"
+    }
+  ],
+  "code_version": "59fe994cacf930df79d9b364fe104f1778d41f47+dirty",
+  "config_hash": "bd9bfa77d53ee0172baa1846fc6015235d5e0573222176204f2e07dc7f248cd7",
+  "config_path": "config/gate2_mvp.yaml",
+  "decision": {
+    "decision": "select",
+    "decision_status": "provisional_mvp",
+    "selected_candidate": "h3_r9",
+    "selected_h3_resolution": 9,
+    "selection_rule_fired": 1,
+    "verdicts": {
+      "h3_r10": {
+        "candidate_id": "h3_r10",
+        "contexts_missing": [],
+        "contexts_rejected": [],
+        "passes_all_contexts": true
+      },
+      "h3_r8": {
+        "candidate_id": "h3_r8",
+        "contexts_missing": [],
+        "contexts_rejected": [
+          "dong_thap_rural",
+          "hanoi_core",
+          "hoi_an",
+          "mu_cang_chai"
+        ],
+        "passes_all_contexts": false
+      },
+      "h3_r9": {
+        "candidate_id": "h3_r9",
+        "contexts_missing": [],
+        "contexts_rejected": [],
+        "passes_all_contexts": true
+      }
+    }
+  },
+  "environment": {
+    "cpu_count_logical": 8,
+    "geopandas": "1.1.4",
+    "h3": "4.5.0",
+    "machine": "arm64",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "platform": "macOS-15.6-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.12.13",
+    "rasterio": "1.5.1",
+    "shapely": "2.1.2",
+    "total_ram_bytes": 17179869184
+  },
+  "figures": [
+    "data/gate2/mvp_run_20260914T134100Z/figures/fig_unit_count_storage.png",
+    "data/gate2/mvp_run_20260914T134100Z/figures/fig_sparsity.png",
+    "data/gate2/mvp_run_20260914T134100Z/figures/fig_within_cell_loss.png",
+    "data/gate2/mvp_run_20260914T134100Z/figures/fig_runtime_lookup.png"
+  ],
+  "finished_at_utc": "2026-09-14T13:41:30+00:00",
+  "gate": 2,
+  "run_id": "20260914T134100Z",
+  "run_kind": "mvp_resolution_decision",
+  "scope_override": "docs/gate2_mvp_decision.md",
+  "source_releases": {
+    "acquisition_source_index": "data/gate2/aoi_sources/gate2_source_index.json",
+    "dong_thap_rural": "20260914T102150Z",
+    "hanoi_core": "20260914T102150Z",
+    "hoi_an": "20260914T102150Z",
+    "mu_cang_chai": "20260914T102150Z"
+  },
+  "started_at_utc": "2026-09-14T13:41:00+00:00"
+}

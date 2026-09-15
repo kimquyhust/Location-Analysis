@@ -1,0 +1,321 @@
+{
+  "candidate_aoi_pairs_expected": 12,
+  "candidate_aoi_pairs_present": 12,
+  "candidate_summary": [
+    {
+      "candidate_id": "h3_r8",
+      "cell_area_km2_median": 0.8134506199065725,
+      "cell_area_km2_p05": 0.8127843895020452,
+      "cell_area_km2_p95": 0.8141367368264727,
+      "lookup_failures": 0,
+      "lookup_single_p50_us": 1.8961727619171143,
+      "lookup_single_p95_us": 2.083613071590662,
+      "nationwide_storage_bytes_projected": 96395093.9263373,
+      "nationwide_units_projected": 465613.7977118882,
+      "peak_rss_bytes": 715292672,
+      "poi_zero_share_1km": 0.23328527519883394,
+      "poi_zero_share_footprint": 0.692338160271238,
+      "population_median": 518.3594384859316,
+      "population_zero_share": 0.07996705623970507,
+      "road_length_median_m": 4050.709278401684,
+      "road_zero_length_share": 0.10801197756582909,
+      "runtime_s_total": 1.9298315402120352,
+      "units_total_4_aois": 893.0,
+      "within_cell_loss_ratio_median": 0.3546881652615844
+    },
+    {
+      "candidate_id": "h3_r9",
+      "cell_area_km2_median": 0.11620904864097441,
+      "cell_area_km2_p05": 0.11611644706338325,
+      "cell_area_km2_p95": 0.116301799754244,
+      "lookup_failures": 0,
+      "lookup_single_p50_us": 1.916429027915001,
+      "lookup_single_p95_us": 2.062646672129631,
+      "nationwide_storage_bytes_projected": 450959600.52467525,
+      "nationwide_units_projected": 3101590.228598101,
+      "peak_rss_bytes": 715325440,
+      "poi_zero_share_1km": 0.21510388447743167,
+      "poi_zero_share_footprint": 0.8800472670002932,
+      "population_median": 44.21545767784119,
+      "population_zero_share": 0.14152653715884755,
+      "road_length_median_m": 504.4342007841194,
+      "road_zero_length_share": 0.2806754869918652,
+      "runtime_s_total": 2.2579973670654,
+      "units_total_4_aois": 5681.0,
+      "within_cell_loss_ratio_median": 0.16032961754609362
+    },
+    {
+      "candidate_id": "h3_r10",
+      "cell_area_km2_median": 0.01660128827373557,
+      "cell_area_km2_p05": 0.016588247084263492,
+      "cell_area_km2_p95": 0.01661429794621745,
+      "lookup_failures": 0,
+      "lookup_single_p50_us": 1.978827640414238,
+      "lookup_single_p95_us": 2.1043349988758564,
+      "nationwide_storage_bytes_projected": 2655820570.4123607,
+      "nationwide_units_projected": 20877088.2309476,
+      "peak_rss_bytes": 713293824,
+      "poi_zero_share_1km": 0.21178953498736028,
+      "poi_zero_share_footprint": 0.9593379282388481,
+      "population_median": 3.305239498615265,
+      "population_zero_share": 0.24695285777310627,
+      "road_length_median_m": 25.320220751789726,
+      "road_zero_length_share": 0.5370329872760371,
+      "runtime_s_total": 5.533481709193438,
+      "units_total_4_aois": 38292.0,
+      "within_cell_loss_ratio_median": 0.05131496724802272
+    }
+  ],
+  "candidates_expected": [
+    "h3_r8",
+    "h3_r9",
+    "h3_r10"
+  ],
+  "coarse_gate": [
+    {
+      "anchors_evaluable": 3,
+      "anchors_triggered": 0,
+      "aoi_id": "dong_thap_rural",
+      "candidate_id": "h3_r10",
+      "ratio_poi_count_1km": 1.0459189070388677e-15,
+      "ratio_population_1km": 0.04999835554867943,
+      "ratio_road_length_1km_m": 0.07782302418159888,
+      "rejected_in_context": false,
+      "triggered_poi_count_1km": false,
+      "triggered_population_1km": false,
+      "triggered_road_length_1km_m": false
+    },
+    {
+      "anchors_evaluable": 3,
+      "anchors_triggered": 0,
+      "aoi_id": "hanoi_core",
+      "candidate_id": "h3_r10",
+      "ratio_poi_count_1km": 0.04903677758318752,
+      "ratio_population_1km": 0.04173579283869355,
+      "ratio_road_length_1km_m": 0.07751932181274838,
+      "rejected_in_context": false,
+      "triggered_poi_count_1km": false,
+      "triggered_population_1km": false,
+      "triggered_road_length_1km_m": false
+    },
+    {
+      "anchors_evaluable": 3,
+      "anchors_triggered": 0,
+      "aoi_id": "hoi_an",
+      "candidate_id": "h3_r10",
+      "ratio_poi_count_1km": 0.05263157894736602,
+      "ratio_population_1km": 0.07465797299231827,
+      "ratio_road_length_1km_m": 0.07740599688787263,
+      "rejected_in_context": false,
+      "triggered_poi_count_1km": false,
+      "triggered_population_1km": false,
+      "triggered_road_length_1km_m": false
+    },
+    {
+      "anchors_evaluable": 3,
+      "anchors_triggered": 1,
+      "aoi_id": "mu_cang_chai",
+      "candidate_id": "h3_r10",
+      "ratio_poi_count_1km": 0.4498792006342212,
+      "ratio_population_1km": 0.012478921867693948,
+      "ratio_road_length_1km_m": 0.031005807742961775,
+      "rejected_in_context": false,
+      "triggered_poi_count_1km": true,
+      "triggered_population_1km": false,
+      "triggered_road_length_1km_m": false
+    },
+    {
+      "anchors_evaluable": 3,
+      "anchors_triggered": 2,
+      "aoi_id": "dong_thap_rural",
+      "candidate_id": "h3_r8",
+      "ratio_poi_count_1km": 3.597720495613119e-15,
+      "ratio_population_1km": 0.4359237725807377,
+      "ratio_road_length_1km_m": 0.48218832350626994,
+      "rejected_in_context": true,
+      "triggered_poi_count_1km": false,
+      "triggered_population_1km": true,
+      "triggered_road_length_1km_m": true
+    },
+    {
+      "anchors_evaluable": 3,
+      "anchors_triggered": 3,
+      "aoi_id": "hanoi_core",
+      "candidate_id": "h3_r8",
+      "ratio_poi_count_1km": 0.3045977011494253,
+      "ratio_population_1km": 0.27578230739769793,
+      "ratio_road_length_1km_m": 0.4047786293737436,
+      "rejected_in_context": true,
+      "triggered_poi_count_1km": true,
+      "triggered_population_1km": true,
+      "triggered_road_length_1km_m": true
+    },
+    {
+      "anchors_evaluable": 3,
+      "anchors_triggered": 3,
+      "aoi_id": "hoi_an",
+      "candidate_id": "h3_r8",
+      "ratio_poi_count_1km": 0.2666666666666673,
+      "ratio_population_1km": 0.42805282602420164,
+      "ratio_road_length_1km_m": 0.4790082007057606,
+      "rejected_in_context": true,
+      "triggered_poi_count_1km": true,
+      "triggered_population_1km": true,
+      "triggered_road_length_1km_m": true
+    },
+    {
+      "anchors_evaluable": 3,
+      "anchors_triggered": 2,
+      "aoi_id": "mu_cang_chai",
+      "candidate_id": "h3_r8",
+      "ratio_poi_count_1km": 1.179348463317002,
+      "ratio_population_1km": 0.08288185015016146,
+      "ratio_road_length_1km_m": 0.25392591636474193,
+      "rejected_in_context": true,
+      "triggered_poi_count_1km": true,
+      "triggered_population_1km": false,
+      "triggered_road_length_1km_m": true
+    },
+    {
+      "anchors_evaluable": 3,
+      "anchors_triggered": 0,
+      "aoi_id": "dong_thap_rural",
+      "candidate_id": "h3_r9",
+      "ratio_poi_count_1km": 2.1827872842550284e-15,
+      "ratio_population_1km": 0.16913025289227823,
+      "ratio_road_length_1km_m": 0.20850296569746088,
+      "rejected_in_context": false,
+      "triggered_poi_count_1km": false,
+      "triggered_population_1km": false,
+      "triggered_road_length_1km_m": false
+    },
+    {
+      "anchors_evaluable": 3,
+      "anchors_triggered": 0,
+      "aoi_id": "hanoi_core",
+      "candidate_id": "h3_r9",
+      "ratio_poi_count_1km": 0.151528982199909,
+      "ratio_population_1km": 0.12153445990806928,
+      "ratio_road_length_1km_m": 0.19698659637934263,
+      "rejected_in_context": false,
+      "triggered_poi_count_1km": false,
+      "triggered_population_1km": false,
+      "triggered_road_length_1km_m": false
+    },
+    {
+      "anchors_evaluable": 3,
+      "anchors_triggered": 0,
+      "aoi_id": "hoi_an",
+      "candidate_id": "h3_r9",
+      "ratio_poi_count_1km": 0.10526315789473718,
+      "ratio_population_1km": 0.187382694103406,
+      "ratio_road_length_1km_m": 0.21859366540985847,
+      "rejected_in_context": false,
+      "triggered_poi_count_1km": false,
+      "triggered_population_1km": false,
+      "triggered_road_length_1km_m": false
+    },
+    {
+      "anchors_evaluable": 3,
+      "anchors_triggered": 1,
+      "aoi_id": "mu_cang_chai",
+      "candidate_id": "h3_r9",
+      "ratio_poi_count_1km": 0.9250500025578251,
+      "ratio_population_1km": 0.033480388099634245,
+      "ratio_road_length_1km_m": 0.0894594930271595,
+      "rejected_in_context": false,
+      "triggered_poi_count_1km": true,
+      "triggered_population_1km": false,
+      "triggered_road_length_1km_m": false
+    }
+  ],
+  "coarser_alternative_comparison": {
+    "coarser_has_no_greater_loss": false,
+    "coarser_is_cheaper": true,
+    "loss_coarser": 0.3546881652615844,
+    "loss_default": 0.16032961754609362,
+    "storage_ratio_default_over_coarser": 4.6782422440429094,
+    "units_ratio_default_over_coarser": 6.661293638289685
+  },
+  "contexts_expected": [
+    "dong_thap_rural",
+    "hanoi_core",
+    "hoi_an",
+    "mu_cang_chai"
+  ],
+  "decision": "select",
+  "decision_status": "provisional_mvp",
+  "lookup_failures_total": 0,
+  "missing_candidate_aoi_pairs": [],
+  "rule": {
+    "anchors": [
+      "poi_count_1km",
+      "population_1km",
+      "road_length_1km_m"
+    ],
+    "min_anchors_triggered_to_reject": 2,
+    "within_range_over_between_iqr_threshold": 0.25
+  },
+  "run_id": "20260914T134100Z",
+  "scope": {
+    "aois": [
+      "hanoi_core",
+      "hoi_an",
+      "mu_cang_chai",
+      "dong_thap_rural"
+    ],
+    "deferred": [
+      "square_grid_family",
+      "administrative_family",
+      "h3_r7",
+      "origin_shift_replicates",
+      "alternate_population_source_sensitivity",
+      "alternate_builtup_source_sensitivity",
+      "semantic_mixing",
+      "neighborhood_representation",
+      "maup_stability",
+      "robustness_gate",
+      "pareto_selection",
+      "nationwide_validation"
+    ],
+    "family": "h3",
+    "h3_resolutions": [
+      8,
+      9,
+      10
+    ]
+  },
+  "selected_candidate": "h3_r9",
+  "selected_h3_resolution": 9,
+  "selection_order": [
+    "h3_r9",
+    "h3_r10",
+    "h3_r8"
+  ],
+  "selection_rule_fired": 1,
+  "verdicts": {
+    "h3_r10": {
+      "candidate_id": "h3_r10",
+      "contexts_missing": [],
+      "contexts_rejected": [],
+      "passes_all_contexts": true
+    },
+    "h3_r8": {
+      "candidate_id": "h3_r8",
+      "contexts_missing": [],
+      "contexts_rejected": [
+        "dong_thap_rural",
+        "hanoi_core",
+        "hoi_an",
+        "mu_cang_chai"
+      ],
+      "passes_all_contexts": false
+    },
+    "h3_r9": {
+      "candidate_id": "h3_r9",
+      "contexts_missing": [],
+      "contexts_rejected": [],
+      "passes_all_contexts": true
+    }
+  }
+}

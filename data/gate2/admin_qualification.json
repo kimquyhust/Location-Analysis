@@ -1,0 +1,110 @@
+{
+  "assessed_against": "docs/spatial_unit_decision.md administrative-source qualification",
+  "expected_commune_units": 3321,
+  "reform_effective_date": "2025-07-01T00:00:00Z",
+  "checks": [
+    {
+      "source": "ocha_cod_ab_vnm",
+      "status": "checked",
+      "title": "Viet Nam - Subnational Administrative Boundaries",
+      "license": "Creative Commons Attribution for Intergovernmental Organisations (CC BY-IGO)",
+      "notes_excerpt": "Viet Nam administrative level 0-1 boundaries (COD-AB) dataset version 02.      This dataset is structured into 1 level:   - Admin 1: 34 Province         Dates associated with this dataset:   - 25 September 2025: dataset reviewed for accuracy and completeness   - 25 September 2025: valid for use by t",
+      "declares_commune_level": false,
+      "resources": [
+        {
+          "name": "vnm_admin_boundaries.gdb.zip",
+          "format": "Geodatabase",
+          "bytes": 12405269,
+          "url": "https://data.humdata.org/dataset/3cb544a9-9d04-4f54-94e2-93230efd8ceb/resource/566f48d7-96fa-4af8-9a0f-cc1e84743e5f/download/vnm_admin_boundaries.gdb.zip"
+        },
+        {
+          "name": "vnm_admin_boundaries.shp.zip",
+          "format": "SHP",
+          "bytes": 36852707,
+          "url": "https://data.humdata.org/dataset/3cb544a9-9d04-4f54-94e2-93230efd8ceb/resource/cb274bdf-f332-48bd-bfcc-d6fe3a5e4334/download/vnm_admin_boundaries.shp.zip"
+        },
+        {
+          "name": "vnm_admin_boundaries.geojson.zip",
+          "format": "GeoJSON",
+          "bytes": 28415237,
+          "url": "https://data.humdata.org/dataset/3cb544a9-9d04-4f54-94e2-93230efd8ceb/resource/048a6012-a8c2-4fa9-be87-cb6c01e9afbf/download/vnm_admin_boundaries.geojson.zip"
+        },
+        {
+          "name": "vnm_admin_boundaries.xlsx",
+          "format": "XLSX",
+          "bytes": 40979,
+          "url": "https://data.humdata.org/dataset/3cb544a9-9d04-4f54-94e2-93230efd8ceb/resource/9bcbe922-d5ae-43c4-9067-29054b8e82ac/download/vnm_admin_boundaries.xlsx"
+        }
+      ],
+      "verdict": "fails: ADM0/ADM1 only, no commune-level geometry"
+    },
+    {
+      "source": "geoboundaries_vnm",
+      "status": "checked",
+      "layers": [
+        {
+          "boundary_type": "ADM0",
+          "year_represented": "2016",
+          "unit_count": "1",
+          "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+        },
+        {
+          "boundary_type": "ADM1",
+          "year_represented": "2008",
+          "unit_count": "64",
+          "license": "Public Domain"
+        },
+        {
+          "boundary_type": "ADM2",
+          "year_represented": "2020",
+          "unit_count": "708",
+          "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)"
+        }
+      ],
+      "verdict": "fails: no commune layer and every subnational layer predates the 2025 reform"
+    },
+    {
+      "source": "overture_divisions",
+      "status": "checked",
+      "release": "2026-08-19.0",
+      "locality_count": 3399,
+      "expected_commune_units": 3321,
+      "pre_reform_localities": 234,
+      "localities_with_admin_level": 0,
+      "distinct_source_datasets": 1,
+      "source_update_time_range": [
+        "2017-02-15T07:37:24Z",
+        "2026-07-23T10:20:30Z"
+      ],
+      "province_count": 34,
+      "expected_province_units": 34,
+      "schema_columns": [
+        "id",
+        "geometry",
+        "country",
+        "sources",
+        "subtype",
+        "admin_level",
+        "class",
+        "names",
+        "is_land",
+        "is_territorial",
+        "region",
+        "division_id",
+        "version",
+        "bbox",
+        "theme",
+        "type"
+      ],
+      "failures": [
+        "unit count 3399 != expected 3321",
+        "no official commune code and admin_level is NULL for every locality",
+        "234/3399 localities carry a pre-reform source update_time"
+      ],
+      "verdict": "fails: unit count 3399 != expected 3321; no official commune code and admin_level is NULL for every locality; 234/3399 localities carry a pre-reform source update_time"
+    }
+  ],
+  "qualified_sources": [],
+  "status": "blocked",
+  "record": "docs/gate2_admin_qualification.md"
+}
