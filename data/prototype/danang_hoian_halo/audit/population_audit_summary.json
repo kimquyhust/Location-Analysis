@@ -1,0 +1,102 @@
+{
+  "worldpop_2020_total": 1752533.7375131864,
+  "worldpop_2020_nonzero_fraction": 1.0,
+  "worldpop_2020_quantiles": {
+    "10": 8.417872985139486,
+    "25": 91.45422941633286,
+    "50": 441.27943341990135,
+    "75": 1243.9489564766182,
+    "90": 2996.112652712711,
+    "99": 18181.216727023384
+  },
+  "ghspop_2020_total": 1731452.6521364902,
+  "ghspop_2020_nonzero_fraction": 0.7316332726168792,
+  "ghspop_2020_quantiles": {
+    "10": 0.0,
+    "25": 0.0,
+    "50": 202.46063623885945,
+    "75": 825.9823702089375,
+    "90": 2384.1486585989633,
+    "99": 15747.078804978755
+  },
+  "common_valid_cell_count": 1262,
+  "spearman_rho": 0.9697388111400889,
+  "spearman_p": 0.0,
+  "abs_diff_mean": 290.3173429262559,
+  "abs_diff_median": 84.87998436417595,
+  "rel_diff_median": 0.25916917932881467,
+  "rel_diff_undefined_fraction": 0.022187004754358162,
+  "density_proxy_strata": {
+    "dense_urban_proxy": {
+      "cell_count": 127,
+      "worldpop_total": 1074346.8779452404,
+      "ghspop_total": 1053462.0291546283,
+      "abs_diff_median": 998.5481317220451,
+      "rel_diff_median": 0.14674861000666753
+    },
+    "peri_urban_proxy": {
+      "cell_count": 378,
+      "worldpop_total": 524273.48807433725,
+      "ghspop_total": 512205.9668648916,
+      "abs_diff_median": 213.15396893923423,
+      "rel_diff_median": 0.1666120218618184
+    },
+    "sparse_proxy": {
+      "cell_count": 757,
+      "worldpop_total": 153913.37149360875,
+      "ghspop_total": 148694.51046996383,
+      "abs_diff_median": 33.9761518768868,
+      "rel_diff_median": 0.3654671728508036
+    }
+  },
+  "mapped_water_polygon_stratum": {
+    "water_fraction_threshold": 0.1,
+    "mapped_water_cell_count": 42,
+    "non_water_cell_count": 1778,
+    "mapped_water": {
+      "cell_count": 41,
+      "worldpop_total": 56072.393828070635,
+      "ghspop_total": 54139.630027530846,
+      "abs_diff_median": 101.01681088423243,
+      "rel_diff_median": 0.29991438257884667
+    },
+    "non_water": {
+      "cell_count": 1221,
+      "worldpop_total": 1696461.343685116,
+      "ghspop_total": 1660222.876461953,
+      "abs_diff_median": 84.08081844959713,
+      "rel_diff_median": 0.2585190874192481
+    },
+    "coverage_caveat": "Covers only closed OSM water polygons this parser captures (natural=water/bay/strait, waterway=riverbank/dock). Does NOT read natural=coastline, does NOT construct an ocean/land mask, and excludes 22 water-related multipolygon relations this parser skips (see osm_extract.py skipped_relevant_relation_counts) -- an undercount of true water/coastal coverage, not a complete coastal stratum."
+  },
+  "conservation_report": {
+    "worldpop_2020": {
+      "native_total": 1751491.6690065053,
+      "native_valid_pixel_count": 95680,
+      "native_crs": "EPSG:4326",
+      "regridded_total_1km": 1752533.7375131864,
+      "conservation_abs_error": 1042.0685066811275,
+      "conservation_rel_error": 0.0005949605842385866
+    },
+    "worldpop_2025": {
+      "native_total": 1817443.9556409484,
+      "native_valid_pixel_count": 97003,
+      "native_crs": "EPSG:4326",
+      "regridded_total_1km": 1818526.8952190243,
+      "conservation_abs_error": 1082.9395780758932,
+      "conservation_rel_error": 0.0005958585818917198
+    },
+    "ghspop_2020": {
+      "native_total": 1781719.810138146,
+      "native_valid_pixel_count": 205002,
+      "native_crs": "ESRI:54009",
+      "regridded_total_1km": 1731452.6521364902,
+      "conservation_abs_error": -50267.15800165571,
+      "conservation_rel_error": -0.02821271768750118
+    }
+  },
+  "worldpop_2025_total": 1818526.8952190243,
+  "worldpop_2025_nonzero_fraction": 1.0,
+  "worldpop_2025_vs_2020_growth_fraction": 0.03765585580080244,
+  "grid": "1km EPSG:32649, Resampling.sum (area-conserving), acquisition AOI"
+}

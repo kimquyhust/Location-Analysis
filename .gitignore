@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Environment
+.venv/
+
+# Large acquired/derived geospatial data -- reproducible via
+# src/ingestion/run_acquisition.py and src/audit/run_all_audits.py,
+# not meant to live in git history.
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/osm/.gitkeep
+!data/raw/worldpop/.gitkeep
+!data/raw/ghsl/.gitkeep
+!data/raw/overture/.gitkeep
+data/staging/*
+!data/staging/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/features/*
+!data/features/.gitkeep
+
+# AOI subset geospatial files are large and reproducible from data/raw/ --
+# ignored. The audit/ subfolder (JSON summaries + CSVs cited directly by
+# docs/source_validation_report.md) is small and kept as evidence.
+data/prototype/*/*.pbf
+data/prototype/*/*.tif
+data/prototype/*/*.parquet
+data/prototype/*/*.gpkg
+data/prototype/*/*.json
+data/prototype/*/*.aux.xml
+!data/prototype/*/audit/*.json
+
+# Manifests ARE tracked (small, reproducibility evidence) -- no ignore
+# rule for data/manifests/.
+
+.DS_Store
+
+# Gate 2 (docs/spatial_unit_decision.md). Same rule as above: the large,
+# fully reproducible outputs are ignored; the small evidence artifacts the
+# decision cites are kept. Every ignored file's checksum and byte count is
+# recorded in the run's run_manifest.json, so what is left out is still
+# verifiable.
+data/gate2/aoi_sources/
+data/gate2/run_*/units/
+data/gate2/run_*/figures/
+data/gate2/run_*/candidate_inventory.parquet

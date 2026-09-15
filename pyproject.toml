@@ -12,13 +12,21 @@ dependencies = [
   "duckdb>=1.1",
   "h3>=4.1",
   "pyyaml>=6.0",
+  "rasterio>=1.3",
+  "numpy>=1.26",
+  "scipy>=1.13",
+  "networkx>=3.3",
+  "osmium>=3.7",
+  # Gate 2: per-stage peak-RSS sampling in src/spatial/benchmark.py, and the
+  # faceted maps / diagnostic plots the Gate 2 output contract requires.
+  "psutil>=5.9",
+  "matplotlib>=3.9",
 ]
 
 [project.optional-dependencies]
 dev = [
   "pytest>=8.0",
   "jupyter>=1.0",
-  "matplotlib>=3.9",
 ]
 
 [tool.pytest.ini_options]

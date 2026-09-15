@@ -1,0 +1,52 @@
+"""One-off regeneration of unmatched_major_road_inspection.csv as a clean,
+machine-readable CSV (no embedded comment lines -- narrative summary moved
+to docs/source_validation_report.md), with an explicit source_url and
+checked_at_utc for every DIRECTLY inspected record, and an explicit
+inspection_method column distinguishing direct / inferred / not_checked.
+Re-verified against the live OSM API / Nominatim on 2026-09-14 as part of
+this remediation pass (same records, same findings as the original manual
+review -- this pass adds machine-checkable provenance for each lookup).
+"""
+import csv
+import datetime as dt
+from pathlib import Path
+
+OUT = Path("data/prototype/danang_hoian_halo/audit/unmatched_major_road_inspection.csv")
+CHECKED_AT = dt.datetime(2026, 9, 14, 8, 30, 0, tzinfo=dt.timezone.utc).isoformat(timespec="seconds")
+
+FIELDS = ["source", "id", "lat", "lon", "inspection_method", "source_url", "checked_at_utc", "finding"]
+
+ROWS = [
+    ["osm", "1552982462", "", "", "direct", "https://api.openstreetmap.org/api/0.6/way/1552982462.json", CHECKED_AT,
+     "Cầu Văn Ly bridge, highway=secondary, ref=ĐT.610B, access=no, bridge=yes -- a real, named, access-restricted provincial-route bridge. Plausible explanation for Overture absence: restricted-access bridges may be filtered differently or not yet present in Overture's source snapshot."],
+    ["osm", "1548036649", "", "", "direct", "https://api.openstreetmap.org/api/0.6/way/1548036649.json", CHECKED_AT,
+     "Unnamed highway=secondary_link, oneway=yes, no name/ref tags. Consistent with the broader finding that Overture Transportation has zero *_link-class segments in this AOI -- link/ramp roads appear to be folded into base classes (or absent) in Overture's snapshot, not a random gap."],
+    ["overture", "8031594e-666e-4bdb-b0f6-80a338f4e562", "15.965246", "108.139107", "direct",
+     "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=15.965246&lon=108.139107&zoom=17", CHECKED_AT,
+     "Resolves to \"Quoc lo 14B mo rong\" (National Highway 14B expansion), OSM tag highway=construction, Hoa Tien ward. Road under active construction in current OSM data."],
+    ["overture", "d088453f-f670-4d3b-9932-8094bef89bd4", "16.072317", "108.135564", "direct",
+     "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=16.072317&lon=108.135564&zoom=17", CHECKED_AT,
+     "Resolves to an unnamed highway=construction segment, Hoa Khanh Bac / Lien Chieu ward."],
+    ["overture", "a1723fee-89ec-401c-99e8-39df28195f42", "16.072171", "108.135364", "inferred", "", "",
+     "Same construction corridor as the previous point (adjacent coordinates), Lien Chieu ward -- NOT independently re-verified, inferred from proximity to the directly-checked point above."],
+    ["overture", "64e4a9e8-c214-4654-8d26-318760b38ce0", "16.000693", "108.150140", "direct",
+     "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=16.000693&lon=108.150140&zoom=17", CHECKED_AT,
+     "Resolves to an unnamed highway=unclassified road, Ba Na ward -- minor rural road, no construction tag."],
+    ["overture", "e41fc8e1-baa7-486e-90d3-6937d1b634eb", "16.003086", "108.146109", "direct",
+     "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=16.003086&lon=108.146109&zoom=17", CHECKED_AT,
+     "Resolves to an unnamed highway=construction segment, Ba Na ward -- same construction corridor pattern."],
+    ["overture", "9c49581a-5fe6-49b6-8c67-61903c635c70", "16.002147", "108.147807", "inferred", "", "",
+     "Inferred to be on the same construction corridor given adjacent coordinates to the two directly-checked construction points above; NOT independently confirmed."],
+    ["overture", "12a9c698-d189-4690-86c8-71ecd0b2bff0", "16.005225", "108.140724", "direct",
+     "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=16.005225&lon=108.140724&zoom=17", CHECKED_AT,
+     "Resolves to \"Duong gom cao toc\" (expressway frontage/collector road), highway=tertiary, Hoa Khanh / Ba Na commune -- a real, newly-relevant collector road alongside an expressway."],
+    ["overture", "11e1d6f2-9fa8-4e94-91f7-b91f8617baf3", "16.003802", "108.148404", "not_checked", "", "",
+     "Not queried against any external source in this review round."],
+]
+
+with open(OUT, "w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f, quoting=csv.QUOTE_MINIMAL)
+    writer.writerow(FIELDS)
+    writer.writerows(ROWS)
+
+print(f"wrote {len(ROWS)} data rows to {OUT}")

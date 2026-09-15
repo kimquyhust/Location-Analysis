@@ -1,0 +1,16 @@
+kept_osm_type,kept_osm_id,dropped_osm_type,dropped_osm_id,category
+way,1252183181,node,1037737131,attraction_culture
+way,630377254,node,1623183647,transport_air_water_hub
+way,372735507,node,3762853481,park_recreation
+way,1279845042,node,4271222691,retail_other
+way,256668716,node,4636663189,transport_bus_station
+way,565312042,node,5444874593,food_drink
+way,696949105,node,5609999944,convenience
+way,565302845,node,5672798426,food_drink
+way,693818950,node,6516319385,financial_service
+way,632374434,node,6821692763,food_drink
+way,286426670,node,7306032785,financial_service
+way,1098017439,node,10054034978,lodging
+way,1436381412,node,13202329414,lodging
+way,674904839,node,13352502126,lodging
+way,316234674,node,13673944403,financial_service

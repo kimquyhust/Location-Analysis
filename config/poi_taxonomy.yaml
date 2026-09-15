@@ -1,4 +1,10 @@
-version: "0.2.0"
+version: "0.3.0"
+# 0.3.0: LineString accepted for open ways carrying a category tag (bus
+# platforms drawn as lines, linear attractions) and grouping relations
+# (`type=site`, ...) accepted as the union of their members; multipolygon
+# relations are assembled with outer/inner rings. Count representation for
+# every non-point geometry is point_on_surface; distance goes to the
+# original geometry. Matching rules and categories are unchanged.
 source: openstreetmap
 
 # A source object may match several raw rules, but it resolves to one leaf
@@ -36,13 +42,20 @@ entity_policy:
     - retail_other
 
 geometry_policy:
-  accepted: [Point, Polygon, MultiPolygon]
+  accepted: [Point, Polygon, MultiPolygon, LineString, MultiLineString, GeometryCollection]
   count_representation:
     point: original
     polygon: point_on_surface
+    linear: point_on_surface
   distance_representation:
     point: original
     polygon: original_geometry
+    linear: original_geometry
+  relation_assembly:
+    multipolygon_and_boundary: libosmium_area_assembler_outer_inner_rings
+    grouping_relations: union_of_members_all_members_required
+    member_with_same_category_as_relation: duplicate_of_relation
+    unassembled_relevant_entity: entity_assembly_failed_for_category_and_aoi
   area_representation:
     polygon: intersection_area
   forbid_polygon_centroid_for_distance: true
@@ -172,6 +185,12 @@ area_categories:
   park_area:
     match_any:
       - {key: leisure, values: [park]}
+  water_body:
+    # Added for the population-audit coastal/water-cell stratum (a real
+    # geometry-based stratum, distinct from any raster-density proxy).
+    match_any:
+      - {key: natural, values: [water, bay, strait]}
+      - {key: waterway, values: [riverbank, dock]}
 
 audit:
   retain_unmatched: true

@@ -1,0 +1,151 @@
+version: "0.1.0"
+# Maps Overture Places `basic_category` values (schema v1.18.0, release
+# 2026-08-19.0 -- verified empirically against the actual Da Nang-Hoi An
+# acquisition-AOI data, not assumed from documentation) to the SAME
+# canonical leaf categories used for OSM in config/poi_taxonomy.yaml, so
+# POI audit counts are directly comparable across sources.
+#
+# Per COWORK_START_PROMPT.md this uses `basic_category` (and, implicitly,
+# `taxonomy`), never the deprecated `categories` field.
+#
+# A large share of Overture Places categories are INTENTIONALLY left
+# unmapped: OSM's taxonomy (config/poi_taxonomy.yaml) has no equivalent
+# leaf for most B2B/professional-service categories (real_estate_service,
+# wellness_service, professional_service, home_service, ...), religious
+# venues, or bare geographic/landmark entities (river, mountain, beach,
+# ...). Leaving these unmapped is the honest choice -- forcing them into
+# an OSM-shaped bucket would fabricate precision the source doesn't
+# support. See docs/source_validation_report.md for the measured unmapped
+# share and the full observed basic_category distribution.
+
+mapping:
+  food_drink:
+    - restaurant
+    - casual_eatery
+    - fast_food_restaurant
+    - food_truck_stand
+    - smoothie_juice_bar
+    - non_alcoholic_beverage_venue
+    - food_and_drink
+    - food_service
+    - coffee_shop
+    - cafe
+    - bar
+    - lounge
+    - alcoholic_beverage_venue
+    - brewery
+    - winery
+    - distillery
+  lodging:
+    - hotel
+    - lodging
+    - resort
+    - private_lodging
+    - bed_and_breakfast
+    - inn
+    - rv_park
+  convenience:
+    - convenience_store
+  supermarket:
+    # Best-available proxy: Overture's AOI data has no distinct
+    # "supermarket"/"grocery_store" category observed; food_and_beverage_store
+    # is the closest bucket but may also include specialty food shops that
+    # OSM would tag as retail_other, not shop=supermarket. Documented
+    # limitation, not a confirmed equivalence.
+    - food_and_beverage_store
+  marketplace:
+    - market
+    - farmers_market
+  mall:
+    - shopping_mall
+  retail_other:
+    - fashion_and_apparel_store
+    - hardware_home_and_garden_store
+    - electronics_store
+    - flowers_and_gifts_store
+    - arts_crafts_and_hobby_store
+    - sporting_goods_store
+    - books_music_and_video_store
+    - toys_and_games_store
+    - musical_instrument_and_pro_audio_store
+    - office_supply_store
+    - second_hand_store
+    - vehicle_parts_store
+    - personal_care_and_beauty_store
+    - animal_and_pet_store
+    - specialty_store
+    - department_store
+    - discount_store
+    - superstore
+    - warehouse_club_store
+    - shopping
+  financial_service:
+    - bank_or_credit_union
+    - atm
+    - financial_service
+  civic_service:
+    - government_office
+    - government_department
+    - police_station
+    - fire_station
+    - courthouse
+    - embassy
+  early_childhood:
+    - preschool
+  school:
+    - elementary_school
+    - middle_school
+    - high_school
+    - specialty_school
+  higher_education:
+    - college_university
+  hospital:
+    - hospital
+    - emergency_or_urgent_care_facility
+  clinic:
+    - dental_clinic
+    - primary_care_or_general_clinic
+    - outpatient_care_facility
+    - specialized_health_care
+    - behavioral_or_mental_health_clinic
+    - vision_or_eye_care_clinic
+    - pediatric_clinic
+    - reproductive_perinatal_and_womens_care
+    - physical_medicine_and_rehabilitation
+    - complementary_and_alternative_medicine
+    - diagnostics_imaging_or_lab_service
+    - medical_service
+    - health_care
+    - surgery
+    - specialized_medical_facility
+  pharmacy:
+    - pharmacy_and_drug_store
+  park_recreation:
+    - park
+    - playground
+    - gym
+    - fitness_studio
+    - sport_or_fitness_facility
+    - stadium_arena
+    - sports_and_recreation
+    - sport_or_recreation_club
+    - movie_theater
+  attraction_culture:
+    - historic_site
+    - museum
+    - art_gallery
+    - monument
+    - sculpture_statue
+    - theatre_venue
+    - performing_arts_venue
+  manufacturing:
+    - manufacturer
+  warehouse_logistics:
+    - storage_facility
+    - shipping_or_delivery_service
+    - b2b_transportation_and_storage_service
+  transport_air_water_hub:
+    - airport
+    - air_transport_facility_or_service
+  transport_rail_station:
+    - train_station

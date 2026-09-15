@@ -1,0 +1,710 @@
+{
+  "counts_by_group_multi_policy": [
+    {
+      "group": "commercial",
+      "osm": 2911,
+      "overture_unfiltered": 17289,
+      "overture_conf_ge_0.3": 15728,
+      "overture_conf_ge_0.6": 10087
+    },
+    {
+      "group": "retail",
+      "osm": 1682,
+      "overture_unfiltered": 15434,
+      "overture_conf_ge_0.3": 13477,
+      "overture_conf_ge_0.6": 7719
+    },
+    {
+      "group": "tourism",
+      "osm": 1352,
+      "overture_unfiltered": 4961,
+      "overture_conf_ge_0.3": 4563,
+      "overture_conf_ge_0.6": 3279
+    },
+    {
+      "group": "transport",
+      "osm": 853,
+      "overture_unfiltered": 93,
+      "overture_conf_ge_0.3": 82,
+      "overture_conf_ge_0.6": 51
+    },
+    {
+      "group": "commercial_service",
+      "osm": 478,
+      "overture_unfiltered": 849,
+      "overture_conf_ge_0.3": 752,
+      "overture_conf_ge_0.6": 421
+    },
+    {
+      "group": "leisure",
+      "osm": 291,
+      "overture_unfiltered": 1194,
+      "overture_conf_ge_0.3": 1090,
+      "overture_conf_ge_0.6": 746
+    },
+    {
+      "group": "education",
+      "osm": 288,
+      "overture_unfiltered": 1519,
+      "overture_conf_ge_0.3": 1444,
+      "overture_conf_ge_0.6": 1160
+    },
+    {
+      "group": "healthcare",
+      "osm": 176,
+      "overture_unfiltered": 1669,
+      "overture_conf_ge_0.3": 1502,
+      "overture_conf_ge_0.6": 936
+    },
+    {
+      "group": "public_service",
+      "osm": 86,
+      "overture_unfiltered": 299,
+      "overture_conf_ge_0.3": 291,
+      "overture_conf_ge_0.6": 177
+    },
+    {
+      "group": "industrial_logistics",
+      "osm": 58,
+      "overture_unfiltered": 744,
+      "overture_conf_ge_0.3": 645,
+      "overture_conf_ge_0.6": 346
+    },
+    {
+      "group": NaN,
+      "osm": 0,
+      "overture_unfiltered": 28699,
+      "overture_conf_ge_0.3": 24967,
+      "overture_conf_ge_0.6": 14236
+    }
+  ],
+  "provider_confidence_summary": {
+    "overall": {
+      "total_records": 72750,
+      "provider_appearance_counts": {
+        "meta": 71903,
+        "microsoft": 385,
+        "alltheplaces": 291,
+        "foursquare": 170,
+        "pinmeto": 1
+      },
+      "provider_appearance_rate": {
+        "meta": 0.9884,
+        "microsoft": 0.0053,
+        "alltheplaces": 0.004,
+        "foursquare": 0.0023,
+        "pinmeto": 0.0
+      },
+      "multi_provider_record_count": 0,
+      "multi_provider_rate": 0.0,
+      "zero_provider_record_count": 0,
+      "single_provider_breakdown": {
+        "meta": 71903,
+        "microsoft": 385,
+        "alltheplaces": 291,
+        "foursquare": 170,
+        "pinmeto": 1
+      }
+    },
+    "by_confidence_band": {
+      "<0.3": {
+        "total_records": 8209,
+        "provider_appearance_counts": {
+          "meta": 8209
+        },
+        "provider_appearance_rate": {
+          "meta": 1.0
+        },
+        "multi_provider_record_count": 0,
+        "multi_provider_rate": 0.0,
+        "zero_provider_record_count": 0,
+        "single_provider_breakdown": {
+          "meta": 8209
+        }
+      },
+      "0.3-0.6": {
+        "total_records": 25383,
+        "provider_appearance_counts": {
+          "meta": 25383
+        },
+        "provider_appearance_rate": {
+          "meta": 1.0
+        },
+        "multi_provider_record_count": 0,
+        "multi_provider_rate": 0.0,
+        "zero_provider_record_count": 0,
+        "single_provider_breakdown": {
+          "meta": 25383
+        }
+      },
+      ">=0.6": {
+        "total_records": 39158,
+        "provider_appearance_counts": {
+          "meta": 38311,
+          "microsoft": 385,
+          "alltheplaces": 291,
+          "foursquare": 170,
+          "pinmeto": 1
+        },
+        "provider_appearance_rate": {
+          "meta": 0.9784,
+          "microsoft": 0.0098,
+          "alltheplaces": 0.0074,
+          "foursquare": 0.0043,
+          "pinmeto": 0.0
+        },
+        "multi_provider_record_count": 0,
+        "multi_provider_rate": 0.0,
+        "zero_provider_record_count": 0,
+        "single_provider_breakdown": {
+          "meta": 38311,
+          "microsoft": 385,
+          "alltheplaces": 291,
+          "foursquare": 170,
+          "pinmeto": 1
+        }
+      }
+    }
+  },
+  "contact_info_proxy": [
+    {
+      "group": "commercial",
+      "confidence_band": "<0.3",
+      "n": 1561,
+      "has_website_rate": 0.18770019218449713,
+      "has_phone_rate": 0.8763613068545804,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "commercial",
+      "confidence_band": "0.3-0.6",
+      "n": 5641,
+      "has_website_rate": 0.14873249423861018,
+      "has_phone_rate": 0.8174082609466407,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "commercial",
+      "confidence_band": ">=0.6",
+      "n": 10087,
+      "has_website_rate": 0.2851194606919798,
+      "has_phone_rate": 0.8893625458510954,
+      "has_social_rate": 0.9878060870427282,
+      "has_any_contact_info_rate": 0.9987112124516705
+    },
+    {
+      "group": "commercial_service",
+      "confidence_band": "<0.3",
+      "n": 97,
+      "has_website_rate": 0.30927835051546393,
+      "has_phone_rate": 0.9587628865979382,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "commercial_service",
+      "confidence_band": "0.3-0.6",
+      "n": 331,
+      "has_website_rate": 0.552870090634441,
+      "has_phone_rate": 0.9003021148036254,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "commercial_service",
+      "confidence_band": ">=0.6",
+      "n": 421,
+      "has_website_rate": 0.6484560570071259,
+      "has_phone_rate": 0.8883610451306413,
+      "has_social_rate": 0.9453681710213777,
+      "has_any_contact_info_rate": 0.9691211401425178
+    },
+    {
+      "group": "education",
+      "confidence_band": "<0.3",
+      "n": 75,
+      "has_website_rate": 0.3466666666666667,
+      "has_phone_rate": 0.8533333333333334,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "education",
+      "confidence_band": "0.3-0.6",
+      "n": 284,
+      "has_website_rate": 0.4823943661971831,
+      "has_phone_rate": 0.8063380281690141,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "education",
+      "confidence_band": ">=0.6",
+      "n": 1160,
+      "has_website_rate": 0.44310344827586207,
+      "has_phone_rate": 0.8775862068965518,
+      "has_social_rate": 0.9982758620689656,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "healthcare",
+      "confidence_band": "<0.3",
+      "n": 167,
+      "has_website_rate": 0.2634730538922156,
+      "has_phone_rate": 0.9461077844311377,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "healthcare",
+      "confidence_band": "0.3-0.6",
+      "n": 566,
+      "has_website_rate": 0.284452296819788,
+      "has_phone_rate": 0.9222614840989399,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "healthcare",
+      "confidence_band": ">=0.6",
+      "n": 936,
+      "has_website_rate": 0.4326923076923077,
+      "has_phone_rate": 0.9326923076923077,
+      "has_social_rate": 0.9871794871794872,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "industrial_logistics",
+      "confidence_band": "<0.3",
+      "n": 99,
+      "has_website_rate": 0.45454545454545453,
+      "has_phone_rate": 0.9292929292929293,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "industrial_logistics",
+      "confidence_band": "0.3-0.6",
+      "n": 299,
+      "has_website_rate": 0.44481605351170567,
+      "has_phone_rate": 0.9331103678929766,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "industrial_logistics",
+      "confidence_band": ">=0.6",
+      "n": 346,
+      "has_website_rate": 0.661849710982659,
+      "has_phone_rate": 0.930635838150289,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "leisure",
+      "confidence_band": "<0.3",
+      "n": 104,
+      "has_website_rate": 0.27884615384615385,
+      "has_phone_rate": 0.8269230769230769,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "leisure",
+      "confidence_band": "0.3-0.6",
+      "n": 344,
+      "has_website_rate": 0.23546511627906977,
+      "has_phone_rate": 0.8430232558139535,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "leisure",
+      "confidence_band": ">=0.6",
+      "n": 746,
+      "has_website_rate": 0.3512064343163539,
+      "has_phone_rate": 0.8873994638069705,
+      "has_social_rate": 0.9959785522788204,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "public_service",
+      "confidence_band": "<0.3",
+      "n": 8,
+      "has_website_rate": 0.5,
+      "has_phone_rate": 0.375,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "public_service",
+      "confidence_band": "0.3-0.6",
+      "n": 114,
+      "has_website_rate": 0.23684210526315788,
+      "has_phone_rate": 0.6140350877192983,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "public_service",
+      "confidence_band": ">=0.6",
+      "n": 177,
+      "has_website_rate": 0.23728813559322035,
+      "has_phone_rate": 0.6214689265536724,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "retail",
+      "confidence_band": "<0.3",
+      "n": 1957,
+      "has_website_rate": 0.3076136944302504,
+      "has_phone_rate": 0.8870720490546755,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "retail",
+      "confidence_band": "0.3-0.6",
+      "n": 5758,
+      "has_website_rate": 0.4065647794373046,
+      "has_phone_rate": 0.9289683918027093,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "retail",
+      "confidence_band": ">=0.6",
+      "n": 7719,
+      "has_website_rate": 0.5297318305479984,
+      "has_phone_rate": 0.919937815779246,
+      "has_social_rate": 0.9564710454722114,
+      "has_any_contact_info_rate": 0.9729239538800363
+    },
+    {
+      "group": "tourism",
+      "confidence_band": "<0.3",
+      "n": 398,
+      "has_website_rate": 0.25879396984924624,
+      "has_phone_rate": 0.8391959798994975,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "tourism",
+      "confidence_band": "0.3-0.6",
+      "n": 1284,
+      "has_website_rate": 0.3278816199376947,
+      "has_phone_rate": 0.8559190031152648,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "tourism",
+      "confidence_band": ">=0.6",
+      "n": 3279,
+      "has_website_rate": 0.5818847209515096,
+      "has_phone_rate": 0.9014943580359865,
+      "has_social_rate": 0.9670631290027447,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "transport",
+      "confidence_band": "<0.3",
+      "n": 11,
+      "has_website_rate": 0.2727272727272727,
+      "has_phone_rate": 0.9090909090909091,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "transport",
+      "confidence_band": "0.3-0.6",
+      "n": 31,
+      "has_website_rate": 0.41935483870967744,
+      "has_phone_rate": 0.7741935483870968,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": "transport",
+      "confidence_band": ">=0.6",
+      "n": 51,
+      "has_website_rate": 0.5490196078431373,
+      "has_phone_rate": 0.6470588235294118,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": NaN,
+      "confidence_band": "<0.3",
+      "n": 3732,
+      "has_website_rate": 0.355037513397642,
+      "has_phone_rate": 0.8740621650589496,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": NaN,
+      "confidence_band": "0.3-0.6",
+      "n": 10731,
+      "has_website_rate": 0.43621284130090393,
+      "has_phone_rate": 0.8930202217873451,
+      "has_social_rate": 1.0,
+      "has_any_contact_info_rate": 1.0
+    },
+    {
+      "group": NaN,
+      "confidence_band": ">=0.6",
+      "n": 14236,
+      "has_website_rate": 0.5215650463613375,
+      "has_phone_rate": 0.9081202584995786,
+      "has_social_rate": 0.9886203989884799,
+      "has_any_contact_info_rate": 0.9997892666479348
+    }
+  ],
+  "osm_missing_rates": {
+    "missing_name_rate": 0.247217125382263,
+    "missing_category_rate": 0.0
+  },
+  "overture_missing_rates": {
+    "missing_name_rate": 0.0,
+    "missing_category_rate": 0.3944879725085911
+  },
+  "osm_duplicate_pair_count_acquisition_scope": 15,
+  "osm_duplicate_rate_acquisition_scope": 0.0017597372125762554,
+  "osm_duplicate_pair_count_evaluation_scope": 15,
+  "osm_duplicate_rate_evaluation_scope": 0.0018315018315018315,
+  "cross_source_proximity_heuristic_by_category": {
+    "attraction_culture": {
+      "overture_near_osm": 81,
+      "overture_only": 640,
+      "osm_near_overture": 87,
+      "osm_only": 179,
+      "overture_records_per_osm_entity_near_it": 0.93
+    },
+    "civic_service": {
+      "overture_near_osm": 56,
+      "overture_only": 243,
+      "osm_near_overture": 44,
+      "osm_only": 42,
+      "overture_records_per_osm_entity_near_it": 1.27
+    },
+    "clinic": {
+      "overture_near_osm": 32,
+      "overture_only": 954,
+      "osm_near_overture": 18,
+      "osm_only": 9,
+      "overture_records_per_osm_entity_near_it": 1.78
+    },
+    "convenience": {
+      "overture_near_osm": 81,
+      "overture_only": 317,
+      "osm_near_overture": 124,
+      "osm_only": 344,
+      "overture_records_per_osm_entity_near_it": 0.65
+    },
+    "early_childhood": {
+      "overture_near_osm": 15,
+      "overture_only": 305,
+      "osm_near_overture": 15,
+      "osm_only": 17,
+      "overture_records_per_osm_entity_near_it": 1.0
+    },
+    "financial_service": {
+      "overture_near_osm": 323,
+      "overture_only": 526,
+      "osm_near_overture": 309,
+      "osm_only": 169,
+      "overture_records_per_osm_entity_near_it": 1.05
+    },
+    "food_drink": {
+      "overture_near_osm": 9143,
+      "overture_only": 8146,
+      "osm_near_overture": 2781,
+      "osm_only": 130,
+      "overture_records_per_osm_entity_near_it": 3.29
+    },
+    "higher_education": {
+      "overture_near_osm": 46,
+      "overture_only": 164,
+      "osm_near_overture": 21,
+      "osm_only": 21,
+      "overture_records_per_osm_entity_near_it": 2.19
+    },
+    "hospital": {
+      "overture_near_osm": 55,
+      "overture_only": 226,
+      "osm_near_overture": 31,
+      "osm_only": 16,
+      "overture_records_per_osm_entity_near_it": 1.77
+    },
+    "lodging": {
+      "overture_near_osm": 2160,
+      "overture_only": 2080,
+      "osm_near_overture": 987,
+      "osm_only": 99,
+      "overture_records_per_osm_entity_near_it": 2.19
+    },
+    "mall": {
+      "overture_near_osm": 10,
+      "overture_only": 159,
+      "osm_near_overture": 7,
+      "osm_only": 3,
+      "overture_records_per_osm_entity_near_it": 1.43
+    },
+    "manufacturing": {
+      "overture_near_osm": 1,
+      "overture_only": 484,
+      "osm_near_overture": 2,
+      "osm_only": 55,
+      "overture_records_per_osm_entity_near_it": 0.5
+    },
+    "marketplace": {
+      "overture_near_osm": 9,
+      "overture_only": 35,
+      "osm_near_overture": 7,
+      "osm_only": 60,
+      "overture_records_per_osm_entity_near_it": 1.29
+    },
+    "park_recreation": {
+      "overture_near_osm": 117,
+      "overture_only": 1077,
+      "osm_near_overture": 78,
+      "osm_only": 213,
+      "overture_records_per_osm_entity_near_it": 1.5
+    },
+    "pharmacy": {
+      "overture_near_osm": 27,
+      "overture_only": 375,
+      "osm_near_overture": 34,
+      "osm_only": 68,
+      "overture_records_per_osm_entity_near_it": 0.79
+    },
+    "retail_other": {
+      "overture_near_osm": 3402,
+      "overture_only": 9718,
+      "osm_near_overture": 937,
+      "osm_only": 134,
+      "overture_records_per_osm_entity_near_it": 3.63
+    },
+    "school": {
+      "overture_near_osm": 173,
+      "overture_only": 816,
+      "osm_near_overture": 131,
+      "osm_only": 83,
+      "overture_records_per_osm_entity_near_it": 1.32
+    },
+    "supermarket": {
+      "overture_near_osm": 47,
+      "overture_only": 1656,
+      "osm_near_overture": 31,
+      "osm_only": 35,
+      "overture_records_per_osm_entity_near_it": 1.52
+    },
+    "transport_air_water_hub": {
+      "overture_near_osm": 14,
+      "overture_only": 71,
+      "osm_near_overture": 2,
+      "osm_only": 10,
+      "overture_records_per_osm_entity_near_it": 7.0
+    },
+    "transport_bus_station": {
+      "overture_near_osm": 0,
+      "overture_only": 0,
+      "osm_near_overture": 0,
+      "osm_only": 20
+    },
+    "transport_bus_stop": {
+      "overture_near_osm": 0,
+      "overture_only": 0,
+      "osm_near_overture": 0,
+      "osm_only": 815
+    },
+    "transport_rail_station": {
+      "overture_near_osm": 3,
+      "overture_only": 5,
+      "osm_near_overture": 2,
+      "osm_only": 4,
+      "overture_records_per_osm_entity_near_it": 1.5
+    },
+    "warehouse_logistics": {
+      "overture_near_osm": 0,
+      "overture_only": 259,
+      "osm_near_overture": 0,
+      "osm_only": 1,
+      "overture_records_per_osm_entity_near_it": null
+    }
+  },
+  "notes": [
+    "Confidence-threshold policy is NOT set from retention rate alone -- see contact_info_proxy and docs/source_validation_report.md's manual spot-check for the evidence actually used.",
+    "0 / 72750 Overture records (0.0%) have more than one contributing provider in sources[] -- see provider_confidence_summary for the full breakdown."
+  ],
+  "density_grid_osm_zero_share": 0.7087301587301588,
+  "density_grid_overture_zero_share": 0.43412698412698414,
+  "density_grid_cell_count": 1260,
+  "density_grid_osm_top5": [
+    {
+      "cell_x_m": 213727.66401520075,
+      "cell_y_m": 1757565.5185298186,
+      "count": 765
+    },
+    {
+      "cell_x_m": 202727.66401520075,
+      "cell_y_m": 1778565.5185298186,
+      "count": 452
+    },
+    {
+      "cell_x_m": 204727.66401520075,
+      "cell_y_m": 1776565.5185298186,
+      "count": 430
+    },
+    {
+      "cell_x_m": 205727.66401520075,
+      "cell_y_m": 1776565.5185298186,
+      "count": 390
+    },
+    {
+      "cell_x_m": 204727.66401520075,
+      "cell_y_m": 1778565.5185298186,
+      "count": 269
+    }
+  ],
+  "density_grid_overture_top5": [
+    {
+      "cell_x_m": 202727.66401520075,
+      "cell_y_m": 1778565.5185298186,
+      "count": 2782
+    },
+    {
+      "cell_x_m": 201727.66401520075,
+      "cell_y_m": 1777565.5185298186,
+      "count": 2679
+    },
+    {
+      "cell_x_m": 202727.66401520075,
+      "cell_y_m": 1777565.5185298186,
+      "count": 2182
+    },
+    {
+      "cell_x_m": 201727.66401520075,
+      "cell_y_m": 1778565.5185298186,
+      "count": 2164
+    },
+    {
+      "cell_x_m": 202727.66401520075,
+      "cell_y_m": 1779565.5185298186,
+      "count": 1988
+    }
+  ],
+  "relevant_relation_omissions": {
+    "area:water_body": 22,
+    "area:park_area": 1,
+    "poi:park_recreation": 3,
+    "poi:attraction_culture": 3,
+    "area:industrial_site": 1,
+    "poi:food_drink": 1
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "osm_length_by_class_m": {
+    "residential": 4199547.264504204,
+    "service": 860398.2195022557,
+    "track": 557053.5902010511,
+    "tertiary": 496025.67048732704,
+    "unclassified": 467986.42886063736,
+    "secondary": 334262.0630890404,
+    "primary": 216504.05462106364,
+    "trunk": 175901.77464302536,
+    "motorway": 84896.44295462655,
+    "living_street": 40114.48854142289,
+    "trunk_link": 9197.011047969934,
+    "motorway_link": 7922.411476791339,
+    "secondary_link": 7514.150722470467,
+    "primary_link": 7388.870836997441,
+    "tertiary_link": 1184.0742677051458
+  },
+  "overture_length_by_class_m": {
+    "residential": 4111569.4522516215,
+    "service": 855913.2867511177,
+    "track": 585058.7154564725,
+    "unclassified": 526562.0251249323,
+    "tertiary": 462488.0093750699,
+    "secondary": 359702.29904824554,
+    "primary": 222752.06907496217,
+    "trunk": 202126.5300631393,
+    "motorway": 98017.06353007382,
+    "living_street": 42615.16338539932
+  },
+  "acquisition_halo_scope": {
+    "osm_connectivity": {
+      "component_count": 119,
+      "total_length_m": 8866365.391027791,
+      "largest_component_length_m": 8795386.261261137,
+      "largest_component_share": 0.9919945629763375
+    },
+    "overture_connectivity": {
+      "component_count": 121,
+      "total_length_m": 8344156.71482034,
+      "largest_component_length_m": 8286450.216139467,
+      "largest_component_share": 0.9930842024361337
+    },
+    "osm_top_components_m": [
+      8795386.261261137,
+      7619.191962474153,
+      6935.712863047489,
+      6514.661941813437,
+      4715.551860148617,
+      4436.703144307437,
+      3834.036900958136,
+      2436.787746165557,
+      2282.626972281792,
+      1793.4571509831203
+    ],
+    "overture_top_components_m": [
+      8286450.216139467,
+      6317.935754981677,
+      5678.751499698691,
+      5055.153709086167,
+      3792.4059080983534,
+      3623.4679114856986,
+      3228.225776434628,
+      1677.4934689232548,
+      1653.1539025789791,
+      1577.5021924412315
+    ],
+    "osm_intersection_count": 47683,
+    "overture_connector_intersection_count": 47188
+  },
+  "evaluation_scope": {
+    "osm_connectivity": {
+      "component_count": 91,
+      "total_length_m": 7455912.596929626,
+      "largest_component_length_m": 7423414.490516459,
+      "largest_component_share": 0.995641297293835
+    },
+    "overture_connectivity": {
+      "component_count": 92,
+      "total_length_m": 7014277.142944959,
+      "largest_component_length_m": 6985674.779614854,
+      "largest_component_share": 0.9959222650107469
+    },
+    "osm_top_components_m": [
+      7423414.490516459,
+      5095.750404420663,
+      4562.574657236488,
+      3834.036900958136,
+      1793.4571509831203,
+      1351.3679774788575,
+      1157.8214037348612,
+      1015.6764288312277,
+      761.1888553642742,
+      760.7849115988191
+    ],
+    "overture_top_components_m": [
+      6985674.779614854,
+      4387.279620409469,
+      3792.4059080983534,
+      3451.638107890763,
+      1677.4934689232548,
+      1559.8831106998405,
+      1092.3885426921984,
+      995.9935866662092,
+      980.6303443489096,
+      812.5257247727316
+    ],
+    "osm_intersection_count": 42301,
+    "overture_connector_intersection_count": 41769
+  },
+  "matched_length": {
+    "buffer_m": 10.0,
+    "a_total_length_m": 7465896.515756588,
+    "b_total_length_m": 7466804.614061035,
+    "a_matched_length_m": 7424392.719542442,
+    "a_only_length_m": 41503.79621414654,
+    "a_matched_share": 0.994440882467825,
+    "b_matched_length_m": 7431164.526115399,
+    "b_only_length_m": 35640.08794563636,
+    "b_matched_share": 0.9952268621200397
+  },
+  "unmatched_major_osm_sample": [
+    {
+      "id": 1552982462,
+      "length_m": 537.5280465893238,
+      "unmatched_length_m": 517.5264690008665,
+      "centroid_x_32649": 194542.91949239318,
+      "centroid_y_32649": 1755114.5657747176
+    },
+    {
+      "id": 1548036649,
+      "length_m": 107.24035459748613,
+      "unmatched_length_m": 82.3247905329861,
+      "centroid_x_32649": 192272.11060298557,
+      "centroid_y_32649": 1787003.008943262
+    }
+  ],
+  "unmatched_major_overture_sample": [
+    {
+      "id": "8031594e-666e-4bdb-b0f6-80a338f4e562",
+      "length_m": 8172.706868709747,
+      "unmatched_length_m": 6555.053902560768,
+      "centroid_x_32649": 193746.97410339492,
+      "centroid_y_32649": 1767195.3503728062
+    },
+    {
+      "id": "d088453f-f670-4d3b-9932-8094bef89bd4",
+      "length_m": 2293.393232973859,
+      "unmatched_length_m": 1876.2538562355385,
+      "centroid_x_32649": 193531.15367877565,
+      "centroid_y_32649": 1779056.8690712403
+    },
+    {
+      "id": "a1723fee-89ec-401c-99e8-39df28195f42",
+      "length_m": 2299.4033796710314,
+      "unmatched_length_m": 1813.6637247744666,
+      "centroid_x_32649": 193509.52983020223,
+      "centroid_y_32649": 1779041.0075500014
+    },
+    {
+      "id": "64e4a9e8-c214-4654-8d26-318760b38ce0",
+      "length_m": 923.0413540355814,
+      "unmatched_length_m": 551.242924296829,
+      "centroid_x_32649": 194982.66723537334,
+      "centroid_y_32649": 1771104.2763788837
+    },
+    {
+      "id": "e41fc8e1-baa7-486e-90d3-6937d1b634eb",
+      "length_m": 478.6650579897055,
+      "unmatched_length_m": 410.4616575429328,
+      "centroid_x_32649": 194554.53960309,
+      "centroid_y_32649": 1771375.1275664717
+    },
+    {
+      "id": "9c49581a-5fe6-49b6-8c67-61903c635c70",
+      "length_m": 549.963436430553,
+      "unmatched_length_m": 391.6116377285701,
+      "centroid_x_32649": 194735.04874778306,
+      "centroid_y_32649": 1771268.6564571713
+    },
+    {
+      "id": "12a9c698-d189-4690-86c8-71ecd0b2bff0",
+      "length_m": 485.80005851967144,
+      "unmatched_length_m": 376.27486390937577,
+      "centroid_x_32649": 193981.1157660516,
+      "centroid_y_32649": 1771619.9376185772
+    },
+    {
+      "id": "11e1d6f2-9fa8-4e94-91f7-b91f8617baf3",
+      "length_m": 512.1915688696624,
+      "unmatched_length_m": 375.82235224591847,
+      "centroid_x_32649": 194801.40416076413,
+      "centroid_y_32649": 1771451.1016344642
+    }
+  ],
+  "feature_impact_notes": []
+}

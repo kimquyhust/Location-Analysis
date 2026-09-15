@@ -1,0 +1,106 @@
+category,source,id,name,lon,lat,confidence,has_any_contact_info,contributing_provider_count
+school,osm,way/403614689,Trường Trung học phổ thông Hoàng Hoa Thám,108.23746837227432,16.05831325,,,
+school,osm,way/1324354866,Trường Tiểu học Nguyễn Bá Ngọc,108.21087488172068,16.06751585,,,
+school,osm,way/488435094,Trường Tiểu học Phan Đăng Lưu,108.21772670209762,16.03692385,,,
+school,osm,way/531448739,Trường Tiểu học Văn Thanh Tùng,108.30292721501439,15.9229812,,,
+school,osm,node/13644509020,THPT Nguyễn Duy Hiệu,108.2458094,15.8953671,,,
+school,overture,ba4973ea-34f0-436b-84bd-4dbf8a9500f0,Trường Tiểu học Lý Thường Kiệt,108.25890781,15.87961999,0.745862603187561,True,1.0
+school,overture,eb4a74d1-80a9-473e-b84c-def5c3e60ab1,GeniusCamp Đà Nẵng,108.2085454,16.0179292,0.8481078743934631,True,1.0
+school,overture,314ea05a-8532-46d2-a463-83e394d83003,Trường TH Trưng Nữ Vương,108.1328,16.1048,0.6337112784385681,True,1.0
+school,overture,75daf3e6-a067-4526-a497-7ccb4979e9dc,Apax English Đà Nẵng 1,108.21908979,16.06064561,0.7611720561981201,True,1.0
+school,overture,0c2a323a-44db-4f7f-8935-654d3c817dca,Trung Tâm Anh Ngữ Star Language,108.22029195,16.0515818,0.7828287482261658,True,1.0
+hospital,osm,way/1182415212,Bệnh viện Đa khoa khu vực Quảng Nam,108.24617960078342,15.8910537,,,
+hospital,osm,node/6539587371,Dana Dental - Nha Khoa Đà Nẵng,108.2139467,16.0619222,,,
+hospital,osm,way/372433951,Bệnh viện C Đà Nẵng,108.21664327963295,16.0731892,,,
+hospital,osm,way/372316060,Bệnh viện Phổi Đà Nẵng,108.17061065025521,16.048069499999997,,,
+hospital,osm,way/372433638,Bệnh viện Đà Nẵng,108.21543455430552,16.0730163,,,
+hospital,overture,60a4602f-7779-490e-8b7c-4f7bdc57b29b,Phòng Khám Bác Sĩ Lê Đình Nguyên,108.32335,15.89022,0.5571451187133789,True,1.0
+hospital,overture,7ad12c43-7eef-43a5-834e-8b007c6f5d63,Khoa Hồi sức tích cực - Chống độc - Thận nhân tạo Bệnh viện 199,108.23607,16.06661,0.5840777158737183,True,1.0
+hospital,overture,97642c71-ed51-4724-a158-54b2856fe24c,Hội Đông Y TP Đà Nẵng,108.220659,16.066542,0.5903903841972351,True,1.0
+hospital,overture,3a08a705-78fe-488c-a211-c8afaf269dce,Khoa Dược - Bệnh viện Y học cổ truyền TP Đà Nẵng,108.2186374,16.0553933,0.6006290316581726,True,1.0
+hospital,overture,798e2f03-29f4-4f9b-b01b-3389aa61f880,Bệnh Viện Mắt Sài Gòn- Đà Nẵng,108.21019802,16.03957099,0.30951493978500366,True,1.0
+clinic,osm,node/4470678589,Phòng khám Nội-nhi Bs Đông_Bs Hóa,108.2097865,16.0576736,,,
+clinic,osm,node/13959498760,Phòng Khám Nội Soi Tai Mũi Họng Bác Sĩ Vy,108.2554935,15.9563817,,,
+clinic,osm,node/4597655189,,108.2216548,16.0789018,,,
+clinic,osm,node/6320067585,Family Medical Practice Danang,108.2151326,16.0606133,,,
+clinic,osm,node/6611784187,,108.2137324,16.0327557,,,
+clinic,overture,723b73b4-3be7-43f3-b33c-153dde9872d6,Sinh trắc vân tay cho học sinh,108.21186,16.06029,0.2996438443660736,True,1.0
+clinic,overture,85497249-d452-4d57-8937-d04af909a92e,Gà Hoa Đệ 254 -256 âu cơ HK,108.1397061,16.07178,0.591934859752655,True,1.0
+clinic,overture,fdb8d399-8fb0-4571-af92-e38b104685c6,Nha Khoa Việt Anh,108.215911,16.06744383,0.9726232290267944,True,1.0
+clinic,overture,a4d9fef7-0b4b-4b3f-ad8e-caa6033974f7,Bác sĩ Trà Lộc,108.25508880615,16.012825149732,0.8467113971710205,True,1.0
+clinic,overture,4b609e26-ee6b-425c-acbe-81c95f1f923f,Phòng khám bác sĩ Lê Đức Toàn,108.19669,16.00954,0.5428229570388794,True,1.0
+pharmacy,osm,node/14030318911,,108.1257259,15.8317538,,,
+pharmacy,osm,node/12841766768,CVC,108.2448323,16.0527159,,,
+pharmacy,osm,node/12839774219,Hello Pharmacy,108.2454496,16.0516489,,,
+pharmacy,osm,node/13893913017,Nha thuoc 213,108.3219894,15.8790769,,,
+pharmacy,osm,node/6528665334,,108.18055,16.0501521,,,
+pharmacy,overture,5baa72b5-b6e7-4512-8425-99c9a0f743c2,Nhà Thuốc Hưng Phát,108.2085958,16.06823722,0.7540366053581238,True,1.0
+pharmacy,overture,eccbcc59-fe7e-4c29-a1d9-e4a61134680f,Thy Khang Pharmacy,108.18856120986683,16.042976036803886,0.7547327280044556,True,1.0
+pharmacy,overture,fc0f182c-c603-4fab-8fc9-e4b1980dca8f,Nhà Thuốc Sunny Pharmacy,108.24380927,16.05093809,0.3498006761074066,True,1.0
+pharmacy,overture,a1f2c536-33b7-41ff-913c-d09e0752d84c,Tâm Phúc Pharmacy,108.14549803734,16.074733290869,0.6029298901557922,True,1.0
+pharmacy,overture,770fdedb-fbb4-4c33-ab64-113fbc8199f7,Nhà Thuốc Gia Đình Xanh,108.32799753,15.88079606,0.24731452763080597,True,1.0
+food_drink,osm,node/4485096895,Tuyet Restaurant,108.3406487,15.9134216,,,
+food_drink,osm,node/13204937554,Highlands Coffee,108.2025915,16.056994,,,
+food_drink,osm,node/13566150243,Anh Tuyet,108.2652119,16.0030134,,,
+food_drink,osm,node/5217312122,Cafe Caracoli,108.2224703,16.0830572,,,
+food_drink,osm,node/4289580589,KFC,108.2185085,16.0712358,,,
+food_drink,overture,57ff1076-5283-4b42-ba20-11bc5a9cd688,"Mì cay 7 cấp độ NAGA VIPER , 319 điện biên phủ ĐÀ NẴNG",108.1923637,16.0656459,0.5224736332893372,True,1.0
+food_drink,overture,dc308a09-6d10-47f0-b86a-60000c58a133,QQ Coffee,108.17906262,16.05057989,0.015927543863654137,True,1.0
+food_drink,overture,da92232b-8e79-4082-84b0-6a35263af4df,Mỳ Quảng Bà Mua,108.243547,16.05603696,0.88163822889328,True,1.0
+food_drink,overture,ba28e3a4-b691-4c67-b6cd-33d584ae5928,CHÂU Ú cà phê,108.21086615324,16.003183838183,0.8547799587249756,True,1.0
+food_drink,overture,bf202b06-f735-4d74-813e-c7ab6e6a09b3,Hoang Long Restaurant,108.32308864,15.9222519,0.5614585876464844,True,1.0
+retail_other,osm,node/12169174291,Lo Lem,108.2431579,16.055492,,,
+retail_other,osm,node/6675647541,Viettel Store,108.168852,16.0561124,,,
+retail_other,osm,node/7183917586,The Sinh Tourist,108.325216,15.8819792,,,
+retail_other,osm,node/5818326260,Sinh tourist,108.326004,15.8816373,,,
+retail_other,osm,way/694479631,Kính ô tô Hồng Hải,108.19547966772306,16.06609915,,,
+retail_other,overture,4855f23e-a8b7-410a-afd6-7c50b676f7f0,Shop quần áo Hoài Thương,108.14023108,15.98950871,0.37993791699409485,True,1.0
+retail_other,overture,0da65b98-db92-4f31-b297-52a42f9f3954,Vườn Hồng Đà Nẵng,108.2416000999959,16.09124793597711,0.804231584072113,True,1.0
+retail_other,overture,4a17f0fc-be1a-4ac9-9152-fdc4b9d0a1e4,Minoo Eyewear - Mắt Kính Đà Nẵng,108.21078,16.00275,0.2306603044271469,True,1.0
+retail_other,overture,450c5294-70f3-4e2f-b3c5-ce3bc3a6b483,"Shop Hoa Tươi Tại Hàm Nghi, Vĩnh Trung, Thanh Khê, Đà Nẵng Giao Tận Nơi",108.2115983963,16.067832347912,0.37010517716407776,True,1.0
+retail_other,overture,b0ae8765-ea97-4530-9fb3-4601e67e301e,Sontra mini Mart 24h,108.2548543,16.0995772,0.9570017755031586,True,1.0
+lodging,osm,node/12662738802,Bananaflower Homestay,108.2191541,16.0784393,,,
+lodging,osm,node/5572565921,Skybird Homestay,108.3468891,15.8853113,,,
+lodging,osm,node/12174005660,Thanh Tam,108.2400529,16.0635419,,,
+lodging,osm,node/11513126568,Hero`s House,108.321342,15.8953056,,,
+lodging,osm,node/12091889769,Mimi’s House,108.3468367,15.8979798,,,
+lodging,overture,efc695fd-d520-459e-916e-f9749b2375aa,BJ's Homestay and Cafe,108.201331,16.07212174,0.6700872182846069,True,1.0
+lodging,overture,65474605-d281-421e-8efe-be945682e340,"Crown Plaza, da Nang",108.15748515557297,16.072773822355906,0.5507671236991882,True,1.0
+lodging,overture,8ed8bb91-5509-4e2e-8b49-0c63edc6c94a,Atlas Hoi An Hotel by Embrace,108.32175597,15.87700455,0.7370510101318359,True,1.0
+lodging,overture,b9a6d635-c041-4357-bf66-f23fc2241b58,Han Apartment,108.23105878,16.0658194,0.9959694802761078,True,1.0
+lodging,overture,77816c61-6638-4136-a6a6-5353024cd632,Dana Beach Motel,108.17203975,16.0782992,0.9369792938232422,True,1.0
+attraction_culture,osm,node/5281444722,,108.2602185,16.1020467,,,
+attraction_culture,osm,way/626704914,Hùng Đông về và bạn tránh,108.33036590088861,15.8774451,,,
+attraction_culture,osm,way/582551167,,108.11937793474999,15.77273635,,,
+attraction_culture,osm,node/2076855866,Nhà cổ Đức An,108.3273582,15.8770533,,,
+attraction_culture,osm,node/1037737395,Group C,108.1241227,15.7632766,,,
+attraction_culture,overture,706a2dd1-e22b-4ea6-87aa-61ac1443f15c,Sun Ponte Residence Đà Nẵng,108.23074617,16.05840363,0.6722357869148254,True,1.0
+attraction_culture,overture,1c10f505-7a76-4ef3-bb3a-671ade248e6c,Triple Apartment and Hotel Khue My Dong,108.24435083,16.0381499,0.6410340666770935,True,1.0
+attraction_culture,overture,dbb2343c-90f5-44df-836b-d7c794f5dec3,Đỉnh Bàn Cờ-Núi Sơn Trà,108.24556030716718,16.13509778840517,0.8458007574081421,True,1.0
+attraction_culture,overture,42aa7032-e496-4de1-85c0-ddd33d268a80,Căn hộ sông Hàn - Đà Nẵng,108.22909,16.07182,0.7247293591499329,True,1.0
+attraction_culture,overture,c9ecd887-92e8-46cb-9213-1e18e16f358c,FPT city Đà Nẵng-Đô thị xanh,108.232566897921,16.016089345082026,0.7795131802558899,True,1.0
+transport_bus_stop,osm,node/11883892150,438 Trần Đại Nghĩa,108.2545304,15.9762795,,,
+transport_bus_stop,osm,node/11903086053,419 Cách Mạng Tháng 8,108.1979153,16.0137548,,,
+transport_bus_stop,osm,node/11882946595,Trường Trung học phổ thông Hòa Vang,108.2034574,16.0197768,,,
+transport_bus_stop,osm,node/11891349452,919 Âu Cơ,108.1202658,16.0777209,,,
+transport_bus_stop,osm,node/13805656725,105 Đường 2 Tháng 9,108.2227398,16.0282194,,,
+manufacturing,osm,way/738224862,Công ty Cổ phần Cao su Đà Nẵng,108.11370161790948,16.13042755,,,
+manufacturing,osm,way/1120257014,,108.14285299265171,16.079664700000002,,,
+manufacturing,osm,way/1120257018,,108.14121116184134,16.074968050000003,,,
+manufacturing,osm,way/599961391,Facotry,108.11465402463435,16.0773849,,,
+manufacturing,osm,way/1120257017,,108.14301141062893,16.0788465,,,
+manufacturing,overture,b0817d2c-3699-4541-beeb-d54ad7497ba2,Xe Tải THACO Trường Hải tại Đà Nẵng,108.21177399479922,15.962953816023722,0.8023277521133423,True,1.0
+manufacturing,overture,c8e1f72f-bd35-4ef1-9d2b-bee68d4812be,Vật liệu xây dựng Hữu Niên,108.23619642,16.05470544,0.4608192443847656,True,1.0
+manufacturing,overture,efb9c66f-31e2-4a68-bd59-066034188c4d,Ngũ Cốc Thuận Duyên,108.30455034,15.9409085,0.36448249220848083,True,1.0
+manufacturing,overture,f60775a0-a162-4003-8d4f-6a367dc89a66,Siêu Thị Thiết Bị Mạng,108.20081192500217,16.010686100000783,0.8624570965766907,True,1.0
+manufacturing,overture,538a128f-7189-4812-9ef2-9881afd590de,Danifoods,108.24536261,16.10400304,0.5521531105041504,True,1.0
+park_recreation,osm,way/554912868,,108.32124158047219,15.88776425,,,
+park_recreation,osm,way/149699484,Công viên Biển Đông,108.2459339349006,16.0683513,,,
+park_recreation,osm,node/8898498315,,108.217681,16.0834863,,,
+park_recreation,osm,way/118564664,,108.21318895670207,16.07292615,,,
+park_recreation,osm,way/296134431,,108.3235538363129,15.87778165,,,
+park_recreation,overture,b134832b-3b83-4e1e-b80a-35f3f7609cce,Paracel,108.205,16.0559,0.47815948724746704,True,1.0
+park_recreation,overture,1c4865b8-d255-45f4-8cda-1fa3209aa06d,Rinbin GC,108.2181185,16.0796463,0.463151216506958,True,1.0
+park_recreation,overture,2afa6202-67c5-476d-aae8-c929eb338031,UncleC,108.2142599,16.0019236,0.4405827820301056,True,1.0
+park_recreation,overture,34802d37-360d-403e-9eb6-58c42687c488,Lớp Vẽ Nhà Mình- Đà Nẵng,108.21225221,16.07918481,0.5503912568092346,True,1.0
+park_recreation,overture,cb512081-756f-4c83-8b94-0887410c135d,Nhà Văn Hóa Thôn Quá Giáng,108.20977952993414,15.963022839034874,0.5744233131408691,True,1.0

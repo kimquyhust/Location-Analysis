@@ -1,0 +1,176 @@
+{
+  "manifest_version": "1.0.0",
+  "run_id": "20260914T050158Z",
+  "written_at_utc": "2026-09-14T05:02:02+00:00",
+  "sources": [
+    {
+      "source_id": "osm_geofabrik_vnm_20260913",
+      "provider": "OpenStreetMap contributors / Geofabrik",
+      "product": "Geofabrik Vietnam OSM extract",
+      "release": "vietnam-260913",
+      "represented_at": "vietnam-260913",
+      "retrieved_at_utc": "2026-09-14T05:01:58+00:00",
+      "source_uri": "https://download.geofabrik.de/asia/vietnam-260913.osm.pbf",
+      "local_path": "data/raw/osm/vietnam-260913.osm.pbf",
+      "sha256": "3c4b19fea3e58ce0e3f6a1a52d75b141de1351e699cb8136bd7b1585bc24f52c",
+      "bytes": 328456722,
+      "license_id": "ODbL-1.0",
+      "crs": null,
+      "bounds": null,
+      "expected_assets": [
+        "osm_geofabrik_vnm_20260913"
+      ],
+      "present_assets": [
+        "osm_geofabrik_vnm_20260913"
+      ],
+      "notes": "reused existing verified file"
+    },
+    {
+      "source_id": "worldpop_vnm_2025_cn_100m_r2025a_v1",
+      "provider": "WorldPop / University of Southampton",
+      "product": "Global 2 R2025A v1 constrained count",
+      "release": "2025",
+      "represented_at": "2025",
+      "retrieved_at_utc": "2026-09-14T05:01:58+00:00",
+      "source_uri": "https://data.worldpop.org/GIS/Population/Global_2015_2030/R2025A/2025/VNM/v1/100m/constrained/vnm_pop_2025_CN_100m_R2025A_v1.tif",
+      "local_path": "data/raw/worldpop/vnm_pop_2025_CN_100m_R2025A_v1.tif",
+      "sha256": "21f403884d5a2d3a0961f75ef66dea51c43fcc9e2e99d4e43cbcceafd6774540",
+      "bytes": 75215955,
+      "license_id": "CC-BY-4.0",
+      "crs": null,
+      "bounds": null,
+      "expected_assets": [
+        "worldpop_vnm_2025_cn_100m_r2025a_v1"
+      ],
+      "present_assets": [
+        "worldpop_vnm_2025_cn_100m_r2025a_v1"
+      ],
+      "notes": "reused existing verified file"
+    },
+    {
+      "source_id": "worldpop_vnm_2020_cn_100m_r2025a_v1",
+      "provider": "WorldPop / University of Southampton",
+      "product": "Global 2 R2025A v1 constrained count",
+      "release": "2020",
+      "represented_at": "2020",
+      "retrieved_at_utc": "2026-09-14T05:01:58+00:00",
+      "source_uri": "https://data.worldpop.org/GIS/Population/Global_2015_2030/R2025A/2020/VNM/v1/100m/constrained/vnm_pop_2020_CN_100m_R2025A_v1.tif",
+      "local_path": "data/raw/worldpop/vnm_pop_2020_CN_100m_R2025A_v1.tif",
+      "sha256": "d615df574ef2d42a1ca0f29c66f27f8d044a2b5b7be9ee368be8afb747127606",
+      "bytes": 74064549,
+      "license_id": "CC-BY-4.0",
+      "crs": null,
+      "bounds": null,
+      "expected_assets": [
+        "worldpop_vnm_2020_cn_100m_r2025a_v1"
+      ],
+      "present_assets": [
+        "worldpop_vnm_2020_cn_100m_r2025a_v1"
+      ],
+      "notes": "reused existing verified file"
+    },
+    {
+      "source_id": "ghspop_e2020_r2023a_r8_c29",
+      "provider": "European Commission JRC GHSL",
+      "product": "GHS-POP R2023A",
+      "release": "E2020",
+      "represented_at": "E2020",
+      "retrieved_at_utc": "2026-09-14T05:01:58+00:00",
+      "source_uri": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2020_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_POP_E2020_GLOBE_R2023A_54009_100_V1_0_R8_C29.zip",
+      "local_path": "data/raw/ghsl/GHS_POP_E2020_GLOBE_R2023A_54009_100_V1_0_R8_C29.zip",
+      "sha256": "d83c34aa9e108388dda3841db08996b3b3a598986270986b65daf77617568219",
+      "bytes": 39426582,
+      "license_id": "CC-BY-4.0",
+      "crs": null,
+      "bounds": null,
+      "expected_assets": [
+        "ghspop_e2020_r2023a_r8_c29"
+      ],
+      "present_assets": [
+        "ghspop_e2020_r2023a_r8_c29"
+      ],
+      "notes": "reused existing verified file"
+    },
+    {
+      "source_id": "overture_places_place_2026-08-19.0",
+      "provider": "Overture Maps Foundation",
+      "product": "places/place",
+      "release": "2026-08-19.0",
+      "represented_at": "2026-08-19.0",
+      "retrieved_at_utc": "2026-09-14T05:02:02+00:00",
+      "source_uri": "s3://overturemaps-us-west-2/release/2026-08-19.0/theme=places/type=place/*",
+      "local_path": "data/prototype/danang_hoian_halo/overture-places.parquet",
+      "sha256": "9ef8c06919d0d4d5c67fb3fd6b6020f5834345608a2fdbb819900215efeff825",
+      "bytes": 12896272,
+      "license_id": "CDLA-Permissive-2.0_or_Apache-2.0_by_source",
+      "crs": "OGC:CRS84",
+      "bounds": [
+        108.07,
+        15.72,
+        108.38,
+        16.18
+      ],
+      "expected_assets": [
+        "overture_places_place"
+      ],
+      "present_assets": [
+        "overture_places_place"
+      ],
+      "notes": "74589 rows, reused existing AOI subset (not re-fetched from S3)"
+    },
+    {
+      "source_id": "overture_transportation_segment_2026-08-19.0",
+      "provider": "Overture Maps Foundation",
+      "product": "transportation/segment",
+      "release": "2026-08-19.0",
+      "represented_at": "2026-08-19.0",
+      "retrieved_at_utc": "2026-09-14T05:02:02+00:00",
+      "source_uri": "s3://overturemaps-us-west-2/release/2026-08-19.0/theme=transportation/type=segment/*",
+      "local_path": "data/prototype/danang_hoian_halo/overture-transportation-segments.parquet",
+      "sha256": "0d21d9dfd0e0fd0a4ecb15b78a96a3b6acb4663b1455560488a70e132ff0729c",
+      "bytes": 15060893,
+      "license_id": "ODbL-1.0",
+      "crs": "OGC:CRS84",
+      "bounds": [
+        108.07,
+        15.72,
+        108.38,
+        16.18
+      ],
+      "expected_assets": [
+        "overture_transportation_segment"
+      ],
+      "present_assets": [
+        "overture_transportation_segment"
+      ],
+      "notes": "77149 rows, reused existing AOI subset (not re-fetched from S3)"
+    },
+    {
+      "source_id": "overture_transportation_connector_2026-08-19.0",
+      "provider": "Overture Maps Foundation",
+      "product": "transportation/connector",
+      "release": "2026-08-19.0",
+      "represented_at": "2026-08-19.0",
+      "retrieved_at_utc": "2026-09-14T05:02:02+00:00",
+      "source_uri": "s3://overturemaps-us-west-2/release/2026-08-19.0/theme=transportation/type=connector/*",
+      "local_path": "data/prototype/danang_hoian_halo/overture-transportation-connectors.parquet",
+      "sha256": "34f47a99a5e522b0c9153f3d716c26b4045cfc3689d7fa46ed1589b6166c0bee",
+      "bytes": 6131212,
+      "license_id": "ODbL-1.0",
+      "crs": "OGC:CRS84",
+      "bounds": [
+        108.07,
+        15.72,
+        108.38,
+        16.18
+      ],
+      "expected_assets": [
+        "overture_transportation_connector"
+      ],
+      "present_assets": [
+        "overture_transportation_connector"
+      ],
+      "notes": "78029 rows, reused existing AOI subset (not re-fetched from S3)"
+    }
+  ]
+}
