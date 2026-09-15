@@ -1,4 +1,127 @@
-feature_set_version: "0.2.0"
+feature_set_version: "0.3.0"
+# 0.3.0 (2026-09-14, Gate 3 remediation): every parameter that changes a
+# formula or the zero/null semantics of an atomic feature lives in the
+# `semantics` block below and is part of the versioned contract. 0.2.0
+# artifacts (data/gate3/run_20260914T160806Z) carried the land-support floor,
+# the coverage floor and the WorldPop NoData policy in the runner config
+# and clipped two ratios silently; they are superseded, not back-edited.
+# Changes vs 0.2.0: (1) ratio numerators are restricted to the valid
+# land-support mask that is their denominator (no clipping); (2) the
+# 1 % land-support denominator floor and the 0.999 coverage floor are
+# contract parameters; (3) OSM multipolygon/grouping relations and open
+# ways are entities; a relevant entity that cannot be assembled nulls every
+# feature reading its category (`entity_assembly_failed`); (4) each POI
+# count feature carries its own status column; (5) an unavailable OSM
+# source nulls every OSM-derived feature.
+
+semantics:
+  raster:
+    # Every pixel contributes by the exact fraction of its area inside the
+    # unit footprint; interior pixels 1.0. Never pixel-centre.
+    aggregation: exact_area_weighted
+    # A raster feature is null (`coverage_incomplete`) unless at least this
+    # fraction of the unit footprint is covered by pixels the publisher
+    # marked valid (land cover, built-up) or by the raster window
+    # (population, see worldpop.nodata_policy).
+    minimum_coverage_fraction: 0.999
+    worldcover:
+      nodata_class: 0
+      legend:
+        10: tree_cover
+        20: shrubland
+        30: grassland
+        40: cropland
+        50: built_up
+        60: bare_sparse
+        70: snow_ice
+        80: permanent_water
+        90: herbaceous_wetland
+        95: mangroves
+        100: moss_lichen
+      rollups:
+        tree_cover_ratio: [10]
+        grass_shrub_ratio: [20, 30]
+        cropland_ratio: [40]
+        water_wetland_ratio: [80, 90, 95]
+      # valid_land_support_area = valid classified area minus permanent water
+      # (class 80). Denominator of population_density, built_up_ratio,
+      # road_density_km_per_km2, intersection_density_per_km2 and
+      # osm_industrial_site_area_ratio. Wetland/mangrove stay in land support.
+      land_support_excludes: [80]
+      # Denominator floor: a unit whose land support is below this fraction of
+      # its own area gets `denominator_below_minimum` (zero support ->
+      # `denominator_zero`) for every land-support-denominated feature. The
+      # numerators are still reported.
+      minimum_land_support_fraction: 0.01
+    worldpop:
+      # WorldPop Global 2 R2025A v1, constrained ("CN") 100 m count, Vietnam.
+      # Evidence for the NoData policy (pinned, exact release):
+      #  - Global2_Release_Statement_R2025A_v1.pdf (worldpop.org, September
+      #    2025; sha256 1a23e31f49102b599026f29a8a36d62b5507d36131bd37b66ba834b5ad24f243):
+      #    the only product type is "CN = Constrained"; the mastergrid recodes
+      #    oceans and major inland water bodies as NoData and omits coastline
+      #    pixels with > 75 % water share; population is disaggregated onto an
+      #    annual binary built-settlement layer (GHS-BUILT-S/V + Google Open
+      #    Buildings V3 + Microsoft footprints + World Settlement Footprint);
+      #    national totals are aligned to UN WPP 2024 (1 January reference).
+      #  - vnm_pop_2025_CN_100m_R2025A_v1.tif (sha256 21f403884d5a...): NoData
+      #    -99999; 12,811,650 valid pixels = 8.11 % of the 158.0 M-pixel
+      #    bounding box (about 106,000 km2, one third of Vietnam's 331,000 km2
+      #    land area); the sum over valid pixels is 101,300,081 persons, the
+      #    WPP-2024-aligned national total. Hence the whole national count is
+      #    carried by valid pixels and publisher-NoData pixels inside the
+      #    national domain hold no modelled population by construction.
+      # Policy: publisher NoData inside the raster window = 0 persons
+      # (unsettled mask or water); the NoData share of every unit is reported
+      # (`population_nodata_area_fraction`) and decomposed per AOI into
+      # WorldCover permanent-water vs land in the validation summary. Only
+      # TECHNICAL non-coverage (unit outside the raster window) is missing.
+      # Scope limit: valid only inside Vietnam's national model domain; the
+      # four MVP AOIs lie entirely within the national raster window and far
+      # from any international boundary, which is asserted per run, not
+      # assumed nationwide.
+      nodata_policy: publisher_nodata_is_zero_persons_inside_window
+      nodata_means_zero_persons: true
+      evidence:
+        release_statement: "WorldPop Global Demographic Data, Public release R2025A V1, September 2025"
+        release_statement_url: https://data.worldpop.org/repo/prj/Global_2015_2030/R2025A/doc/Global2_Release_Statement_R2025A_v1.pdf
+        release_statement_sha256: 1a23e31f49102b599026f29a8a36d62b5507d36131bd37b66ba834b5ad24f243
+        national_raster_sha256: 21f403884d5a2d3a0961f75ef66dea51c43fcc9e2e99d4e43cbcceafd6774540
+        national_raster_valid_pixels: 12811650
+        national_raster_valid_fraction_of_window: 0.08107
+        national_raster_sum_persons: 101300081
+    ghs_built_s:
+      # Built-up surface m^2 per 100 m x 100 m pixel (0..10000).
+      pixel_area_m2: 10000
+  ratios:
+    # Public ratios are defined on [0, 1]. Their numerator is measured INSIDE
+    # the valid land-support mask that is their denominator: built-up
+    # surface and industrial polygon area lying over WorldCover permanent
+    # water / NoData are excluded from the numerator (uniform-within-pixel
+    # assumption for the 100 m built-up pixels, exact polygon intersection
+    # for industrial sites). The unmasked numerators are kept as QA columns
+    # and summarised in the validation summary. No clipping: a value outside
+    # [0, 1] by more than `unit_interval_tolerance` fails validation.
+    numerator_policy: within_valid_land_support_mask
+    unit_interval_tolerance: 1.0e-9
+  distance:
+    # The OSM source is a halo clip, so a nearest-entity search is complete
+    # only out to the unit's distance from the halo edge. A nearest entity
+    # found beyond that radius, or none found, is null with
+    # `search_truncated_by_extract` -- never the cap, never an upper bound.
+    incomplete_status: search_truncated_by_extract
+  osm_entities:
+    # A relevant OSM entity (multipolygon/boundary/grouping relation, closed
+    # or open way) that cannot be assembled reliably nulls, for the whole
+    # AOI, every feature that reads its category: count features, richness
+    # and total, distance features, industrial area/distance. Status
+    # `entity_assembly_failed`. Missing data is never a zero.
+    assembly_failure_policy: null_affected_features_for_aoi
+    assembly_failure_status: entity_assembly_failed
+  source_failure:
+    # osm_ingest_status != ok -> every OSM-derived feature is null with
+    # `source_unavailable` and `osm_query_complete` is false.
+    osm_dependent_status: source_unavailable
 
 parameters:
   road_classes:

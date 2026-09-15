@@ -1,0 +1,1256 @@
+{
+  "aoi_stats": {
+    "dong_thap_rural": {
+      "aoi_checksum": "3e03727b1c33c4ef63bc17955b77cd5ef435f8b65eb23ea819c333bf2f928128",
+      "cells": 1955,
+      "metric_crs": "EPSG:32648",
+      "osm_area_records": 94,
+      "osm_canonical_pois": 246,
+      "osm_intersections": 2931,
+      "osm_invalid_polygons_skipped": 0,
+      "osm_poi_duplicates_dropped": 2,
+      "osm_poi_on_open_way_skipped": 0,
+      "osm_raw_poi_records": 248,
+      "osm_road_ways": 4271,
+      "osm_skipped_multipolygon_relations": {
+        "area:water_body": 2
+      }
+    },
+    "hanoi_core": {
+      "aoi_checksum": "8951524c20a6125e6854c452adcc0e836ae3f9f24d703b20d9006b209a4031eb",
+      "cells": 356,
+      "metric_crs": "EPSG:32648",
+      "osm_area_records": 1068,
+      "osm_canonical_pois": 12868,
+      "osm_intersections": 39799,
+      "osm_invalid_polygons_skipped": 0,
+      "osm_poi_duplicates_dropped": 22,
+      "osm_poi_on_open_way_skipped": 17,
+      "osm_raw_poi_records": 12890,
+      "osm_road_ways": 39436,
+      "osm_skipped_multipolygon_relations": {
+        "area:industrial_site": 2,
+        "area:park_area": 3,
+        "area:water_body": 36,
+        "poi:attraction_culture": 2,
+        "poi:civic_service": 3,
+        "poi:early_childhood": 2,
+        "poi:higher_education": 8,
+        "poi:hospital": 3,
+        "poi:lodging": 3,
+        "poi:mall": 3,
+        "poi:manufacturing": 2,
+        "poi:marketplace": 2,
+        "poi:park_recreation": 4,
+        "poi:retail_other": 1,
+        "poi:school": 1
+      }
+    },
+    "hoi_an": {
+      "aoi_checksum": "5cecca1095cdaf1d38f618f261a685301f9cfc4a7bc4c359b00b5421d6096218",
+      "cells": 1317,
+      "metric_crs": "EPSG:32649",
+      "osm_area_records": 384,
+      "osm_canonical_pois": 2429,
+      "osm_intersections": 9931,
+      "osm_invalid_polygons_skipped": 0,
+      "osm_poi_duplicates_dropped": 6,
+      "osm_poi_on_open_way_skipped": 4,
+      "osm_raw_poi_records": 2435,
+      "osm_road_ways": 8689,
+      "osm_skipped_multipolygon_relations": {
+        "area:park_area": 1,
+        "area:water_body": 6,
+        "poi:attraction_culture": 2,
+        "poi:park_recreation": 1
+      }
+    },
+    "mu_cang_chai": {
+      "aoi_checksum": "6a721850cab94278f907650d91a3aa31f60cc16844032c21aaab58eec935f88a",
+      "cells": 2053,
+      "metric_crs": "EPSG:32648",
+      "osm_area_records": 0,
+      "osm_canonical_pois": 45,
+      "osm_intersections": 1928,
+      "osm_invalid_polygons_skipped": 0,
+      "osm_poi_duplicates_dropped": 0,
+      "osm_poi_on_open_way_skipped": 0,
+      "osm_raw_poi_records": 45,
+      "osm_road_ways": 1993,
+      "osm_skipped_multipolygon_relations": {
+        "area:water_body": 1
+      }
+    }
+  },
+  "aois_computed": [
+    "hanoi_core",
+    "hoi_an",
+    "mu_cang_chai",
+    "dong_thap_rural"
+  ],
+  "aois_expected": [
+    "hanoi_core",
+    "hoi_an",
+    "mu_cang_chai",
+    "dong_thap_rural"
+  ],
+  "conservation": {
+    "dong_thap_rural": {
+      "built_up_m2": {
+        "passed": true,
+        "relative_error": 1.2468398649620098e-16,
+        "sum_over_cells": 14938928.41874855,
+        "sum_over_union_of_cells": 14938928.418748548
+      },
+      "built_up_ratio_cells_over_1_before_cap": 0,
+      "built_up_ratio_uncapped_max": 0.6686798304664551,
+      "land_support_fraction_max": 1.0000000000027103,
+      "land_support_within_cell": true,
+      "population": {
+        "passed": true,
+        "relative_error": 4.2184205099581055e-12,
+        "sum_over_cells": 268490.2236218075,
+        "sum_over_union_of_cells": 268490.22362294013
+      },
+      "worldcover_rollup_sum_max": 1.0000000000000002,
+      "worldcover_rollups_within_valid_area": true
+    },
+    "hanoi_core": {
+      "built_up_m2": {
+        "passed": true,
+        "relative_error": 1.3571109366231657e-16,
+        "sum_over_cells": 13725076.550231682,
+        "sum_over_union_of_cells": 13725076.550231684
+      },
+      "built_up_ratio_cells_over_1_before_cap": 0,
+      "built_up_ratio_uncapped_max": 0.9243316164330732,
+      "land_support_fraction_max": 1.0000000000024634,
+      "land_support_within_cell": true,
+      "population": {
+        "passed": true,
+        "relative_error": 4.024720459675854e-12,
+        "sum_over_cells": 889069.8826989547,
+        "sum_over_union_of_cells": 889069.8827025329
+      },
+      "worldcover_rollup_sum_max": 1.0000000000000002,
+      "worldcover_rollups_within_valid_area": true
+    },
+    "hoi_an": {
+      "built_up_m2": {
+        "passed": true,
+        "relative_error": 0.0,
+        "sum_over_cells": 12335550.90340241,
+        "sum_over_union_of_cells": 12335550.90340241
+      },
+      "built_up_ratio_cells_over_1_before_cap": 0,
+      "built_up_ratio_uncapped_max": 0.8876433875671309,
+      "land_support_fraction_max": 1.000000000002436,
+      "land_support_within_cell": true,
+      "population": {
+        "passed": true,
+        "relative_error": 4.272917001472433e-12,
+        "sum_over_cells": 185272.33081696407,
+        "sum_over_union_of_cells": 185272.33081775572
+      },
+      "worldcover_rollup_sum_max": 1.0000000000000002,
+      "worldcover_rollups_within_valid_area": true
+    },
+    "mu_cang_chai": {
+      "built_up_m2": {
+        "passed": true,
+        "relative_error": 0.0,
+        "sum_over_cells": 100334.23267643448,
+        "sum_over_union_of_cells": 100334.23267643448
+      },
+      "built_up_ratio_cells_over_1_before_cap": 0,
+      "built_up_ratio_uncapped_max": 0.07047294846843169,
+      "land_support_fraction_max": 1.0000000000025167,
+      "land_support_within_cell": true,
+      "population": {
+        "passed": true,
+        "relative_error": 4.339501372139709e-12,
+        "sum_over_cells": 17803.83258359852,
+        "sum_over_union_of_cells": 17803.83258367578
+      },
+      "worldcover_rollup_sum_max": 1.0000000000000002,
+      "worldcover_rollups_within_valid_area": true
+    }
+  },
+  "conservation_passed": true,
+  "distance_status_counts": {
+    "distance_nearest_higher_education_m": {
+      "ok": 2446,
+      "search_truncated_by_extract": 3235
+    },
+    "distance_nearest_hospital_m": {
+      "ok": 3159,
+      "search_truncated_by_extract": 2522
+    },
+    "distance_nearest_major_road_m": {
+      "ok": 5071,
+      "search_truncated_by_extract": 610
+    },
+    "distance_nearest_osm_industrial_site_m": {
+      "ok": 2704,
+      "search_truncated_by_extract": 2977
+    },
+    "distance_nearest_park_m": {
+      "ok": 2797,
+      "search_truncated_by_extract": 2884
+    },
+    "distance_nearest_transit_stop_m": {
+      "ok": 2903,
+      "search_truncated_by_extract": 2778
+    },
+    "distance_nearest_transport_hub_m": {
+      "ok": 3355,
+      "search_truncated_by_extract": 2326
+    },
+    "distance_nearest_urban_centre_km": {
+      "source_not_acquired": 5681
+    }
+  },
+  "full_mvp_run": true,
+  "passed": true,
+  "per_aoi": {
+    "dong_thap_rural": {
+      "cells": 1955,
+      "cells_fully_inside_aoi": 1751,
+      "features": {
+        "attraction_culture_count_3km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 2.0,
+          "zero_rate": 0.8460358056265984
+        },
+        "built_up_ratio": {
+          "median": 0.0331268793098807,
+          "null_rate": 0.05115089514066496,
+          "p05": 0.0,
+          "p95": 0.2792454620807181,
+          "zero_rate": 0.058312020460358056
+        },
+        "clinic_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 0.9872122762148338
+        },
+        "cropland_ratio": {
+          "median": 0.1287375562518619,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.9897215607237251,
+          "zero_rate": 0.2071611253196931
+        },
+        "distance_nearest_higher_education_m": {
+          "median": 3197.2139400990286,
+          "null_rate": 0.4265984654731458,
+          "p05": 695.3403540709912,
+          "p95": 5451.366246255937,
+          "zero_rate": 0.0005115089514066496
+        },
+        "distance_nearest_hospital_m": {
+          "median": 2733.1557374683202,
+          "null_rate": 0.2578005115089514,
+          "p05": 581.369868294309,
+          "p95": 4653.482036391581,
+          "zero_rate": 0.0010230179028132991
+        },
+        "distance_nearest_major_road_m": {
+          "median": 740.0747224437126,
+          "null_rate": 0.0,
+          "p05": 54.2601627930122,
+          "p95": 2471.174179998222,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_osm_industrial_site_m": {
+          "median": 3669.5118629879794,
+          "null_rate": 0.3028132992327366,
+          "p05": 1040.9428953094268,
+          "p95": 5956.548287135963,
+          "zero_rate": 0.001534526854219949
+        },
+        "distance_nearest_park_m": {
+          "median": 2929.330374394835,
+          "null_rate": 0.34271099744245526,
+          "p05": 531.2832002753734,
+          "p95": 5007.607781149541,
+          "zero_rate": 0.0010230179028132991
+        },
+        "distance_nearest_transit_stop_m": {
+          "median": 2602.251265420611,
+          "null_rate": 0.329923273657289,
+          "p05": 494.2768161841548,
+          "p95": 5575.249332940473,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_transport_hub_m": {
+          "median": 2034.5834234509846,
+          "null_rate": 0.18721227621483377,
+          "p05": 567.8914985226462,
+          "p95": 4847.742939709134,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_urban_centre_km": {
+          "median": null,
+          "null_rate": 1.0,
+          "p05": null,
+          "p95": null,
+          "zero_rate": 0.0
+        },
+        "food_drink_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 2.0,
+          "zero_rate": 0.9416879795396419
+        },
+        "grass_shrub_ratio": {
+          "median": 0.001994442164641738,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.09856975364246545,
+          "zero_rate": 0.4112531969309463
+        },
+        "higher_education_count_3km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 2.0,
+          "zero_rate": 0.7544757033248082
+        },
+        "hospital_count_3km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 8.0,
+          "zero_rate": 0.5902813299232736
+        },
+        "intersection_density_per_km2": {
+          "median": 0.0,
+          "null_rate": 0.05115089514066496,
+          "p05": 0.0,
+          "p95": 57.58351103435141,
+          "zero_rate": 0.6762148337595908
+        },
+        "lodging_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 1.0,
+          "zero_rate": 0.9171355498721228
+        },
+        "major_road_length_km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.3878776896489517,
+          "zero_rate": 0.8398976982097187
+        },
+        "mall_count_3km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 1.0
+        },
+        "marketplace_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 1.0,
+          "zero_rate": 0.8895140664961637
+        },
+        "osm_industrial_site_area_ratio": {
+          "median": 0.0,
+          "null_rate": 0.05115089514066496,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 0.9452685421994885
+        },
+        "park_recreation_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 1.0,
+          "zero_rate": 0.9268542199488491
+        },
+        "pharmacy_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 1.0
+        },
+        "poi_category_richness_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 5.0,
+          "zero_rate": 0.5994884910485934
+        },
+        "poi_total_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 7.0,
+          "zero_rate": 0.5994884910485934
+        },
+        "population_count": {
+          "median": 46.28738217394414,
+          "null_rate": 0.0,
+          "p05": 0.014553908546248778,
+          "p95": 557.0798746782817,
+          "zero_rate": 0.04603580562659847
+        },
+        "population_density": {
+          "median": 460.7667971363658,
+          "null_rate": 0.05115089514066496,
+          "p05": 24.807217449968938,
+          "p95": 4992.8688140750955,
+          "zero_rate": 0.006649616368286445
+        },
+        "retail_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 1.0,
+          "zero_rate": 0.829156010230179
+        },
+        "road_density_km_per_km2": {
+          "median": 3.195712731652553,
+          "null_rate": 0.05115089514066496,
+          "p05": 0.0,
+          "p95": 13.168026631376701,
+          "zero_rate": 0.2639386189258312
+        },
+        "road_length_km": {
+          "median": 0.3573353532541201,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 1.5062478077760855,
+          "zero_rate": 0.3145780051150895
+        },
+        "school_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 1.0,
+          "zero_rate": 0.9120204603580563
+        },
+        "transit_stop_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 2.0,
+          "zero_rate": 0.9033248081841432
+        },
+        "tree_cover_ratio": {
+          "median": 0.3618186795127432,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.9749188102851034,
+          "zero_rate": 0.07519181585677749
+        },
+        "water_wetland_ratio": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.9943375857849338,
+          "zero_rate": 0.6112531969309463
+        }
+      }
+    },
+    "hanoi_core": {
+      "cells": 356,
+      "cells_fully_inside_aoi": 272,
+      "features": {
+        "attraction_culture_count_3km": {
+          "median": 82.5,
+          "null_rate": 0.0,
+          "p05": 22.0,
+          "p95": 145.25,
+          "zero_rate": 0.0
+        },
+        "built_up_ratio": {
+          "median": 0.44688133973358796,
+          "null_rate": 0.08146067415730338,
+          "p05": 6.423895116078343e-05,
+          "p95": 0.6410979003693028,
+          "zero_rate": 0.03932584269662921
+        },
+        "clinic_count_1km": {
+          "median": 4.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 22.0,
+          "zero_rate": 0.19662921348314608
+        },
+        "cropland_ratio": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.12269272045831994,
+          "zero_rate": 0.7275280898876404
+        },
+        "distance_nearest_higher_education_m": {
+          "median": 746.3077555826621,
+          "null_rate": 0.0,
+          "p05": 115.52917010193647,
+          "p95": 1926.4970367613043,
+          "zero_rate": 0.011235955056179775
+        },
+        "distance_nearest_hospital_m": {
+          "median": 529.6211555319987,
+          "null_rate": 0.0,
+          "p05": 97.50688243899474,
+          "p95": 1560.623546657264,
+          "zero_rate": 0.011235955056179775
+        },
+        "distance_nearest_major_road_m": {
+          "median": 176.44365038733054,
+          "null_rate": 0.0,
+          "p05": 11.450474510216523,
+          "p95": 843.3946054784565,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_osm_industrial_site_m": {
+          "median": 766.8202099912398,
+          "null_rate": 0.0,
+          "p05": 85.82851958357368,
+          "p95": 1951.4672613928178,
+          "zero_rate": 0.008426966292134831
+        },
+        "distance_nearest_park_m": {
+          "median": 341.1485814370367,
+          "null_rate": 0.0,
+          "p05": 2.467645214202171,
+          "p95": 1116.2480294463064,
+          "zero_rate": 0.042134831460674156
+        },
+        "distance_nearest_transit_stop_m": {
+          "median": 199.45996354113151,
+          "null_rate": 0.0,
+          "p05": 39.51190000238641,
+          "p95": 902.6211484477561,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_transport_hub_m": {
+          "median": 1019.0169468769296,
+          "null_rate": 0.0,
+          "p05": 165.2861255272096,
+          "p95": 1999.8759320412287,
+          "zero_rate": 0.0028089887640449437
+        },
+        "distance_nearest_urban_centre_km": {
+          "median": null,
+          "null_rate": 1.0,
+          "p05": null,
+          "p95": null,
+          "zero_rate": 0.0
+        },
+        "food_drink_count_1km": {
+          "median": 80.0,
+          "null_rate": 0.0,
+          "p05": 1.0,
+          "p95": 756.25,
+          "zero_rate": 0.047752808988764044
+        },
+        "grass_shrub_ratio": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.08965988904892722,
+          "zero_rate": 0.6348314606741573
+        },
+        "higher_education_count_3km": {
+          "median": 12.0,
+          "null_rate": 0.0,
+          "p05": 4.0,
+          "p95": 31.0,
+          "zero_rate": 0.0
+        },
+        "hospital_count_3km": {
+          "median": 27.0,
+          "null_rate": 0.0,
+          "p05": 4.75,
+          "p95": 49.0,
+          "zero_rate": 0.0
+        },
+        "intersection_density_per_km2": {
+          "median": 269.7186853574864,
+          "null_rate": 0.08146067415730338,
+          "p05": 0.0,
+          "p95": 610.0640203919319,
+          "zero_rate": 0.06460674157303371
+        },
+        "lodging_count_1km": {
+          "median": 10.0,
+          "null_rate": 0.0,
+          "p05": 1.0,
+          "p95": 331.25,
+          "zero_rate": 0.03651685393258427
+        },
+        "major_road_length_km": {
+          "median": 0.15446300728912932,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 1.3266901971702212,
+          "zero_rate": 0.45786516853932585
+        },
+        "mall_count_3km": {
+          "median": 2.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 10.0,
+          "zero_rate": 0.18258426966292135
+        },
+        "marketplace_count_1km": {
+          "median": 2.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 6.0,
+          "zero_rate": 0.19101123595505617
+        },
+        "osm_industrial_site_area_ratio": {
+          "median": 0.0,
+          "null_rate": 0.08146067415730338,
+          "p05": 0.0,
+          "p95": 0.12109566619645272,
+          "zero_rate": 0.800561797752809
+        },
+        "park_recreation_count_1km": {
+          "median": 12.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 28.0,
+          "zero_rate": 0.06741573033707865
+        },
+        "pharmacy_count_1km": {
+          "median": 6.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 21.25,
+          "zero_rate": 0.199438202247191
+        },
+        "poi_category_richness_1km": {
+          "median": 17.0,
+          "null_rate": 0.0,
+          "p05": 7.75,
+          "p95": 21.0,
+          "zero_rate": 0.0
+        },
+        "poi_total_count_1km": {
+          "median": 360.5,
+          "null_rate": 0.0,
+          "p05": 25.5,
+          "p95": 2157.75,
+          "zero_rate": 0.0
+        },
+        "population_count": {
+          "median": 2494.6230332930263,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 5723.908645026745,
+          "zero_rate": 0.06460674157303371
+        },
+        "population_density": {
+          "median": 26840.039905771686,
+          "null_rate": 0.08146067415730338,
+          "p05": 76.90681297714998,
+          "p95": 50071.74361420306,
+          "zero_rate": 0.008426966292134831
+        },
+        "retail_count_1km": {
+          "median": 86.0,
+          "null_rate": 0.0,
+          "p05": 3.0,
+          "p95": 527.5,
+          "zero_rate": 0.014044943820224719
+        },
+        "road_density_km_per_km2": {
+          "median": 27.513444159309525,
+          "null_rate": 0.08146067415730338,
+          "p05": 5.109933884810363,
+          "p95": 42.42260083860176,
+          "zero_rate": 0.02247191011235955
+        },
+        "road_length_km": {
+          "median": 2.8347477613029453,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 4.588237562601352,
+          "zero_rate": 0.10393258426966293
+        },
+        "school_count_1km": {
+          "median": 12.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 23.0,
+          "zero_rate": 0.06460674157303371
+        },
+        "transit_stop_count_1km": {
+          "median": 28.5,
+          "null_rate": 0.0,
+          "p05": 2.0,
+          "p95": 56.25,
+          "zero_rate": 0.03651685393258427
+        },
+        "tree_cover_ratio": {
+          "median": 0.09192166726561835,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.6510861130563808,
+          "zero_rate": 0.08707865168539326
+        },
+        "water_wetland_ratio": {
+          "median": 0.00030179679769976053,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 1.0,
+          "zero_rate": 0.49157303370786515
+        }
+      }
+    },
+    "hoi_an": {
+      "cells": 1317,
+      "cells_fully_inside_aoi": 1151,
+      "features": {
+        "attraction_culture_count_3km": {
+          "median": 6.0,
+          "null_rate": 0.0,
+          "p05": 1.0,
+          "p95": 53.0,
+          "zero_rate": 0.02733485193621868
+        },
+        "built_up_ratio": {
+          "median": 0.08597970010136399,
+          "null_rate": 0.16476841305998483,
+          "p05": 0.0,
+          "p95": 0.35015327856192,
+          "zero_rate": 0.05239179954441914
+        },
+        "clinic_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 0.9544419134396356
+        },
+        "cropland_ratio": {
+          "median": 0.009953361062828181,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.8888939311835968,
+          "zero_rate": 0.36446469248291574
+        },
+        "distance_nearest_higher_education_m": {
+          "median": 2446.039594278217,
+          "null_rate": 0.2642369020501139,
+          "p05": 698.6346795393015,
+          "p95": 4880.1572892372415,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_hospital_m": {
+          "median": 3273.8075251275272,
+          "null_rate": 0.32801822323462415,
+          "p05": 747.7097647668187,
+          "p95": 4735.083674920856,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_major_road_m": {
+          "median": 789.2746561501798,
+          "null_rate": 0.009111617312072893,
+          "p05": 59.97897528425297,
+          "p95": 2894.2713312937044,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_osm_industrial_site_m": {
+          "median": 2111.015808869473,
+          "null_rate": 0.25208807896735,
+          "p05": 406.89003992106615,
+          "p95": 4890.296200688642,
+          "zero_rate": 0.006074411541381929
+        },
+        "distance_nearest_park_m": {
+          "median": 1882.708185649462,
+          "null_rate": 0.12224753227031131,
+          "p05": 234.9115903153838,
+          "p95": 3871.3097167294036,
+          "zero_rate": 0.005315110098709187
+        },
+        "distance_nearest_transit_stop_m": {
+          "median": 1627.704321948275,
+          "null_rate": 0.060744115413819286,
+          "p05": 265.03935218770545,
+          "p95": 3686.3697281849936,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_transport_hub_m": {
+          "median": 2357.285953044279,
+          "null_rate": 0.170083523158694,
+          "p05": 575.696163729805,
+          "p95": 4154.0891816226895,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_urban_centre_km": {
+          "median": null,
+          "null_rate": 1.0,
+          "p05": null,
+          "p95": null,
+          "zero_rate": 0.0
+        },
+        "food_drink_count_1km": {
+          "median": 1.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 97.20000000000005,
+          "zero_rate": 0.4844343204252088
+        },
+        "grass_shrub_ratio": {
+          "median": 0.14356546876440426,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.8191108539746897,
+          "zero_rate": 0.18147304479878512
+        },
+        "higher_education_count_3km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 1.2000000000000455,
+          "zero_rate": 0.5375854214123007
+        },
+        "hospital_count_3km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 4.0,
+          "zero_rate": 0.7289293849658315
+        },
+        "intersection_density_per_km2": {
+          "median": 29.54126348696046,
+          "null_rate": 0.16476841305998483,
+          "p05": 0.0,
+          "p95": 169.06311752728902,
+          "zero_rate": 0.20652999240698558
+        },
+        "lodging_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 56.0,
+          "zero_rate": 0.5679574791192104
+        },
+        "major_road_length_km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.47496128519008163,
+          "zero_rate": 0.8367501898253606
+        },
+        "mall_count_3km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 1.0
+        },
+        "marketplace_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 2.0,
+          "zero_rate": 0.8147304479878512
+        },
+        "osm_industrial_site_area_ratio": {
+          "median": 0.0,
+          "null_rate": 0.16476841305998483,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 0.8192862566438877
+        },
+        "park_recreation_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 10.0,
+          "zero_rate": 0.6970387243735763
+        },
+        "pharmacy_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 3.0,
+          "zero_rate": 0.8823082763857252
+        },
+        "poi_category_richness_1km": {
+          "median": 3.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 14.0,
+          "zero_rate": 0.2604403948367502
+        },
+        "poi_total_count_1km": {
+          "median": 4.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 203.8000000000004,
+          "zero_rate": 0.2604403948367502
+        },
+        "population_count": {
+          "median": 44.424768772524885,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 572.6479273623021,
+          "zero_rate": 0.16552771450265755
+        },
+        "population_density": {
+          "median": 811.283839470048,
+          "null_rate": 0.16476841305998483,
+          "p05": 10.354719414919808,
+          "p95": 5768.187943434522,
+          "zero_rate": 0.012148823082763858
+        },
+        "retail_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 39.600000000000136,
+          "zero_rate": 0.568716780561883
+        },
+        "road_density_km_per_km2": {
+          "median": 8.40080008419552,
+          "null_rate": 0.16476841305998483,
+          "p05": 0.0,
+          "p95": 23.506231985357392,
+          "zero_rate": 0.08428246013667426
+        },
+        "road_length_km": {
+          "median": 0.6515330483141186,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 2.205064955383516,
+          "zero_rate": 0.24677296886864086
+        },
+        "school_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 2.0,
+          "zero_rate": 0.7107061503416856
+        },
+        "transit_stop_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 7.0,
+          "zero_rate": 0.7281700835231587
+        },
+        "tree_cover_ratio": {
+          "median": 0.037782716173681716,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.3851026508741997,
+          "zero_rate": 0.2642369020501139
+        },
+        "water_wetland_ratio": {
+          "median": 0.015220594324915118,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 1.0,
+          "zero_rate": 0.44874715261959
+        }
+      }
+    },
+    "mu_cang_chai": {
+      "cells": 2053,
+      "cells_fully_inside_aoi": 1843,
+      "features": {
+        "attraction_culture_count_3km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 4.0,
+          "zero_rate": 0.5893813930832927
+        },
+        "built_up_ratio": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0005533449383594314,
+          "zero_rate": 0.9254749147588894
+        },
+        "clinic_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 1.0
+        },
+        "cropland_ratio": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.31428629202727865,
+          "zero_rate": 0.6200681928884559
+        },
+        "distance_nearest_higher_education_m": {
+          "median": null,
+          "null_rate": 1.0,
+          "p05": null,
+          "p95": null,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_hospital_m": {
+          "median": 5294.331314532117,
+          "null_rate": 0.772528007793473,
+          "p05": 2085.0345878575868,
+          "p95": 9310.888665270479,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_major_road_m": {
+          "median": 2293.5984741012676,
+          "null_rate": 0.29128105211885047,
+          "p05": 158.91607321036085,
+          "p95": 5827.733011921535,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_osm_industrial_site_m": {
+          "median": null,
+          "null_rate": 1.0,
+          "p05": null,
+          "p95": null,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_park_m": {
+          "median": null,
+          "null_rate": 1.0,
+          "p05": null,
+          "p95": null,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_transit_stop_m": {
+          "median": null,
+          "null_rate": 1.0,
+          "p05": null,
+          "p95": null,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_transport_hub_m": {
+          "median": 5264.735279077084,
+          "null_rate": 0.8455918168533852,
+          "p05": 2396.6427243272456,
+          "p95": 9643.445073226827,
+          "zero_rate": 0.0
+        },
+        "distance_nearest_urban_centre_km": {
+          "median": null,
+          "null_rate": 1.0,
+          "p05": null,
+          "p95": null,
+          "zero_rate": 0.0
+        },
+        "food_drink_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 0.9727228446176327
+        },
+        "grass_shrub_ratio": {
+          "median": 0.15737829633949188,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.7005337353153962,
+          "zero_rate": 0.13346322454943985
+        },
+        "higher_education_count_3km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 1.0
+        },
+        "hospital_count_3km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 0.964929371651242
+        },
+        "intersection_density_per_km2": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 34.61647430289917,
+          "zero_rate": 0.864101315148563
+        },
+        "lodging_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 1.0,
+          "zero_rate": 0.9444715051144666
+        },
+        "major_road_length_km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 0.9571358986848514
+        },
+        "mall_count_3km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 1.0
+        },
+        "marketplace_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 1.0
+        },
+        "osm_industrial_site_area_ratio": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 1.0
+        },
+        "park_recreation_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 1.0
+        },
+        "pharmacy_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 1.0
+        },
+        "poi_category_richness_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 1.0,
+          "zero_rate": 0.8811495372625426
+        },
+        "poi_total_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 1.0,
+          "zero_rate": 0.8811495372625426
+        },
+        "population_count": {
+          "median": 0.05664341438836954,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 50.074314212790014,
+          "zero_rate": 0.4729663906478324
+        },
+        "population_density": {
+          "median": 0.490786751593921,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 433.5688236291005,
+          "zero_rate": 0.4729663906478324
+        },
+        "retail_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 0.9688261081344374
+        },
+        "road_density_km_per_km2": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 7.746105003005763,
+          "zero_rate": 0.6945932781295665
+        },
+        "road_length_km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.8945083536615914,
+          "zero_rate": 0.6945932781295665
+        },
+        "school_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 1.0
+        },
+        "transit_stop_count_1km": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 1.0
+        },
+        "tree_cover_ratio": {
+          "median": 0.8296248360126535,
+          "null_rate": 0.0,
+          "p05": 0.10837062553506004,
+          "p95": 1.0,
+          "zero_rate": 0.0
+        },
+        "water_wetland_ratio": {
+          "median": 0.0,
+          "null_rate": 0.0,
+          "p05": 0.0,
+          "p95": 0.0,
+          "zero_rate": 0.9985387238188017
+        }
+      }
+    }
+  },
+  "rows": 5681,
+  "run_id": "20260914T160806Z",
+  "runtime": {
+    "peak_rss_bytes": 518569984,
+    "wall_time_s_by_aoi": {
+      "": 0.07805287512019277,
+      "dong_thap_rural": 12.454079582355917,
+      "hanoi_core": 12.042780791874975,
+      "hoi_an": 11.79670770606026,
+      "mu_cang_chai": 12.695167791564018
+    },
+    "wall_time_s_by_stage": {
+      "conservation_checks": 0.6296852910891175,
+      "features": 33.425071999430656,
+      "osm_parse": 14.167373624630272,
+      "poi_dedup": 0.4780488326214254,
+      "provenance_verify": 0.018958665896207094,
+      "raster_open": 0.09410966606810689,
+      "units": 0.1754877921193838,
+      "write_outputs": 0.07805287512019277
+    },
+    "wall_time_s_total": 49.06678874697536
+  },
+  "schema": {
+    "expected_columns": 84,
+    "missing_columns": [],
+    "passed": true,
+    "problems": [],
+    "rows": 5681
+  },
+  "storage_bytes": {
+    "atomic_features.parquet": 1145459,
+    "source_coverage.parquet": 15010,
+    "spatial_units.parquet": 439700
+  }
+}

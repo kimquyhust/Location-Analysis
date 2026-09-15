@@ -1,0 +1,63 @@
+# Gate 3 Atomic Feature MVP — runner-only parameters.
+#
+# The FEATURE CONTRACT lives in config/features.yaml and
+# docs/feature_dictionary.md; the SPATIAL UNIT in config/spatial.yaml; the
+# POI taxonomy in config/poi_taxonomy.yaml; search caps and buffers in
+# config/spatial.yaml. Nothing here redefines any of those -- this file only
+# says how the four-AOI vertical slice is executed.
+version: "1.1.0"   # 1.1.0: semantics moved to config/features.yaml (feature_set_version 0.3.0)
+
+run:
+  output_root: data/gate3
+  run_dir_prefix: run_
+  # Every AOI in this list is computed; the run is a full MVP run only when
+  # all four are present. A `--aoi` subset is a smoke run.
+  aoi_ids: [hanoi_core, hoi_an, mu_cang_chai, dong_thap_rural]
+  source_index: data/gate2/aoi_sources/gate2_source_index.json
+  spatial_config: config/spatial.yaml
+  features_config: config/features.yaml
+  taxonomy_config: config/poi_taxonomy.yaml
+
+sources:
+  # Gate 3 MVP source policy (COWORK_START_PROMPT.md §5). OSM-only for POI so
+  # the slice is consistent across all four AOIs; Overture Places is NOT
+  # unioned, NOT used to fill the three non-corridor AOIs, and its
+  # commercial augmentation is deferred to a separate multi-context pass.
+  poi_source_policy: osm_only_gate3_mvp_v1
+  road_source_policy: osm_only_canonical
+  overture_places: deferred_multi_context_coverage_pass
+  overture_transportation: qa_fallback_not_unioned
+  urban_centres:
+    source: ghsl_urban_centre_database_R2024A
+    status: source_not_acquired      # not in data/raw; not downloaded this session
+  admin_province:
+    source: ocha_cod_ab_vietnam_2025_adm1
+    status: source_not_acquired      # not pinned in the four-AOI bundle
+  admin_commune:
+    status: blocked_no_qualified_geometry   # docs/gate2_admin_qualification.md
+
+spatial_unit:
+  # Cells are FULL H3 cells intersecting the AOI polygon (same inclusion
+  # rule as Gate 2). Features are computed on the full cell footprint using
+  # the halo-clipped sources, so an edge cell is complete, not clipped.
+  # `aoi_id` and `aoi_overlap_fraction` are carried so that, when AOI runs
+  # are later merged, a cell present in two AOIs is de-duplicated on
+  # spatial_unit_id rather than double-counted. The four MVP AOIs do not
+  # overlap each other.
+  boundary_policy: full_cells_intersecting_aoi
+
+# Feature semantics (raster aggregation, coverage and denominator floors,
+# WorldCover legend/rollups, WorldPop NoData policy, ratio numerator policy,
+# distance completeness, entity-assembly failure policy) are NOT here: they
+# are part of the versioned contract in config/features.yaml `semantics`
+# (feature_set_version 0.3.0) and are hashed into the run manifest from there.
+
+statuses:
+  ok: ok
+  not_found_within_cap: not_found_within_cap
+  source_not_acquired: source_not_acquired
+  source_unavailable: source_unavailable
+  coverage_incomplete: coverage_incomplete
+  denominator_zero: denominator_zero
+  denominator_below_minimum: denominator_below_minimum
+  entity_assembly_failed: entity_assembly_failed

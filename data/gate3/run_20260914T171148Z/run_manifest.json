@@ -1,0 +1,321 @@
+{
+  "aois": [
+    {
+      "acquisition_manifest": "data/manifests/source_manifest_20260914T102150Z.json",
+      "aoi_id": "hanoi_core",
+      "checksum": "8951524c20a6125e6854c452adcc0e836ae3f9f24d703b20d9006b209a4031eb",
+      "context": "dense_urban",
+      "metric_crs": "EPSG:32648",
+      "source_manifest_id": "20260914T102150Z"
+    },
+    {
+      "acquisition_manifest": "data/manifests/source_manifest_20260914T102150Z.json",
+      "aoi_id": "hoi_an",
+      "checksum": "5cecca1095cdaf1d38f618f261a685301f9cfc4a7bc4c359b00b5421d6096218",
+      "context": "tourism",
+      "metric_crs": "EPSG:32649",
+      "source_manifest_id": "20260914T102150Z"
+    },
+    {
+      "acquisition_manifest": "data/manifests/source_manifest_20260914T102150Z.json",
+      "aoi_id": "mu_cang_chai",
+      "checksum": "6a721850cab94278f907650d91a3aa31f60cc16844032c21aaab58eec935f88a",
+      "context": "rural_mountain",
+      "metric_crs": "EPSG:32648",
+      "source_manifest_id": "20260914T102150Z"
+    },
+    {
+      "acquisition_manifest": "data/manifests/source_manifest_20260914T102150Z.json",
+      "aoi_id": "dong_thap_rural",
+      "checksum": "3e03727b1c33c4ef63bc17955b77cd5ef435f8b65eb23ea819c333bf2f928128",
+      "context": "rural_delta",
+      "metric_crs": "EPSG:32648",
+      "source_manifest_id": "20260914T102150Z"
+    }
+  ],
+  "artifacts": {
+    "aois.geojson": {
+      "bytes": 4659,
+      "sha256": "56d7f574e4b6c83b350f5487d5738c41fc739ef9559c528c213d46ac3434a18e"
+    },
+    "atomic_features.parquet": {
+      "bytes": 1112610,
+      "sha256": "26d75dd0bf08b101a479aae816f667f44271dee676f08b7aa485cccbc0ed09e0"
+    },
+    "feature_manifest.json": {
+      "bytes": 16929,
+      "sha256": "1cd97295ab6d905b8a0a28223f010c5df78ce81dff1dc05db91ea37093e0e087"
+    },
+    "source_coverage.parquet": {
+      "bytes": 15010,
+      "sha256": "7413b0b521e9e71d5b599b1337b5596b9495447faf761f72785920a334ddb24e"
+    },
+    "spatial_units.parquet": {
+      "bytes": 439700,
+      "sha256": "901093900bd912f00aed73e7de8f5ed871e2ef9d7e4fdae2edf043c9de333cc5"
+    },
+    "validation_summary.json": {
+      "bytes": 62701,
+      "sha256": "43dca9e7f00dae7b07e3847927f3cacb31da022829e661af705bbe6f01bf16b7"
+    }
+  },
+  "code_version": "59fe994cacf930df79d9b364fe104f1778d41f47+dirty",
+  "config_hash": "f1b1948188b66f4de0eaf755a095d59da5fe1549e30777ae17e6dec6ad8f8a4d",
+  "config_path": "config/gate3_mvp.yaml",
+  "config_sha256": {
+    "config/features.yaml": "515ac315b4b7791c5027134ae37889781aea6acac0db81dce334ada5fc119856",
+    "config/gate3_mvp.yaml": "08e0a65a5c4ac18545082d38c58442fe293526f0068d2b24c7bb502dfe16300c",
+    "config/poi_taxonomy.yaml": "0f1809242608281e637ea0a71824d842024728b73656b95ccd199c52c1b2497d",
+    "config/spatial.yaml": "1cdba55dc736ca0b79d09dfd0d48e1aa99f88316532a8a8c162d9e06b55d82b0"
+  },
+  "configs_hashed": [
+    "config/gate3_mvp.yaml",
+    "config/spatial.yaml",
+    "config/features.yaml",
+    "config/poi_taxonomy.yaml"
+  ],
+  "environment": {
+    "cpu_count_logical": 8,
+    "geopandas": "1.1.4",
+    "h3": "4.5.0",
+    "machine": "arm64",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "platform": "macOS-15.6-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.12.13",
+    "rasterio": "1.5.1",
+    "shapely": "2.1.2",
+    "total_ram_bytes": 17179869184
+  },
+  "feature_semantics": {
+    "distance": {
+      "incomplete_status": "search_truncated_by_extract"
+    },
+    "osm_entities": {
+      "assembly_failure_policy": "null_affected_features_for_aoi",
+      "assembly_failure_status": "entity_assembly_failed"
+    },
+    "raster": {
+      "aggregation": "exact_area_weighted",
+      "ghs_built_s": {
+        "pixel_area_m2": 10000
+      },
+      "minimum_coverage_fraction": 0.999,
+      "worldcover": {
+        "land_support_excludes": [
+          80
+        ],
+        "legend": {
+          "10": "tree_cover",
+          "20": "shrubland",
+          "30": "grassland",
+          "40": "cropland",
+          "50": "built_up",
+          "60": "bare_sparse",
+          "70": "snow_ice",
+          "80": "permanent_water",
+          "90": "herbaceous_wetland",
+          "95": "mangroves",
+          "100": "moss_lichen"
+        },
+        "minimum_land_support_fraction": 0.01,
+        "nodata_class": 0,
+        "rollups": {
+          "cropland_ratio": [
+            40
+          ],
+          "grass_shrub_ratio": [
+            20,
+            30
+          ],
+          "tree_cover_ratio": [
+            10
+          ],
+          "water_wetland_ratio": [
+            80,
+            90,
+            95
+          ]
+        }
+      },
+      "worldpop": {
+        "evidence": {
+          "national_raster_sha256": "21f403884d5a2d3a0961f75ef66dea51c43fcc9e2e99d4e43cbcceafd6774540",
+          "national_raster_sum_persons": 101300081,
+          "national_raster_valid_fraction_of_window": 0.08107,
+          "national_raster_valid_pixels": 12811650,
+          "release_statement": "WorldPop Global Demographic Data, Public release R2025A V1, September 2025",
+          "release_statement_sha256": "1a23e31f49102b599026f29a8a36d62b5507d36131bd37b66ba834b5ad24f243",
+          "release_statement_url": "https://data.worldpop.org/repo/prj/Global_2015_2030/R2025A/doc/Global2_Release_Statement_R2025A_v1.pdf"
+        },
+        "nodata_means_zero_persons": true,
+        "nodata_policy": "publisher_nodata_is_zero_persons_inside_window"
+      }
+    },
+    "ratios": {
+      "numerator_policy": "within_valid_land_support_mask",
+      "unit_interval_tolerance": 1e-09
+    },
+    "source_failure": {
+      "osm_dependent_status": "source_unavailable"
+    }
+  },
+  "feature_set_version": "0.3.0",
+  "finished_at_utc": "2026-09-14T17:12:57+00:00",
+  "gate": 3,
+  "gate3_config_version": "1.1.0",
+  "poi_taxonomy_version": "0.3.0",
+  "rows": 5681,
+  "run_id": "20260914T171148Z",
+  "run_kind": "atomic_feature_mvp",
+  "source_index": {
+    "path": "data/gate2/aoi_sources/gate2_source_index.json",
+    "sha256": "a2d0689e1804a7cec2776ff29a9ef23a1c622fd9c8bc40c1ed9296ac8784f23f"
+  },
+  "source_releases": {
+    "dong_thap_rural": "20260914T102150Z",
+    "hanoi_core": "20260914T102150Z",
+    "hoi_an": "20260914T102150Z",
+    "mu_cang_chai": "20260914T102150Z",
+    "source_index": "data/gate2/aoi_sources/gate2_source_index.json"
+  },
+  "sources": [
+    {
+      "aoi_id": "hanoi_core",
+      "license_id": "ODbL-1.0",
+      "release": "vietnam-260913",
+      "sha256": "909d6f9c28f84f367a8c3b4677f316341a19ee019338c7a4013aba7230521352",
+      "source_id": "gate2_hanoi_core_osm",
+      "source_role": "poi_roads"
+    },
+    {
+      "aoi_id": "hanoi_core",
+      "license_id": "CC-BY-4.0",
+      "release": "2025",
+      "sha256": "90bab91df2b295753d48b0cbd652dde0f00eabb7a69268383a61d36d466851b1",
+      "source_id": "gate2_hanoi_core_worldpop2025",
+      "source_role": "population"
+    },
+    {
+      "aoi_id": "hanoi_core",
+      "license_id": "CC-BY-4.0",
+      "release": "2021_v200",
+      "sha256": "bfab588ab02571745607b6df7ac251bf8e6263b18c6488f63cd3c19a12783c8c",
+      "source_id": "gate2_hanoi_core_worldcover",
+      "source_role": "land_cover"
+    },
+    {
+      "aoi_id": "hanoi_core",
+      "license_id": "CC-BY-4.0",
+      "release": "E2020",
+      "sha256": "6362504a0b87252669a06c5a86642577121affe3bce069de18fe5a6ad6efd6b3",
+      "source_id": "gate2_hanoi_core_ghs_built_s",
+      "source_role": "built_up"
+    },
+    {
+      "aoi_id": "hoi_an",
+      "license_id": "ODbL-1.0",
+      "release": "vietnam-260913",
+      "sha256": "2ef656457154050c3de1d790082da5b51403c00b82828258a8e0b3b3f561a3c8",
+      "source_id": "gate2_hoi_an_osm",
+      "source_role": "poi_roads"
+    },
+    {
+      "aoi_id": "hoi_an",
+      "license_id": "CC-BY-4.0",
+      "release": "2025",
+      "sha256": "d801176f8c1bcd15145e469fa75385f3a2c230cfefa37bf9528d6780b453b09e",
+      "source_id": "gate2_hoi_an_worldpop2025",
+      "source_role": "population"
+    },
+    {
+      "aoi_id": "hoi_an",
+      "license_id": "CC-BY-4.0",
+      "release": "2021_v200",
+      "sha256": "367b0231be6d7fc488483ae072f24bdfbf792989bac99b3365c2c5a23562d7a4",
+      "source_id": "gate2_hoi_an_worldcover",
+      "source_role": "land_cover"
+    },
+    {
+      "aoi_id": "hoi_an",
+      "license_id": "CC-BY-4.0",
+      "release": "E2020",
+      "sha256": "3da2b0107037262c3398e5acf8db0997977d5eeb8c1e68e37a301ac016e9b10d",
+      "source_id": "gate2_hoi_an_ghs_built_s",
+      "source_role": "built_up"
+    },
+    {
+      "aoi_id": "mu_cang_chai",
+      "license_id": "ODbL-1.0",
+      "release": "vietnam-260913",
+      "sha256": "d3b44fd355bf1a5148a794962541a9c5d551859d403397982beb40d95b1000cc",
+      "source_id": "gate2_mu_cang_chai_osm",
+      "source_role": "poi_roads"
+    },
+    {
+      "aoi_id": "mu_cang_chai",
+      "license_id": "CC-BY-4.0",
+      "release": "2025",
+      "sha256": "47f90b6e414aa19f6b5c38a576f3d61eb1d1928dfa653199c3d1baaab67b4121",
+      "source_id": "gate2_mu_cang_chai_worldpop2025",
+      "source_role": "population"
+    },
+    {
+      "aoi_id": "mu_cang_chai",
+      "license_id": "CC-BY-4.0",
+      "release": "2021_v200",
+      "sha256": "58521565317092afc9b745e1b1201a25b769a1d8f4f1d560ced5a6a76f407ed1",
+      "source_id": "gate2_mu_cang_chai_worldcover",
+      "source_role": "land_cover"
+    },
+    {
+      "aoi_id": "mu_cang_chai",
+      "license_id": "CC-BY-4.0",
+      "release": "E2020",
+      "sha256": "fcdba5d02f53f489ffa6a58f8d29c306c2d1c53c6474c181f216c58ce1a73fcd",
+      "source_id": "gate2_mu_cang_chai_ghs_built_s",
+      "source_role": "built_up"
+    },
+    {
+      "aoi_id": "dong_thap_rural",
+      "license_id": "ODbL-1.0",
+      "release": "vietnam-260913",
+      "sha256": "c9b81db933cfc06f6e238ed6b3dc7047941b19e8acfd3258c13c00c735c1c861",
+      "source_id": "gate2_dong_thap_rural_osm",
+      "source_role": "poi_roads"
+    },
+    {
+      "aoi_id": "dong_thap_rural",
+      "license_id": "CC-BY-4.0",
+      "release": "2025",
+      "sha256": "008f47ac07ff1566d31d85e43c91ff560a73072150ed9d50f477bbbc1627d561",
+      "source_id": "gate2_dong_thap_rural_worldpop2025",
+      "source_role": "population"
+    },
+    {
+      "aoi_id": "dong_thap_rural",
+      "license_id": "CC-BY-4.0",
+      "release": "2021_v200",
+      "sha256": "23a244d57b15395881569fab7ef6e56bd2193a18dd20fd63ffcfd416f20777c0",
+      "source_id": "gate2_dong_thap_rural_worldcover",
+      "source_role": "land_cover"
+    },
+    {
+      "aoi_id": "dong_thap_rural",
+      "license_id": "CC-BY-4.0",
+      "release": "E2020",
+      "sha256": "6641c919d229b5ac0b84d0a91e6b44280c4affc9a1fbc24ce1838746f744f305",
+      "source_id": "gate2_dong_thap_rural_ghs_built_s",
+      "source_role": "built_up"
+    }
+  ],
+  "spatial_unit": {
+    "decision_record": "docs/gate2_mvp_decision.md",
+    "decision_status": "provisional_mvp",
+    "h3_resolution": 9,
+    "method": "h3"
+  },
+  "started_at_utc": "2026-09-14T17:11:48+00:00",
+  "validation_passed": true
+}

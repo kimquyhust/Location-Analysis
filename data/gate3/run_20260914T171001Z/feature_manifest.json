@@ -1,0 +1,637 @@
+{
+  "contract_columns": [
+    "spatial_unit_id",
+    "spatial_method",
+    "spatial_resolution",
+    "spatial_unit_area_km2",
+    "representative_lat",
+    "representative_lon",
+    "admin_province_code",
+    "admin_commune_code",
+    "run_id",
+    "feature_set_version",
+    "source_manifest_id",
+    "computed_at_utc",
+    "population_count",
+    "population_density",
+    "built_up_ratio",
+    "tree_cover_ratio",
+    "grass_shrub_ratio",
+    "cropland_ratio",
+    "water_wetland_ratio",
+    "road_length_km",
+    "road_density_km_per_km2",
+    "major_road_length_km",
+    "intersection_density_per_km2",
+    "distance_nearest_major_road_m",
+    "distance_nearest_urban_centre_km",
+    "transit_stop_count_1km",
+    "distance_nearest_transit_stop_m",
+    "distance_nearest_transport_hub_m",
+    "school_count_1km",
+    "higher_education_count_3km",
+    "distance_nearest_higher_education_m",
+    "hospital_count_3km",
+    "clinic_count_1km",
+    "pharmacy_count_1km",
+    "distance_nearest_hospital_m",
+    "food_drink_count_1km",
+    "retail_count_1km",
+    "marketplace_count_1km",
+    "mall_count_3km",
+    "lodging_count_1km",
+    "attraction_culture_count_3km",
+    "park_recreation_count_1km",
+    "distance_nearest_park_m",
+    "osm_industrial_site_area_ratio",
+    "distance_nearest_osm_industrial_site_m",
+    "poi_total_count_1km",
+    "poi_category_richness_1km",
+    "osm_ingest_status",
+    "osm_query_complete",
+    "poi_taxonomy_version",
+    "population_coverage_fraction",
+    "built_up_coverage_fraction",
+    "land_cover_coverage_fraction",
+    "admin_match_status",
+    "population_count_status",
+    "population_density_status",
+    "built_up_ratio_status",
+    "land_cover_ratio_status",
+    "road_features_status",
+    "road_density_status",
+    "intersection_density_status",
+    "osm_industrial_site_area_ratio_status",
+    "distance_nearest_major_road_m_status",
+    "distance_nearest_urban_centre_km_status",
+    "distance_nearest_transit_stop_m_status",
+    "distance_nearest_transport_hub_m_status",
+    "distance_nearest_higher_education_m_status",
+    "distance_nearest_hospital_m_status",
+    "distance_nearest_park_m_status",
+    "distance_nearest_osm_industrial_site_m_status",
+    "transit_stop_count_1km_status",
+    "school_count_1km_status",
+    "clinic_count_1km_status",
+    "pharmacy_count_1km_status",
+    "food_drink_count_1km_status",
+    "retail_count_1km_status",
+    "marketplace_count_1km_status",
+    "lodging_count_1km_status",
+    "park_recreation_count_1km_status",
+    "poi_total_count_1km_status",
+    "poi_category_richness_1km_status",
+    "higher_education_count_3km_status",
+    "hospital_count_3km_status",
+    "mall_count_3km_status",
+    "attraction_culture_count_3km_status",
+    "aoi_id",
+    "aoi_context",
+    "aoi_overlap_fraction",
+    "spatial_decision_status",
+    "spatial_metric_crs",
+    "valid_land_support_area_km2",
+    "land_cover_valid_area_km2",
+    "population_nodata_area_fraction",
+    "distance_search_complete_radius_m",
+    "poi_source_policy",
+    "road_source_policy",
+    "osm_entity_assembly_failures",
+    "admin_province_match_status",
+    "admin_commune_match_status"
+  ],
+  "deferred": [
+    "overture_places_commercial_augmentation",
+    "contextual_normalization (Gate 4)",
+    "semantic_scores (Gate 5)",
+    "nationwide_processing (Gate 6)",
+    "urban_centre_distance (UCDB not acquired)",
+    "admin_codes (province not pinned; commune blocked)"
+  ],
+  "feature_semantics": {
+    "distance": {
+      "incomplete_status": "search_truncated_by_extract"
+    },
+    "osm_entities": {
+      "assembly_failure_policy": "null_affected_features_for_aoi",
+      "assembly_failure_status": "entity_assembly_failed"
+    },
+    "raster": {
+      "aggregation": "exact_area_weighted",
+      "ghs_built_s": {
+        "pixel_area_m2": 10000
+      },
+      "minimum_coverage_fraction": 0.999,
+      "worldcover": {
+        "land_support_excludes": [
+          80
+        ],
+        "legend": {
+          "10": "tree_cover",
+          "20": "shrubland",
+          "30": "grassland",
+          "40": "cropland",
+          "50": "built_up",
+          "60": "bare_sparse",
+          "70": "snow_ice",
+          "80": "permanent_water",
+          "90": "herbaceous_wetland",
+          "95": "mangroves",
+          "100": "moss_lichen"
+        },
+        "minimum_land_support_fraction": 0.01,
+        "nodata_class": 0,
+        "rollups": {
+          "cropland_ratio": [
+            40
+          ],
+          "grass_shrub_ratio": [
+            20,
+            30
+          ],
+          "tree_cover_ratio": [
+            10
+          ],
+          "water_wetland_ratio": [
+            80,
+            90,
+            95
+          ]
+        }
+      },
+      "worldpop": {
+        "evidence": {
+          "national_raster_sha256": "21f403884d5a2d3a0961f75ef66dea51c43fcc9e2e99d4e43cbcceafd6774540",
+          "national_raster_sum_persons": 101300081,
+          "national_raster_valid_fraction_of_window": 0.08107,
+          "national_raster_valid_pixels": 12811650,
+          "release_statement": "WorldPop Global Demographic Data, Public release R2025A V1, September 2025",
+          "release_statement_sha256": "1a23e31f49102b599026f29a8a36d62b5507d36131bd37b66ba834b5ad24f243",
+          "release_statement_url": "https://data.worldpop.org/repo/prj/Global_2015_2030/R2025A/doc/Global2_Release_Statement_R2025A_v1.pdf"
+        },
+        "nodata_means_zero_persons": true,
+        "nodata_policy": "publisher_nodata_is_zero_persons_inside_window"
+      }
+    },
+    "ratios": {
+      "numerator_policy": "within_valid_land_support_mask",
+      "unit_interval_tolerance": 1e-09
+    },
+    "source_failure": {
+      "osm_dependent_status": "source_unavailable"
+    }
+  },
+  "feature_set_version": "0.3.0",
+  "features": [
+    {
+      "disposition": "implemented",
+      "feature": "population_count",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 1212,
+      "zero_rate": 0.3252818035426731
+    },
+    {
+      "disposition": "implemented",
+      "feature": "population_density",
+      "null_count": 246,
+      "null_rate": 0.06602254428341385,
+      "rows": 3726,
+      "status_counts": {
+        "denominator_below_minimum": 14,
+        "denominator_zero": 232,
+        "ok": 3480
+      },
+      "zero_count": 990,
+      "zero_rate": 0.26570048309178745
+    },
+    {
+      "disposition": "implemented",
+      "feature": "built_up_ratio",
+      "null_count": 246,
+      "null_rate": 0.06602254428341385,
+      "rows": 3726,
+      "status_counts": {
+        "denominator_below_minimum": 14,
+        "denominator_zero": 232,
+        "ok": 3480
+      },
+      "zero_count": 1992,
+      "zero_rate": 0.534621578099839
+    },
+    {
+      "disposition": "implemented",
+      "feature": "tree_cover_ratio",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 379,
+      "zero_rate": 0.10171765968867418
+    },
+    {
+      "disposition": "implemented",
+      "feature": "grass_shrub_ratio",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 739,
+      "zero_rate": 0.19833601717659688
+    },
+    {
+      "disposition": "implemented",
+      "feature": "cropland_ratio",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 2012,
+      "zero_rate": 0.5399892646269457
+    },
+    {
+      "disposition": "implemented",
+      "feature": "water_wetland_ratio",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 2816,
+      "zero_rate": 0.7557702630166399
+    },
+    {
+      "disposition": "implemented",
+      "feature": "road_length_km",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 1788,
+      "zero_rate": 0.47987117552334946
+    },
+    {
+      "disposition": "implemented",
+      "feature": "road_density_km_per_km2",
+      "null_count": 246,
+      "null_rate": 0.06602254428341385,
+      "rows": 3726,
+      "status_counts": {
+        "denominator_below_minimum": 14,
+        "denominator_zero": 232,
+        "ok": 3480
+      },
+      "zero_count": 1545,
+      "zero_rate": 0.4146537842190016
+    },
+    {
+      "disposition": "implemented",
+      "feature": "major_road_length_km",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 3230,
+      "zero_rate": 0.8668813741277509
+    },
+    {
+      "disposition": "implemented",
+      "feature": "intersection_density_per_km2",
+      "null_count": 246,
+      "null_rate": 0.06602254428341385,
+      "rows": 3726,
+      "status_counts": {
+        "denominator_below_minimum": 14,
+        "denominator_zero": 232,
+        "ok": 3480
+      },
+      "zero_count": 2069,
+      "zero_rate": 0.5552871712292002
+    },
+    {
+      "disposition": "implemented",
+      "feature": "distance_nearest_major_road_m",
+      "null_count": 610,
+      "null_rate": 0.16371443907675792,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3116,
+        "search_truncated_by_extract": 610
+      },
+      "zero_count": 0,
+      "zero_rate": 0.0
+    },
+    {
+      "disposition": "null_by_contract_source_not_acquired",
+      "feature": "distance_nearest_urban_centre_km",
+      "null_count": 3726,
+      "null_rate": 1.0,
+      "rows": 3726,
+      "status_counts": {
+        "source_not_acquired": 3726
+      },
+      "zero_count": 0,
+      "zero_rate": 0.0
+    },
+    {
+      "disposition": "implemented",
+      "feature": "transit_stop_count_1km",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 3025,
+      "zero_rate": 0.8118625872249061
+    },
+    {
+      "disposition": "implemented",
+      "feature": "distance_nearest_transit_stop_m",
+      "null_count": 2133,
+      "null_rate": 0.572463768115942,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 1593,
+        "search_truncated_by_extract": 2133
+      },
+      "zero_count": 0,
+      "zero_rate": 0.0
+    },
+    {
+      "disposition": "implemented",
+      "feature": "distance_nearest_transport_hub_m",
+      "null_count": 1960,
+      "null_rate": 0.5260332796564681,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 1766,
+        "search_truncated_by_extract": 1960
+      },
+      "zero_count": 1,
+      "zero_rate": 0.00026838432635534085
+    },
+    {
+      "disposition": "implemented",
+      "feature": "school_count_1km",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 3012,
+      "zero_rate": 0.8083735909822867
+    },
+    {
+      "disposition": "implemented",
+      "feature": "higher_education_count_3km",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 2761,
+      "zero_rate": 0.741009125067096
+    },
+    {
+      "disposition": "implemented",
+      "feature": "distance_nearest_higher_education_m",
+      "null_count": 2401,
+      "null_rate": 0.6443907675791734,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 1325,
+        "search_truncated_by_extract": 2401
+      },
+      "zero_count": 7,
+      "zero_rate": 0.001878690284487386
+    },
+    {
+      "disposition": "implemented",
+      "feature": "hospital_count_3km",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 2941,
+      "zero_rate": 0.7893183038110574
+    },
+    {
+      "disposition": "implemented",
+      "feature": "clinic_count_1km",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 3380,
+      "zero_rate": 0.9071390230810521
+    },
+    {
+      "disposition": "implemented",
+      "feature": "pharmacy_count_1km",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 3286,
+      "zero_rate": 0.8819108964036501
+    },
+    {
+      "disposition": "implemented",
+      "feature": "distance_nearest_hospital_m",
+      "null_count": 2018,
+      "null_rate": 0.5415995705850778,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 1708,
+        "search_truncated_by_extract": 2018
+      },
+      "zero_count": 4,
+      "zero_rate": 0.0010735373054213634
+    },
+    {
+      "disposition": "implemented",
+      "feature": "food_drink_count_1km",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 2652,
+      "zero_rate": 0.711755233494364
+    },
+    {
+      "disposition": "implemented",
+      "feature": "retail_count_1km",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 2743,
+      "zero_rate": 0.7361782071927
+    },
+    {
+      "disposition": "implemented",
+      "feature": "marketplace_count_1km",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 3182,
+      "zero_rate": 0.8539989264626946
+    },
+    {
+      "disposition": "implemented",
+      "feature": "mall_count_3km",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 3375,
+      "zero_rate": 0.9057971014492754
+    },
+    {
+      "disposition": "implemented",
+      "feature": "lodging_count_1km",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 2700,
+      "zero_rate": 0.7246376811594203
+    },
+    {
+      "disposition": "implemented",
+      "feature": "attraction_culture_count_3km",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "rows": 3726,
+      "status_counts": {
+        "ok": 3726
+      },
+      "zero_count": 1246,
+      "zero_rate": 0.3344068706387547
+    },
+    {
+      "disposition": "implemented",
+      "feature": "park_recreation_count_1km",
+      "null_count": 356,
+      "null_rate": 0.09554482018250134,
+      "rows": 3726,
+      "status_counts": {
+        "entity_assembly_failed": 356,
+        "ok": 3370
+      },
+      "zero_count": 2971,
+      "zero_rate": 0.7973698336017176
+    },
+    {
+      "disposition": "implemented",
+      "feature": "distance_nearest_park_m",
+      "null_count": 2570,
+      "null_rate": 0.6897477187332259,
+      "rows": 3726,
+      "status_counts": {
+        "entity_assembly_failed": 356,
+        "ok": 1156,
+        "search_truncated_by_extract": 2214
+      },
+      "zero_count": 8,
+      "zero_rate": 0.0021470746108427268
+    },
+    {
+      "disposition": "implemented",
+      "feature": "osm_industrial_site_area_ratio",
+      "null_count": 573,
+      "null_rate": 0.1537842190016103,
+      "rows": 3726,
+      "status_counts": {
+        "denominator_below_minimum": 9,
+        "denominator_zero": 208,
+        "entity_assembly_failed": 356,
+        "ok": 3153
+      },
+      "zero_count": 3132,
+      "zero_rate": 0.8405797101449275
+    },
+    {
+      "disposition": "implemented",
+      "feature": "distance_nearest_osm_industrial_site_m",
+      "null_count": 2741,
+      "null_rate": 0.7356414385399893,
+      "rows": 3726,
+      "status_counts": {
+        "entity_assembly_failed": 356,
+        "ok": 985,
+        "search_truncated_by_extract": 2385
+      },
+      "zero_count": 8,
+      "zero_rate": 0.0021470746108427268
+    },
+    {
+      "disposition": "implemented",
+      "feature": "poi_total_count_1km",
+      "null_count": 356,
+      "null_rate": 0.09554482018250134,
+      "rows": 3726,
+      "status_counts": {
+        "entity_assembly_failed": 356,
+        "ok": 3370
+      },
+      "zero_count": 2152,
+      "zero_rate": 0.5775630703166935
+    },
+    {
+      "disposition": "implemented",
+      "feature": "poi_category_richness_1km",
+      "null_count": 356,
+      "null_rate": 0.09554482018250134,
+      "rows": 3726,
+      "status_counts": {
+        "entity_assembly_failed": 356,
+        "ok": 3370
+      },
+      "zero_count": 2152,
+      "zero_rate": 0.5775630703166935
+    }
+  ],
+  "metadata_null_by_contract": {
+    "admin_commune_code": "blocked_no_qualified_geometry",
+    "admin_province_code": "source_not_acquired"
+  },
+  "poi_source_policy": "osm_only_gate3_mvp_v1",
+  "poi_taxonomy_version": "0.3.0",
+  "road_source_policy": "osm_only_canonical"
+}
