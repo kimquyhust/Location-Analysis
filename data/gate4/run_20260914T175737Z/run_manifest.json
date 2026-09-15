@@ -1,0 +1,179 @@
+{
+  "artifacts": {
+    "benchmark_runs.parquet": {
+      "bytes": 15149,
+      "sha256": "ea18134a49c90de1da9840e064650c95645f8f615583cff7f7343c89144b3f13"
+    },
+    "cohort_statistics.parquet": {
+      "bytes": 1011007,
+      "sha256": "cd2dfd27e21d4e12e83ee250e92d208bf2f51cb48002ea3d009a6afb2a5d228d"
+    },
+    "contextual_features.parquet": {
+      "bytes": 359618,
+      "sha256": "58baf5ed07a7a069ab1ec9096f3ac69e3354cd700aa1b8c7aee7d56964659ace"
+    },
+    "diagnostic_features.parquet": {
+      "bytes": 926429,
+      "sha256": "3949f0729accbb1d6eff0918de320157f95bfef7f68e0f46b971b92170355ab0"
+    },
+    "normalization_manifest.json": {
+      "bytes": 110919,
+      "sha256": "f09909fbc690fec1d768f85f945eb1e58325cb44dcb564c5a08434ebc8978102"
+    },
+    "validation_summary.json": {
+      "bytes": 183155,
+      "sha256": "f09852810d817a8d17deedb3ecc8812ae71c40fc8d54ef57167f66a2495bcb05"
+    }
+  },
+  "code_version": "59fe994cacf930df79d9b364fe104f1778d41f47+dirty",
+  "config_hash": "42b1912391ea35048e148e08f697c6f0b49298a9663d9b0d3e881b516db41872",
+  "config_path": "config/gate4_mvp.yaml",
+  "config_sha256": {
+    "config/features.yaml": "515ac315b4b7791c5027134ae37889781aea6acac0db81dce334ada5fc119856",
+    "config/gate4_mvp.yaml": "c4ac0bb3cf9f662cd20ee622d3e590e5493a4242e92d9ac95d7ece47d087d43b",
+    "config/spatial.yaml": "1cdba55dc736ca0b79d09dfd0d48e1aa99f88316532a8a8c162d9e06b55d82b0"
+  },
+  "configs_hashed": [
+    "config/gate4_mvp.yaml",
+    "config/features.yaml",
+    "config/spatial.yaml"
+  ],
+  "diagnostic_columns": [
+    "attraction_culture_count_3km_mvp_pooled_percentile",
+    "attraction_culture_count_3km_within_aoi_percentile",
+    "built_up_ratio_mvp_pooled_percentile",
+    "built_up_ratio_within_aoi_percentile",
+    "clinic_count_1km_mvp_pooled_percentile",
+    "clinic_count_1km_within_aoi_percentile",
+    "cropland_ratio_mvp_pooled_percentile",
+    "cropland_ratio_within_aoi_percentile",
+    "food_drink_count_1km_mvp_pooled_percentile",
+    "food_drink_count_1km_within_aoi_percentile",
+    "grass_shrub_ratio_mvp_pooled_percentile",
+    "grass_shrub_ratio_within_aoi_percentile",
+    "higher_education_count_3km_mvp_pooled_percentile",
+    "higher_education_count_3km_within_aoi_percentile",
+    "hospital_count_3km_mvp_pooled_percentile",
+    "hospital_count_3km_within_aoi_percentile",
+    "intersection_density_per_km2_mvp_pooled_percentile",
+    "intersection_density_per_km2_within_aoi_percentile",
+    "local_ratio_k1_food_drink_count_1km",
+    "local_ratio_k1_intersection_density_per_km2",
+    "local_ratio_k1_poi_total_count_1km",
+    "lodging_count_1km_mvp_pooled_percentile",
+    "lodging_count_1km_within_aoi_percentile",
+    "major_road_length_km_mvp_pooled_percentile",
+    "major_road_length_km_within_aoi_percentile",
+    "mall_count_3km_mvp_pooled_percentile",
+    "mall_count_3km_within_aoi_percentile",
+    "marketplace_count_1km_mvp_pooled_percentile",
+    "marketplace_count_1km_within_aoi_percentile",
+    "osm_industrial_site_area_ratio_mvp_pooled_percentile",
+    "osm_industrial_site_area_ratio_within_aoi_percentile",
+    "park_recreation_count_1km_mvp_pooled_percentile",
+    "park_recreation_count_1km_within_aoi_percentile",
+    "pharmacy_count_1km_mvp_pooled_percentile",
+    "pharmacy_count_1km_within_aoi_percentile",
+    "poi_category_richness_1km_mvp_pooled_percentile",
+    "poi_category_richness_1km_within_aoi_percentile",
+    "poi_total_count_1km_mvp_pooled_percentile",
+    "poi_total_count_1km_within_aoi_percentile",
+    "population_count_mvp_pooled_percentile",
+    "population_count_within_aoi_percentile",
+    "population_density_mvp_pooled_percentile",
+    "population_density_within_aoi_percentile",
+    "retail_count_1km_mvp_pooled_percentile",
+    "retail_count_1km_within_aoi_percentile",
+    "road_density_km_per_km2_mvp_pooled_percentile",
+    "road_density_km_per_km2_within_aoi_percentile",
+    "road_length_km_mvp_pooled_percentile",
+    "road_length_km_within_aoi_percentile",
+    "school_count_1km_mvp_pooled_percentile",
+    "school_count_1km_within_aoi_percentile",
+    "transit_stop_count_1km_mvp_pooled_percentile",
+    "transit_stop_count_1km_within_aoi_percentile",
+    "tree_cover_ratio_mvp_pooled_percentile",
+    "tree_cover_ratio_within_aoi_percentile",
+    "water_wetland_ratio_mvp_pooled_percentile",
+    "water_wetland_ratio_within_aoi_percentile"
+  ],
+  "environment": {
+    "cpu_count_logical": 8,
+    "geopandas": "1.1.4",
+    "h3": "4.5.0",
+    "machine": "arm64",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "platform": "macOS-15.6-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.12.13",
+    "rasterio": "1.5.1",
+    "shapely": "2.1.2",
+    "total_ram_bytes": 17179869184
+  },
+  "feature_set_version": "0.3.0",
+  "finished_at_utc": "2026-09-14T17:57:41+00:00",
+  "gate": 4,
+  "gate4_config_version": "1.0.0",
+  "input": {
+    "feature_set_version": "0.3.0",
+    "gate3_code_version": "59fe994cacf930df79d9b364fe104f1778d41f47+dirty",
+    "gate3_config_hash": "f1b1948188b66f4de0eaf755a095d59da5fe1549e30777ae17e6dec6ad8f8a4d",
+    "gate3_config_sha256": {
+      "config/features.yaml": "515ac315b4b7791c5027134ae37889781aea6acac0db81dce334ada5fc119856",
+      "config/gate3_mvp.yaml": "08e0a65a5c4ac18545082d38c58442fe293526f0068d2b24c7bb502dfe16300c",
+      "config/poi_taxonomy.yaml": "0f1809242608281e637ea0a71824d842024728b73656b95ccd199c52c1b2497d",
+      "config/spatial.yaml": "1cdba55dc736ca0b79d09dfd0d48e1aa99f88316532a8a8c162d9e06b55d82b0"
+    },
+    "gate3_run_dir": "data/gate3/run_20260914T171148Z",
+    "gate3_run_id": "20260914T171148Z",
+    "gate3_sha256sums_verified": true,
+    "poi_taxonomy_version": "0.3.0",
+    "rows": 5681,
+    "sha256": {
+      "atomic_features.parquet": "26d75dd0bf08b101a479aae816f667f44271dee676f08b7aa485cccbc0ed09e0",
+      "feature_manifest.json": "1cd97295ab6d905b8a0a28223f010c5df78ce81dff1dc05db91ea37093e0e087",
+      "run_manifest.json": "ae37aa53b0e9d47c87370f38c97bfb20cd760a7be38f74f16985d810b29bfea1",
+      "validation_summary.json": "43dca9e7f00dae7b07e3847927f3cacb31da022829e661af705bbe6f01bf16b7"
+    }
+  },
+  "normalization_version": "0.1.0",
+  "publishable_columns": [
+    "local_ratio_k1_population_density",
+    "local_ratio_k1_road_density_km_per_km2",
+    "log1p_attraction_culture_count_3km",
+    "log1p_clinic_count_1km",
+    "log1p_food_drink_count_1km",
+    "log1p_higher_education_count_3km",
+    "log1p_hospital_count_3km",
+    "log1p_intersection_density_per_km2",
+    "log1p_lodging_count_1km",
+    "log1p_major_road_length_km",
+    "log1p_mall_count_3km",
+    "log1p_marketplace_count_1km",
+    "log1p_park_recreation_count_1km",
+    "log1p_pharmacy_count_1km",
+    "log1p_poi_category_richness_1km",
+    "log1p_poi_total_count_1km",
+    "log1p_population_count",
+    "log1p_population_density",
+    "log1p_retail_count_1km",
+    "log1p_road_density_km_per_km2",
+    "log1p_road_length_km",
+    "log1p_school_count_1km",
+    "log1p_transit_stop_count_1km"
+  ],
+  "rows": 5681,
+  "run_id": "20260914T175737Z",
+  "run_kind": "contextual_normalization_mvp",
+  "source_releases": {
+    "gate3_run_dir": "data/gate3/run_20260914T171148Z",
+    "gate3_run_id": "20260914T171148Z"
+  },
+  "spatial_unit": {
+    "h3_resolution": 9,
+    "method": "h3"
+  },
+  "started_at_utc": "2026-09-14T17:57:37+00:00",
+  "validation_passed": true
+}

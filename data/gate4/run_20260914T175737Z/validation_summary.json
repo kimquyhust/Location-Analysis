@@ -1,0 +1,5770 @@
+{
+  "aois": {
+    "dong_thap_rural": 1955,
+    "hanoi_core": 356,
+    "hoi_an": 1317,
+    "mu_cang_chai": 2053
+  },
+  "distance_selection_bias": {
+    "distance_nearest_higher_education_m": {
+      "dong_thap_rural": {
+        "complete_radius_p50_m": 5575.152160294823,
+        "ok_max_m": 6786.994721645425,
+        "ok_p50_m": 3197.2139400990286,
+        "ok_share": 0.5734015345268543,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 1955,
+        "status_counts": {
+          "ok": 1121,
+          "search_truncated_by_extract": 834
+        },
+        "truncated_rows_complete_radius_p50_m": 4285.8357080770475
+      },
+      "hanoi_core": {
+        "complete_radius_p50_m": 4279.546680470497,
+        "ok_max_m": 2512.5668735610784,
+        "ok_p50_m": 721.3356761659663,
+        "ok_share": 1.0,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 356,
+        "status_counts": {
+          "ok": 356
+        },
+        "truncated_rows_complete_radius_p50_m": null
+      },
+      "hoi_an": {
+        "complete_radius_p50_m": 5236.398573952986,
+        "ok_max_m": 5933.928694000133,
+        "ok_p50_m": 2446.039594278217,
+        "ok_share": 0.7357630979498861,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 1317,
+        "status_counts": {
+          "ok": 969,
+          "search_truncated_by_extract": 348
+        },
+        "truncated_rows_complete_radius_p50_m": 4187.012712584463
+      },
+      "mu_cang_chai": {
+        "complete_radius_p50_m": 5623.487490844579,
+        "ok_max_m": null,
+        "ok_p50_m": null,
+        "ok_share": 0.0,
+        "ok_values_bounded_by_complete_radius": null,
+        "rows": 2053,
+        "status_counts": {
+          "search_truncated_by_extract": 2053
+        },
+        "truncated_rows_complete_radius_p50_m": 5623.487490844579
+      }
+    },
+    "distance_nearest_hospital_m": {
+      "dong_thap_rural": {
+        "complete_radius_p50_m": 5575.152160294823,
+        "ok_max_m": 5629.300465140552,
+        "ok_p50_m": 2733.1557374683202,
+        "ok_share": 0.7421994884910486,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 1955,
+        "status_counts": {
+          "ok": 1451,
+          "search_truncated_by_extract": 504
+        },
+        "truncated_rows_complete_radius_p50_m": 3960.25035619564
+      },
+      "hanoi_core": {
+        "complete_radius_p50_m": 4279.546680470497,
+        "ok_max_m": 2014.9052599251902,
+        "ok_p50_m": 529.6211555319987,
+        "ok_share": 1.0,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 356,
+        "status_counts": {
+          "ok": 356
+        },
+        "truncated_rows_complete_radius_p50_m": null
+      },
+      "hoi_an": {
+        "complete_radius_p50_m": 5236.398573952986,
+        "ok_max_m": 5441.227460466001,
+        "ok_p50_m": 3273.8075251275272,
+        "ok_share": 0.6719817767653758,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 1317,
+        "status_counts": {
+          "ok": 885,
+          "search_truncated_by_extract": 432
+        },
+        "truncated_rows_complete_radius_p50_m": 4096.569960195009
+      },
+      "mu_cang_chai": {
+        "complete_radius_p50_m": 5623.487490844579,
+        "ok_max_m": 10296.899568405677,
+        "ok_p50_m": 5294.331314532117,
+        "ok_share": 0.22747199220652703,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 2053,
+        "status_counts": {
+          "ok": 467,
+          "search_truncated_by_extract": 1586
+        },
+        "truncated_rows_complete_radius_p50_m": 5366.32567881511
+      }
+    },
+    "distance_nearest_major_road_m": {
+      "dong_thap_rural": {
+        "complete_radius_p50_m": 5575.152160294823,
+        "ok_max_m": 3664.2438262534342,
+        "ok_p50_m": 740.0747224437126,
+        "ok_share": 1.0,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 1955,
+        "status_counts": {
+          "ok": 1955
+        },
+        "truncated_rows_complete_radius_p50_m": null
+      },
+      "hanoi_core": {
+        "complete_radius_p50_m": 4279.546680470497,
+        "ok_max_m": 1203.6317728070428,
+        "ok_p50_m": 176.44365038733054,
+        "ok_share": 1.0,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 356,
+        "status_counts": {
+          "ok": 356
+        },
+        "truncated_rows_complete_radius_p50_m": null
+      },
+      "hoi_an": {
+        "complete_radius_p50_m": 5236.398573952986,
+        "ok_max_m": 3921.3586863851324,
+        "ok_p50_m": 789.2746561501798,
+        "ok_share": 0.9908883826879271,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 1317,
+        "status_counts": {
+          "ok": 1305,
+          "search_truncated_by_extract": 12
+        },
+        "truncated_rows_complete_radius_p50_m": 3620.2070978563124
+      },
+      "mu_cang_chai": {
+        "complete_radius_p50_m": 5623.487490844579,
+        "ok_max_m": 7290.705570837663,
+        "ok_p50_m": 2293.5984741012676,
+        "ok_share": 0.7087189478811495,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 2053,
+        "status_counts": {
+          "ok": 1455,
+          "search_truncated_by_extract": 598
+        },
+        "truncated_rows_complete_radius_p50_m": 4468.255359154013
+      }
+    },
+    "distance_nearest_osm_industrial_site_m": {
+      "dong_thap_rural": {
+        "complete_radius_p50_m": 5575.152160294823,
+        "ok_max_m": 6594.20369857756,
+        "ok_p50_m": 3669.5118629879794,
+        "ok_share": 0.6971867007672634,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 1955,
+        "status_counts": {
+          "ok": 1363,
+          "search_truncated_by_extract": 592
+        },
+        "truncated_rows_complete_radius_p50_m": 4234.0216405760075
+      },
+      "hanoi_core": {
+        "complete_radius_p50_m": 4279.546680470497,
+        "ok_max_m": null,
+        "ok_p50_m": null,
+        "ok_share": 0.0,
+        "ok_values_bounded_by_complete_radius": null,
+        "rows": 356,
+        "status_counts": {
+          "entity_assembly_failed": 356
+        },
+        "truncated_rows_complete_radius_p50_m": null
+      },
+      "hoi_an": {
+        "complete_radius_p50_m": 5236.398573952986,
+        "ok_max_m": 6195.320259142619,
+        "ok_p50_m": 2111.015808869473,
+        "ok_share": 0.7479119210326499,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 1317,
+        "status_counts": {
+          "ok": 985,
+          "search_truncated_by_extract": 332
+        },
+        "truncated_rows_complete_radius_p50_m": 4231.789609045349
+      },
+      "mu_cang_chai": {
+        "complete_radius_p50_m": 5623.487490844579,
+        "ok_max_m": null,
+        "ok_p50_m": null,
+        "ok_share": 0.0,
+        "ok_values_bounded_by_complete_radius": null,
+        "rows": 2053,
+        "status_counts": {
+          "search_truncated_by_extract": 2053
+        },
+        "truncated_rows_complete_radius_p50_m": 5623.487490844579
+      }
+    },
+    "distance_nearest_park_m": {
+      "dong_thap_rural": {
+        "complete_radius_p50_m": 5575.152160294823,
+        "ok_max_m": 6082.310887310496,
+        "ok_p50_m": 2929.330374394835,
+        "ok_share": 0.6572890025575447,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 1955,
+        "status_counts": {
+          "ok": 1285,
+          "search_truncated_by_extract": 670
+        },
+        "truncated_rows_complete_radius_p50_m": 4179.112522641866
+      },
+      "hanoi_core": {
+        "complete_radius_p50_m": 4279.546680470497,
+        "ok_max_m": null,
+        "ok_p50_m": null,
+        "ok_share": 0.0,
+        "ok_values_bounded_by_complete_radius": null,
+        "rows": 356,
+        "status_counts": {
+          "entity_assembly_failed": 356
+        },
+        "truncated_rows_complete_radius_p50_m": null
+      },
+      "hoi_an": {
+        "complete_radius_p50_m": 5236.398573952986,
+        "ok_max_m": 4978.860880965221,
+        "ok_p50_m": 1882.708185649462,
+        "ok_share": 0.8777524677296887,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 1317,
+        "status_counts": {
+          "ok": 1156,
+          "search_truncated_by_extract": 161
+        },
+        "truncated_rows_complete_radius_p50_m": 3821.786224627363
+      },
+      "mu_cang_chai": {
+        "complete_radius_p50_m": 5623.487490844579,
+        "ok_max_m": null,
+        "ok_p50_m": null,
+        "ok_share": 0.0,
+        "ok_values_bounded_by_complete_radius": null,
+        "rows": 2053,
+        "status_counts": {
+          "search_truncated_by_extract": 2053
+        },
+        "truncated_rows_complete_radius_p50_m": 5623.487490844579
+      }
+    },
+    "distance_nearest_transit_stop_m": {
+      "dong_thap_rural": {
+        "complete_radius_p50_m": 5575.152160294823,
+        "ok_max_m": 6760.938937771797,
+        "ok_p50_m": 2602.251265420611,
+        "ok_share": 0.670076726342711,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 1955,
+        "status_counts": {
+          "ok": 1310,
+          "search_truncated_by_extract": 645
+        },
+        "truncated_rows_complete_radius_p50_m": 4477.356106239424
+      },
+      "hanoi_core": {
+        "complete_radius_p50_m": 4279.546680470497,
+        "ok_max_m": 1266.830829394058,
+        "ok_p50_m": 199.45996354113151,
+        "ok_share": 1.0,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 356,
+        "status_counts": {
+          "ok": 356
+        },
+        "truncated_rows_complete_radius_p50_m": null
+      },
+      "hoi_an": {
+        "complete_radius_p50_m": 5236.398573952986,
+        "ok_max_m": 4563.557641384689,
+        "ok_p50_m": 1627.704321948275,
+        "ok_share": 0.9392558845861807,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 1317,
+        "status_counts": {
+          "ok": 1237,
+          "search_truncated_by_extract": 80
+        },
+        "truncated_rows_complete_radius_p50_m": 3711.973073600823
+      },
+      "mu_cang_chai": {
+        "complete_radius_p50_m": 5623.487490844579,
+        "ok_max_m": null,
+        "ok_p50_m": null,
+        "ok_share": 0.0,
+        "ok_values_bounded_by_complete_radius": null,
+        "rows": 2053,
+        "status_counts": {
+          "search_truncated_by_extract": 2053
+        },
+        "truncated_rows_complete_radius_p50_m": 5623.487490844579
+      }
+    },
+    "distance_nearest_transport_hub_m": {
+      "dong_thap_rural": {
+        "complete_radius_p50_m": 5575.152160294823,
+        "ok_max_m": 6035.73637566105,
+        "ok_p50_m": 2034.5834234509846,
+        "ok_share": 0.8127877237851663,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 1955,
+        "status_counts": {
+          "ok": 1589,
+          "search_truncated_by_extract": 366
+        },
+        "truncated_rows_complete_radius_p50_m": 4111.773651009215
+      },
+      "hanoi_core": {
+        "complete_radius_p50_m": 4279.546680470497,
+        "ok_max_m": 2765.3769735356145,
+        "ok_p50_m": 1019.0169468769296,
+        "ok_share": 1.0,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 356,
+        "status_counts": {
+          "ok": 356
+        },
+        "truncated_rows_complete_radius_p50_m": null
+      },
+      "hoi_an": {
+        "complete_radius_p50_m": 5236.398573952986,
+        "ok_max_m": 5138.07940751145,
+        "ok_p50_m": 2357.285953044279,
+        "ok_share": 0.829916476841306,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 1317,
+        "status_counts": {
+          "ok": 1093,
+          "search_truncated_by_extract": 224
+        },
+        "truncated_rows_complete_radius_p50_m": 3878.2641690124046
+      },
+      "mu_cang_chai": {
+        "complete_radius_p50_m": 5623.487490844579,
+        "ok_max_m": 10729.841606277883,
+        "ok_p50_m": 5264.735279077084,
+        "ok_share": 0.1544081831466147,
+        "ok_values_bounded_by_complete_radius": true,
+        "rows": 2053,
+        "status_counts": {
+          "ok": 317,
+          "search_truncated_by_extract": 1736
+        },
+        "truncated_rows_complete_radius_p50_m": 5522.748995790456
+      }
+    },
+    "distance_nearest_urban_centre_km": {
+      "dong_thap_rural": {
+        "complete_radius_p50_m": 5575.152160294823,
+        "ok_max_m": null,
+        "ok_p50_m": null,
+        "ok_share": 0.0,
+        "ok_values_bounded_by_complete_radius": null,
+        "rows": 1955,
+        "status_counts": {
+          "source_not_acquired": 1955
+        },
+        "truncated_rows_complete_radius_p50_m": null
+      },
+      "hanoi_core": {
+        "complete_radius_p50_m": 4279.546680470497,
+        "ok_max_m": null,
+        "ok_p50_m": null,
+        "ok_share": 0.0,
+        "ok_values_bounded_by_complete_radius": null,
+        "rows": 356,
+        "status_counts": {
+          "source_not_acquired": 356
+        },
+        "truncated_rows_complete_radius_p50_m": null
+      },
+      "hoi_an": {
+        "complete_radius_p50_m": 5236.398573952986,
+        "ok_max_m": null,
+        "ok_p50_m": null,
+        "ok_share": 0.0,
+        "ok_values_bounded_by_complete_radius": null,
+        "rows": 1317,
+        "status_counts": {
+          "source_not_acquired": 1317
+        },
+        "truncated_rows_complete_radius_p50_m": null
+      },
+      "mu_cang_chai": {
+        "complete_radius_p50_m": 5623.487490844579,
+        "ok_max_m": null,
+        "ok_p50_m": null,
+        "ok_share": 0.0,
+        "ok_values_bounded_by_complete_radius": null,
+        "rows": 2053,
+        "status_counts": {
+          "source_not_acquired": 2053
+        },
+        "truncated_rows_complete_radius_p50_m": null
+      }
+    }
+  },
+  "distributions": {
+    "attraction_culture_count_3km": {
+      "dong_thap_rural": {
+        "max": 2.0,
+        "min": 0.0,
+        "n_distinct": 3,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 2.0,
+        "rows": 1955,
+        "skew_log1p": 2.138709175016717,
+        "skew_raw": 2.3407582704581835,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.8460358056265984
+      },
+      "hanoi_core": {
+        "max": 173.0,
+        "min": 8.0,
+        "n_distinct": 135,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 86.5,
+        "p95": 150.0,
+        "rows": 356,
+        "skew_log1p": -1.1407343606375933,
+        "skew_raw": -0.016634433045910987,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.0
+      },
+      "hoi_an": {
+        "max": 62.0,
+        "min": 0.0,
+        "n_distinct": 60,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 6.0,
+        "p95": 58.0,
+        "rows": 1317,
+        "skew_log1p": 0.4248246041920647,
+        "skew_raw": 1.5227130724380442,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.02733485193621868
+      },
+      "mu_cang_chai": {
+        "max": 4.0,
+        "min": 0.0,
+        "n_distinct": 5,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 4.0,
+        "rows": 2053,
+        "skew_log1p": 0.8101368016332564,
+        "skew_raw": 1.3078947773402023,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.5893813930832927
+      },
+      "pooled": {
+        "max": 173.0,
+        "min": 0.0,
+        "n_distinct": 152,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 60.0,
+        "rows": 5681,
+        "skew_log1p": 1.4403568273814542,
+        "skew_raw": 3.5639009391619156,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.5104735081851787
+      }
+    },
+    "built_up_ratio": {
+      "dong_thap_rural": {
+        "max": 0.535272226883162,
+        "min": 0.0,
+        "n_distinct": 1739,
+        "n_valid": 1855,
+        "null_rate": 0.05115089514066496,
+        "p50": 0.03191024996280501,
+        "p95": 0.26652530139090574,
+        "rows": 1955,
+        "skew_log1p": 1.685870884420036,
+        "skew_raw": 1.9072536588570723,
+        "status_counts": {
+          "denominator_below_minimum": 10,
+          "denominator_zero": 90,
+          "ok": 1855
+        },
+        "zero_rate_of_valid": 0.06307277628032346
+      },
+      "hanoi_core": {
+        "max": 0.7199278874991274,
+        "min": 0.0,
+        "n_distinct": 312,
+        "n_valid": 327,
+        "null_rate": 0.08146067415730338,
+        "p50": 0.4331222419936661,
+        "p95": 0.6338216674605797,
+        "rows": 356,
+        "skew_log1p": -0.935385377634894,
+        "skew_raw": -0.7328586679453626,
+        "status_counts": {
+          "denominator_below_minimum": 5,
+          "denominator_zero": 24,
+          "ok": 327
+        },
+        "zero_rate_of_valid": 0.04892966360856269
+      },
+      "hoi_an": {
+        "max": 0.5505394486958524,
+        "min": 0.0,
+        "n_distinct": 1025,
+        "n_valid": 1100,
+        "null_rate": 0.16476841305998483,
+        "p50": 0.07904639405572486,
+        "p95": 0.32401231098458405,
+        "rows": 1317,
+        "skew_log1p": 0.8636826029400246,
+        "skew_raw": 1.0427291104887069,
+        "status_counts": {
+          "denominator_below_minimum": 9,
+          "denominator_zero": 208,
+          "ok": 1100
+        },
+        "zero_rate_of_valid": 0.06909090909090909
+      },
+      "mu_cang_chai": {
+        "max": 0.07008683270070584,
+        "min": 0.0,
+        "n_distinct": 154,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0005503281909460368,
+        "rows": 2053,
+        "skew_log1p": 12.314685876911328,
+        "skew_raw": 12.508896915932956,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.9254749147588894
+      },
+      "pooled": {
+        "max": 0.7199278874991274,
+        "min": 0.0,
+        "n_distinct": 3227,
+        "n_valid": 5335,
+        "null_rate": 0.06090477028692132,
+        "p50": 0.004180078568895076,
+        "p95": 0.36573401072967276,
+        "rows": 5681,
+        "skew_log1p": 2.089592170475057,
+        "skew_raw": 2.3532650226402625,
+        "status_counts": {
+          "denominator_below_minimum": 24,
+          "denominator_zero": 322,
+          "ok": 5335
+        },
+        "zero_rate_of_valid": 0.3953139643861293
+      }
+    },
+    "clinic_count_1km": {
+      "dong_thap_rural": {
+        "max": 1.0,
+        "min": 0.0,
+        "n_distinct": 2,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 1955,
+        "skew_log1p": 8.67920084436078,
+        "skew_raw": 8.679200844360786,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.9872122762148338
+      },
+      "hanoi_core": {
+        "max": 26.0,
+        "min": 0.0,
+        "n_distinct": 25,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 4.0,
+        "p95": 22.0,
+        "rows": 356,
+        "skew_log1p": -0.012412571358036768,
+        "skew_raw": 1.7040243600867377,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.19662921348314608
+      },
+      "hoi_an": {
+        "max": 7.0,
+        "min": 0.0,
+        "n_distinct": 8,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 1317,
+        "skew_log1p": 5.230593256912835,
+        "skew_raw": 6.283877589149963,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.9544419134396356
+      },
+      "mu_cang_chai": {
+        "max": 0.0,
+        "min": 0.0,
+        "n_distinct": 1,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 2053,
+        "skew_log1p": 0.0,
+        "skew_raw": 0.0,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 1.0
+      },
+      "pooled": {
+        "max": 26.0,
+        "min": 0.0,
+        "n_distinct": 25,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 1.0,
+        "rows": 5681,
+        "skew_log1p": 4.5888190126245565,
+        "skew_raw": 7.996260513203619,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.9346945960218271
+      }
+    },
+    "cropland_ratio": {
+      "dong_thap_rural": {
+        "max": 1.0,
+        "min": 0.0,
+        "n_distinct": 1509,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.1287375562518619,
+        "p95": 0.9897215607237251,
+        "rows": 1955,
+        "skew_log1p": 0.45721052563507364,
+        "skew_raw": 0.5812470965509676,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.2071611253196931
+      },
+      "hanoi_core": {
+        "max": 0.4745423843613556,
+        "min": 0.0,
+        "n_distinct": 98,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.12269272045831994,
+        "rows": 356,
+        "skew_log1p": 4.039783013835328,
+        "skew_raw": 4.323144110686651,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.7275280898876404
+      },
+      "hoi_an": {
+        "max": 1.0,
+        "min": 0.0,
+        "n_distinct": 832,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.009953361062828181,
+        "p95": 0.8888939311835968,
+        "rows": 1317,
+        "skew_log1p": 1.5578928678507253,
+        "skew_raw": 1.7855667978257377,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.36446469248291574
+      },
+      "mu_cang_chai": {
+        "max": 0.8201806905452692,
+        "min": 0.0,
+        "n_distinct": 781,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.31428629202727865,
+        "rows": 2053,
+        "skew_log1p": 2.8523326036364822,
+        "skew_raw": 3.2021701067958914,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.6200681928884559
+      },
+      "pooled": {
+        "max": 1.0,
+        "min": 0.0,
+        "n_distinct": 3216,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0049357596320602284,
+        "p95": 0.9262918334447554,
+        "rows": 5681,
+        "skew_log1p": 1.4872782483818388,
+        "skew_raw": 1.6621952766516193,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.4254532652701989
+      }
+    },
+    "food_drink_count_1km": {
+      "dong_thap_rural": {
+        "max": 40.0,
+        "min": 0.0,
+        "n_distinct": 34,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 2.0,
+        "rows": 1955,
+        "skew_log1p": 4.818257852784807,
+        "skew_raw": 7.40705722335136,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.9416879795396419
+      },
+      "hanoi_core": {
+        "max": 1146.0,
+        "min": 0.0,
+        "n_distinct": 209,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 80.0,
+        "p95": 756.25,
+        "rows": 356,
+        "skew_log1p": -0.624119463712177,
+        "skew_raw": 2.280736754875821,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.047752808988764044
+      },
+      "hoi_an": {
+        "max": 614.0,
+        "min": 0.0,
+        "n_distinct": 135,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 1.0,
+        "p95": 97.20000000000005,
+        "rows": 1317,
+        "skew_log1p": 1.3571966095948746,
+        "skew_raw": 5.7060269741529135,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.4844343204252088
+      },
+      "mu_cang_chai": {
+        "max": 1.0,
+        "min": 0.0,
+        "n_distinct": 2,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 2053,
+        "skew_log1p": 5.808446345417199,
+        "skew_raw": 5.808446345417204,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.9727228446176327
+      },
+      "pooled": {
+        "max": 1146.0,
+        "min": 0.0,
+        "n_distinct": 264,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 70.0,
+        "rows": 5681,
+        "skew_log1p": 2.580338694580101,
+        "skew_raw": 8.370298734894662,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.7908818869917268
+      }
+    },
+    "grass_shrub_ratio": {
+      "dong_thap_rural": {
+        "max": 0.5890761339171652,
+        "min": 0.0,
+        "n_distinct": 1152,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.001994442164641738,
+        "p95": 0.09856975364246545,
+        "rows": 1955,
+        "skew_log1p": 4.106620408626629,
+        "skew_raw": 4.765836183384299,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.4112531969309463
+      },
+      "hanoi_core": {
+        "max": 0.44941113005188205,
+        "min": 0.0,
+        "n_distinct": 131,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.08965988904892722,
+        "rows": 356,
+        "skew_log1p": 4.814690652071865,
+        "skew_raw": 5.071002615927935,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.6348314606741573
+      },
+      "hoi_an": {
+        "max": 0.9977563258941095,
+        "min": 0.0,
+        "n_distinct": 1079,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.14356546876440426,
+        "p95": 0.8191108539746897,
+        "rows": 1317,
+        "skew_log1p": 0.8317880613607344,
+        "skew_raw": 1.0896712966504707,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.18147304479878512
+      },
+      "mu_cang_chai": {
+        "max": 0.956636170126625,
+        "min": 0.0,
+        "n_distinct": 1780,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.15737829633949188,
+        "p95": 0.7005337353153962,
+        "rows": 2053,
+        "skew_log1p": 0.671321128154156,
+        "skew_raw": 0.9209850377449428,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.13346322454943985
+      },
+      "pooled": {
+        "max": 0.9977563258941095,
+        "min": 0.0,
+        "n_distinct": 4139,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.02884484532580311,
+        "p95": 0.6569505496075402,
+        "rows": 5681,
+        "skew_log1p": 1.432627164538682,
+        "skew_raw": 1.6983116407385634,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.2716071114240451
+      }
+    },
+    "higher_education_count_3km": {
+      "dong_thap_rural": {
+        "max": 3.0,
+        "min": 0.0,
+        "n_distinct": 4,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 2.0,
+        "rows": 1955,
+        "skew_log1p": 1.4599043380112906,
+        "skew_raw": 1.8017379334765538,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.7544757033248082
+      },
+      "hanoi_core": {
+        "max": 42.0,
+        "min": 3.0,
+        "n_distinct": 39,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 13.0,
+        "p95": 37.0,
+        "rows": 356,
+        "skew_log1p": -0.12798772670041653,
+        "skew_raw": 0.6434472154087946,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.0
+      },
+      "hoi_an": {
+        "max": 2.0,
+        "min": 0.0,
+        "n_distinct": 3,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 1.2000000000000455,
+        "rows": 1317,
+        "skew_log1p": 0.345561349579762,
+        "skew_raw": 0.6782082415409285,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.5375854214123007
+      },
+      "mu_cang_chai": {
+        "max": 0.0,
+        "min": 0.0,
+        "n_distinct": 1,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 2053,
+        "skew_log1p": 0.0,
+        "skew_raw": 0.0,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 1.0
+      },
+      "pooled": {
+        "max": 42.0,
+        "min": 0.0,
+        "n_distinct": 42,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 7.0,
+        "rows": 5681,
+        "skew_log1p": 2.8475905466638665,
+        "skew_raw": 5.426549803975941,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.7456433726456609
+      }
+    },
+    "hospital_count_3km": {
+      "dong_thap_rural": {
+        "max": 9.0,
+        "min": 0.0,
+        "n_distinct": 10,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 8.0,
+        "rows": 1955,
+        "skew_log1p": 1.2434404105033006,
+        "skew_raw": 2.0398672333631467,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.5902813299232736
+      },
+      "hanoi_core": {
+        "max": 54.0,
+        "min": 3.0,
+        "n_distinct": 52,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 29.0,
+        "p95": 51.0,
+        "rows": 356,
+        "skew_log1p": -0.9430449810859424,
+        "skew_raw": -0.03689819182705961,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.0
+      },
+      "hoi_an": {
+        "max": 4.0,
+        "min": 0.0,
+        "n_distinct": 5,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 4.0,
+        "rows": 1317,
+        "skew_log1p": 1.3327936314856945,
+        "skew_raw": 1.6049333067273834,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.7289293849658315
+      },
+      "mu_cang_chai": {
+        "max": 1.0,
+        "min": 0.0,
+        "n_distinct": 2,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 2053,
+        "skew_log1p": 5.058420570979413,
+        "skew_raw": 5.058420570979413,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.964929371651242
+      },
+      "pooled": {
+        "max": 54.0,
+        "min": 0.0,
+        "n_distinct": 55,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 12.0,
+        "rows": 5681,
+        "skew_log1p": 2.2139394466584754,
+        "skew_raw": 4.521289412236006,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.7208237986270023
+      }
+    },
+    "intersection_density_per_km2": {
+      "dong_thap_rural": {
+        "max": 437.77984543181566,
+        "min": 0.0,
+        "n_distinct": 534,
+        "n_valid": 1855,
+        "null_rate": 0.05115089514066496,
+        "p50": 0.0,
+        "p95": 57.58351103435141,
+        "rows": 1955,
+        "skew_log1p": 1.2565403520679184,
+        "skew_raw": 5.924271040294314,
+        "status_counts": {
+          "denominator_below_minimum": 10,
+          "denominator_zero": 90,
+          "ok": 1855
+        },
+        "zero_rate_of_valid": 0.7126684636118599
+      },
+      "hanoi_core": {
+        "max": 896.2173298628356,
+        "min": 0.0,
+        "n_distinct": 305,
+        "n_valid": 327,
+        "null_rate": 0.08146067415730338,
+        "p50": 269.7186853574864,
+        "p95": 610.0640203919319,
+        "rows": 356,
+        "skew_log1p": -2.1697927682487466,
+        "skew_raw": 0.5101618195610774,
+        "status_counts": {
+          "denominator_below_minimum": 5,
+          "denominator_zero": 24,
+          "ok": 327
+        },
+        "zero_rate_of_valid": 0.07033639143730887
+      },
+      "hoi_an": {
+        "max": 818.0684364600789,
+        "min": 0.0,
+        "n_distinct": 829,
+        "n_valid": 1100,
+        "null_rate": 0.16476841305998483,
+        "p50": 29.54126348696046,
+        "p95": 169.06311752728902,
+        "rows": 1317,
+        "skew_log1p": -0.596185261952038,
+        "skew_raw": 3.217398886958497,
+        "status_counts": {
+          "denominator_below_minimum": 9,
+          "denominator_zero": 208,
+          "ok": 1100
+        },
+        "zero_rate_of_valid": 0.24727272727272728
+      },
+      "mu_cang_chai": {
+        "max": 155.89816448472249,
+        "min": 0.0,
+        "n_distinct": 280,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 34.61647430289917,
+        "rows": 2053,
+        "skew_log1p": 2.446310937454963,
+        "skew_raw": 5.009003984210749,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.864101315148563
+      },
+      "pooled": {
+        "max": 896.2173298628356,
+        "min": 0.0,
+        "n_distinct": 1945,
+        "n_valid": 5335,
+        "null_rate": 0.06090477028692132,
+        "p50": 0.0,
+        "p95": 188.22039534040888,
+        "rows": 5681,
+        "skew_log1p": 0.9555138910767326,
+        "skew_raw": 4.36828162156933,
+        "status_counts": {
+          "denominator_below_minimum": 24,
+          "denominator_zero": 322,
+          "ok": 5335
+        },
+        "zero_rate_of_valid": 0.6356138706654171
+      }
+    },
+    "lodging_count_1km": {
+      "dong_thap_rural": {
+        "max": 8.0,
+        "min": 0.0,
+        "n_distinct": 9,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 1.0,
+        "rows": 1955,
+        "skew_log1p": 4.231004492538055,
+        "skew_raw": 6.54576429686755,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.9171355498721228
+      },
+      "hanoi_core": {
+        "max": 514.0,
+        "min": 0.0,
+        "n_distinct": 112,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 10.0,
+        "p95": 331.25,
+        "rows": 356,
+        "skew_log1p": 0.6003365696131304,
+        "skew_raw": 2.857948891928826,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.03651685393258427
+      },
+      "hoi_an": {
+        "max": 184.0,
+        "min": 0.0,
+        "n_distinct": 100,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 56.0,
+        "rows": 1317,
+        "skew_log1p": 1.3485456026815268,
+        "skew_raw": 4.177682578912447,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.5679574791192104
+      },
+      "mu_cang_chai": {
+        "max": 4.0,
+        "min": 0.0,
+        "n_distinct": 5,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 1.0,
+        "rows": 2053,
+        "skew_log1p": 4.722074945635238,
+        "skew_raw": 5.8364349248669924,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.9444715051144666
+      },
+      "pooled": {
+        "max": 514.0,
+        "min": 0.0,
+        "n_distinct": 152,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 21.0,
+        "rows": 5681,
+        "skew_log1p": 2.8762826152208127,
+        "skew_raw": 10.612402289545969,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.7908818869917268
+      }
+    },
+    "major_road_length_km": {
+      "dong_thap_rural": {
+        "max": 2.4453553821503857,
+        "min": 0.0,
+        "n_distinct": 314,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.3878776896489517,
+        "rows": 1955,
+        "skew_log1p": 3.346650315371827,
+        "skew_raw": 4.5978226598069964,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.8398976982097187
+      },
+      "hanoi_core": {
+        "max": 3.2627363885581726,
+        "min": 0.0,
+        "n_distinct": 194,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 0.15446300728912932,
+        "p95": 1.3266901971702212,
+        "rows": 356,
+        "skew_log1p": 0.8845816957879739,
+        "skew_raw": 1.642621662821015,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.45786516853932585
+      },
+      "hoi_an": {
+        "max": 1.5360523790462377,
+        "min": 0.0,
+        "n_distinct": 216,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.47496128519008163,
+        "rows": 1317,
+        "skew_log1p": 2.720481826518104,
+        "skew_raw": 3.137573608198654,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.8367501898253606
+      },
+      "mu_cang_chai": {
+        "max": 0.6891616103932939,
+        "min": 0.0,
+        "n_distinct": 89,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 2053,
+        "skew_log1p": 5.554504479432128,
+        "skew_raw": 5.797630684339912,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.9571358986848514
+      },
+      "pooled": {
+        "max": 3.2627363885581726,
+        "min": 0.0,
+        "n_distinct": 810,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.4121070972963983,
+        "rows": 5681,
+        "skew_log1p": 3.472989702122631,
+        "skew_raw": 4.721254481100828,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.8575954937511001
+      }
+    },
+    "mall_count_3km": {
+      "dong_thap_rural": {
+        "max": 0.0,
+        "min": 0.0,
+        "n_distinct": 1,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 1955,
+        "skew_log1p": 0.0,
+        "skew_raw": 0.0,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 1.0
+      },
+      "hanoi_core": {
+        "max": 13.0,
+        "min": 0.0,
+        "n_distinct": 14,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 4.0,
+        "p95": 12.0,
+        "rows": 356,
+        "skew_log1p": 0.00993413354535547,
+        "skew_raw": 1.040935585322351,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.014044943820224719
+      },
+      "hoi_an": {
+        "max": 0.0,
+        "min": 0.0,
+        "n_distinct": 1,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 1317,
+        "skew_log1p": 0.0,
+        "skew_raw": 0.0,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 1.0
+      },
+      "mu_cang_chai": {
+        "max": 0.0,
+        "min": 0.0,
+        "n_distinct": 1,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 2053,
+        "skew_log1p": 0.0,
+        "skew_raw": 0.0,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 1.0
+      },
+      "pooled": {
+        "max": 13.0,
+        "min": 0.0,
+        "n_distinct": 14,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 2.0,
+        "rows": 5681,
+        "skew_log1p": 4.349015895632594,
+        "skew_raw": 6.123039984048927,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.9382151029748284
+      }
+    },
+    "marketplace_count_1km": {
+      "dong_thap_rural": {
+        "max": 3.0,
+        "min": 0.0,
+        "n_distinct": 4,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 1.0,
+        "rows": 1955,
+        "skew_log1p": 3.0224764907584176,
+        "skew_raw": 4.139242564250382,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.8895140664961637
+      },
+      "hanoi_core": {
+        "max": 10.0,
+        "min": 0.0,
+        "n_distinct": 11,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 2.0,
+        "p95": 7.0,
+        "rows": 356,
+        "skew_log1p": -0.04458324962103343,
+        "skew_raw": 1.4771322966483675,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.15730337078651685
+      },
+      "hoi_an": {
+        "max": 6.0,
+        "min": 0.0,
+        "n_distinct": 7,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 2.0,
+        "rows": 1317,
+        "skew_log1p": 2.2514880175515444,
+        "skew_raw": 3.6772509497305252,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.8147304479878512
+      },
+      "mu_cang_chai": {
+        "max": 0.0,
+        "min": 0.0,
+        "n_distinct": 1,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 2053,
+        "skew_log1p": 0.0,
+        "skew_raw": 0.0,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 1.0
+      },
+      "pooled": {
+        "max": 10.0,
+        "min": 0.0,
+        "n_distinct": 11,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 2.0,
+        "rows": 5681,
+        "skew_log1p": 2.982523735552802,
+        "skew_raw": 5.102558294117894,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.8662207357859532
+      }
+    },
+    "osm_industrial_site_area_ratio": {
+      "dong_thap_rural": {
+        "max": 0.745898623944279,
+        "min": 0.0,
+        "n_distinct": 8,
+        "n_valid": 1855,
+        "null_rate": 0.05115089514066496,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 1955,
+        "skew_log1p": 24.007656227126027,
+        "skew_raw": 24.643302758566733,
+        "status_counts": {
+          "denominator_below_minimum": 10,
+          "denominator_zero": 90,
+          "ok": 1855
+        },
+        "zero_rate_of_valid": 0.9962264150943396
+      },
+      "hanoi_core": {
+        "max": null,
+        "min": null,
+        "n_distinct": 0,
+        "n_valid": 0,
+        "null_rate": 1.0,
+        "p50": null,
+        "p95": null,
+        "rows": 356,
+        "skew_log1p": null,
+        "skew_raw": null,
+        "status_counts": {
+          "entity_assembly_failed": 356
+        },
+        "zero_rate_of_valid": null
+      },
+      "hoi_an": {
+        "max": 1.0,
+        "min": 0.0,
+        "n_distinct": 21,
+        "n_valid": 1100,
+        "null_rate": 0.16476841305998483,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 1317,
+        "skew_log1p": 11.237511786749298,
+        "skew_raw": 12.190751733009536,
+        "status_counts": {
+          "denominator_below_minimum": 9,
+          "denominator_zero": 208,
+          "ok": 1100
+        },
+        "zero_rate_of_valid": 0.980909090909091
+      },
+      "mu_cang_chai": {
+        "max": 0.0,
+        "min": 0.0,
+        "n_distinct": 1,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 2053,
+        "skew_log1p": 0.0,
+        "skew_raw": 0.0,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 1.0
+      },
+      "pooled": {
+        "max": 1.0,
+        "min": 0.0,
+        "n_distinct": 28,
+        "n_valid": 5008,
+        "null_rate": 0.11846505896849147,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 5681,
+        "skew_log1p": 20.651562356468727,
+        "skew_raw": 22.197413858163994,
+        "status_counts": {
+          "denominator_below_minimum": 19,
+          "denominator_zero": 298,
+          "entity_assembly_failed": 356,
+          "ok": 5008
+        },
+        "zero_rate_of_valid": 0.994408945686901
+      }
+    },
+    "park_recreation_count_1km": {
+      "dong_thap_rural": {
+        "max": 9.0,
+        "min": 0.0,
+        "n_distinct": 10,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 1.0,
+        "rows": 1955,
+        "skew_log1p": 4.612982474099835,
+        "skew_raw": 6.55550298073807,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.9268542199488491
+      },
+      "hanoi_core": {
+        "max": null,
+        "min": null,
+        "n_distinct": 0,
+        "n_valid": 0,
+        "null_rate": 1.0,
+        "p50": null,
+        "p95": null,
+        "rows": 356,
+        "skew_log1p": null,
+        "skew_raw": null,
+        "status_counts": {
+          "entity_assembly_failed": 356
+        },
+        "zero_rate_of_valid": null
+      },
+      "hoi_an": {
+        "max": 26.0,
+        "min": 0.0,
+        "n_distinct": 25,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 10.0,
+        "rows": 1317,
+        "skew_log1p": 1.7298687248701692,
+        "skew_raw": 3.356470680344278,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.6970387243735763
+      },
+      "mu_cang_chai": {
+        "max": 0.0,
+        "min": 0.0,
+        "n_distinct": 1,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 2053,
+        "skew_log1p": 0.0,
+        "skew_raw": 0.0,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 1.0
+      },
+      "pooled": {
+        "max": 26.0,
+        "min": 0.0,
+        "n_distinct": 25,
+        "n_valid": 5325,
+        "null_rate": 0.06266502376342194,
+        "p50": 0.0,
+        "p95": 2.0,
+        "rows": 5681,
+        "skew_log1p": 3.8523527414752246,
+        "skew_raw": 6.683375509992735,
+        "status_counts": {
+          "entity_assembly_failed": 356,
+          "ok": 5325
+        },
+        "zero_rate_of_valid": 0.8982159624413145
+      }
+    },
+    "pharmacy_count_1km": {
+      "dong_thap_rural": {
+        "max": 0.0,
+        "min": 0.0,
+        "n_distinct": 1,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 1955,
+        "skew_log1p": 0.0,
+        "skew_raw": 0.0,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 1.0
+      },
+      "hanoi_core": {
+        "max": 30.0,
+        "min": 0.0,
+        "n_distinct": 31,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 6.0,
+        "p95": 21.25,
+        "rows": 356,
+        "skew_log1p": -0.31929666123896766,
+        "skew_raw": 0.7720313996374474,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.199438202247191
+      },
+      "hoi_an": {
+        "max": 16.0,
+        "min": 0.0,
+        "n_distinct": 17,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 3.0,
+        "rows": 1317,
+        "skew_log1p": 3.4278798975610925,
+        "skew_raw": 5.258727632119823,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.8823082763857252
+      },
+      "mu_cang_chai": {
+        "max": 0.0,
+        "min": 0.0,
+        "n_distinct": 1,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 2053,
+        "skew_log1p": 0.0,
+        "skew_raw": 0.0,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 1.0
+      },
+      "pooled": {
+        "max": 30.0,
+        "min": 0.0,
+        "n_distinct": 31,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 3.0,
+        "rows": 5681,
+        "skew_log1p": 4.0245135281222995,
+        "skew_raw": 5.688714328697541,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.9225488470339729
+      }
+    },
+    "poi_category_richness_1km": {
+      "dong_thap_rural": {
+        "max": 14.0,
+        "min": 0.0,
+        "n_distinct": 15,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 5.0,
+        "rows": 1955,
+        "skew_log1p": 1.2960920763814334,
+        "skew_raw": 3.1133869120869386,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.5994884910485934
+      },
+      "hanoi_core": {
+        "max": null,
+        "min": null,
+        "n_distinct": 0,
+        "n_valid": 0,
+        "null_rate": 1.0,
+        "p50": null,
+        "p95": null,
+        "rows": 356,
+        "skew_log1p": null,
+        "skew_raw": null,
+        "status_counts": {
+          "entity_assembly_failed": 356
+        },
+        "zero_rate_of_valid": null
+      },
+      "hoi_an": {
+        "max": 19.0,
+        "min": 0.0,
+        "n_distinct": 20,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 3.0,
+        "p95": 14.0,
+        "rows": 1317,
+        "skew_log1p": -0.052269988101830006,
+        "skew_raw": 1.299928405781739,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.2604403948367502
+      },
+      "mu_cang_chai": {
+        "max": 4.0,
+        "min": 0.0,
+        "n_distinct": 5,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 1.0,
+        "rows": 2053,
+        "skew_log1p": 2.9800065879002293,
+        "skew_raw": 4.014656421666278,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.8811495372625426
+      },
+      "pooled": {
+        "max": 19.0,
+        "min": 0.0,
+        "n_distinct": 20,
+        "n_valid": 5325,
+        "null_rate": 0.06266502376342194,
+        "p50": 0.0,
+        "p95": 8.0,
+        "rows": 5681,
+        "skew_log1p": 1.290045769030239,
+        "skew_raw": 2.811718317157965,
+        "status_counts": {
+          "entity_assembly_failed": 356,
+          "ok": 5325
+        },
+        "zero_rate_of_valid": 0.624225352112676
+      }
+    },
+    "poi_total_count_1km": {
+      "dong_thap_rural": {
+        "max": 107.0,
+        "min": 0.0,
+        "n_distinct": 58,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 7.0,
+        "rows": 1955,
+        "skew_log1p": 1.9408284278598762,
+        "skew_raw": 6.785497097358002,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.5994884910485934
+      },
+      "hanoi_core": {
+        "max": null,
+        "min": null,
+        "n_distinct": 0,
+        "n_valid": 0,
+        "null_rate": 1.0,
+        "p50": null,
+        "p95": null,
+        "rows": 356,
+        "skew_log1p": null,
+        "skew_raw": null,
+        "status_counts": {
+          "entity_assembly_failed": 356
+        },
+        "zero_rate_of_valid": null
+      },
+      "hoi_an": {
+        "max": 1264.0,
+        "min": 0.0,
+        "n_distinct": 198,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 4.0,
+        "p95": 203.8000000000004,
+        "rows": 1317,
+        "skew_log1p": 0.8021993376864971,
+        "skew_raw": 5.428527735585286,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.2604403948367502
+      },
+      "mu_cang_chai": {
+        "max": 7.0,
+        "min": 0.0,
+        "n_distinct": 8,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 1.0,
+        "rows": 2053,
+        "skew_log1p": 3.422413646099148,
+        "skew_raw": 4.840058070259235,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.8811495372625426
+      },
+      "pooled": {
+        "max": 1264.0,
+        "min": 0.0,
+        "n_distinct": 204,
+        "n_valid": 5325,
+        "null_rate": 0.06266502376342194,
+        "p50": 0.0,
+        "p95": 37.80000000000018,
+        "rows": 5681,
+        "skew_log1p": 2.1911318434835447,
+        "skew_raw": 11.042157842794715,
+        "status_counts": {
+          "entity_assembly_failed": 356,
+          "ok": 5325
+        },
+        "zero_rate_of_valid": 0.624225352112676
+      }
+    },
+    "population_count": {
+      "dong_thap_rural": {
+        "max": 2684.0638241323704,
+        "min": 0.0,
+        "n_distinct": 1866,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 46.28738217394414,
+        "p95": 557.0798746782817,
+        "rows": 1955,
+        "skew_log1p": -0.335037749511091,
+        "skew_raw": 4.33354062206942,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.04603580562659847
+      },
+      "hanoi_core": {
+        "max": 6338.636850543254,
+        "min": 0.0,
+        "n_distinct": 334,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 2494.6230332930263,
+        "p95": 5723.908645026745,
+        "rows": 356,
+        "skew_log1p": -1.3614412864852512,
+        "skew_raw": 0.1888151120131618,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.06460674157303371
+      },
+      "hoi_an": {
+        "max": 2015.952335820285,
+        "min": 0.0,
+        "n_distinct": 1100,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 44.424768772524885,
+        "p95": 572.6479273623021,
+        "rows": 1317,
+        "skew_log1p": -0.29707524706499916,
+        "skew_raw": 3.073957286073305,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.16552771450265755
+      },
+      "mu_cang_chai": {
+        "max": 253.06379235442577,
+        "min": 0.0,
+        "n_distinct": 1051,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.05664341438836954,
+        "p95": 50.074314212790014,
+        "rows": 2053,
+        "skew_log1p": 1.3790191776324,
+        "skew_raw": 4.488693632497022,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.4729663906478324
+      },
+      "pooled": {
+        "max": 6338.636850543254,
+        "min": 0.0,
+        "n_distinct": 4348,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 15.046850191072897,
+        "p95": 1122.7539317732487,
+        "rows": 5681,
+        "skew_log1p": 0.40068618918162835,
+        "skew_raw": 5.055033953265956,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.22918500264038022
+      }
+    },
+    "population_density": {
+      "dong_thap_rural": {
+        "max": 22089.189432558276,
+        "min": 0.0,
+        "n_distinct": 1843,
+        "n_valid": 1855,
+        "null_rate": 0.05115089514066496,
+        "p50": 460.7667971363658,
+        "p95": 4992.8688140750955,
+        "rows": 1955,
+        "skew_log1p": -0.6104772332371632,
+        "skew_raw": 4.147724809866906,
+        "status_counts": {
+          "denominator_below_minimum": 10,
+          "denominator_zero": 90,
+          "ok": 1855
+        },
+        "zero_rate_of_valid": 0.007008086253369272
+      },
+      "hanoi_core": {
+        "max": 55137.018386095246,
+        "min": 0.0,
+        "n_distinct": 325,
+        "n_valid": 327,
+        "null_rate": 0.08146067415730338,
+        "p50": 26840.039905771686,
+        "p95": 50071.74361420306,
+        "rows": 356,
+        "skew_log1p": -2.2064868607167023,
+        "skew_raw": -0.02751993840609977,
+        "status_counts": {
+          "denominator_below_minimum": 5,
+          "denominator_zero": 24,
+          "ok": 327
+        },
+        "zero_rate_of_valid": 0.009174311926605505
+      },
+      "hoi_an": {
+        "max": 17246.176150514846,
+        "min": 0.0,
+        "n_distinct": 1085,
+        "n_valid": 1100,
+        "null_rate": 0.16476841305998483,
+        "p50": 811.283839470048,
+        "p95": 5768.187943434522,
+        "rows": 1317,
+        "skew_log1p": -1.0508566975471572,
+        "skew_raw": 2.526111157577157,
+        "status_counts": {
+          "denominator_below_minimum": 9,
+          "denominator_zero": 208,
+          "ok": 1100
+        },
+        "zero_rate_of_valid": 0.014545454545454545
+      },
+      "mu_cang_chai": {
+        "max": 2191.7695015105755,
+        "min": 0.0,
+        "n_distinct": 1083,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.490786751593921,
+        "p95": 433.5688236291005,
+        "rows": 2053,
+        "skew_log1p": 0.7806632983460693,
+        "skew_raw": 4.488605229145885,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.4729663906478324
+      },
+      "pooled": {
+        "max": 55137.018386095246,
+        "min": 0.0,
+        "n_distinct": 4333,
+        "n_valid": 5335,
+        "null_rate": 0.06090477028692132,
+        "p50": 185.03240669392417,
+        "p95": 11441.232254603756,
+        "rows": 5681,
+        "skew_log1p": -0.2032684293587895,
+        "skew_raw": 4.756855955050744,
+        "status_counts": {
+          "denominator_below_minimum": 24,
+          "denominator_zero": 322,
+          "ok": 5335
+        },
+        "zero_rate_of_valid": 0.1880037488284911
+      }
+    },
+    "retail_count_1km": {
+      "dong_thap_rural": {
+        "max": 21.0,
+        "min": 0.0,
+        "n_distinct": 20,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 1.0,
+        "rows": 1955,
+        "skew_log1p": 3.698178140397198,
+        "skew_raw": 7.700301601082566,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.829156010230179
+      },
+      "hanoi_core": {
+        "max": 697.0,
+        "min": 0.0,
+        "n_distinct": 217,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 86.0,
+        "p95": 528.25,
+        "rows": 356,
+        "skew_log1p": -0.7745640929177987,
+        "skew_raw": 1.338362877227988,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.014044943820224719
+      },
+      "hoi_an": {
+        "max": 302.0,
+        "min": 0.0,
+        "n_distinct": 91,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 39.600000000000136,
+        "rows": 1317,
+        "skew_log1p": 1.723357412263895,
+        "skew_raw": 5.677454734718575,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.568716780561883
+      },
+      "mu_cang_chai": {
+        "max": 3.0,
+        "min": 0.0,
+        "n_distinct": 4,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 2053,
+        "skew_log1p": 5.685693113755842,
+        "skew_raw": 6.0590472298280496,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.9688261081344374
+      },
+      "pooled": {
+        "max": 697.0,
+        "min": 0.0,
+        "n_distinct": 249,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 56.0,
+        "rows": 5681,
+        "skew_log1p": 2.7726959051477853,
+        "skew_raw": 6.86435151447301,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.7681746171448689
+      }
+    },
+    "road_density_km_per_km2": {
+      "dong_thap_rural": {
+        "max": 260.7528396727913,
+        "min": 0.0,
+        "n_distinct": 1340,
+        "n_valid": 1855,
+        "null_rate": 0.05115089514066496,
+        "p50": 3.195712731652553,
+        "p95": 13.168026631376701,
+        "rows": 1955,
+        "skew_log1p": -0.04187482641087254,
+        "skew_raw": 19.23760456809807,
+        "status_counts": {
+          "denominator_below_minimum": 10,
+          "denominator_zero": 90,
+          "ok": 1855
+        },
+        "zero_rate_of_valid": 0.27816711590296495
+      },
+      "hanoi_core": {
+        "max": 273.1978922318783,
+        "min": 0.0,
+        "n_distinct": 320,
+        "n_valid": 327,
+        "null_rate": 0.08146067415730338,
+        "p50": 27.513444159309525,
+        "p95": 42.42260083860176,
+        "rows": 356,
+        "skew_log1p": -2.0657939855382517,
+        "skew_raw": 7.02292140617961,
+        "status_counts": {
+          "denominator_below_minimum": 5,
+          "denominator_zero": 24,
+          "ok": 327
+        },
+        "zero_rate_of_valid": 0.024464831804281346
+      },
+      "hoi_an": {
+        "max": 185.32909590082932,
+        "min": 0.0,
+        "n_distinct": 990,
+        "n_valid": 1100,
+        "null_rate": 0.16476841305998483,
+        "p50": 8.40080008419552,
+        "p95": 23.506231985357392,
+        "rows": 1317,
+        "skew_log1p": -0.8529221382156981,
+        "skew_raw": 6.863901664745923,
+        "status_counts": {
+          "denominator_below_minimum": 9,
+          "denominator_zero": 208,
+          "ok": 1100
+        },
+        "zero_rate_of_valid": 0.1009090909090909
+      },
+      "mu_cang_chai": {
+        "max": 20.44486293567072,
+        "min": 0.0,
+        "n_distinct": 628,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 7.746105003005763,
+        "rows": 2053,
+        "skew_log1p": 1.3440909945761703,
+        "skew_raw": 2.41905774413312,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.6945932781295665
+      },
+      "pooled": {
+        "max": 273.1978922318783,
+        "min": 0.0,
+        "n_distinct": 3275,
+        "n_valid": 5335,
+        "null_rate": 0.06090477028692132,
+        "p50": 2.849171515007794,
+        "p95": 24.056813991451108,
+        "rows": 5681,
+        "skew_log1p": 0.32614929428120487,
+        "skew_raw": 9.654951792182189,
+        "status_counts": {
+          "denominator_below_minimum": 24,
+          "denominator_zero": 322,
+          "ok": 5335
+        },
+        "zero_rate_of_valid": 0.38631677600749764
+      }
+    },
+    "road_length_km": {
+      "dong_thap_rural": {
+        "max": 3.706939681854086,
+        "min": 0.0,
+        "n_distinct": 1341,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.3573353532541201,
+        "p95": 1.5062478077760855,
+        "rows": 1955,
+        "skew_log1p": 0.7431548582603554,
+        "skew_raw": 1.6595917063089807,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.3145780051150895
+      },
+      "hanoi_core": {
+        "max": 5.803832887807707,
+        "min": 0.0,
+        "n_distinct": 320,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 2.8347477613029453,
+        "p95": 4.588237562601352,
+        "rows": 356,
+        "skew_log1p": -0.9329941262405675,
+        "skew_raw": -0.2554197984975273,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.10393258426966293
+      },
+      "hoi_an": {
+        "max": 3.4875640733316478,
+        "min": 0.0,
+        "n_distinct": 993,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.6515330483141186,
+        "p95": 2.205064955383516,
+        "rows": 1317,
+        "skew_log1p": 0.21966011571779162,
+        "skew_raw": 0.8585758762197516,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.24677296886864086
+      },
+      "mu_cang_chai": {
+        "max": 2.360660295112819,
+        "min": 0.0,
+        "n_distinct": 628,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.8945083536615914,
+        "rows": 2053,
+        "skew_log1p": 1.8711145671582592,
+        "skew_raw": 2.418821867497931,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.6945932781295665
+      },
+      "pooled": {
+        "max": 5.803832887807707,
+        "min": 0.0,
+        "n_distinct": 3279,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.23972708500434628,
+        "p95": 2.324981065414467,
+        "rows": 5681,
+        "skew_log1p": 1.1939916843965537,
+        "skew_raw": 2.3528708360789223,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.42298891040309805
+      }
+    },
+    "school_count_1km": {
+      "dong_thap_rural": {
+        "max": 4.0,
+        "min": 0.0,
+        "n_distinct": 5,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 1.0,
+        "rows": 1955,
+        "skew_log1p": 3.4128992782041654,
+        "skew_raw": 4.120331150503907,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.9120204603580563
+      },
+      "hanoi_core": {
+        "max": 28.0,
+        "min": 0.0,
+        "n_distinct": 29,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 12.0,
+        "p95": 23.0,
+        "rows": 356,
+        "skew_log1p": -1.195318967919112,
+        "skew_raw": 0.028100871142087928,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.06460674157303371
+      },
+      "hoi_an": {
+        "max": 8.0,
+        "min": 0.0,
+        "n_distinct": 9,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 2.0,
+        "rows": 1317,
+        "skew_log1p": 1.6475597693334136,
+        "skew_raw": 3.2551728330991887,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.7107061503416856
+      },
+      "mu_cang_chai": {
+        "max": 0.0,
+        "min": 0.0,
+        "n_distinct": 1,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 2053,
+        "skew_log1p": 0.0,
+        "skew_raw": 0.0,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 1.0
+      },
+      "pooled": {
+        "max": 28.0,
+        "min": 0.0,
+        "n_distinct": 29,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 5.0,
+        "rows": 5681,
+        "skew_log1p": 3.1032257412680124,
+        "skew_raw": 4.791195485733978,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.8440415419820454
+      }
+    },
+    "transit_stop_count_1km": {
+      "dong_thap_rural": {
+        "max": 6.0,
+        "min": 0.0,
+        "n_distinct": 7,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 2.0,
+        "rows": 1955,
+        "skew_log1p": 3.3845954951530017,
+        "skew_raw": 4.618640438807248,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.9033248081841432
+      },
+      "hanoi_core": {
+        "max": 76.0,
+        "min": 0.0,
+        "n_distinct": 68,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 29.0,
+        "p95": 57.25,
+        "rows": 356,
+        "skew_log1p": -1.6851162636328858,
+        "skew_raw": 0.2365612277806121,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.03651685393258427
+      },
+      "hoi_an": {
+        "max": 18.0,
+        "min": 0.0,
+        "n_distinct": 19,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 7.0,
+        "rows": 1317,
+        "skew_log1p": 1.651953519171115,
+        "skew_raw": 2.9948036179149393,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.7281700835231587
+      },
+      "mu_cang_chai": {
+        "max": 0.0,
+        "min": 0.0,
+        "n_distinct": 1,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 2053,
+        "skew_log1p": 0.0,
+        "skew_raw": 0.0,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 1.0
+      },
+      "pooled": {
+        "max": 76.0,
+        "min": 0.0,
+        "n_distinct": 68,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 14.0,
+        "rows": 5681,
+        "skew_log1p": 2.855813015292022,
+        "skew_raw": 4.846611354299152,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.8433374405914452
+      }
+    },
+    "tree_cover_ratio": {
+      "dong_thap_rural": {
+        "max": 1.0,
+        "min": 0.0,
+        "n_distinct": 1798,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.3618186795127432,
+        "p95": 0.9749188102851034,
+        "rows": 1955,
+        "skew_log1p": 0.11332507084177879,
+        "skew_raw": 0.328426525334342,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.07519181585677749
+      },
+      "hanoi_core": {
+        "max": 0.9261343969192253,
+        "min": 0.0,
+        "n_distinct": 326,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 0.09192166726561835,
+        "p95": 0.6510861130563808,
+        "rows": 356,
+        "skew_log1p": 1.3118858499916464,
+        "skew_raw": 1.5946356839770017,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.08707865168539326
+      },
+      "hoi_an": {
+        "max": 0.8224674961961008,
+        "min": 0.0,
+        "n_distinct": 970,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.037782716173681716,
+        "p95": 0.3851026508741997,
+        "rows": 1317,
+        "skew_log1p": 1.5569268862431063,
+        "skew_raw": 1.870840275136217,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.2642369020501139
+      },
+      "mu_cang_chai": {
+        "max": 1.0,
+        "min": 0.004148606825541726,
+        "n_distinct": 1781,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.8296248360126535,
+        "p95": 1.0,
+        "rows": 2053,
+        "skew_log1p": -1.0587173347037906,
+        "skew_raw": -0.8372729083954771,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.0
+      },
+      "pooled": {
+        "max": 1.0,
+        "min": 0.0,
+        "n_distinct": 4872,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.35443831391747194,
+        "p95": 1.0,
+        "rows": 5681,
+        "skew_log1p": 0.11938893264063902,
+        "skew_raw": 0.2887339272311518,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.09258933286393241
+      }
+    },
+    "water_wetland_ratio": {
+      "dong_thap_rural": {
+        "max": 1.0,
+        "min": 0.0,
+        "n_distinct": 672,
+        "n_valid": 1955,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.9943375857849338,
+        "rows": 1955,
+        "skew_log1p": 2.389474721432493,
+        "skew_raw": 2.5220024682149274,
+        "status_counts": {
+          "ok": 1955
+        },
+        "zero_rate_of_valid": 0.6112531969309463
+      },
+      "hanoi_core": {
+        "max": 1.0,
+        "min": 0.0,
+        "n_distinct": 159,
+        "n_valid": 356,
+        "null_rate": 0.0,
+        "p50": 0.00030179679769976053,
+        "p95": 1.0,
+        "rows": 356,
+        "skew_log1p": 1.4890718840610884,
+        "skew_raw": 1.6282277134854324,
+        "status_counts": {
+          "ok": 356
+        },
+        "zero_rate_of_valid": 0.49157303370786515
+      },
+      "hoi_an": {
+        "max": 1.0,
+        "min": 0.0,
+        "n_distinct": 520,
+        "n_valid": 1317,
+        "null_rate": 0.0,
+        "p50": 0.015220594324915118,
+        "p95": 1.0,
+        "rows": 1317,
+        "skew_log1p": 0.7506495901392227,
+        "skew_raw": 0.8664706610733159,
+        "status_counts": {
+          "ok": 1317
+        },
+        "zero_rate_of_valid": 0.44874715261959
+      },
+      "mu_cang_chai": {
+        "max": 0.12522650049713535,
+        "min": 0.0,
+        "n_distinct": 4,
+        "n_valid": 2053,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "rows": 2053,
+        "skew_log1p": 45.29858219463597,
+        "skew_raw": 45.2998525595633,
+        "status_counts": {
+          "ok": 2053
+        },
+        "zero_rate_of_valid": 0.9985387238188017
+      },
+      "pooled": {
+        "max": 1.0,
+        "min": 0.0,
+        "n_distinct": 1350,
+        "n_valid": 5681,
+        "null_rate": 0.0,
+        "p50": 0.0,
+        "p95": 1.0,
+        "rows": 5681,
+        "skew_log1p": 2.2167742486545925,
+        "skew_raw": 2.3462727495822517,
+        "status_counts": {
+          "ok": 5681
+        },
+        "zero_rate_of_valid": 0.7060376694243972
+      }
+    }
+  },
+  "gate3_run_id": "20260914T171148Z",
+  "input_verification": {
+    "feature_set_version": "0.3.0",
+    "gate3_code_version": "59fe994cacf930df79d9b364fe104f1778d41f47+dirty",
+    "gate3_config_hash": "f1b1948188b66f4de0eaf755a095d59da5fe1549e30777ae17e6dec6ad8f8a4d",
+    "gate3_config_sha256": {
+      "config/features.yaml": "515ac315b4b7791c5027134ae37889781aea6acac0db81dce334ada5fc119856",
+      "config/gate3_mvp.yaml": "08e0a65a5c4ac18545082d38c58442fe293526f0068d2b24c7bb502dfe16300c",
+      "config/poi_taxonomy.yaml": "0f1809242608281e637ea0a71824d842024728b73656b95ccd199c52c1b2497d",
+      "config/spatial.yaml": "1cdba55dc736ca0b79d09dfd0d48e1aa99f88316532a8a8c162d9e06b55d82b0"
+    },
+    "gate3_run_dir": "data/gate3/run_20260914T171148Z",
+    "gate3_run_id": "20260914T171148Z",
+    "gate3_sha256sums_verified": true,
+    "poi_taxonomy_version": "0.3.0",
+    "rows": 5681,
+    "sha256": {
+      "atomic_features.parquet": "26d75dd0bf08b101a479aae816f667f44271dee676f08b7aa485cccbc0ed09e0",
+      "feature_manifest.json": "1cd97295ab6d905b8a0a28223f010c5df78ce81dff1dc05db91ea37093e0e087",
+      "run_manifest.json": "ae37aa53b0e9d47c87370f38c97bfb20cd760a7be38f74f16985d810b29bfea1",
+      "validation_summary.json": "43dca9e7f00dae7b07e3847927f3cacb31da022829e661af705bbe6f01bf16b7"
+    }
+  },
+  "local_ratio": {
+    "completeness": {
+      "dong_thap_rural": {
+        "aoi_edge_cells": 204,
+        "aoi_interior_cells": 1751,
+        "cells": 1955,
+        "ring_complete_cells": 1777,
+        "ring_complete_share_edge": 0.12745098039215685,
+        "ring_complete_share_interior": 1.0
+      },
+      "hanoi_core": {
+        "aoi_edge_cells": 84,
+        "aoi_interior_cells": 272,
+        "cells": 356,
+        "ring_complete_cells": 283,
+        "ring_complete_share_edge": 0.13095238095238096,
+        "ring_complete_share_interior": 1.0
+      },
+      "hoi_an": {
+        "aoi_edge_cells": 166,
+        "aoi_interior_cells": 1151,
+        "cells": 1317,
+        "ring_complete_cells": 1173,
+        "ring_complete_share_edge": 0.13253012048192772,
+        "ring_complete_share_interior": 1.0
+      },
+      "k": 1,
+      "mu_cang_chai": {
+        "aoi_edge_cells": 210,
+        "aoi_interior_cells": 1843,
+        "cells": 2053,
+        "ring_complete_cells": 1870,
+        "ring_complete_share_edge": 0.12857142857142856,
+        "ring_complete_share_interior": 1.0
+      },
+      "pooled": {
+        "aoi_edge_cells": 664,
+        "aoi_interior_cells": 5017,
+        "cells": 5681,
+        "ring_complete_cells": 5103,
+        "ring_complete_share_edge": 0.12951807228915663,
+        "ring_complete_share_interior": 1.0
+      }
+    },
+    "features": {
+      "food_drink_count_1km": {
+        "disposition": "diagnostic",
+        "eligible_rows": 5103,
+        "finite_rows": 1134,
+        "finite_share_of_eligible": 0.2222222222222222,
+        "output": "local_ratio_k1_food_drink_count_1km",
+        "per_aoi": {
+          "dong_thap_rural": {
+            "finite_share_of_eligible": 0.0686550365785031,
+            "ratio_p50": 1.078252032520325,
+            "ratio_p95": 2.0,
+            "status_counts": {
+              "neighborhood_incomplete": 178,
+              "neighborhood_reference_zero": 1655,
+              "ok": 122
+            }
+          },
+          "hanoi_core": {
+            "finite_share_of_eligible": 0.9787985865724381,
+            "ratio_p50": 1.0305676855895196,
+            "ratio_p95": 1.3158469945355187,
+            "status_counts": {
+              "neighborhood_incomplete": 73,
+              "neighborhood_reference_zero": 6,
+              "ok": 277
+            }
+          },
+          "hoi_an": {
+            "finite_share_of_eligible": 0.577152600170503,
+            "ratio_p50": 1.0,
+            "ratio_p95": 2.0,
+            "status_counts": {
+              "neighborhood_incomplete": 144,
+              "neighborhood_reference_zero": 496,
+              "ok": 677
+            }
+          },
+          "mu_cang_chai": {
+            "finite_share_of_eligible": 0.031016042780748664,
+            "ratio_p50": 1.0,
+            "ratio_p95": 2.0,
+            "status_counts": {
+              "neighborhood_incomplete": 183,
+              "neighborhood_reference_zero": 1812,
+              "ok": 58
+            }
+          }
+        },
+        "publish_rule_met": false,
+        "reference_zero_rows": 3969,
+        "sensitivity_reference_mean": {
+          "finite_rows": 1324,
+          "finite_share_of_eligible": 0.25945522241818536,
+          "n_both_finite": 1134,
+          "spearman_vs_median_where_both_finite": 0.6939454938653034
+        }
+      },
+      "intersection_density_per_km2": {
+        "disposition": "diagnostic",
+        "eligible_rows": 4775,
+        "finite_rows": 1876,
+        "finite_share_of_eligible": 0.39287958115183247,
+        "output": "local_ratio_k1_intersection_density_per_km2",
+        "per_aoi": {
+          "dong_thap_rural": {
+            "finite_share_of_eligible": 0.2819436112777445,
+            "ratio_p50": 0.785158018708328,
+            "ratio_p95": 5.38916293491602,
+            "status_counts": {
+              "denominator_below_minimum": 10,
+              "denominator_zero": 90,
+              "neighborhood_incomplete": 163,
+              "neighborhood_insufficient_valid": 25,
+              "neighborhood_reference_zero": 1197,
+              "ok": 470
+            }
+          },
+          "hanoi_core": {
+            "finite_share_of_eligible": 0.968503937007874,
+            "ratio_p50": 1.0095338046054811,
+            "ratio_p95": 2.093845921614488,
+            "status_counts": {
+              "denominator_below_minimum": 5,
+              "denominator_zero": 24,
+              "neighborhood_incomplete": 66,
+              "neighborhood_insufficient_valid": 7,
+              "neighborhood_reference_zero": 8,
+              "ok": 246
+            }
+          },
+          "hoi_an": {
+            "finite_share_of_eligible": 0.9024390243902439,
+            "ratio_p50": 0.9999966197225025,
+            "ratio_p95": 4.008223813036564,
+            "status_counts": {
+              "denominator_below_minimum": 9,
+              "denominator_zero": 208,
+              "neighborhood_incomplete": 104,
+              "neighborhood_insufficient_valid": 12,
+              "neighborhood_reference_zero": 96,
+              "ok": 888
+            }
+          },
+          "mu_cang_chai": {
+            "finite_share_of_eligible": 0.14545454545454545,
+            "ratio_p50": 0.9999986311755373,
+            "ratio_p95": 10.000192971734666,
+            "status_counts": {
+              "neighborhood_incomplete": 183,
+              "neighborhood_reference_zero": 1598,
+              "ok": 272
+            }
+          }
+        },
+        "publish_rule_met": false,
+        "reference_zero_rows": 2899,
+        "sensitivity_reference_mean": {
+          "finite_rows": 3052,
+          "finite_share_of_eligible": 0.6391623036649214,
+          "n_both_finite": 1876,
+          "spearman_vs_median_where_both_finite": 0.9463648324464928
+        }
+      },
+      "poi_total_count_1km": {
+        "disposition": "diagnostic",
+        "eligible_rows": 4820,
+        "finite_rows": 1997,
+        "finite_share_of_eligible": 0.41431535269709546,
+        "output": "local_ratio_k1_poi_total_count_1km",
+        "per_aoi": {
+          "dong_thap_rural": {
+            "finite_share_of_eligible": 0.44513224535734386,
+            "ratio_p50": 1.0,
+            "ratio_p95": 2.0,
+            "status_counts": {
+              "neighborhood_incomplete": 178,
+              "neighborhood_reference_zero": 986,
+              "ok": 791
+            }
+          },
+          "hanoi_core": {
+            "finite_share_of_eligible": null,
+            "ratio_p50": null,
+            "ratio_p95": null,
+            "status_counts": {
+              "entity_assembly_failed": 356
+            }
+          },
+          "hoi_an": {
+            "finite_share_of_eligible": 0.8022165387894288,
+            "ratio_p50": 1.0,
+            "ratio_p95": 1.5,
+            "status_counts": {
+              "neighborhood_incomplete": 144,
+              "neighborhood_reference_zero": 232,
+              "ok": 941
+            }
+          },
+          "mu_cang_chai": {
+            "finite_share_of_eligible": 0.14171122994652408,
+            "ratio_p50": 1.0,
+            "ratio_p95": 2.0,
+            "status_counts": {
+              "neighborhood_incomplete": 183,
+              "neighborhood_reference_zero": 1605,
+              "ok": 265
+            }
+          }
+        },
+        "publish_rule_met": false,
+        "reference_zero_rows": 2823,
+        "sensitivity_reference_mean": {
+          "finite_rows": 2375,
+          "finite_share_of_eligible": 0.4927385892116183,
+          "n_both_finite": 1997,
+          "spearman_vs_median_where_both_finite": 0.7532811621567846
+        }
+      },
+      "population_density": {
+        "disposition": "publishable",
+        "eligible_rows": 4775,
+        "finite_rows": 4004,
+        "finite_share_of_eligible": 0.8385340314136126,
+        "output": "local_ratio_k1_population_density",
+        "per_aoi": {
+          "dong_thap_rural": {
+            "finite_share_of_eligible": 1.0,
+            "ratio_p50": 0.9657721039138926,
+            "ratio_p95": 3.2768534571209877,
+            "status_counts": {
+              "denominator_below_minimum": 10,
+              "denominator_zero": 90,
+              "neighborhood_incomplete": 163,
+              "neighborhood_insufficient_valid": 25,
+              "ok": 1667
+            }
+          },
+          "hanoi_core": {
+            "finite_share_of_eligible": 1.0,
+            "ratio_p50": 0.9884309466127432,
+            "ratio_p95": 1.4731854482321132,
+            "status_counts": {
+              "denominator_below_minimum": 5,
+              "denominator_zero": 24,
+              "neighborhood_incomplete": 66,
+              "neighborhood_insufficient_valid": 7,
+              "ok": 254
+            }
+          },
+          "hoi_an": {
+            "finite_share_of_eligible": 0.9989837398373984,
+            "ratio_p50": 0.9862977474659489,
+            "ratio_p95": 3.3991653224855622,
+            "status_counts": {
+              "denominator_below_minimum": 9,
+              "denominator_zero": 208,
+              "neighborhood_incomplete": 104,
+              "neighborhood_insufficient_valid": 12,
+              "neighborhood_reference_zero": 1,
+              "ok": 983
+            }
+          },
+          "mu_cang_chai": {
+            "finite_share_of_eligible": 0.5882352941176471,
+            "ratio_p50": 0.7651797619418592,
+            "ratio_p95": 18.225502638966383,
+            "status_counts": {
+              "neighborhood_incomplete": 183,
+              "neighborhood_reference_zero": 770,
+              "ok": 1100
+            }
+          }
+        },
+        "publish_rule_met": true,
+        "reference_zero_rows": 771,
+        "sensitivity_reference_mean": {
+          "finite_rows": 4507,
+          "finite_share_of_eligible": 0.9438743455497383,
+          "n_both_finite": 4004,
+          "spearman_vs_median_where_both_finite": 0.9170179034203702
+        }
+      },
+      "road_density_km_per_km2": {
+        "disposition": "publishable",
+        "eligible_rows": 4775,
+        "finite_rows": 3407,
+        "finite_share_of_eligible": 0.7135078534031414,
+        "output": "local_ratio_k1_road_density_km_per_km2",
+        "per_aoi": {
+          "dong_thap_rural": {
+            "finite_share_of_eligible": 0.8956208758248351,
+            "ratio_p50": 1.0018449349934884,
+            "ratio_p95": 4.965902640438738,
+            "status_counts": {
+              "denominator_below_minimum": 10,
+              "denominator_zero": 90,
+              "neighborhood_incomplete": 163,
+              "neighborhood_insufficient_valid": 25,
+              "neighborhood_reference_zero": 174,
+              "ok": 1493
+            }
+          },
+          "hanoi_core": {
+            "finite_share_of_eligible": 1.0,
+            "ratio_p50": 0.9993045101111262,
+            "ratio_p95": 1.6774116205488274,
+            "status_counts": {
+              "denominator_below_minimum": 5,
+              "denominator_zero": 24,
+              "neighborhood_incomplete": 66,
+              "neighborhood_insufficient_valid": 7,
+              "ok": 254
+            }
+          },
+          "hoi_an": {
+            "finite_share_of_eligible": 0.9705284552845529,
+            "ratio_p50": 0.9978999769447461,
+            "ratio_p95": 2.4827052625495543,
+            "status_counts": {
+              "denominator_below_minimum": 9,
+              "denominator_zero": 208,
+              "neighborhood_incomplete": 104,
+              "neighborhood_insufficient_valid": 12,
+              "neighborhood_reference_zero": 29,
+              "ok": 955
+            }
+          },
+          "mu_cang_chai": {
+            "finite_share_of_eligible": 0.3770053475935829,
+            "ratio_p50": 1.0643001520003184,
+            "ratio_p95": 8.27421598494795,
+            "status_counts": {
+              "neighborhood_incomplete": 183,
+              "neighborhood_reference_zero": 1165,
+              "ok": 705
+            }
+          }
+        },
+        "publish_rule_met": true,
+        "reference_zero_rows": 1368,
+        "sensitivity_reference_mean": {
+          "finite_rows": 3826,
+          "finite_share_of_eligible": 0.8012565445026179,
+          "n_both_finite": 3407,
+          "spearman_vs_median_where_both_finite": 0.9495624753974985
+        }
+      }
+    },
+    "policy": {
+      "exclude_centre": true,
+      "k": 1,
+      "minimum_valid_neighbors": 4,
+      "reference_statistic": "median",
+      "require_all_neighbors_present": true
+    }
+  },
+  "log1p": {
+    "attraction_culture_count_3km": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_attraction_culture_count_3km",
+      "publish_rule_met": true,
+      "skew_log1p": 1.4403568273814542,
+      "skew_raw": 3.5639009391619156,
+      "zero_share_of_valid": 0.5104735081851787
+    },
+    "clinic_count_1km": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_clinic_count_1km",
+      "publish_rule_met": true,
+      "skew_log1p": 4.5888190126245565,
+      "skew_raw": 7.996260513203619,
+      "zero_share_of_valid": 0.9346945960218271
+    },
+    "food_drink_count_1km": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_food_drink_count_1km",
+      "publish_rule_met": true,
+      "skew_log1p": 2.580338694580101,
+      "skew_raw": 8.370298734894662,
+      "zero_share_of_valid": 0.7908818869917268
+    },
+    "higher_education_count_3km": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_higher_education_count_3km",
+      "publish_rule_met": true,
+      "skew_log1p": 2.8475905466638665,
+      "skew_raw": 5.426549803975941,
+      "zero_share_of_valid": 0.7456433726456609
+    },
+    "hospital_count_3km": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_hospital_count_3km",
+      "publish_rule_met": true,
+      "skew_log1p": 2.2139394466584754,
+      "skew_raw": 4.521289412236006,
+      "zero_share_of_valid": 0.7208237986270023
+    },
+    "intersection_density_per_km2": {
+      "disposition": "publishable",
+      "n_valid": 5335,
+      "output": "log1p_intersection_density_per_km2",
+      "publish_rule_met": true,
+      "skew_log1p": 0.9555138910767326,
+      "skew_raw": 4.36828162156933,
+      "zero_share_of_valid": 0.6356138706654171
+    },
+    "lodging_count_1km": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_lodging_count_1km",
+      "publish_rule_met": true,
+      "skew_log1p": 2.8762826152208127,
+      "skew_raw": 10.612402289545969,
+      "zero_share_of_valid": 0.7908818869917268
+    },
+    "major_road_length_km": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_major_road_length_km",
+      "publish_rule_met": true,
+      "skew_log1p": 3.472989702122631,
+      "skew_raw": 4.721254481100828,
+      "zero_share_of_valid": 0.8575954937511001
+    },
+    "mall_count_3km": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_mall_count_3km",
+      "publish_rule_met": true,
+      "skew_log1p": 4.349015895632594,
+      "skew_raw": 6.123039984048927,
+      "zero_share_of_valid": 0.9382151029748284
+    },
+    "marketplace_count_1km": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_marketplace_count_1km",
+      "publish_rule_met": true,
+      "skew_log1p": 2.982523735552802,
+      "skew_raw": 5.102558294117894,
+      "zero_share_of_valid": 0.8662207357859532
+    },
+    "park_recreation_count_1km": {
+      "disposition": "publishable",
+      "n_valid": 5325,
+      "output": "log1p_park_recreation_count_1km",
+      "publish_rule_met": true,
+      "skew_log1p": 3.8523527414752246,
+      "skew_raw": 6.683375509992735,
+      "zero_share_of_valid": 0.8982159624413145
+    },
+    "pharmacy_count_1km": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_pharmacy_count_1km",
+      "publish_rule_met": true,
+      "skew_log1p": 4.0245135281222995,
+      "skew_raw": 5.688714328697541,
+      "zero_share_of_valid": 0.9225488470339729
+    },
+    "poi_category_richness_1km": {
+      "disposition": "publishable",
+      "n_valid": 5325,
+      "output": "log1p_poi_category_richness_1km",
+      "publish_rule_met": true,
+      "skew_log1p": 1.290045769030239,
+      "skew_raw": 2.811718317157965,
+      "zero_share_of_valid": 0.624225352112676
+    },
+    "poi_total_count_1km": {
+      "disposition": "publishable",
+      "n_valid": 5325,
+      "output": "log1p_poi_total_count_1km",
+      "publish_rule_met": true,
+      "skew_log1p": 2.1911318434835447,
+      "skew_raw": 11.042157842794715,
+      "zero_share_of_valid": 0.624225352112676
+    },
+    "population_count": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_population_count",
+      "publish_rule_met": true,
+      "skew_log1p": 0.40068618918162835,
+      "skew_raw": 5.055033953265956,
+      "zero_share_of_valid": 0.22918500264038022
+    },
+    "population_density": {
+      "disposition": "publishable",
+      "n_valid": 5335,
+      "output": "log1p_population_density",
+      "publish_rule_met": true,
+      "skew_log1p": -0.2032684293587895,
+      "skew_raw": 4.756855955050744,
+      "zero_share_of_valid": 0.1880037488284911
+    },
+    "retail_count_1km": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_retail_count_1km",
+      "publish_rule_met": true,
+      "skew_log1p": 2.7726959051477853,
+      "skew_raw": 6.86435151447301,
+      "zero_share_of_valid": 0.7681746171448689
+    },
+    "road_density_km_per_km2": {
+      "disposition": "publishable",
+      "n_valid": 5335,
+      "output": "log1p_road_density_km_per_km2",
+      "publish_rule_met": true,
+      "skew_log1p": 0.32614929428120487,
+      "skew_raw": 9.654951792182189,
+      "zero_share_of_valid": 0.38631677600749764
+    },
+    "road_length_km": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_road_length_km",
+      "publish_rule_met": true,
+      "skew_log1p": 1.1939916843965537,
+      "skew_raw": 2.3528708360789223,
+      "zero_share_of_valid": 0.42298891040309805
+    },
+    "school_count_1km": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_school_count_1km",
+      "publish_rule_met": true,
+      "skew_log1p": 3.1032257412680124,
+      "skew_raw": 4.791195485733978,
+      "zero_share_of_valid": 0.8440415419820454
+    },
+    "transit_stop_count_1km": {
+      "disposition": "publishable",
+      "n_valid": 5681,
+      "output": "log1p_transit_stop_count_1km",
+      "publish_rule_met": true,
+      "skew_log1p": 2.855813015292022,
+      "skew_raw": 4.846611354299152,
+      "zero_share_of_valid": 0.8433374405914452
+    }
+  },
+  "normalization_version": "0.1.0",
+  "passed": true,
+  "percentile": {
+    "cohort_table_rows": 109052,
+    "fit": {
+      "features": [
+        "transit_stop_count_1km",
+        "school_count_1km",
+        "higher_education_count_3km",
+        "hospital_count_3km",
+        "clinic_count_1km",
+        "pharmacy_count_1km",
+        "food_drink_count_1km",
+        "retail_count_1km",
+        "marketplace_count_1km",
+        "mall_count_3km",
+        "lodging_count_1km",
+        "attraction_culture_count_3km",
+        "park_recreation_count_1km",
+        "poi_total_count_1km",
+        "poi_category_richness_1km",
+        "population_count",
+        "population_density",
+        "road_length_km",
+        "road_density_km_per_km2",
+        "major_road_length_km",
+        "intersection_density_per_km2",
+        "built_up_ratio",
+        "tree_cover_ratio",
+        "grass_shrub_ratio",
+        "cropland_ratio",
+        "water_wetland_ratio",
+        "osm_industrial_site_area_ratio"
+      ],
+      "minimum_cohort_size": 30,
+      "peer_percentile": {
+        "aois_per_context": {
+          "dense_urban": 1,
+          "rural_delta": 1,
+          "rural_mountain": 1,
+          "tourism": 1
+        },
+        "disposition": "blocked",
+        "kind": "peer_percentile",
+        "minimum_aois_per_group": 2,
+        "peer_group_column": "aoi_context",
+        "reason": "one AOI per aoi_context in the Gate 3 input: a peer cohort would be a single AOI and cannot be distinguished from the within-AOI percentile; no peer cohort fitted, no column emitted",
+        "sufficient": false
+      },
+      "tie_method": "midrank_ecdf"
+    },
+    "sensitivity": {
+      "attraction_culture_count_3km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.19814728643627355,
+          "mean_abs_diff": 0.11831660635202167
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.16874908999241572,
+            "mean_abs_change": 0.09976524756977781,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.05805540749041571,
+            "mean_abs_change": 0.0305735864462135,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.15806848321813705,
+            "mean_abs_change": 0.08860084578185971,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.11460011873462816,
+            "mean_abs_change": 0.04805472583421363,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 5681,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.08716345572014643,
+            "mean_abs_pooled_minus_within": 0.19014082478004707,
+            "mean_pooled_minus_aoi_equal": 0.08716345572014643,
+            "n_ok": 1955,
+            "pooled_p50": 0.25523675409258934,
+            "within_p50": 0.4230179028132992
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09455745328367175,
+            "mean_abs_pooled_minus_within": 0.45731558378114306,
+            "mean_pooled_minus_aoi_equal": 0.09455745328367175,
+            "n_ok": 356,
+            "pooled_p50": 0.9686674881182891,
+            "within_p50": 0.5
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.17724635026359736,
+            "mean_abs_pooled_minus_within": 0.29352395780137563,
+            "mean_pooled_minus_aoi_equal": 0.17724635026359736,
+            "n_ok": 1317,
+            "pooled_p50": 0.8168456257701109,
+            "within_p50": 0.48025816249050873
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.11429916614067415,
+            "mean_abs_pooled_minus_within": 0.0849208696183765,
+            "mean_pooled_minus_aoi_equal": 0.11429916614067415,
+            "n_ok": 2053,
+            "pooled_p50": 0.25523675409258934,
+            "within_p50": 0.29469069654164637
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.8683812491470683,
+          "mean_abs_diff": 0.1928257803242418
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.9952473156134484,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.25523675409258934,
+            "percentile_of_zero": 0.5104735081851787
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.25523675409258934
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.25523675409258934,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.5104735081851787
+      },
+      "built_up_ratio": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.14687229379690603,
+          "mean_abs_diff": 0.0951983294253226
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.17602513761863214,
+            "mean_abs_change": 0.07446243845902298,
+            "n_ok": 3480
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.0445229338774924,
+            "mean_abs_change": 0.024881988256465384,
+            "n_ok": 5008
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.08594797891892547,
+            "mean_abs_change": 0.05032866598850076,
+            "n_ok": 4235
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.3315746564573342,
+            "mean_abs_change": 0.17588213692361904,
+            "n_ok": 3282
+          }
+        },
+        "n_ok_pooled": 5335,
+        "n_ok_pooled_and_within": 5335,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.12326067032238662,
+            "mean_abs_pooled_minus_within": 0.1396923228021565,
+            "mean_pooled_minus_aoi_equal": 0.12326067032238662,
+            "n_ok": 1855,
+            "pooled_p50": 0.6360824742268041,
+            "within_p50": 0.5
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.08107265483309757,
+            "mean_abs_pooled_minus_within": 0.38106726968923127,
+            "mean_pooled_minus_aoi_equal": 0.08107265483309757,
+            "n_ok": 327,
+            "pooled_p50": 0.9663542642924087,
+            "within_p50": 0.5
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.12677170471468824,
+            "mean_abs_pooled_minus_within": 0.19376528925619835,
+            "mean_pooled_minus_aoi_equal": 0.12677170471468824,
+            "n_ok": 1100,
+            "pooled_p50": 0.7385192127460168,
+            "within_p50": 0.5
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.05517530965391568,
+            "mean_abs_pooled_minus_within": 0.2811715408588981,
+            "mean_pooled_minus_aoi_equal": 0.05517530965391568,
+            "n_ok": 2053,
+            "pooled_p50": 0.19765698219306466,
+            "within_p50": 0.4627374573794447
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.6805264409917772,
+          "mean_abs_diff": 0.22007970900684443
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.3953139643861293,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.19765698219306466,
+            "percentile_of_zero": 0.3953139643861293
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.19765698219306466
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.19765698219306466,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.3953139643861293
+      },
+      "clinic_count_1km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.13797897225857125,
+          "mean_abs_diff": 0.07597169481676774
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.026754222978479292,
+            "mean_abs_change": 0.013943725556168747,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.04536548399119711,
+            "mean_abs_change": 0.024870381710553148,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.006162359423753316,
+            "mean_abs_change": 0.0030807662701229387,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.03247240700786602,
+            "mean_abs_change": 0.01847739723913849,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 3628,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.07586643911026464,
+            "mean_abs_pooled_minus_within": 0.026575100471756933,
+            "mean_pooled_minus_aoi_equal": 0.07586643911026464,
+            "n_ok": 1955,
+            "pooled_p50": 0.46734729801091357,
+            "within_p50": 0.4936061381074169
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.07534631359356349,
+            "mean_abs_pooled_minus_within": 0.37200781631656077,
+            "mean_pooled_minus_aoi_equal": 0.07534631359356349,
+            "n_ok": 356,
+            "pooled_p50": 0.9662031332511881,
+            "within_p50": 0.526685393258427
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.07629698761986135,
+            "mean_abs_pooled_minus_within": 0.010208400913300254,
+            "mean_pooled_minus_aoi_equal": 0.07629698761986135,
+            "n_ok": 1317,
+            "pooled_p50": 0.46734729801091357,
+            "within_p50": 0.4772209567198178
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.6785707928458552,
+          "mean_abs_diff": 0.05452964940292086
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.9996479493046999,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.46734729801091357,
+            "percentile_of_zero": 0.9346945960218271
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.46734729801091357
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.46734729801091357,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.9346945960218271
+      },
+      "cropland_ratio": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.05719202404726231,
+          "mean_abs_diff": 0.034377697431312144
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.1154286217215279,
+            "mean_abs_change": 0.078884748561066,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.020626435371012664,
+            "mean_abs_change": 0.012186805040770935,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.021525814657732345,
+            "mean_abs_change": 0.007352177752714045,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.11343370821362997,
+            "mean_abs_change": 0.06919513719788219,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 5681,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.032400023909035694,
+            "mean_abs_pooled_minus_within": 0.1503450501987376,
+            "mean_pooled_minus_aoi_equal": -0.032400023909035694,
+            "n_ok": 1955,
+            "pooled_p50": 0.7080619609223728,
+            "within_p50": 0.5
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.03348793296625743,
+            "mean_abs_pooled_minus_within": 0.18228858663512715,
+            "mean_pooled_minus_aoi_equal": -0.03348793296625743,
+            "n_ok": 356,
+            "pooled_p50": 0.21272663263509944,
+            "within_p50": 0.3637640449438202
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.03669256468999048,
+            "mean_abs_pooled_minus_within": 0.024361874512945383,
+            "mean_pooled_minus_aoi_equal": -0.03669256468999048,
+            "n_ok": 1317,
+            "pooled_p50": 0.5308044358387608,
+            "within_p50": 0.5
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.034930268159968074,
+            "mean_abs_pooled_minus_within": 0.12227957026493744,
+            "mean_pooled_minus_aoi_equal": -0.034930268159968074,
+            "n_ok": 2053,
+            "pooled_p50": 0.21272663263509944,
+            "within_p50": 0.31003409644422797
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.30729897015282565,
+          "mean_abs_diff": 0.11299839050661907
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.434254532652702,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.21272663263509944,
+            "percentile_of_zero": 0.4254532652701989
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.21272663263509944
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.21272663263509944,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.4254532652701989
+      },
+      "food_drink_count_1km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.17836106003293473,
+          "mean_abs_diff": 0.09886563273702073
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.06988043315274439,
+            "mean_abs_change": 0.040144361571748555,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.05099295650686364,
+            "mean_abs_change": 0.028064572378234655,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.08012801689456117,
+            "mean_abs_change": 0.04388744180062388,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.0987638537479717,
+            "mean_abs_change": 0.052740357566285555,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 5681,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.0937089681179307,
+            "mean_abs_pooled_minus_within": 0.07651043028968549,
+            "mean_pooled_minus_aoi_equal": 0.0937089681179307,
+            "n_ok": 1955,
+            "pooled_p50": 0.3954409434958634,
+            "within_p50": 0.47084398976982095
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09021225664618102,
+            "mean_abs_pooled_minus_within": 0.4197860896463472,
+            "mean_pooled_minus_aoi_equal": 0.09021225664618102,
+            "n_ok": 356,
+            "pooled_p50": 0.9550255236754093,
+            "within_p50": 0.4992977528089888
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.11950439952891032,
+            "mean_abs_pooled_minus_within": 0.14542502380758435,
+            "mean_pooled_minus_aoi_equal": 0.11950439952891032,
+            "n_ok": 1317,
+            "pooled_p50": 0.8118289033620841,
+            "within_p50": 0.5463173880030372
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09203690665506321,
+            "mean_abs_pooled_minus_within": 0.09320117742351877,
+            "mean_pooled_minus_aoi_equal": 0.09203690665506321,
+            "n_ok": 2053,
+            "pooled_p50": 0.3954409434958634,
+            "within_p50": 0.48636142230881635
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.7627457679748582,
+          "mean_abs_diff": 0.12002966251285116
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.9732441471571907,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.3954409434958634,
+            "percentile_of_zero": 0.7908818869917268
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.3954409434958634
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.3954409434958634,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.7908818869917268
+      },
+      "grass_shrub_ratio": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.08624344027285258,
+          "mean_abs_diff": 0.04463159708802735
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.16931736935550817,
+            "mean_abs_change": 0.09289536941843511,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.031703536952513656,
+            "mean_abs_change": 0.017418476711350665,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.07002067692798175,
+            "mean_abs_change": 0.03812925229885716,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.12564519985475486,
+            "mean_abs_change": 0.07514525401623566,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 5681,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.055876528649355196,
+            "mean_abs_pooled_minus_within": 0.1770476452445469,
+            "mean_pooled_minus_aoi_equal": -0.055876528649355196,
+            "n_ok": 1955,
+            "pooled_p50": 0.32186234817813764,
+            "within_p50": 0.5
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.04769822220787034,
+            "mean_abs_pooled_minus_within": 0.26054322608972547,
+            "mean_pooled_minus_aoi_equal": -0.04769822220787034,
+            "n_ok": 356,
+            "pooled_p50": 0.13580355571202254,
+            "within_p50": 0.31741573033707865
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.036063573468727246,
+            "mean_abs_pooled_minus_within": 0.12634476615961476,
+            "mean_pooled_minus_aoi_equal": -0.0360585895251273,
+            "n_ok": 1317,
+            "pooled_p50": 0.6853546910755148,
+            "within_p50": 0.5
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.038888064385425386,
+            "mean_abs_pooled_minus_within": 0.13279441485430593,
+            "mean_pooled_minus_aoi_equal": -0.03888725192880744,
+            "n_ok": 2053,
+            "pooled_p50": 0.6983805668016194,
+            "within_p50": 0.5
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.4729887620671309,
+          "mean_abs_diff": 0.1545334493344718
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.2716071114240451,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.13580355571202254,
+            "percentile_of_zero": 0.2716071114240451
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.13580355571202254
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.13580355571202254,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.2716071114240451
+      },
+      "higher_education_count_3km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.18321809034485592,
+          "mean_abs_diff": 0.11432065835947394
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.030709360419505338,
+            "mean_abs_change": 0.004104447186395927,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.0613269336136516,
+            "mean_abs_change": 0.03132834677489335,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.03139462898422729,
+            "mean_abs_change": 0.028451194919527904,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.10324432473513234,
+            "mean_abs_change": 0.0719672210527092,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 3628,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.10894261449099125,
+            "mean_abs_pooled_minus_within": 0.007822593461131047,
+            "mean_pooled_minus_aoi_equal": 0.10894261449099125,
+            "n_ok": 1955,
+            "pooled_p50": 0.37282168632283047,
+            "within_p50": 0.3772378516624041
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09365044693335602,
+            "mean_abs_pooled_minus_within": 0.4686051870120983,
+            "mean_pooled_minus_aoi_equal": 0.09365044693335602,
+            "n_ok": 356,
+            "pooled_p50": 0.9682274247491639,
+            "within_p50": 0.49297752808988765
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.12789140325740983,
+            "mean_abs_pooled_minus_within": 0.08952178650413412,
+            "mean_pooled_minus_aoi_equal": 0.12789140325740983,
+            "n_ok": 1317,
+            "pooled_p50": 0.37282168632283047,
+            "within_p50": 0.26879271070615035
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.9173200041929633,
+          "mean_abs_diff": 0.08269482073284531
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.99982397465235,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.37282168632283047,
+            "percentile_of_zero": 0.7456433726456609
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.37282168632283047
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.37282168632283047,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.7456433726456609
+      },
+      "hospital_count_3km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.1734931394898015,
+          "mean_abs_diff": 0.09556317435077548
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.04286977818633053,
+            "mean_abs_change": 0.03038417026163878,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.056866649642618894,
+            "mean_abs_change": 0.030964131323173435,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.029403150643976916,
+            "mean_abs_change": 0.003185267026228497,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.12170995622267067,
+            "mean_abs_change": 0.07091303396862247,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 5681,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.11152653963316406,
+            "mean_abs_pooled_minus_within": 0.057990897474252096,
+            "mean_pooled_minus_aoi_equal": 0.11152653963316406,
+            "n_ok": 1955,
+            "pooled_p50": 0.36041189931350115,
+            "within_p50": 0.2951406649616368
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09262124666251996,
+            "mean_abs_pooled_minus_within": 0.4631573013929736,
+            "mean_pooled_minus_aoi_equal": 0.09262124666251996,
+            "n_ok": 356,
+            "pooled_p50": 0.9690195388135892,
+            "within_p50": 0.5056179775280899
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.10022083941775979,
+            "mean_abs_pooled_minus_within": 0.010630855090216731,
+            "mean_pooled_minus_aoi_equal": 0.10022083941775979,
+            "n_ok": 1317,
+            "pooled_p50": 0.36041189931350115,
+            "within_p50": 0.36446469248291574
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.07788407168966051,
+            "mean_abs_pooled_minus_within": 0.12531538589291882,
+            "mean_pooled_minus_aoi_equal": 0.07788407168966051,
+            "n_ok": 2053,
+            "pooled_p50": 0.36041189931350115,
+            "within_p50": 0.482464685825621
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.8506036779408594,
+          "mean_abs_diff": 0.09673112607816216
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.99982397465235,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.36041189931350115,
+            "percentile_of_zero": 0.7208237986270023
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.36041189931350115
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.36041189931350115,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.7208237986270023
+      },
+      "intersection_density_per_km2": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.16335965169931732,
+          "mean_abs_diff": 0.09872307683679314
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.07331127664846104,
+            "mean_abs_change": 0.030445550420665952,
+            "n_ok": 3480
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.04724117138913253,
+            "mean_abs_change": 0.026463375562548845,
+            "n_ok": 5008
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.1067345026107912,
+            "mean_abs_change": 0.052810776259521436,
+            "n_ok": 4235
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.14286785950688402,
+            "mean_abs_change": 0.07570943038253014,
+            "n_ok": 3282
+          }
+        },
+        "n_ok_pooled": 5335,
+        "n_ok_pooled_and_within": 5335,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09665026802965491,
+            "mean_abs_pooled_minus_within": 0.057116180843082225,
+            "mean_pooled_minus_aoi_equal": 0.09665026802965491,
+            "n_ok": 1855,
+            "pooled_p50": 0.31780693533270854,
+            "within_p50": 0.35633423180592994
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.08553758439364356,
+            "mean_abs_pooled_minus_within": 0.4052861921016655,
+            "mean_pooled_minus_aoi_equal": 0.08553758439364356,
+            "n_ok": 327,
+            "pooled_p50": 0.9665417057169634,
+            "within_p50": 0.5
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.13247084267117898,
+            "mean_abs_pooled_minus_within": 0.20332135128226972,
+            "mean_pooled_minus_aoi_equal": 0.13247084267117898,
+            "n_ok": 1100,
+            "pooled_p50": 0.7887535145267104,
+            "within_p50": 0.5
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.08461405294411263,
+            "mean_abs_pooled_minus_within": 0.12103183171722541,
+            "mean_pooled_minus_aoi_equal": 0.08461405294411263,
+            "n_ok": 2053,
+            "pooled_p50": 0.31780693533270854,
+            "within_p50": 0.4320506575742815
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.7221562069192827,
+          "mean_abs_diff": 0.13319792637434352
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.6356138706654171,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.31780693533270854,
+            "percentile_of_zero": 0.6356138706654171
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.31780693533270854
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.31780693533270854,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.6356138706654171
+      },
+      "lodging_count_1km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.17303328216958058,
+          "mean_abs_diff": 0.0933938137954397
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.06485284498251698,
+            "mean_abs_change": 0.035375945451228165,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.05048444985467582,
+            "mean_abs_change": 0.02713484450681085,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.06215770047972147,
+            "mean_abs_change": 0.034779178531235744,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.08226135610937013,
+            "mean_abs_change": 0.045310928301790114,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 5681,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09324684693086734,
+            "mean_abs_pooled_minus_within": 0.06742239015410549,
+            "mean_pooled_minus_aoi_equal": 0.09324684693086734,
+            "n_ok": 1955,
+            "pooled_p50": 0.3954409434958634,
+            "within_p50": 0.4585677749360614
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.0918443764094916,
+            "mean_abs_pooled_minus_within": 0.4058793455021568,
+            "mean_pooled_minus_aoi_equal": 0.0918443764094916,
+            "n_ok": 356,
+            "pooled_p50": 0.9283576835064249,
+            "within_p50": 0.49859550561797755
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09698593063876196,
+            "mean_abs_pooled_minus_within": 0.1152439879490937,
+            "mean_pooled_minus_aoi_equal": 0.09698593063876196,
+            "n_ok": 1317,
+            "pooled_p50": 0.3954409434958634,
+            "within_p50": 0.2839787395596052
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09149810120263947,
+            "mean_abs_pooled_minus_within": 0.08007211294636854,
+            "mean_pooled_minus_aoi_equal": 0.09149810120263947,
+            "n_ok": 2053,
+            "pooled_p50": 0.3954409434958634,
+            "within_p50": 0.4722357525572333
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.7551395940341252,
+          "mean_abs_diff": 0.10428942083398962
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.9860939975356451,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.3954409434958634,
+            "percentile_of_zero": 0.7908818869917268
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.3954409434958634
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.3954409434958634,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.7908818869917268
+      },
+      "major_road_length_km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.0848379733075515,
+          "mean_abs_diff": 0.044803660954129486
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.009537422771595194,
+            "mean_abs_change": 0.004648223759971955,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.026776711433300848,
+            "mean_abs_change": 0.014181544114183457,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.006353873711251623,
+            "mean_abs_change": 0.0030444499997417506,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.05627777323859662,
+            "mean_abs_change": 0.028652419222899485,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 5681,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.04563208566317788,
+            "mean_abs_pooled_minus_within": 0.008858899463680098,
+            "mean_pooled_minus_aoi_equal": 0.04563208566317788,
+            "n_ok": 1955,
+            "pooled_p50": 0.42879774687555006,
+            "within_p50": 0.41994884910485936
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.04439980771393933,
+            "mean_abs_pooled_minus_within": 0.21212562474164817,
+            "mean_pooled_minus_aoi_equal": 0.04439980771393933,
+            "n_ok": 356,
+            "pooled_p50": 0.8732617496919557,
+            "within_p50": 0.5
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.04562452145293613,
+            "mean_abs_pooled_minus_within": 0.010087646454547022,
+            "mean_pooled_minus_aoi_equal": 0.04562452145293613,
+            "n_ok": 1317,
+            "pooled_p50": 0.42879774687555006,
+            "within_p50": 0.4183750949126803
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.043558228986467384,
+            "mean_abs_pooled_minus_within": 0.05063369553856767,
+            "mean_pooled_minus_aoi_equal": 0.043558228986467384,
+            "n_ok": 2053,
+            "pooled_p50": 0.42879774687555006,
+            "within_p50": 0.4785679493424257
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.3992939702418272,
+          "mean_abs_diff": 0.036978045798422676
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.8575954937511001,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.42879774687555006,
+            "percentile_of_zero": 0.8575954937511001
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.42879774687555006
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.42879774687555006,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.8575954937511001
+      },
+      "mall_count_3km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.1736532083091763,
+          "mean_abs_diff": 0.09235193350988014
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.03047846297274215,
+            "mean_abs_change": 0.016209000762776486,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "fit_status": "cohort_degenerate"
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.017530333717276192,
+            "mean_abs_change": 0.009322950204187778,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.03287084144968033,
+            "mean_abs_change": 0.017481311134602717,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 356,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09235193350988014,
+            "mean_abs_pooled_minus_within": 0.4620850795773018,
+            "mean_pooled_minus_aoi_equal": 0.09235193350988014,
+            "n_ok": 356,
+            "pooled_p50": 0.971219855659215,
+            "within_p50": 0.5407303370786517
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.8688779274103112,
+          "mean_abs_diff": 0.4620850795773018
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 1.0,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.4691075514874142,
+            "percentile_of_zero": 0.9382151029748284
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.4691075514874142
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.4691075514874142,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.9382151029748284
+      },
+      "marketplace_count_1km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.1288167264230019,
+          "mean_abs_diff": 0.08019986167181213
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.017454217110967618,
+            "mean_abs_change": 0.007261943197007685,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.040834095696634765,
+            "mean_abs_change": 0.024719198249994034,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.010083158665956993,
+            "mean_abs_change": 0.007560753465486027,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.05413727978151894,
+            "mean_abs_change": 0.03785127197235916,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 3628,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.08027051545146946,
+            "mean_abs_pooled_minus_within": 0.013840409387238232,
+            "mean_pooled_minus_aoi_equal": 0.08027051545146946,
+            "n_ok": 1955,
+            "pooled_p50": 0.4331103678929766,
+            "within_p50": 0.44475703324808186
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.07732646283299294,
+            "mean_abs_pooled_minus_within": 0.3697464344978037,
+            "mean_pooled_minus_aoi_equal": 0.07732646283299294,
+            "n_ok": 356,
+            "pooled_p50": 0.9554655870445344,
+            "within_p50": 0.5407303370786517
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.08087169299101458,
+            "mean_abs_pooled_minus_within": 0.024985559413537025,
+            "mean_pooled_minus_aoi_equal": 0.08087169299101458,
+            "n_ok": 1317,
+            "pooled_p50": 0.4331103678929766,
+            "within_p50": 0.4073652239939256
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.6107908977094949,
+          "mean_abs_diff": 0.052809733401570316
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.99982397465235,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.4331103678929766,
+            "percentile_of_zero": 0.8662207357859532
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.4331103678929766
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.4331103678929766,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.8662207357859532
+      },
+      "osm_industrial_site_area_ratio": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.0013858287994150675,
+          "mean_abs_diff": 0.0007111917522835631
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.0010105303129328558,
+            "mean_abs_change": 0.0005346662593260234,
+            "n_ok": 3153
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.0,
+            "mean_abs_change": 0.0,
+            "n_ok": 5008
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.0032289176621397297,
+            "mean_abs_change": 0.0018999539324593229,
+            "n_ok": 3908
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.00381504651778819,
+            "mean_abs_change": 0.0019422054999648772,
+            "n_ok": 2955
+          }
+        },
+        "n_ok_pooled": 5008,
+        "n_ok_pooled_and_within": 2955,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.0007111963822996438,
+            "mean_abs_pooled_minus_within": 0.0009087885259595381,
+            "mean_pooled_minus_aoi_equal": 0.0007111963822996438,
+            "n_ok": 1855,
+            "pooled_p50": 0.4972044728434505,
+            "within_p50": 0.4981132075471698
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.0007111839443928092,
+            "mean_abs_pooled_minus_within": 0.006750018152773728,
+            "mean_pooled_minus_aoi_equal": 0.0007111839443928092,
+            "n_ok": 1100,
+            "pooled_p50": 0.4972044728434505,
+            "within_p50": 0.4904545454545455
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.013145149578855708,
+          "mean_abs_diff": 0.0030831887254504377
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.9948083067092651,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.4972044728434505,
+            "percentile_of_zero": 0.994408945686901
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.4972044728434505
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.4972044728434505,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.994408945686901
+      },
+      "park_recreation_count_1km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.020129600830148364,
+          "mean_abs_diff": 0.01201377707099498
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.0172074783020576,
+            "mean_abs_change": 0.008795280088045554,
+            "n_ok": 3370
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.0,
+            "mean_abs_change": 0.0,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.05664881504596442,
+            "mean_abs_change": 0.03346342526215175,
+            "n_ok": 4008
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.05166847458016233,
+            "mean_abs_change": 0.03193194210085288,
+            "n_ok": 3272
+          }
+        },
+        "n_ok_pooled": 5325,
+        "n_ok_pooled_and_within": 3272,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.012085319979733338,
+            "mean_abs_pooled_minus_within": 0.015161173348702626,
+            "mean_pooled_minus_aoi_equal": 0.012085319979733338,
+            "n_ok": 1955,
+            "pooled_p50": 0.44910798122065726,
+            "within_p50": 0.46342710997442454
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.011907576321880716,
+            "mean_abs_pooled_minus_within": 0.10183857892991968,
+            "mean_pooled_minus_aoi_equal": 0.011907576321880716,
+            "n_ok": 1317,
+            "pooled_p50": 0.44910798122065726,
+            "within_p50": 0.34851936218678814
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.172398216176329,
+          "mean_abs_diff": 0.05004935890813505
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.9992488262910798,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.44910798122065726,
+            "percentile_of_zero": 0.8982159624413145
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.44910798122065726
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.44910798122065726,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.8982159624413145
+      },
+      "pharmacy_count_1km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.13995483560069022,
+          "mean_abs_diff": 0.07909787172560477
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.03643561709923271,
+            "mean_abs_change": 0.020318975315161414,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.044653267253583095,
+            "mean_abs_change": 0.024499869014001873,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.009290762251065732,
+            "mean_abs_change": 0.005890568881835129,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.03929559682393602,
+            "mean_abs_change": 0.021913894299786903,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 1673,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.07567114759437496,
+            "mean_abs_pooled_minus_within": 0.36646573735831445,
+            "mean_pooled_minus_aoi_equal": 0.07567114759437496,
+            "n_ok": 356,
+            "pooled_p50": 0.9618024995599367,
+            "within_p50": 0.5070224719101124
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.08002415402683319,
+            "mean_abs_pooled_minus_within": 0.019518830754419316,
+            "mean_pooled_minus_aoi_equal": 0.08002415402683319,
+            "n_ok": 1317,
+            "pooled_p50": 0.46127442351698644,
+            "within_p50": 0.4411541381928626
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.6679175509138484,
+          "mean_abs_diff": 0.09334614620629418
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.9989438479140996,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.46127442351698644,
+            "percentile_of_zero": 0.9225488470339729
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.46127442351698644
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.46127442351698644,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.9225488470339729
+      },
+      "poi_category_richness_1km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.043572342474800796,
+          "mean_abs_diff": 0.02595854494467495
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.029386885108872773,
+            "mean_abs_change": 0.009936476499137226,
+            "n_ok": 3370
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.0,
+            "mean_abs_change": 0.0,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.11976209552725536,
+            "mean_abs_change": 0.07142812965618062,
+            "n_ok": 4008
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.1473866753905667,
+            "mean_abs_change": 0.08682493084013454,
+            "n_ok": 3272
+          }
+        },
+        "n_ok_pooled": 5325,
+        "n_ok_pooled_and_within": 5325,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.027886335600989614,
+            "mean_abs_pooled_minus_within": 0.016332497954083963,
+            "mean_pooled_minus_aoi_equal": 0.027886335600989614,
+            "n_ok": 1955,
+            "pooled_p50": 0.312112676056338,
+            "within_p50": 0.2997442455242967
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.02570185542793867,
+            "mean_abs_pooled_minus_within": 0.21737581143657694,
+            "mean_pooled_minus_aoi_equal": 0.02570185542793867,
+            "n_ok": 1317,
+            "pooled_p50": 0.8264788732394366,
+            "within_p50": 0.5075930144267274
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.024287443805097026,
+            "mean_abs_pooled_minus_within": 0.13837855514316622,
+            "mean_pooled_minus_aoi_equal": 0.024287443805097026,
+            "n_ok": 2053,
+            "pooled_p50": 0.312112676056338,
+            "within_p50": 0.4405747686312713
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.3644696119007133,
+          "mean_abs_diff": 0.1131089485203993
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 1.0,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.312112676056338,
+            "percentile_of_zero": 0.624225352112676
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.312112676056338
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.312112676056338,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.624225352112676
+      },
+      "poi_total_count_1km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.04351782978089591,
+          "mean_abs_diff": 0.026247426637038992
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.04185397249968659,
+            "mean_abs_change": 0.012011923425013858,
+            "n_ok": 3370
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.0,
+            "mean_abs_change": 0.0,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.11920658682634733,
+            "mean_abs_change": 0.07231382305810914,
+            "n_ok": 4008
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.1522453137734311,
+            "mean_abs_change": 0.08666241950480387,
+            "n_ok": 3272
+          }
+        },
+        "n_ok_pooled": 5325,
+        "n_ok_pooled_and_within": 5325,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.02855624373833243,
+            "mean_abs_pooled_minus_within": 0.020681924598570045,
+            "mean_pooled_minus_aoi_equal": 0.02855624373833243,
+            "n_ok": 1955,
+            "pooled_p50": 0.312112676056338,
+            "within_p50": 0.2997442455242967
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.02594000262083576,
+            "mean_abs_pooled_minus_within": 0.2200712246142,
+            "mean_pooled_minus_aoi_equal": 0.02594000262083576,
+            "n_ok": 1317,
+            "pooled_p50": 0.8180281690140845,
+            "within_p50": 0.4848139711465452
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.02424603355194936,
+            "mean_abs_pooled_minus_within": 0.1381195502287961,
+            "mean_pooled_minus_aoi_equal": 0.02424603355194936,
+            "n_ok": 2053,
+            "pooled_p50": 0.312112676056338,
+            "within_p50": 0.4405747686312713
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.36277904328018223,
+          "mean_abs_diff": 0.11527256376090597
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.979718309859155,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.312112676056338,
+            "percentile_of_zero": 0.624225352112676
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.312112676056338
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.312112676056338,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.624225352112676
+      },
+      "population_count": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.13509156466088623,
+          "mean_abs_diff": 0.07776341864459589
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.13480444887767545,
+            "mean_abs_change": 0.06742970948055878,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.0437361008154189,
+            "mean_abs_change": 0.02241235714468705,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.042680116605902096,
+            "mean_abs_change": 0.024959629767360304,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.21491605706326453,
+            "mean_abs_change": 0.12782591520080766,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 5681,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.10042812340533176,
+            "mean_abs_pooled_minus_within": 0.12851302753084634,
+            "mean_pooled_minus_aoi_equal": 0.10042812340533176,
+            "n_ok": 1955,
+            "pooled_p50": 0.6434606583348003,
+            "within_p50": 0.5
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.07001527725064088,
+            "mean_abs_pooled_minus_within": 0.3352410162793779,
+            "mean_pooled_minus_aoi_equal": 0.07001527725064088,
+            "n_ok": 356,
+            "pooled_p50": 0.9684914627706389,
+            "within_p50": 0.5
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09261050407801627,
+            "mean_abs_pooled_minus_within": 0.0827059204418885,
+            "mean_pooled_minus_aoi_equal": 0.09261050407801627,
+            "n_ok": 1317,
+            "pooled_p50": 0.6376518218623481,
+            "within_p50": 0.5
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.047999769844398466,
+            "mean_abs_pooled_minus_within": 0.2258901219427814,
+            "mean_pooled_minus_aoi_equal": 0.047999769844398466,
+            "n_ok": 2053,
+            "pooled_p50": 0.24476324590741066,
+            "within_p50": 0.5
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.6529702299603053,
+          "mean_abs_diff": 0.16603852986952305
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.23710614328463298,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.11459250132019011,
+            "percentile_of_zero": 0.22918500264038022
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.11459250132019011
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.11459250132019011,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.22918500264038022
+      },
+      "population_density": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.15229744078548046,
+          "mean_abs_diff": 0.09633062647415379
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.1430979273718343,
+            "mean_abs_change": 0.06881990552583214,
+            "n_ok": 3480
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.04833883406044237,
+            "mean_abs_change": 0.025998963981902618,
+            "n_ok": 5008
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.06844533161309169,
+            "mean_abs_change": 0.04355528894767113,
+            "n_ok": 4235
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.270006887701341,
+            "mean_abs_change": 0.16289470783524573,
+            "n_ok": 3282
+          }
+        },
+        "n_ok_pooled": 5335,
+        "n_ok_pooled_and_within": 5335,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.12237444591586998,
+            "mean_abs_pooled_minus_within": 0.12910687976321217,
+            "mean_pooled_minus_aoi_equal": 0.12237444591586998,
+            "n_ok": 1855,
+            "pooled_p50": 0.6267104029990628,
+            "within_p50": 0.5
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.08289048202718952,
+            "mean_abs_pooled_minus_within": 0.398173735845163,
+            "mean_pooled_minus_aoi_equal": 0.08289048202718952,
+            "n_ok": 327,
+            "pooled_p50": 0.9693533270852859,
+            "within_p50": 0.5
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.1264710466588123,
+            "mean_abs_pooled_minus_within": 0.16768775666695065,
+            "mean_pooled_minus_aoi_equal": 0.1264710466588123,
+            "n_ok": 1100,
+            "pooled_p50": 0.7075913776944704,
+            "within_p50": 0.5
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.05879004194743653,
+            "mean_abs_pooled_minus_within": 0.26040936732356373,
+            "mean_pooled_minus_aoi_equal": 0.05879004194743653,
+            "n_ok": 2053,
+            "pooled_p50": 0.19971883786316777,
+            "within_p50": 0.5
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.7389668939465591,
+          "mean_abs_diff": 0.20408116907798485
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.1880037488284911,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.09400187441424555,
+            "percentile_of_zero": 0.1880037488284911
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.09400187441424555
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.09400187441424555,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.1880037488284911
+      },
+      "retail_count_1km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.18005650806430318,
+          "mean_abs_diff": 0.10065848364229137
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.057925921579621065,
+            "mean_abs_change": 0.02124254148099204,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.05510317316679514,
+            "mean_abs_change": 0.029905549591629423,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.053386422750283935,
+            "mean_abs_change": 0.02956956792359314,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.09446416292766446,
+            "mean_abs_change": 0.057326817354973664,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 5681,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.10171065716029883,
+            "mean_abs_pooled_minus_within": 0.040485784940243665,
+            "mean_pooled_minus_aoi_equal": 0.10171065716029883,
+            "n_ok": 1955,
+            "pooled_p50": 0.38408730857243445,
+            "within_p50": 0.4145780051150895
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.092727512274183,
+            "mean_abs_pooled_minus_within": 0.44732317858265974,
+            "mean_pooled_minus_aoi_equal": 0.092727512274183,
+            "n_ok": 356,
+            "pooled_p50": 0.9618024995599367,
+            "within_p50": 0.5
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.11880487685821728,
+            "mean_abs_pooled_minus_within": 0.09798135023899493,
+            "mean_pooled_minus_aoi_equal": 0.11880487685821728,
+            "n_ok": 1317,
+            "pooled_p50": 0.38408730857243445,
+            "within_p50": 0.2843583902809415
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.08939088827646947,
+            "mean_abs_pooled_minus_within": 0.1013062315459544,
+            "mean_pooled_minus_aoi_equal": 0.08939088827646947,
+            "n_ok": 2053,
+            "pooled_p50": 0.38408730857243445,
+            "within_p50": 0.4844130540672187
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.8242258345875964,
+          "mean_abs_diff": 0.10128848666822811
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.974300299243091,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.38408730857243445,
+            "percentile_of_zero": 0.7681746171448689
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.38408730857243445
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.38408730857243445,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.7681746171448689
+      },
+      "road_density_km_per_km2": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.16340681797399415,
+          "mean_abs_diff": 0.10142879031908877
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.05761117215525324,
+            "mean_abs_change": 0.0280850166286472,
+            "n_ok": 3480
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.046951775004416496,
+            "mean_abs_change": 0.026974348072138003,
+            "n_ok": 5008
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.09114521841794565,
+            "mean_abs_change": 0.053460299207027565,
+            "n_ok": 4235
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.19484436136559247,
+            "mean_abs_change": 0.11637679495724315,
+            "n_ok": 3282
+          }
+        },
+        "n_ok_pooled": 5335,
+        "n_ok_pooled_and_within": 5335,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.11356027417756916,
+            "mean_abs_pooled_minus_within": 0.05268772551595331,
+            "mean_pooled_minus_aoi_equal": 0.11356027417756916,
+            "n_ok": 1855,
+            "pooled_p50": 0.5283036551077788,
+            "within_p50": 0.5
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.08784874591416231,
+            "mean_abs_pooled_minus_within": 0.4131117282729881,
+            "mean_pooled_minus_aoi_equal": 0.08784874591416231,
+            "n_ok": 327,
+            "pooled_p50": 0.9641049671977507,
+            "within_p50": 0.5
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.1340284020705202,
+            "mean_abs_pooled_minus_within": 0.2058219562068672,
+            "mean_pooled_minus_aoi_equal": 0.1340284020705202,
+            "n_ok": 1100,
+            "pooled_p50": 0.7731958762886597,
+            "within_p50": 0.5
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.07516342209519947,
+            "mean_abs_pooled_minus_within": 0.18604415053564147,
+            "mean_pooled_minus_aoi_equal": 0.07516342209519947,
+            "n_ok": 2053,
+            "pooled_p50": 0.19315838800374882,
+            "within_p50": 0.34729663906478325
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.7177241057123777,
+          "mean_abs_diff": 0.15767123877311837
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.38631677600749764,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.19315838800374882,
+            "percentile_of_zero": 0.38631677600749764
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.19315838800374882
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.19315838800374882,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.38631677600749764
+      },
+      "road_length_km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.13859353760397664,
+          "mean_abs_diff": 0.08368570647119603
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.05693713721936455,
+            "mean_abs_change": 0.025251986736379302,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.04180316068800294,
+            "mean_abs_change": 0.023443865681916413,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.06607369976400346,
+            "mean_abs_change": 0.03735693926705038,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.15389717111546314,
+            "mean_abs_change": 0.09156728932803149,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 5681,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09361825156549362,
+            "mean_abs_pooled_minus_within": 0.048127279117120204,
+            "mean_pooled_minus_aoi_equal": 0.09361825156549362,
+            "n_ok": 1955,
+            "pooled_p50": 0.5512233761661679,
+            "within_p50": 0.5
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.07499298436990161,
+            "mean_abs_pooled_minus_within": 0.3506701818994519,
+            "mean_pooled_minus_aoi_equal": 0.07499298436990161,
+            "n_ok": 356,
+            "pooled_p50": 0.9654110191867629,
+            "within_p50": 0.5
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.10240603254005391,
+            "mean_abs_pooled_minus_within": 0.12378560827986365,
+            "mean_pooled_minus_aoi_equal": 0.10240603254005391,
+            "n_ok": 1317,
+            "pooled_p50": 0.6934518570674177,
+            "within_p50": 0.5
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.06372555740934663,
+            "mean_abs_pooled_minus_within": 0.1618149662358004,
+            "mean_pooled_minus_aoi_equal": 0.06372555740934663,
+            "n_ok": 2053,
+            "pooled_p50": 0.21149445520154903,
+            "within_p50": 0.34729663906478325
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.624057572155559,
+          "mean_abs_diff": 0.12571011920733208
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.42298891040309805,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.21149445520154903,
+            "percentile_of_zero": 0.42298891040309805
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.21149445520154903
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.21149445520154903,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.42298891040309805
+      },
+      "school_count_1km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.16840790387333737,
+          "mean_abs_diff": 0.09807823556704909
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.03258533426344257,
+            "mean_abs_change": 0.01898721080892007,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.05277297771254641,
+            "mean_abs_change": 0.028759252693890264,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.023181779972833105,
+            "mean_abs_change": 0.01894760686393228,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.07146917800044128,
+            "mean_abs_change": 0.044126614430934505,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 3628,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09300473648514929,
+            "mean_abs_pooled_minus_within": 0.03618739001229478,
+            "mean_pooled_minus_aoi_equal": 0.09300473648514929,
+            "n_ok": 1955,
+            "pooled_p50": 0.4220207709910227,
+            "within_p50": 0.45601023017902814
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.08739903074193751,
+            "mean_abs_pooled_minus_within": 0.43017702414316206,
+            "mean_pooled_minus_aoi_equal": 0.08739903074193751,
+            "n_ok": 356,
+            "pooled_p50": 0.9693715895088892,
+            "within_p50": 0.5112359550561798
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.10849622161325555,
+            "mean_abs_pooled_minus_within": 0.062248465737279816,
+            "mean_pooled_minus_aoi_equal": 0.10849622161325555,
+            "n_ok": 1317,
+            "pooled_p50": 0.4220207709910227,
+            "within_p50": 0.3553530751708428
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.7893710851666011,
+          "mean_abs_diff": 0.08430832344128983
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.9996479493046999,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.4220207709910227,
+            "percentile_of_zero": 0.8440415419820454
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.4220207709910227
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.4220207709910227,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.8440415419820454
+      },
+      "transit_stop_count_1km": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.1774350559180834,
+          "mean_abs_diff": 0.10125566889507756
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.041443103609388854,
+            "mean_abs_change": 0.017854809417837975,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.05675194392311744,
+            "mean_abs_change": 0.0298539154896521,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.030085732895491102,
+            "mean_abs_change": 0.01675834293730245,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.08108140890921156,
+            "mean_abs_change": 0.044325831651841674,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 3628,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09675170227524182,
+            "mean_abs_pooled_minus_within": 0.03402916618458527,
+            "mean_pooled_minus_aoi_equal": 0.09675170227524182,
+            "n_ok": 1955,
+            "pooled_p50": 0.4216687202957226,
+            "within_p50": 0.4516624040920716
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.09027423305805576,
+            "mean_abs_pooled_minus_within": 0.44655084264718387,
+            "mean_pooled_minus_aoi_equal": 0.09027423305805576,
+            "n_ok": 356,
+            "pooled_p50": 0.968579475444464,
+            "within_p50": 0.49859550561797755
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.1109099178698373,
+            "mean_abs_pooled_minus_within": 0.055514380788766096,
+            "mean_pooled_minus_aoi_equal": 0.1109099178698373,
+            "n_ok": 1317,
+            "pooled_p50": 0.4216687202957226,
+            "within_p50": 0.36408504176157935
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": null,
+            "mean_abs_pooled_minus_within": null,
+            "mean_pooled_minus_aoi_equal": null,
+            "n_ok": 0,
+            "pooled_p50": null,
+            "within_p50": null
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.8488879252544951,
+          "mean_abs_diff": 0.08230748604522233
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.9982397465234993,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.4216687202957226,
+            "percentile_of_zero": 0.8433374405914452
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.4216687202957226
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.4216687202957226,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.8433374405914452
+      },
+      "tree_cover_ratio": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.10922093779223463,
+          "mean_abs_diff": 0.0638987667218318
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.03711472723677156,
+            "mean_abs_change": 0.018879819401070492,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.022461264093390942,
+            "mean_abs_change": 0.012691565210570509,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.1361786179703003,
+            "mean_abs_change": 0.08308481114222704,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.19037662922909626,
+            "mean_abs_change": 0.12403435929393457,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 5681,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.07249504742568462,
+            "mean_abs_pooled_minus_within": 0.035982685270783105,
+            "mean_pooled_minus_aoi_equal": -0.07249504742568462,
+            "n_ok": 1955,
+            "pooled_p50": 0.5049287097342017,
+            "within_p50": 0.5
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.06797216913607301,
+            "mean_abs_pooled_minus_within": 0.18983670537839106,
+            "mean_pooled_minus_aoi_equal": -0.06797216913607301,
+            "n_ok": 356,
+            "pooled_p50": 0.27776799859179724,
+            "within_p50": 0.5
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.05336208274634069,
+            "mean_abs_pooled_minus_within": 0.2753091236330135,
+            "mean_pooled_minus_aoi_equal": -0.05336208274634069,
+            "n_ok": 1317,
+            "pooled_p50": 0.1977644780848442,
+            "within_p50": 0.5
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.061765767579220796,
+            "mean_abs_pooled_minus_within": 0.21918979810930084,
+            "mean_pooled_minus_aoi_equal": -0.061765767579220796,
+            "n_ok": 2053,
+            "pooled_p50": 0.75717303291674,
+            "within_p50": 0.5
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.45103668504574457,
+          "mean_abs_diff": 0.16731328782998794
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.14275655694419997,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.046294666431966204,
+            "percentile_of_zero": 0.09258933286393241
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.046294666431966204
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.046294666431966204,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.09258933286393241
+      },
+      "water_wetland_ratio": {
+        "cell_vs_aoi_equal": {
+          "max_abs_diff": 0.06887273869660737,
+          "mean_abs_diff": 0.034932110384767456
+        },
+        "leave_one_aoi_out": {
+          "dong_thap_rural": {
+            "held_out": "dong_thap_rural",
+            "max_abs_change": 0.04979615830111639,
+            "mean_abs_change": 0.02079139305140607,
+            "n_ok": 3726
+          },
+          "hanoi_core": {
+            "held_out": "hanoi_core",
+            "max_abs_change": 0.01436981685926153,
+            "mean_abs_change": 0.006910441112909924,
+            "n_ok": 5325
+          },
+          "hoi_an": {
+            "held_out": "hoi_an",
+            "max_abs_change": 0.08283216797884341,
+            "mean_abs_change": 0.044247020516875596,
+            "n_ok": 4364
+          },
+          "mu_cang_chai": {
+            "held_out": "mu_cang_chai",
+            "max_abs_change": 0.1654696732779355,
+            "mean_abs_change": 0.08283967312461683,
+            "n_ok": 3628
+          }
+        },
+        "n_ok_pooled": 5681,
+        "n_ok_pooled_and_within": 5681,
+        "per_aoi": {
+          "dong_thap_rural": {
+            "mean_abs_pooled_minus_aoi_equal": 0.037983840608962684,
+            "mean_abs_pooled_minus_within": 0.039625942826003166,
+            "mean_pooled_minus_aoi_equal": 0.037983840608962684,
+            "n_ok": 1955,
+            "pooled_p50": 0.3530188347121986,
+            "within_p50": 0.30562659846547313
+          },
+          "hanoi_core": {
+            "mean_abs_pooled_minus_aoi_equal": 0.036467525811583544,
+            "mean_abs_pooled_minus_within": 0.1033654464220376,
+            "mean_pooled_minus_aoi_equal": 0.036467525811583544,
+            "n_ok": 356,
+            "pooled_p50": 0.708678049639148,
+            "within_p50": 0.5
+          },
+          "hoi_an": {
+            "mean_abs_pooled_minus_aoi_equal": 0.030985548508037593,
+            "mean_abs_pooled_minus_within": 0.14661655090026207,
+            "mean_pooled_minus_aoi_equal": 0.030985548508037593,
+            "n_ok": 1317,
+            "pooled_p50": 0.7709030100334449,
+            "within_p50": 0.5
+          },
+          "mu_cang_chai": {
+            "mean_abs_pooled_minus_aoi_equal": 0.03429152661048839,
+            "mean_abs_pooled_minus_within": 0.14639178475212358,
+            "mean_pooled_minus_aoi_equal": 0.03429152661048839,
+            "n_ok": 2053,
+            "pooled_p50": 0.3530188347121986,
+            "within_p50": 0.49926936190940086
+          }
+        },
+        "pooled_vs_within": {
+          "max_abs_diff": 0.2871998019736274,
+          "mean_abs_diff": 0.10700636310206593
+        },
+        "share_of_pooled_ok_rows_in_tie_groups": 0.762717831367717,
+        "tie_methods": {
+          "max_ecdf": {
+            "max_abs_diff_vs_primary": 0.3530188347121986,
+            "percentile_of_zero": 0.7060376694243972
+          },
+          "midrank_ecdf": {
+            "max_abs_diff_vs_primary": 0.0,
+            "percentile_of_zero": 0.3530188347121986
+          },
+          "min_ecdf": {
+            "max_abs_diff_vs_primary": 0.3530188347121986,
+            "percentile_of_zero": 0.0
+          }
+        },
+        "zero_share_of_pooled_ok": 0.7060376694243972
+      }
+    }
+  },
+  "rows": 5681,
+  "run_id": "20260914T175737Z",
+  "runtime": {
+    "peak_rss_bytes": 287031296,
+    "wall_time_s_by_stage": {
+      "input_diagnostics": 0.11130083305761218,
+      "load_input": 0.0695575000718236,
+      "local_ratio": 2.4752124156802893,
+      "log1p": 0.02049066685140133,
+      "percentile_apply": 1.2202062080614269,
+      "percentile_fit": 0.13692166609689593,
+      "validate": 0.19122554082423449,
+      "write_outputs": 0.069883415941149
+    },
+    "wall_time_s_total": 4.294798246584833
+  },
+  "schema": {
+    "diagnostic": {
+      "checks": {
+        "all_aois_present": true,
+        "aoi_context_present": true,
+        "aoi_id_present": true,
+        "computed_at_utc_present": true,
+        "computed_at_utc_uniform": true,
+        "every_value_column_has_a_spec": true,
+        "feature_set_version_present": true,
+        "feature_set_version_uniform": true,
+        "gate3_run_id_matches_config": true,
+        "gate3_run_id_present": true,
+        "gate3_run_id_uniform": true,
+        "key_non_null": true,
+        "key_order_equals_gate3": true,
+        "key_set_equals_gate3": true,
+        "key_unique": true,
+        "no_forbidden_columns": true,
+        "normalization_run_id_present": true,
+        "normalization_run_id_uniform": true,
+        "normalization_version_matches_config": true,
+        "normalization_version_present": true,
+        "normalization_version_uniform": true,
+        "row_count_equals_gate3": true,
+        "run_id_present": true,
+        "source_manifest_id_present": true,
+        "spatial_unit_id_present": true
+      },
+      "passed": true,
+      "problems": [],
+      "rows": 5681,
+      "table": "diagnostic_features.parquet"
+    },
+    "publishable": {
+      "checks": {
+        "all_aois_present": true,
+        "aoi_context_present": true,
+        "aoi_id_present": true,
+        "computed_at_utc_present": true,
+        "computed_at_utc_uniform": true,
+        "every_value_column_has_a_spec": true,
+        "feature_set_version_present": true,
+        "feature_set_version_uniform": true,
+        "gate3_run_id_matches_config": true,
+        "gate3_run_id_present": true,
+        "gate3_run_id_uniform": true,
+        "key_non_null": true,
+        "key_order_equals_gate3": true,
+        "key_set_equals_gate3": true,
+        "key_unique": true,
+        "no_forbidden_columns": true,
+        "normalization_run_id_present": true,
+        "normalization_run_id_uniform": true,
+        "normalization_version_matches_config": true,
+        "normalization_version_present": true,
+        "normalization_version_uniform": true,
+        "row_count_equals_gate3": true,
+        "run_id_present": true,
+        "source_manifest_id_present": true,
+        "spatial_unit_id_present": true
+      },
+      "passed": true,
+      "problems": [],
+      "rows": 5681,
+      "table": "contextual_features.parquet"
+    }
+  }
+}

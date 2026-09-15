@@ -1,0 +1,3170 @@
+{
+  "aoi_context_note": "aoi_context is Gate 2 experiment metadata (one AOI per context); it is not a source-defined settlement class",
+  "candidates": {
+    "local_ratio": {
+      "food_drink_count_1km": {
+        "disposition": "diagnostic",
+        "eligible_rows": 5103,
+        "finite_rows": 1134,
+        "finite_share_of_eligible": 0.2222222222222222,
+        "output": "local_ratio_k1_food_drink_count_1km",
+        "publish_rule_met": false,
+        "reference_zero_rows": 3969,
+        "sensitivity_reference_mean": {
+          "finite_rows": 1324,
+          "finite_share_of_eligible": 0.25945522241818536,
+          "n_both_finite": 1134,
+          "spearman_vs_median_where_both_finite": 0.6939454938653034
+        }
+      },
+      "intersection_density_per_km2": {
+        "disposition": "diagnostic",
+        "eligible_rows": 4775,
+        "finite_rows": 1876,
+        "finite_share_of_eligible": 0.39287958115183247,
+        "output": "local_ratio_k1_intersection_density_per_km2",
+        "publish_rule_met": false,
+        "reference_zero_rows": 2899,
+        "sensitivity_reference_mean": {
+          "finite_rows": 3052,
+          "finite_share_of_eligible": 0.6391623036649214,
+          "n_both_finite": 1876,
+          "spearman_vs_median_where_both_finite": 0.9463648324464928
+        }
+      },
+      "poi_total_count_1km": {
+        "disposition": "diagnostic",
+        "eligible_rows": 4820,
+        "finite_rows": 1997,
+        "finite_share_of_eligible": 0.41431535269709546,
+        "output": "local_ratio_k1_poi_total_count_1km",
+        "publish_rule_met": false,
+        "reference_zero_rows": 2823,
+        "sensitivity_reference_mean": {
+          "finite_rows": 2375,
+          "finite_share_of_eligible": 0.4927385892116183,
+          "n_both_finite": 1997,
+          "spearman_vs_median_where_both_finite": 0.7532811621567846
+        }
+      },
+      "population_density": {
+        "disposition": "publishable",
+        "eligible_rows": 4775,
+        "finite_rows": 4004,
+        "finite_share_of_eligible": 0.8385340314136126,
+        "output": "local_ratio_k1_population_density",
+        "publish_rule_met": true,
+        "reference_zero_rows": 771,
+        "sensitivity_reference_mean": {
+          "finite_rows": 4507,
+          "finite_share_of_eligible": 0.9438743455497383,
+          "n_both_finite": 4004,
+          "spearman_vs_median_where_both_finite": 0.9170179034203702
+        }
+      },
+      "road_density_km_per_km2": {
+        "disposition": "publishable",
+        "eligible_rows": 4775,
+        "finite_rows": 3407,
+        "finite_share_of_eligible": 0.7135078534031414,
+        "output": "local_ratio_k1_road_density_km_per_km2",
+        "publish_rule_met": true,
+        "reference_zero_rows": 1368,
+        "sensitivity_reference_mean": {
+          "finite_rows": 3826,
+          "finite_share_of_eligible": 0.8012565445026179,
+          "n_both_finite": 3407,
+          "spearman_vs_median_where_both_finite": 0.9495624753974985
+        }
+      }
+    },
+    "log1p": {
+      "attraction_culture_count_3km": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_attraction_culture_count_3km",
+        "publish_rule_met": true,
+        "skew_log1p": 1.4403568273814542,
+        "skew_raw": 3.5639009391619156,
+        "zero_share_of_valid": 0.5104735081851787
+      },
+      "clinic_count_1km": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_clinic_count_1km",
+        "publish_rule_met": true,
+        "skew_log1p": 4.5888190126245565,
+        "skew_raw": 7.996260513203619,
+        "zero_share_of_valid": 0.9346945960218271
+      },
+      "food_drink_count_1km": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_food_drink_count_1km",
+        "publish_rule_met": true,
+        "skew_log1p": 2.580338694580101,
+        "skew_raw": 8.370298734894662,
+        "zero_share_of_valid": 0.7908818869917268
+      },
+      "higher_education_count_3km": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_higher_education_count_3km",
+        "publish_rule_met": true,
+        "skew_log1p": 2.8475905466638665,
+        "skew_raw": 5.426549803975941,
+        "zero_share_of_valid": 0.7456433726456609
+      },
+      "hospital_count_3km": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_hospital_count_3km",
+        "publish_rule_met": true,
+        "skew_log1p": 2.2139394466584754,
+        "skew_raw": 4.521289412236006,
+        "zero_share_of_valid": 0.7208237986270023
+      },
+      "intersection_density_per_km2": {
+        "disposition": "publishable",
+        "n_valid": 5335,
+        "output": "log1p_intersection_density_per_km2",
+        "publish_rule_met": true,
+        "skew_log1p": 0.9555138910767326,
+        "skew_raw": 4.36828162156933,
+        "zero_share_of_valid": 0.6356138706654171
+      },
+      "lodging_count_1km": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_lodging_count_1km",
+        "publish_rule_met": true,
+        "skew_log1p": 2.8762826152208127,
+        "skew_raw": 10.612402289545969,
+        "zero_share_of_valid": 0.7908818869917268
+      },
+      "major_road_length_km": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_major_road_length_km",
+        "publish_rule_met": true,
+        "skew_log1p": 3.472989702122631,
+        "skew_raw": 4.721254481100828,
+        "zero_share_of_valid": 0.8575954937511001
+      },
+      "mall_count_3km": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_mall_count_3km",
+        "publish_rule_met": true,
+        "skew_log1p": 4.349015895632594,
+        "skew_raw": 6.123039984048927,
+        "zero_share_of_valid": 0.9382151029748284
+      },
+      "marketplace_count_1km": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_marketplace_count_1km",
+        "publish_rule_met": true,
+        "skew_log1p": 2.982523735552802,
+        "skew_raw": 5.102558294117894,
+        "zero_share_of_valid": 0.8662207357859532
+      },
+      "park_recreation_count_1km": {
+        "disposition": "publishable",
+        "n_valid": 5325,
+        "output": "log1p_park_recreation_count_1km",
+        "publish_rule_met": true,
+        "skew_log1p": 3.8523527414752246,
+        "skew_raw": 6.683375509992735,
+        "zero_share_of_valid": 0.8982159624413145
+      },
+      "pharmacy_count_1km": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_pharmacy_count_1km",
+        "publish_rule_met": true,
+        "skew_log1p": 4.0245135281222995,
+        "skew_raw": 5.688714328697541,
+        "zero_share_of_valid": 0.9225488470339729
+      },
+      "poi_category_richness_1km": {
+        "disposition": "publishable",
+        "n_valid": 5325,
+        "output": "log1p_poi_category_richness_1km",
+        "publish_rule_met": true,
+        "skew_log1p": 1.290045769030239,
+        "skew_raw": 2.811718317157965,
+        "zero_share_of_valid": 0.624225352112676
+      },
+      "poi_total_count_1km": {
+        "disposition": "publishable",
+        "n_valid": 5325,
+        "output": "log1p_poi_total_count_1km",
+        "publish_rule_met": true,
+        "skew_log1p": 2.1911318434835447,
+        "skew_raw": 11.042157842794715,
+        "zero_share_of_valid": 0.624225352112676
+      },
+      "population_count": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_population_count",
+        "publish_rule_met": true,
+        "skew_log1p": 0.40068618918162835,
+        "skew_raw": 5.055033953265956,
+        "zero_share_of_valid": 0.22918500264038022
+      },
+      "population_density": {
+        "disposition": "publishable",
+        "n_valid": 5335,
+        "output": "log1p_population_density",
+        "publish_rule_met": true,
+        "skew_log1p": -0.2032684293587895,
+        "skew_raw": 4.756855955050744,
+        "zero_share_of_valid": 0.1880037488284911
+      },
+      "retail_count_1km": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_retail_count_1km",
+        "publish_rule_met": true,
+        "skew_log1p": 2.7726959051477853,
+        "skew_raw": 6.86435151447301,
+        "zero_share_of_valid": 0.7681746171448689
+      },
+      "road_density_km_per_km2": {
+        "disposition": "publishable",
+        "n_valid": 5335,
+        "output": "log1p_road_density_km_per_km2",
+        "publish_rule_met": true,
+        "skew_log1p": 0.32614929428120487,
+        "skew_raw": 9.654951792182189,
+        "zero_share_of_valid": 0.38631677600749764
+      },
+      "road_length_km": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_road_length_km",
+        "publish_rule_met": true,
+        "skew_log1p": 1.1939916843965537,
+        "skew_raw": 2.3528708360789223,
+        "zero_share_of_valid": 0.42298891040309805
+      },
+      "school_count_1km": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_school_count_1km",
+        "publish_rule_met": true,
+        "skew_log1p": 3.1032257412680124,
+        "skew_raw": 4.791195485733978,
+        "zero_share_of_valid": 0.8440415419820454
+      },
+      "transit_stop_count_1km": {
+        "disposition": "publishable",
+        "n_valid": 5681,
+        "output": "log1p_transit_stop_count_1km",
+        "publish_rule_met": true,
+        "skew_log1p": 2.855813015292022,
+        "skew_raw": 4.846611354299152,
+        "zero_share_of_valid": 0.8433374405914452
+      }
+    },
+    "mvp_pooled_percentile": {
+      "disposition": "diagnostic",
+      "features": [
+        "transit_stop_count_1km",
+        "school_count_1km",
+        "higher_education_count_3km",
+        "hospital_count_3km",
+        "clinic_count_1km",
+        "pharmacy_count_1km",
+        "food_drink_count_1km",
+        "retail_count_1km",
+        "marketplace_count_1km",
+        "mall_count_3km",
+        "lodging_count_1km",
+        "attraction_culture_count_3km",
+        "park_recreation_count_1km",
+        "poi_total_count_1km",
+        "poi_category_richness_1km",
+        "population_count",
+        "population_density",
+        "road_length_km",
+        "road_density_km_per_km2",
+        "major_road_length_km",
+        "intersection_density_per_km2",
+        "built_up_ratio",
+        "tree_cover_ratio",
+        "grass_shrub_ratio",
+        "cropland_ratio",
+        "water_wetland_ratio",
+        "osm_industrial_site_area_ratio"
+      ],
+      "note": "pooled over four hand-picked AOIs; not a national percentile"
+    },
+    "peer_percentile": {
+      "aois_per_context": {
+        "dense_urban": 1,
+        "rural_delta": 1,
+        "rural_mountain": 1,
+        "tourism": 1
+      },
+      "disposition": "blocked",
+      "kind": "peer_percentile",
+      "minimum_aois_per_group": 2,
+      "peer_group_column": "aoi_context",
+      "reason": "one AOI per aoi_context in the Gate 3 input: a peer cohort would be a single AOI and cannot be distinguished from the within-AOI percentile; no peer cohort fitted, no column emitted",
+      "sufficient": false
+    },
+    "source_defined_ghs_smod_class": {
+      "disposition": "blocked",
+      "status": "source_not_acquired"
+    },
+    "within_aoi_percentile": {
+      "disposition": "diagnostic",
+      "features": [
+        "transit_stop_count_1km",
+        "school_count_1km",
+        "higher_education_count_3km",
+        "hospital_count_3km",
+        "clinic_count_1km",
+        "pharmacy_count_1km",
+        "food_drink_count_1km",
+        "retail_count_1km",
+        "marketplace_count_1km",
+        "mall_count_3km",
+        "lodging_count_1km",
+        "attraction_culture_count_3km",
+        "park_recreation_count_1km",
+        "poi_total_count_1km",
+        "poi_category_richness_1km",
+        "population_count",
+        "population_density",
+        "road_length_km",
+        "road_density_km_per_km2",
+        "major_road_length_km",
+        "intersection_density_per_km2",
+        "built_up_ratio",
+        "tree_cover_ratio",
+        "grass_shrub_ratio",
+        "cropland_ratio",
+        "water_wetland_ratio",
+        "osm_industrial_site_area_ratio"
+      ]
+    }
+  },
+  "cohorts": {
+    "mvp_pooled::0.1.0::gate3_20260914T171148Z": {
+      "aoi_row_share": {
+        "dong_thap_rural": 0.3441295546558704,
+        "hanoi_core": 0.06266502376342194,
+        "hoi_an": 0.23182538285513113,
+        "mu_cang_chai": 0.3613800387255765
+      },
+      "disposition": "diagnostic",
+      "features": {
+        "attraction_culture_count_3km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 152,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000044
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 152,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "built_up_ratio": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 3227,
+            "n_obs": 5335,
+            "weight_total": 3.702620017642076
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 3227,
+            "n_obs": 5335,
+            "weight_total": 5335.0
+          }
+        },
+        "clinic_count_1km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 25,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000201
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 25,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "cropland_ratio": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 3216,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000064
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 3216,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "food_drink_count_1km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 264,
+            "n_obs": 5681,
+            "weight_total": 4.0000000000001625
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 264,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "grass_shrub_ratio": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 4139,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000061
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 4139,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "higher_education_count_3km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 42,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000134
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 42,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "hospital_count_3km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 55,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000123
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 55,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "intersection_density_per_km2": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 1945,
+            "n_obs": 5335,
+            "weight_total": 3.7026200176421735
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1945,
+            "n_obs": 5335,
+            "weight_total": 5335.0
+          }
+        },
+        "lodging_count_1km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 152,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000161
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 152,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "major_road_length_km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 810,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000189
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 810,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "mall_count_3km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 14,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000197
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 14,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "marketplace_count_1km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 11,
+            "n_obs": 5681,
+            "weight_total": 4.00000000000018
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 11,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "osm_industrial_site_area_ratio": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 28,
+            "n_obs": 5008,
+            "weight_total": 2.7840806917995287
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 28,
+            "n_obs": 5008,
+            "weight_total": 5008.0
+          }
+        },
+        "park_recreation_count_1km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 25,
+            "n_obs": 5325,
+            "weight_total": 3.00000000000017
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 25,
+            "n_obs": 5325,
+            "weight_total": 5325.0
+          }
+        },
+        "pharmacy_count_1km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 31,
+            "n_obs": 5681,
+            "weight_total": 4.0000000000002
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 31,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "poi_category_richness_1km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 20,
+            "n_obs": 5325,
+            "weight_total": 3.0000000000001164
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 20,
+            "n_obs": 5325,
+            "weight_total": 5325.0
+          }
+        },
+        "poi_total_count_1km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 204,
+            "n_obs": 5325,
+            "weight_total": 3.000000000000115
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 204,
+            "n_obs": 5325,
+            "weight_total": 5325.0
+          }
+        },
+        "population_count": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 4348,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000011
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 4348,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "population_density": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 4333,
+            "n_obs": 5335,
+            "weight_total": 3.702620017642051
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 4333,
+            "n_obs": 5335,
+            "weight_total": 5335.0
+          }
+        },
+        "retail_count_1km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 249,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000147
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 249,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "road_density_km_per_km2": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 3275,
+            "n_obs": 5335,
+            "weight_total": 3.7026200176420554
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 3275,
+            "n_obs": 5335,
+            "weight_total": 5335.0
+          }
+        },
+        "road_length_km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 3279,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000067
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 3279,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "school_count_1km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 29,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000172
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 29,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "transit_stop_count_1km": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 68,
+            "n_obs": 5681,
+            "weight_total": 4.0000000000001705
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 68,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "tree_cover_ratio": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 4872,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000001
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 4872,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        },
+        "water_wetland_ratio": {
+          "aoi_equal": {
+            "fit_status": "ok",
+            "n_distinct": 1350,
+            "n_obs": 5681,
+            "weight_total": 4.000000000000143
+          },
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1350,
+            "n_obs": 5681,
+            "weight_total": 5681.0
+          }
+        }
+      },
+      "kind": "mvp_pooled_percentile",
+      "members": [
+        "dong_thap_rural",
+        "hanoi_core",
+        "hoi_an",
+        "mu_cang_chai"
+      ],
+      "rows": 5681,
+      "weightings": [
+        "cell",
+        "aoi_equal"
+      ]
+    },
+    "within_aoi::dong_thap_rural::0.1.0::gate3_20260914T171148Z": {
+      "disposition": "diagnostic",
+      "features": {
+        "attraction_culture_count_3km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 3,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "built_up_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1739,
+            "n_obs": 1855,
+            "weight_total": 1855.0
+          }
+        },
+        "clinic_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 2,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "cropland_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1509,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "food_drink_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 34,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "grass_shrub_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1152,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "higher_education_count_3km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 4,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "hospital_count_3km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 10,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "intersection_density_per_km2": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 534,
+            "n_obs": 1855,
+            "weight_total": 1855.0
+          }
+        },
+        "lodging_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 9,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "major_road_length_km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 314,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "mall_count_3km": {
+          "cell": {
+            "fit_status": "cohort_degenerate",
+            "n_distinct": 1,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "marketplace_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 4,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "osm_industrial_site_area_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 8,
+            "n_obs": 1855,
+            "weight_total": 1855.0
+          }
+        },
+        "park_recreation_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 10,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "pharmacy_count_1km": {
+          "cell": {
+            "fit_status": "cohort_degenerate",
+            "n_distinct": 1,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "poi_category_richness_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 15,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "poi_total_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 58,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "population_count": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1866,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "population_density": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1843,
+            "n_obs": 1855,
+            "weight_total": 1855.0
+          }
+        },
+        "retail_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 20,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "road_density_km_per_km2": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1340,
+            "n_obs": 1855,
+            "weight_total": 1855.0
+          }
+        },
+        "road_length_km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1341,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "school_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 5,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "transit_stop_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 7,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "tree_cover_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1798,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        },
+        "water_wetland_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 672,
+            "n_obs": 1955,
+            "weight_total": 1955.0
+          }
+        }
+      },
+      "kind": "within_aoi_percentile",
+      "members": [
+        "dong_thap_rural"
+      ],
+      "rows": 1955,
+      "weightings": [
+        "cell"
+      ]
+    },
+    "within_aoi::hanoi_core::0.1.0::gate3_20260914T171148Z": {
+      "disposition": "diagnostic",
+      "features": {
+        "attraction_culture_count_3km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 135,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "built_up_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 312,
+            "n_obs": 327,
+            "weight_total": 327.0
+          }
+        },
+        "clinic_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 25,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "cropland_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 98,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "food_drink_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 209,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "grass_shrub_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 131,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "higher_education_count_3km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 39,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "hospital_count_3km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 52,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "intersection_density_per_km2": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 305,
+            "n_obs": 327,
+            "weight_total": 327.0
+          }
+        },
+        "lodging_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 112,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "major_road_length_km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 194,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "mall_count_3km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 14,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "marketplace_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 11,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "osm_industrial_site_area_ratio": {
+          "cell": {
+            "fit_status": "cohort_too_small",
+            "n_distinct": 0,
+            "n_obs": 0,
+            "weight_total": 0.0
+          }
+        },
+        "park_recreation_count_1km": {
+          "cell": {
+            "fit_status": "cohort_too_small",
+            "n_distinct": 0,
+            "n_obs": 0,
+            "weight_total": 0.0
+          }
+        },
+        "pharmacy_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 31,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "poi_category_richness_1km": {
+          "cell": {
+            "fit_status": "cohort_too_small",
+            "n_distinct": 0,
+            "n_obs": 0,
+            "weight_total": 0.0
+          }
+        },
+        "poi_total_count_1km": {
+          "cell": {
+            "fit_status": "cohort_too_small",
+            "n_distinct": 0,
+            "n_obs": 0,
+            "weight_total": 0.0
+          }
+        },
+        "population_count": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 334,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "population_density": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 325,
+            "n_obs": 327,
+            "weight_total": 327.0
+          }
+        },
+        "retail_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 217,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "road_density_km_per_km2": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 320,
+            "n_obs": 327,
+            "weight_total": 327.0
+          }
+        },
+        "road_length_km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 320,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "school_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 29,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "transit_stop_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 68,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "tree_cover_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 326,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        },
+        "water_wetland_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 159,
+            "n_obs": 356,
+            "weight_total": 356.0
+          }
+        }
+      },
+      "kind": "within_aoi_percentile",
+      "members": [
+        "hanoi_core"
+      ],
+      "rows": 356,
+      "weightings": [
+        "cell"
+      ]
+    },
+    "within_aoi::hoi_an::0.1.0::gate3_20260914T171148Z": {
+      "disposition": "diagnostic",
+      "features": {
+        "attraction_culture_count_3km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 60,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "built_up_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1025,
+            "n_obs": 1100,
+            "weight_total": 1100.0
+          }
+        },
+        "clinic_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 8,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "cropland_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 832,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "food_drink_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 135,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "grass_shrub_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1079,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "higher_education_count_3km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 3,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "hospital_count_3km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 5,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "intersection_density_per_km2": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 829,
+            "n_obs": 1100,
+            "weight_total": 1100.0
+          }
+        },
+        "lodging_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 100,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "major_road_length_km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 216,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "mall_count_3km": {
+          "cell": {
+            "fit_status": "cohort_degenerate",
+            "n_distinct": 1,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "marketplace_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 7,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "osm_industrial_site_area_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 21,
+            "n_obs": 1100,
+            "weight_total": 1100.0
+          }
+        },
+        "park_recreation_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 25,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "pharmacy_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 17,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "poi_category_richness_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 20,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "poi_total_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 198,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "population_count": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1100,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "population_density": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1085,
+            "n_obs": 1100,
+            "weight_total": 1100.0
+          }
+        },
+        "retail_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 91,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "road_density_km_per_km2": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 990,
+            "n_obs": 1100,
+            "weight_total": 1100.0
+          }
+        },
+        "road_length_km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 993,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "school_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 9,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "transit_stop_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 19,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "tree_cover_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 970,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        },
+        "water_wetland_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 520,
+            "n_obs": 1317,
+            "weight_total": 1317.0
+          }
+        }
+      },
+      "kind": "within_aoi_percentile",
+      "members": [
+        "hoi_an"
+      ],
+      "rows": 1317,
+      "weightings": [
+        "cell"
+      ]
+    },
+    "within_aoi::mu_cang_chai::0.1.0::gate3_20260914T171148Z": {
+      "disposition": "diagnostic",
+      "features": {
+        "attraction_culture_count_3km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 5,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "built_up_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 154,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "clinic_count_1km": {
+          "cell": {
+            "fit_status": "cohort_degenerate",
+            "n_distinct": 1,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "cropland_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 781,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "food_drink_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 2,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "grass_shrub_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1780,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "higher_education_count_3km": {
+          "cell": {
+            "fit_status": "cohort_degenerate",
+            "n_distinct": 1,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "hospital_count_3km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 2,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "intersection_density_per_km2": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 280,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "lodging_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 5,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "major_road_length_km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 89,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "mall_count_3km": {
+          "cell": {
+            "fit_status": "cohort_degenerate",
+            "n_distinct": 1,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "marketplace_count_1km": {
+          "cell": {
+            "fit_status": "cohort_degenerate",
+            "n_distinct": 1,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "osm_industrial_site_area_ratio": {
+          "cell": {
+            "fit_status": "cohort_degenerate",
+            "n_distinct": 1,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "park_recreation_count_1km": {
+          "cell": {
+            "fit_status": "cohort_degenerate",
+            "n_distinct": 1,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "pharmacy_count_1km": {
+          "cell": {
+            "fit_status": "cohort_degenerate",
+            "n_distinct": 1,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "poi_category_richness_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 5,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "poi_total_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 8,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "population_count": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1051,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "population_density": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1083,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "retail_count_1km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 4,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "road_density_km_per_km2": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 628,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "road_length_km": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 628,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "school_count_1km": {
+          "cell": {
+            "fit_status": "cohort_degenerate",
+            "n_distinct": 1,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "transit_stop_count_1km": {
+          "cell": {
+            "fit_status": "cohort_degenerate",
+            "n_distinct": 1,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "tree_cover_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 1781,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        },
+        "water_wetland_ratio": {
+          "cell": {
+            "fit_status": "ok",
+            "n_distinct": 4,
+            "n_obs": 2053,
+            "weight_total": 2053.0
+          }
+        }
+      },
+      "kind": "within_aoi_percentile",
+      "members": [
+        "mu_cang_chai"
+      ],
+      "rows": 2053,
+      "weightings": [
+        "cell"
+      ]
+    }
+  },
+  "config_hash": "42b1912391ea35048e148e08f697c6f0b49298a9663d9b0d3e881b516db41872",
+  "config_sha256": {
+    "config/features.yaml": "515ac315b4b7791c5027134ae37889781aea6acac0db81dce334ada5fc119856",
+    "config/gate4_mvp.yaml": "c4ac0bb3cf9f662cd20ee622d3e590e5493a4242e92d9ac95d7ece47d087d43b",
+    "config/spatial.yaml": "1cdba55dc736ca0b79d09dfd0d48e1aa99f88316532a8a8c162d9e06b55d82b0"
+  },
+  "diagnostic_columns": [
+    "attraction_culture_count_3km_mvp_pooled_percentile",
+    "attraction_culture_count_3km_within_aoi_percentile",
+    "built_up_ratio_mvp_pooled_percentile",
+    "built_up_ratio_within_aoi_percentile",
+    "clinic_count_1km_mvp_pooled_percentile",
+    "clinic_count_1km_within_aoi_percentile",
+    "cropland_ratio_mvp_pooled_percentile",
+    "cropland_ratio_within_aoi_percentile",
+    "food_drink_count_1km_mvp_pooled_percentile",
+    "food_drink_count_1km_within_aoi_percentile",
+    "grass_shrub_ratio_mvp_pooled_percentile",
+    "grass_shrub_ratio_within_aoi_percentile",
+    "higher_education_count_3km_mvp_pooled_percentile",
+    "higher_education_count_3km_within_aoi_percentile",
+    "hospital_count_3km_mvp_pooled_percentile",
+    "hospital_count_3km_within_aoi_percentile",
+    "intersection_density_per_km2_mvp_pooled_percentile",
+    "intersection_density_per_km2_within_aoi_percentile",
+    "local_ratio_k1_food_drink_count_1km",
+    "local_ratio_k1_intersection_density_per_km2",
+    "local_ratio_k1_poi_total_count_1km",
+    "lodging_count_1km_mvp_pooled_percentile",
+    "lodging_count_1km_within_aoi_percentile",
+    "major_road_length_km_mvp_pooled_percentile",
+    "major_road_length_km_within_aoi_percentile",
+    "mall_count_3km_mvp_pooled_percentile",
+    "mall_count_3km_within_aoi_percentile",
+    "marketplace_count_1km_mvp_pooled_percentile",
+    "marketplace_count_1km_within_aoi_percentile",
+    "osm_industrial_site_area_ratio_mvp_pooled_percentile",
+    "osm_industrial_site_area_ratio_within_aoi_percentile",
+    "park_recreation_count_1km_mvp_pooled_percentile",
+    "park_recreation_count_1km_within_aoi_percentile",
+    "pharmacy_count_1km_mvp_pooled_percentile",
+    "pharmacy_count_1km_within_aoi_percentile",
+    "poi_category_richness_1km_mvp_pooled_percentile",
+    "poi_category_richness_1km_within_aoi_percentile",
+    "poi_total_count_1km_mvp_pooled_percentile",
+    "poi_total_count_1km_within_aoi_percentile",
+    "population_count_mvp_pooled_percentile",
+    "population_count_within_aoi_percentile",
+    "population_density_mvp_pooled_percentile",
+    "population_density_within_aoi_percentile",
+    "retail_count_1km_mvp_pooled_percentile",
+    "retail_count_1km_within_aoi_percentile",
+    "road_density_km_per_km2_mvp_pooled_percentile",
+    "road_density_km_per_km2_within_aoi_percentile",
+    "road_length_km_mvp_pooled_percentile",
+    "road_length_km_within_aoi_percentile",
+    "school_count_1km_mvp_pooled_percentile",
+    "school_count_1km_within_aoi_percentile",
+    "transit_stop_count_1km_mvp_pooled_percentile",
+    "transit_stop_count_1km_within_aoi_percentile",
+    "tree_cover_ratio_mvp_pooled_percentile",
+    "tree_cover_ratio_within_aoi_percentile",
+    "water_wetland_ratio_mvp_pooled_percentile",
+    "water_wetland_ratio_within_aoi_percentile"
+  ],
+  "excluded_from_all_transforms": {
+    "distances": [
+      "distance_nearest_major_road_m",
+      "distance_nearest_urban_centre_km",
+      "distance_nearest_transit_stop_m",
+      "distance_nearest_transport_hub_m",
+      "distance_nearest_higher_education_m",
+      "distance_nearest_hospital_m",
+      "distance_nearest_park_m",
+      "distance_nearest_osm_industrial_site_m"
+    ],
+    "reason": "right-censored by the halo clip (search_truncated_by_extract); see validation_summary.distance_selection_bias"
+  },
+  "gate": 4,
+  "gate4_config_version": "1.0.0",
+  "input": {
+    "feature_set_version": "0.3.0",
+    "gate3_code_version": "59fe994cacf930df79d9b364fe104f1778d41f47+dirty",
+    "gate3_config_hash": "f1b1948188b66f4de0eaf755a095d59da5fe1549e30777ae17e6dec6ad8f8a4d",
+    "gate3_config_sha256": {
+      "config/features.yaml": "515ac315b4b7791c5027134ae37889781aea6acac0db81dce334ada5fc119856",
+      "config/gate3_mvp.yaml": "08e0a65a5c4ac18545082d38c58442fe293526f0068d2b24c7bb502dfe16300c",
+      "config/poi_taxonomy.yaml": "0f1809242608281e637ea0a71824d842024728b73656b95ccd199c52c1b2497d",
+      "config/spatial.yaml": "1cdba55dc736ca0b79d09dfd0d48e1aa99f88316532a8a8c162d9e06b55d82b0"
+    },
+    "gate3_run_dir": "data/gate3/run_20260914T171148Z",
+    "gate3_run_id": "20260914T171148Z",
+    "gate3_sha256sums_verified": true,
+    "poi_taxonomy_version": "0.3.0",
+    "rows": 5681,
+    "sha256": {
+      "atomic_features.parquet": "26d75dd0bf08b101a479aae816f667f44271dee676f08b7aa485cccbc0ed09e0",
+      "feature_manifest.json": "1cd97295ab6d905b8a0a28223f010c5df78ce81dff1dc05db91ea37093e0e087",
+      "run_manifest.json": "ae37aa53b0e9d47c87370f38c97bfb20cd760a7be38f74f16985d810b29bfea1",
+      "validation_summary.json": "43dca9e7f00dae7b07e3847927f3cacb31da022829e661af705bbe6f01bf16b7"
+    }
+  },
+  "join_contract": {
+    "gate3_columns_copied": [
+      "spatial_unit_id",
+      "aoi_id",
+      "aoi_context",
+      "run_id",
+      "feature_set_version",
+      "source_manifest_id"
+    ],
+    "key": "spatial_unit_id",
+    "relation": "1:1 with atomic_features.parquet"
+  },
+  "local_ratio_policy": {
+    "denominator_zero_policy": "null_with_status",
+    "exclude_centre": true,
+    "formula": "x / median(x over the k-ring neighbors, centre excluded); null when the median is 0",
+    "k": 1,
+    "method": "h3_grid_disk",
+    "minimum_valid_neighbors": 4,
+    "reference_statistic": "median",
+    "require_all_neighbors_present": true,
+    "sensitivity_statistic": "mean"
+  },
+  "log1p_policy": {
+    "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+    "publish_rule": {
+      "minimum_raw_skewness": 1.0,
+      "require_skew_reduction": true
+    },
+    "rules": {
+      "clip_or_winsorize": false,
+      "impute": false,
+      "negative_input": "fail",
+      "null_stays_null": true,
+      "zero_maps_to_zero": true
+    }
+  },
+  "normalization_run_id": "20260914T175737Z",
+  "normalization_version": "0.1.0",
+  "peer_percentile": {
+    "aois_per_context": {
+      "dense_urban": 1,
+      "rural_delta": 1,
+      "rural_mountain": 1,
+      "tourism": 1
+    },
+    "disposition": "blocked",
+    "kind": "peer_percentile",
+    "minimum_aois_per_group": 2,
+    "peer_group_column": "aoi_context",
+    "reason": "one AOI per aoi_context in the Gate 3 input: a peer cohort would be a single AOI and cannot be distinguished from the within-AOI percentile; no peer cohort fitted, no column emitted",
+    "sufficient": false
+  },
+  "percentile_policy": {
+    "constant_cohort_policy": "null_with_status",
+    "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+    "minimum_cohort_size": 30,
+    "range": [
+      0.0,
+      1.0
+    ],
+    "tie_method": "midrank_ecdf",
+    "tie_sensitivity_methods": [
+      "min_ecdf",
+      "max_ecdf"
+    ],
+    "weightings": {
+      "aoi_equal": "every AOI total weight 1 (row weight 1 / rows in its AOI)",
+      "cell": "every row weight 1"
+    }
+  },
+  "publishable_columns": [
+    "local_ratio_k1_population_density",
+    "local_ratio_k1_road_density_km_per_km2",
+    "log1p_attraction_culture_count_3km",
+    "log1p_clinic_count_1km",
+    "log1p_food_drink_count_1km",
+    "log1p_higher_education_count_3km",
+    "log1p_hospital_count_3km",
+    "log1p_intersection_density_per_km2",
+    "log1p_lodging_count_1km",
+    "log1p_major_road_length_km",
+    "log1p_mall_count_3km",
+    "log1p_marketplace_count_1km",
+    "log1p_park_recreation_count_1km",
+    "log1p_pharmacy_count_1km",
+    "log1p_poi_category_richness_1km",
+    "log1p_poi_total_count_1km",
+    "log1p_population_count",
+    "log1p_population_density",
+    "log1p_retail_count_1km",
+    "log1p_road_density_km_per_km2",
+    "log1p_road_length_km",
+    "log1p_school_count_1km",
+    "log1p_transit_stop_count_1km"
+  ],
+  "source_defined_ghs_smod_class": {
+    "enabled": false,
+    "source": "GHS-SMOD R2023A (Degree of Urbanisation, 1 km)",
+    "status": "source_not_acquired",
+    "substitute_with_custom_threshold": false
+  },
+  "status_vocabulary": [
+    "cohort_degenerate",
+    "cohort_not_fitted",
+    "cohort_too_small",
+    "coverage_incomplete",
+    "denominator_below_minimum",
+    "denominator_zero",
+    "entity_assembly_failed",
+    "neighborhood_incomplete",
+    "neighborhood_insufficient_valid",
+    "neighborhood_reference_zero",
+    "not_found_within_cap",
+    "ok",
+    "peer_cohort_insufficient",
+    "search_truncated_by_extract",
+    "source_not_acquired",
+    "source_unavailable"
+  ],
+  "tables": {
+    "contextual_features.parquet": {
+      "columns": {
+        "local_ratio_k1_population_density": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "x / median(x over the k-ring neighbors, centre excluded); null when the median is 0",
+          "neighborhood": {
+            "exclude_centre": true,
+            "k": 1,
+            "method": "h3_grid_disk",
+            "minimum_valid_neighbors": 4,
+            "reference_statistic": "median",
+            "require_all_neighbors_present": true,
+            "sensitivity_statistic": "mean"
+          },
+          "normalization_version": "0.1.0",
+          "source_feature": "population_density",
+          "status_column": "local_ratio_k1_population_density_status",
+          "status_counts": {
+            "denominator_below_minimum": 24,
+            "denominator_zero": 322,
+            "neighborhood_incomplete": 516,
+            "neighborhood_insufficient_valid": 44,
+            "neighborhood_reference_zero": 771,
+            "ok": 4004
+          },
+          "transform": "local_ratio",
+          "unit": "dimensionless ratio to the neighborhood median"
+        },
+        "local_ratio_k1_road_density_km_per_km2": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "x / median(x over the k-ring neighbors, centre excluded); null when the median is 0",
+          "neighborhood": {
+            "exclude_centre": true,
+            "k": 1,
+            "method": "h3_grid_disk",
+            "minimum_valid_neighbors": 4,
+            "reference_statistic": "median",
+            "require_all_neighbors_present": true,
+            "sensitivity_statistic": "mean"
+          },
+          "normalization_version": "0.1.0",
+          "source_feature": "road_density_km_per_km2",
+          "status_column": "local_ratio_k1_road_density_km_per_km2_status",
+          "status_counts": {
+            "denominator_below_minimum": 24,
+            "denominator_zero": 322,
+            "neighborhood_incomplete": 516,
+            "neighborhood_insufficient_valid": 44,
+            "neighborhood_reference_zero": 1368,
+            "ok": 3407
+          },
+          "transform": "local_ratio",
+          "unit": "dimensionless ratio to the neighborhood median"
+        },
+        "log1p_attraction_culture_count_3km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "attraction_culture_count_3km",
+          "status_column": "log1p_attraction_culture_count_3km_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of attraction_culture_count_3km>)"
+        },
+        "log1p_clinic_count_1km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "clinic_count_1km",
+          "status_column": "log1p_clinic_count_1km_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of clinic_count_1km>)"
+        },
+        "log1p_food_drink_count_1km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "food_drink_count_1km",
+          "status_column": "log1p_food_drink_count_1km_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of food_drink_count_1km>)"
+        },
+        "log1p_higher_education_count_3km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "higher_education_count_3km",
+          "status_column": "log1p_higher_education_count_3km_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of higher_education_count_3km>)"
+        },
+        "log1p_hospital_count_3km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "hospital_count_3km",
+          "status_column": "log1p_hospital_count_3km_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of hospital_count_3km>)"
+        },
+        "log1p_intersection_density_per_km2": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "intersection_density_per_km2",
+          "status_column": "log1p_intersection_density_per_km2_status",
+          "status_counts": {
+            "denominator_below_minimum": 24,
+            "denominator_zero": 322,
+            "ok": 5335
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of intersection_density_per_km2>)"
+        },
+        "log1p_lodging_count_1km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "lodging_count_1km",
+          "status_column": "log1p_lodging_count_1km_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of lodging_count_1km>)"
+        },
+        "log1p_major_road_length_km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "major_road_length_km",
+          "status_column": "log1p_major_road_length_km_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of major_road_length_km>)"
+        },
+        "log1p_mall_count_3km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "mall_count_3km",
+          "status_column": "log1p_mall_count_3km_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of mall_count_3km>)"
+        },
+        "log1p_marketplace_count_1km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "marketplace_count_1km",
+          "status_column": "log1p_marketplace_count_1km_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of marketplace_count_1km>)"
+        },
+        "log1p_park_recreation_count_1km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "park_recreation_count_1km",
+          "status_column": "log1p_park_recreation_count_1km_status",
+          "status_counts": {
+            "entity_assembly_failed": 356,
+            "ok": 5325
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of park_recreation_count_1km>)"
+        },
+        "log1p_pharmacy_count_1km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "pharmacy_count_1km",
+          "status_column": "log1p_pharmacy_count_1km_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of pharmacy_count_1km>)"
+        },
+        "log1p_poi_category_richness_1km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "poi_category_richness_1km",
+          "status_column": "log1p_poi_category_richness_1km_status",
+          "status_counts": {
+            "entity_assembly_failed": 356,
+            "ok": 5325
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of poi_category_richness_1km>)"
+        },
+        "log1p_poi_total_count_1km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "poi_total_count_1km",
+          "status_column": "log1p_poi_total_count_1km_status",
+          "status_counts": {
+            "entity_assembly_failed": 356,
+            "ok": 5325
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of poi_total_count_1km>)"
+        },
+        "log1p_population_count": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "population_count",
+          "status_column": "log1p_population_count_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of population_count>)"
+        },
+        "log1p_population_density": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "population_density",
+          "status_column": "log1p_population_density_status",
+          "status_counts": {
+            "denominator_below_minimum": 24,
+            "denominator_zero": 322,
+            "ok": 5335
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of population_density>)"
+        },
+        "log1p_retail_count_1km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "retail_count_1km",
+          "status_column": "log1p_retail_count_1km_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of retail_count_1km>)"
+        },
+        "log1p_road_density_km_per_km2": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "road_density_km_per_km2",
+          "status_column": "log1p_road_density_km_per_km2_status",
+          "status_counts": {
+            "denominator_below_minimum": 24,
+            "denominator_zero": 322,
+            "ok": 5335
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of road_density_km_per_km2>)"
+        },
+        "log1p_road_length_km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "road_length_km",
+          "status_column": "log1p_road_length_km_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of road_length_km>)"
+        },
+        "log1p_school_count_1km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "school_count_1km",
+          "status_column": "log1p_school_count_1km_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of school_count_1km>)"
+        },
+        "log1p_transit_stop_count_1km": {
+          "cohort_id": null,
+          "disposition": "publishable",
+          "formula": "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)",
+          "normalization_version": "0.1.0",
+          "source_feature": "transit_stop_count_1km",
+          "status_column": "log1p_transit_stop_count_1km_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "transform": "log1p",
+          "unit": "log(1 + <unit of transit_stop_count_1km>)"
+        }
+      },
+      "disposition": "publishable",
+      "rows": 5681
+    },
+    "diagnostic_features.parquet": {
+      "columns": {
+        "attraction_culture_count_3km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "attraction_culture_count_3km",
+          "status_column": "attraction_culture_count_3km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "attraction_culture_count_3km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "attraction_culture_count_3km",
+          "status_column": "attraction_culture_count_3km_within_aoi_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "built_up_ratio_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "built_up_ratio",
+          "status_column": "built_up_ratio_mvp_pooled_percentile_status",
+          "status_counts": {
+            "denominator_below_minimum": 24,
+            "denominator_zero": 322,
+            "ok": 5335
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "built_up_ratio_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "built_up_ratio",
+          "status_column": "built_up_ratio_within_aoi_percentile_status",
+          "status_counts": {
+            "denominator_below_minimum": 24,
+            "denominator_zero": 322,
+            "ok": 5335
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "clinic_count_1km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "clinic_count_1km",
+          "status_column": "clinic_count_1km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "clinic_count_1km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "clinic_count_1km",
+          "status_column": "clinic_count_1km_within_aoi_percentile_status",
+          "status_counts": {
+            "cohort_degenerate": 2053,
+            "ok": 3628
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "cropland_ratio_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "cropland_ratio",
+          "status_column": "cropland_ratio_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "cropland_ratio_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "cropland_ratio",
+          "status_column": "cropland_ratio_within_aoi_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "food_drink_count_1km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "food_drink_count_1km",
+          "status_column": "food_drink_count_1km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "food_drink_count_1km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "food_drink_count_1km",
+          "status_column": "food_drink_count_1km_within_aoi_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "grass_shrub_ratio_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "grass_shrub_ratio",
+          "status_column": "grass_shrub_ratio_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "grass_shrub_ratio_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "grass_shrub_ratio",
+          "status_column": "grass_shrub_ratio_within_aoi_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "higher_education_count_3km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "higher_education_count_3km",
+          "status_column": "higher_education_count_3km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "higher_education_count_3km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "higher_education_count_3km",
+          "status_column": "higher_education_count_3km_within_aoi_percentile_status",
+          "status_counts": {
+            "cohort_degenerate": 2053,
+            "ok": 3628
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "hospital_count_3km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "hospital_count_3km",
+          "status_column": "hospital_count_3km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "hospital_count_3km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "hospital_count_3km",
+          "status_column": "hospital_count_3km_within_aoi_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "intersection_density_per_km2_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "intersection_density_per_km2",
+          "status_column": "intersection_density_per_km2_mvp_pooled_percentile_status",
+          "status_counts": {
+            "denominator_below_minimum": 24,
+            "denominator_zero": 322,
+            "ok": 5335
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "intersection_density_per_km2_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "intersection_density_per_km2",
+          "status_column": "intersection_density_per_km2_within_aoi_percentile_status",
+          "status_counts": {
+            "denominator_below_minimum": 24,
+            "denominator_zero": 322,
+            "ok": 5335
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "local_ratio_k1_food_drink_count_1km": {
+          "cohort_id": null,
+          "disposition": "diagnostic",
+          "formula": "x / median(x over the k-ring neighbors, centre excluded); null when the median is 0",
+          "neighborhood": {
+            "exclude_centre": true,
+            "k": 1,
+            "method": "h3_grid_disk",
+            "minimum_valid_neighbors": 4,
+            "reference_statistic": "median",
+            "require_all_neighbors_present": true,
+            "sensitivity_statistic": "mean"
+          },
+          "normalization_version": "0.1.0",
+          "source_feature": "food_drink_count_1km",
+          "status_column": "local_ratio_k1_food_drink_count_1km_status",
+          "status_counts": {
+            "neighborhood_incomplete": 578,
+            "neighborhood_reference_zero": 3969,
+            "ok": 1134
+          },
+          "transform": "local_ratio",
+          "unit": "dimensionless ratio to the neighborhood median"
+        },
+        "local_ratio_k1_intersection_density_per_km2": {
+          "cohort_id": null,
+          "disposition": "diagnostic",
+          "formula": "x / median(x over the k-ring neighbors, centre excluded); null when the median is 0",
+          "neighborhood": {
+            "exclude_centre": true,
+            "k": 1,
+            "method": "h3_grid_disk",
+            "minimum_valid_neighbors": 4,
+            "reference_statistic": "median",
+            "require_all_neighbors_present": true,
+            "sensitivity_statistic": "mean"
+          },
+          "normalization_version": "0.1.0",
+          "source_feature": "intersection_density_per_km2",
+          "status_column": "local_ratio_k1_intersection_density_per_km2_status",
+          "status_counts": {
+            "denominator_below_minimum": 24,
+            "denominator_zero": 322,
+            "neighborhood_incomplete": 516,
+            "neighborhood_insufficient_valid": 44,
+            "neighborhood_reference_zero": 2899,
+            "ok": 1876
+          },
+          "transform": "local_ratio",
+          "unit": "dimensionless ratio to the neighborhood median"
+        },
+        "local_ratio_k1_poi_total_count_1km": {
+          "cohort_id": null,
+          "disposition": "diagnostic",
+          "formula": "x / median(x over the k-ring neighbors, centre excluded); null when the median is 0",
+          "neighborhood": {
+            "exclude_centre": true,
+            "k": 1,
+            "method": "h3_grid_disk",
+            "minimum_valid_neighbors": 4,
+            "reference_statistic": "median",
+            "require_all_neighbors_present": true,
+            "sensitivity_statistic": "mean"
+          },
+          "normalization_version": "0.1.0",
+          "source_feature": "poi_total_count_1km",
+          "status_column": "local_ratio_k1_poi_total_count_1km_status",
+          "status_counts": {
+            "entity_assembly_failed": 356,
+            "neighborhood_incomplete": 505,
+            "neighborhood_reference_zero": 2823,
+            "ok": 1997
+          },
+          "transform": "local_ratio",
+          "unit": "dimensionless ratio to the neighborhood median"
+        },
+        "lodging_count_1km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "lodging_count_1km",
+          "status_column": "lodging_count_1km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "lodging_count_1km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "lodging_count_1km",
+          "status_column": "lodging_count_1km_within_aoi_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "major_road_length_km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "major_road_length_km",
+          "status_column": "major_road_length_km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "major_road_length_km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "major_road_length_km",
+          "status_column": "major_road_length_km_within_aoi_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "mall_count_3km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "mall_count_3km",
+          "status_column": "mall_count_3km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "mall_count_3km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "mall_count_3km",
+          "status_column": "mall_count_3km_within_aoi_percentile_status",
+          "status_counts": {
+            "cohort_degenerate": 5325,
+            "ok": 356
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "marketplace_count_1km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "marketplace_count_1km",
+          "status_column": "marketplace_count_1km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "marketplace_count_1km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "marketplace_count_1km",
+          "status_column": "marketplace_count_1km_within_aoi_percentile_status",
+          "status_counts": {
+            "cohort_degenerate": 2053,
+            "ok": 3628
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "osm_industrial_site_area_ratio_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "osm_industrial_site_area_ratio",
+          "status_column": "osm_industrial_site_area_ratio_mvp_pooled_percentile_status",
+          "status_counts": {
+            "denominator_below_minimum": 19,
+            "denominator_zero": 298,
+            "entity_assembly_failed": 356,
+            "ok": 5008
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "osm_industrial_site_area_ratio_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "osm_industrial_site_area_ratio",
+          "status_column": "osm_industrial_site_area_ratio_within_aoi_percentile_status",
+          "status_counts": {
+            "cohort_degenerate": 2053,
+            "denominator_below_minimum": 19,
+            "denominator_zero": 298,
+            "entity_assembly_failed": 356,
+            "ok": 2955
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "park_recreation_count_1km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "park_recreation_count_1km",
+          "status_column": "park_recreation_count_1km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "entity_assembly_failed": 356,
+            "ok": 5325
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "park_recreation_count_1km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "park_recreation_count_1km",
+          "status_column": "park_recreation_count_1km_within_aoi_percentile_status",
+          "status_counts": {
+            "cohort_degenerate": 2053,
+            "entity_assembly_failed": 356,
+            "ok": 3272
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "pharmacy_count_1km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "pharmacy_count_1km",
+          "status_column": "pharmacy_count_1km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "pharmacy_count_1km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "pharmacy_count_1km",
+          "status_column": "pharmacy_count_1km_within_aoi_percentile_status",
+          "status_counts": {
+            "cohort_degenerate": 4008,
+            "ok": 1673
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "poi_category_richness_1km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "poi_category_richness_1km",
+          "status_column": "poi_category_richness_1km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "entity_assembly_failed": 356,
+            "ok": 5325
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "poi_category_richness_1km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "poi_category_richness_1km",
+          "status_column": "poi_category_richness_1km_within_aoi_percentile_status",
+          "status_counts": {
+            "entity_assembly_failed": 356,
+            "ok": 5325
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "poi_total_count_1km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "poi_total_count_1km",
+          "status_column": "poi_total_count_1km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "entity_assembly_failed": 356,
+            "ok": 5325
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "poi_total_count_1km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "poi_total_count_1km",
+          "status_column": "poi_total_count_1km_within_aoi_percentile_status",
+          "status_counts": {
+            "entity_assembly_failed": 356,
+            "ok": 5325
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "population_count_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "population_count",
+          "status_column": "population_count_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "population_count_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "population_count",
+          "status_column": "population_count_within_aoi_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "population_density_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "population_density",
+          "status_column": "population_density_mvp_pooled_percentile_status",
+          "status_counts": {
+            "denominator_below_minimum": 24,
+            "denominator_zero": 322,
+            "ok": 5335
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "population_density_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "population_density",
+          "status_column": "population_density_within_aoi_percentile_status",
+          "status_counts": {
+            "denominator_below_minimum": 24,
+            "denominator_zero": 322,
+            "ok": 5335
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "retail_count_1km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "retail_count_1km",
+          "status_column": "retail_count_1km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "retail_count_1km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "retail_count_1km",
+          "status_column": "retail_count_1km_within_aoi_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "road_density_km_per_km2_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "road_density_km_per_km2",
+          "status_column": "road_density_km_per_km2_mvp_pooled_percentile_status",
+          "status_counts": {
+            "denominator_below_minimum": 24,
+            "denominator_zero": 322,
+            "ok": 5335
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "road_density_km_per_km2_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "road_density_km_per_km2",
+          "status_column": "road_density_km_per_km2_within_aoi_percentile_status",
+          "status_counts": {
+            "denominator_below_minimum": 24,
+            "denominator_zero": 322,
+            "ok": 5335
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "road_length_km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "road_length_km",
+          "status_column": "road_length_km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "road_length_km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "road_length_km",
+          "status_column": "road_length_km_within_aoi_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "school_count_1km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "school_count_1km",
+          "status_column": "school_count_1km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "school_count_1km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "school_count_1km",
+          "status_column": "school_count_1km_within_aoi_percentile_status",
+          "status_counts": {
+            "cohort_degenerate": 2053,
+            "ok": 3628
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "transit_stop_count_1km_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "transit_stop_count_1km",
+          "status_column": "transit_stop_count_1km_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "transit_stop_count_1km_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "transit_stop_count_1km",
+          "status_column": "transit_stop_count_1km_within_aoi_percentile_status",
+          "status_counts": {
+            "cohort_degenerate": 2053,
+            "ok": 3628
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "tree_cover_ratio_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "tree_cover_ratio",
+          "status_column": "tree_cover_ratio_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "tree_cover_ratio_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "tree_cover_ratio",
+          "status_column": "tree_cover_ratio_within_aoi_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        },
+        "water_wetland_ratio_mvp_pooled_percentile": {
+          "cohort_id": "mvp_pooled::0.1.0::gate3_20260914T171148Z",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "water_wetland_ratio",
+          "status_column": "water_wetland_ratio_mvp_pooled_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the fitted cohort",
+          "weighting": "cell"
+        },
+        "water_wetland_ratio_within_aoi_percentile": {
+          "cohort_id_column": "within_aoi_cohort_id",
+          "disposition": "diagnostic",
+          "formula": "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values",
+          "normalization_version": "0.1.0",
+          "source_feature": "water_wetland_ratio",
+          "status_column": "water_wetland_ratio_within_aoi_percentile_status",
+          "status_counts": {
+            "ok": 5681
+          },
+          "tie_method": "midrank_ecdf",
+          "transform": "percentile",
+          "unit": "percentile [0, 1] within the row's AOI",
+          "weighting": "cell"
+        }
+      },
+      "disposition": "diagnostic",
+      "rows": 5681
+    }
+  }
+}

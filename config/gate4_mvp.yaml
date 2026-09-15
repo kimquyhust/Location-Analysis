@@ -1,0 +1,248 @@
+# Gate 4 Contextual Normalization MVP -- experiment contract.
+#
+# This file is the whole contract of the Gate 4 layer: which atomic
+# features are candidates for which transform, the formulas, the fit
+# cohorts, the tie policy, the local-neighborhood policy, the minimum
+# sample/coverage requirements, how missing values and statuses propagate,
+# and -- decided BEFORE any candidate output was inspected -- the rule that
+# decides whether a candidate is published or kept as a diagnostic.
+#
+# The atomic layer is NOT changed: config/features.yaml stays at
+# feature_set_version 0.3.0 and its `contextual_features.enabled: false`
+# stays false; the Gate 3 artifact pins that file's hash. This layer has
+# its own version below. Enabling production contextual features is an
+# owner decision after independent review of the Gate 4 artifact.
+version: "1.0.0"
+normalization_version: "0.1.0"
+
+run:
+  output_root: data/gate4
+  run_dir_prefix: run_
+  features_config: config/features.yaml
+  spatial_config: config/spatial.yaml
+
+# Exact Gate 3 input. The runner fails if any of these differ on disk.
+input:
+  gate3_run_id: "20260914T171148Z"
+  gate3_run_dir: data/gate3/run_20260914T171148Z
+  feature_set_version: "0.3.0"
+  poi_taxonomy_version: "0.3.0"
+  expected_rows: 5681
+  aoi_ids: [hanoi_core, hoi_an, mu_cang_chai, dong_thap_rural]
+  sha256:
+    atomic_features.parquet: 26d75dd0bf08b101a479aae816f667f44271dee676f08b7aa485cccbc0ed09e0
+    feature_manifest.json: 1cd97295ab6d905b8a0a28223f010c5df78ce81dff1dc05db91ea37093e0e087
+    run_manifest.json: ae37aa53b0e9d47c87370f38c97bfb20cd760a7be38f74f16985d810b29bfea1
+    validation_summary.json: 43dca9e7f00dae7b07e3847927f3cacb31da022829e661af705bbe6f01bf16b7
+  # Join contract: contextual outputs carry spatial_unit_id plus lineage
+  # only; join back to atomic_features.parquet on spatial_unit_id (1:1,
+  # identical key set, identical row count).
+  join_key: spatial_unit_id
+
+# Columns copied from the Gate 3 table into every Gate 4 table (key and
+# lineage). `aoi_id`/`aoi_context` are EXPERIMENT metadata (which Gate 2
+# test geography a cell belongs to); they are not a source-defined
+# urban/rural class and must not be read as one.
+lineage_columns: [spatial_unit_id, aoi_id, aoi_context, run_id, feature_set_version, source_manifest_id]
+
+# Status propagation, shared by every transform:
+#   - the atomic input's status column is read; a non-`ok` status is copied
+#     verbatim to the output status and the output value is null;
+#   - the atomic value is never imputed, clipped or winsorized;
+#   - transform-specific failures use the vocabulary below; there is never
+#     a bare null.
+status_vocabulary:
+  atomic_passthrough: [ok, not_found_within_cap, search_truncated_by_extract, source_not_acquired,
+                       source_unavailable, coverage_incomplete, denominator_zero,
+                       denominator_below_minimum, entity_assembly_failed]
+  gate4:
+    cohort_too_small: cohort_too_small              # fewer valid observations than minimum_cohort_size
+    cohort_degenerate: cohort_degenerate            # every valid observation identical: percentile undefined
+    cohort_not_fitted: cohort_not_fitted            # no persisted statistics for this cohort/feature
+    peer_cohort_insufficient: peer_cohort_insufficient
+    neighborhood_incomplete: neighborhood_incomplete            # a k-ring neighbor is not in the table
+    neighborhood_insufficient_valid: neighborhood_insufficient_valid  # fewer ok neighbors than required
+    neighborhood_reference_zero: neighborhood_reference_zero    # reference statistic is 0: ratio undefined
+    source_not_acquired: source_not_acquired
+
+# Feature groups referenced below. Distances are listed to make their
+# exclusion explicit: in the Gate 3 table 41-59 % of their values are null
+# with `search_truncated_by_extract`, and the nulls are the FAR cells
+# (right-censoring by the halo), so any transform fitted on the observed
+# values would be fitted on a biased sample. They are analysed in the
+# validation summary (`distance_selection_bias`) and deferred.
+feature_groups:
+  counts:
+    - transit_stop_count_1km
+    - school_count_1km
+    - higher_education_count_3km
+    - hospital_count_3km
+    - clinic_count_1km
+    - pharmacy_count_1km
+    - food_drink_count_1km
+    - retail_count_1km
+    - marketplace_count_1km
+    - mall_count_3km
+    - lodging_count_1km
+    - attraction_culture_count_3km
+    - park_recreation_count_1km
+    - poi_total_count_1km
+    - poi_category_richness_1km
+  densities_and_lengths:
+    - population_count
+    - population_density
+    - road_length_km
+    - road_density_km_per_km2
+    - major_road_length_km
+    - intersection_density_per_km2
+  unit_interval_ratios:
+    - built_up_ratio
+    - tree_cover_ratio
+    - grass_shrub_ratio
+    - cropland_ratio
+    - water_wetland_ratio
+    - osm_industrial_site_area_ratio
+  distances_excluded:
+    - distance_nearest_major_road_m
+    - distance_nearest_urban_centre_km
+    - distance_nearest_transit_stop_m
+    - distance_nearest_transport_hub_m
+    - distance_nearest_higher_education_m
+    - distance_nearest_hospital_m
+    - distance_nearest_park_m
+    - distance_nearest_osm_industrial_site_m
+
+transforms:
+
+  # A. log1p ------------------------------------------------------------------
+  log1p:
+    enabled: true
+    output_name: "log1p_{feature}"
+    formula: "ln(1 + x); x the atomic value in its own unit; output unit log(1 + <unit>)"
+    candidates: [counts, densities_and_lengths]
+    # Ratios on [0, 1] are never candidates (log1p of a bounded value is a
+    # near-linear rescaling that adds nothing); distances are excluded (see
+    # feature_groups). Negative input is a contract violation and fails the
+    # run; zero maps to zero; null stays null with the atomic status.
+    rules:
+      zero_maps_to_zero: true
+      null_stays_null: true
+      negative_input: fail
+      impute: false
+      clip_or_winsorize: false
+    # Pre-registered publishability rule, per feature, on the pooled
+    # non-null values of the four AOIs: raw skewness at or above
+    # `minimum_raw_skewness` AND |skew(log1p)| < |skew(raw)|. A feature that
+    # fails stays computed but is written to the diagnostic table.
+    publish_rule:
+      minimum_raw_skewness: 1.0
+      require_skew_reduction: true
+    disposition_if_rule_met: publishable
+    disposition_if_rule_not_met: diagnostic
+
+  # B. percentiles ------------------------------------------------------------
+  percentile:
+    enabled: true
+    candidates: [counts, densities_and_lengths, unit_interval_ratios]
+    formula: "F(x) = (W_below(x) + 0.5 * W_equal(x)) / W_total over the fitted cohort's non-null values"
+    # Fit and apply are separate steps: `fit` writes an ECDF table per
+    # cohort/feature/weighting to cohort_statistics.parquet; `apply` reads
+    # only that table. A cohort that is missing from the table gives
+    # `cohort_not_fitted`, never an implicit refit.
+    tie_method: midrank_ecdf          # midrank_ecdf | min_ecdf | max_ecdf (all deterministic; same fitted table)
+    tie_sensitivity_methods: [min_ecdf, max_ecdf]
+    minimum_cohort_size: 30           # valid observations; else cohort_too_small
+    constant_cohort_policy: null_with_status   # one distinct value -> cohort_degenerate
+    range: [0.0, 1.0]
+    weightings:
+      cell: "every row weight 1"
+      aoi_equal: "every AOI total weight 1 (row weight 1 / rows in its AOI)"
+    cohorts:
+      mvp_pooled_percentile:
+        cohort_id_pattern: "mvp_pooled::{normalization_version}::gate3_{gate3_run_id}"
+        members: all four AOIs of the Gate 3 input
+        primary_weighting: cell
+        sensitivity_weighting: aoi_equal
+        output_name: "{feature}_mvp_pooled_percentile"
+        disposition: diagnostic
+        # A pooled percentile over four hand-picked AOIs (~600 km2) is not a
+        # national percentile and is never named one.
+        forbidden_names: [national_percentile]
+      within_aoi_percentile:
+        cohort_id_pattern: "within_aoi::{aoi_id}::{normalization_version}::gate3_{gate3_run_id}"
+        members: the rows of one AOI
+        primary_weighting: cell
+        output_name: "{feature}_within_aoi_percentile"
+        disposition: diagnostic
+      peer_percentile:
+        cohort_id_pattern: "peer::{aoi_context}::{normalization_version}::gate3_{gate3_run_id}"
+        peer_group_column: aoi_context
+        # A peer distribution that can generalize to a context needs more
+        # than one AOI per context; with one AOI the "peer" percentile is
+        # the within-AOI percentile of that one AOI and cannot be told
+        # apart from it.
+        minimum_aois_per_peer_group: 2
+        output_name: "{feature}_peer_percentile"
+        disposition_if_requirement_met: publishable_candidate
+        disposition_if_requirement_not_met: blocked
+
+  # C. local density ratio -------------------------------------------------
+  local_ratio:
+    enabled: true
+    output_name: "local_ratio_k{k}_{feature}"
+    formula: "x / median(x over the k-ring neighbors, centre excluded); null when the median is 0"
+    candidates:
+      - population_density
+      - road_density_km_per_km2
+      - intersection_density_per_km2
+      - poi_total_count_1km
+      - food_drink_count_1km
+    neighborhood:
+      method: h3_grid_disk
+      k: 1                          # 6 neighbors at r9 (fewer only at pentagons)
+      exclude_centre: true
+      reference_statistic: median   # median | mean
+      sensitivity_statistic: mean   # reported in the validation summary only
+      # Every k-ring neighbor must be in the Gate 3 table; otherwise the
+      # neighborhood is incomplete and the value is null
+      # (`neighborhood_incomplete`). AOI boundaries are not geographic
+      # boundaries, so the share of complete rings is reported for
+      # AOI-interior and AOI-edge cells separately.
+      require_all_neighbors_present: true
+      # Among the present neighbors, at least this many must carry an `ok`
+      # atomic value; else `neighborhood_insufficient_valid`.
+      minimum_valid_neighbors: 4
+    denominator_zero_policy: null_with_status   # NO epsilon; status neighborhood_reference_zero
+    # Pre-registered publishability rule, per feature: among ELIGIBLE rows
+    # (atomic value ok, ring complete, enough valid neighbors) the ratio
+    # must be finite for at least `minimum_finite_share` of rows pooled,
+    # i.e. the reference-zero case must not dominate. Features below the
+    # threshold are written to the diagnostic table.
+    publish_rule:
+      minimum_finite_share_of_eligible: 0.5
+    disposition_if_rule_met: publishable
+    disposition_if_rule_not_met: diagnostic
+
+  # D. source-defined settlement class -------------------------------------
+  source_defined_ghs_smod_class:
+    enabled: false
+    status: source_not_acquired
+    source: GHS-SMOD R2023A (Degree of Urbanisation, 1 km)
+    # No custom urban/rural class is derived from population or built-up
+    # thresholds under this name or any other name in this gate.
+    substitute_with_custom_threshold: false
+
+# Forbidden anywhere in a Gate 4 output (Gate 5 / customer / mobility).
+forbidden_column_patterns:
+  - customer
+  - trip
+  - pickup
+  - dropoff
+  - od_flow
+  - _score
+  - national_percentile
+  - segment
+
+publish:
+  publishable_table: contextual_features.parquet
+  diagnostic_table: diagnostic_features.parquet
